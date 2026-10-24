@@ -20,7 +20,9 @@
       observer.observe(host);
     }
     function animate(element,frames,settings){
-      var animation=element.animate(frames,settings);animations.push(animation);
+      // Only the homepage player supplies a faster rate; the case-study hero stays unchanged.
+      var timing=Object.assign({},settings,{duration:settings.duration/(player.rate||1)});
+      var animation=element.animate(frames,timing);animations.push(animation);
       if(!seen)animation.pause();
       return animation.finished;
     }
