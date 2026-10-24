@@ -1095,8 +1095,8 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
   if(matchMedia('(prefers-reduced-motion: reduce)').matches){
     document.querySelectorAll('.gb i').forEach(function(i){i.style.width=i.dataset.w+'%'}); return;}
   var ARROW='<svg viewBox="0 0 18 22"><path d="M2 1.5v16.2l4.3-4.1 2.8 6.6 2.7-1.2-2.8-6.4h6z" fill="#1E1C1B" stroke="#fff" stroke-width="1.4" stroke-linejoin="round"/></svg>';
-  // Homepage previews run 15% faster; case-study playback keeps its own timing.
-  function Player(thumb){this.rate=1.15;this.t=thumb;this.vis=false;this.waiters=[];var c=document.createElement('div');c.className='cur';c.innerHTML=ARROW;thumb.appendChild(c);this.c=c;this.home(true)}
+  // Homepage and project hero previews share the same playback pace.
+  function Player(thumb){this.rate=1.265;this.t=thumb;this.vis=false;this.waiters=[];var c=document.createElement('div');c.className='cur';c.innerHTML=ARROW;thumb.appendChild(c);this.c=c;this.home(true)}
   Player.prototype.place=function(){this.c.style.transform='translate('+this.x+'px,'+this.y+'px)'};
   Player.prototype.wait=function(ms){var me=this;return new Promise(function(r){setTimeout(function(){if(me.vis)r();else me.waiters.push(r)},ms/me.rate)})};
   Player.prototype.pt=function(el,fx,fy){var a=this.t.getBoundingClientRect(),b=el.getBoundingClientRect();return [b.left-a.left+b.width*(fx==null?.5:fx),b.top-a.top+b.height*(fy==null?.55:fy)]};

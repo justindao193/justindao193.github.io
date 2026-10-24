@@ -679,6 +679,9 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
   var io=('IntersectionObserver' in window)?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12}):null;
   document.querySelectorAll('.rv').forEach(function(el){io?io.observe(el):el.classList.add('in')});
   var vo=('IntersectionObserver' in window)?new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;if(v.dataset.paused)return;if(e.isIntersecting){var p=v.play();p&&p.catch(function(){})}else v.pause()})},{threshold:.3}):null;
+  // Match the homepage pace for the top film; keep the walkthrough clips unchanged.
+  var heroFilm=document.querySelector('.film video');
+  heroFilm.defaultPlaybackRate=1.265;heroFilm.playbackRate=1.265;
   document.querySelectorAll('video').forEach(function(v){vo?vo.observe(v):v.play()});
   var b=document.querySelector('.ctl');b.addEventListener('click',function(){var v=document.querySelector('.film video');if(v.paused){delete v.dataset.paused;v.play();b.textContent='Pause'}else{v.dataset.paused=1;v.pause();b.textContent='Play'}});
 
