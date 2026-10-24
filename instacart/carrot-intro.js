@@ -20,7 +20,7 @@
       observer.observe(host);
     }
     function animate(element,frames,settings){
-      // Only the homepage player supplies a faster rate; the case-study hero stays unchanged.
+      // Follow the supplied preview speed for both the homepage and case-study hero.
       var timing=Object.assign({},settings,{duration:settings.duration/(player.rate||1)});
       var animation=element.animate(frames,timing);animations.push(animation);
       if(!seen)animation.pause();
