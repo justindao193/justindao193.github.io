@@ -375,7 +375,7 @@ h5{margin-bottom:16px!important}
 .bt-r,.bt-ax{display:grid;grid-template-columns:150px minmax(0,1fr);gap:20px;align-items:center}
 .bt-r b{font-size:16px;font-weight:600}
 .bt-t{position:relative;height:14px;border-radius:7px;background:var(--card)}
-.bt-f{position:absolute;left:0;top:0;bottom:0;width:var(--w);border-radius:7px;background:var(--night,#1C1F5E)}
+.bt-f{position:absolute;left:0;top:0;bottom:0;width:var(--w);border-radius:7px;background:var(--red)}
 .bt-t em{position:absolute;left:var(--x);top:50%;transform:translate(10px,-50%);font-style:normal;font-weight:600;font-size:15px;font-variant-numeric:tabular-nums}
 .bt-ax>div{position:relative;height:16px}
 .bt-ax>div span{position:absolute;left:var(--x);transform:translateX(-50%);font:12px var(--mono);color:var(--muted)}
@@ -384,9 +384,8 @@ h5{margin-bottom:16px!important}
 .goals b{display:block;font-family:var(--serif);font-weight:370;font-size:clamp(32px,3.4vw,44px);line-height:1;letter-spacing:-.02em}
 .goals span{display:block;margin-top:8px;font-size:15px;color:var(--muted)}
 .learn4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:36px}
-.learn4>div{border-top:2px solid var(--night,#1C1F5E);padding-top:18px}
-.learn4 .ln{display:block;font-family:var(--serif);font-weight:370;font-size:40px;line-height:1;color:var(--night,#1C1F5E)}
-:root[data-theme="dark"] .learn4 .ln,:root[data-theme="dark"] .learn4>div{color:inherit}
+.learn4>div{border-top:2px solid var(--red);padding-top:18px}
+.learn4 .ln{display:block;font-family:var(--serif);font-weight:370;font-size:40px;line-height:1;color:var(--red)}
 .learn4 h4{margin:14px 0 10px;font-size:17px;font-weight:600}
 .learn4 p{margin:0;font-size:15px;line-height:1.5;color:var(--muted)}
 .learn4 .ba2{margin:0 0 10px;color:var(--ink);font-weight:500;line-height:1.45}
@@ -399,8 +398,6 @@ h5{margin-bottom:16px!important}
 .road b{display:block;margin-top:8px;font-size:15.5px;font-weight:600;line-height:1.35}
 @media (max-width:900px){.learn4{grid-template-columns:1fr 1fr;gap:32px 20px}.road{grid-template-columns:1fr 1fr}}
 @media (max-width:520px){.learn4,.road,.goals{grid-template-columns:1fr}.bt-r,.bt-ax{grid-template-columns:110px minmax(0,1fr)}}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .learn4 .ln{color:var(--star,#FFC43D)}:root:not([data-theme="light"]) .learn4>div{border-color:var(--star,#FFC43D)}:root:not([data-theme="light"]) .bt-f{background:var(--star,#FFC43D)}}
-:root[data-theme="dark"] .learn4 .ln{color:var(--star,#FFC43D)}:root[data-theme="dark"] .learn4>div{border-color:var(--star,#FFC43D)}:root[data-theme="dark"] .bt-f{background:var(--star,#FFC43D)}
 </style>
 </head>
 <body>
