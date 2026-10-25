@@ -369,6 +369,38 @@ h5{margin-bottom:16px!important}
 /* Oct 24 2026: lighter panels for readability (light mode only) */
 :root:not([data-theme="dark"]) .panel{background:#FDFAF6;box-shadow:inset 0 0 0 1px var(--line);--card:#F3EDE5}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .panel{background:var(--panel);box-shadow:none;--card:#2F2B29}}
+
+/* Oct 24 2026: visual next step and reflection */
+.beat{display:grid;gap:18px;margin-top:8px}
+.bt-r,.bt-ax{display:grid;grid-template-columns:150px minmax(0,1fr);gap:20px;align-items:center}
+.bt-r b{font-size:16px;font-weight:600}
+.bt-t{position:relative;height:14px;border-radius:7px;background:var(--card)}
+.bt-f{position:absolute;left:0;top:0;bottom:0;width:var(--w);border-radius:7px;background:var(--night,#1C1F5E)}
+.bt-t em{position:absolute;left:var(--x);top:50%;transform:translate(10px,-50%);font-style:normal;font-weight:600;font-size:15px;font-variant-numeric:tabular-nums}
+.bt-ax>div{position:relative;height:16px}
+.bt-ax>div span{position:absolute;left:var(--x);transform:translateX(-50%);font:12px var(--mono);color:var(--muted)}
+.bt-ax>div span:first-child{transform:none}.bt-ax>div span:last-child{transform:translateX(-100%)}
+.goals{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:36px;padding-top:28px;border-top:1px solid var(--line)}
+.goals b{display:block;font-family:var(--serif);font-weight:370;font-size:clamp(32px,3.4vw,44px);line-height:1;letter-spacing:-.02em}
+.goals span{display:block;margin-top:8px;font-size:15px;color:var(--muted)}
+.learn4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:36px}
+.learn4>div{border-top:2px solid var(--night,#1C1F5E);padding-top:18px}
+.learn4 .ln{display:block;font-family:var(--serif);font-weight:370;font-size:40px;line-height:1;color:var(--night,#1C1F5E)}
+:root[data-theme="dark"] .learn4 .ln,:root[data-theme="dark"] .learn4>div{color:inherit}
+.learn4 h4{margin:14px 0 10px;font-size:17px;font-weight:600}
+.learn4 p{margin:0;font-size:15px;line-height:1.5;color:var(--muted)}
+.learn4 .ba2{margin:0 0 10px;color:var(--ink);font-weight:500;line-height:1.45}
+.learn4 .ba2 s{color:var(--muted);text-decoration-color:var(--red);font-weight:400}
+.learn4 .ba2 i{font-style:normal;color:var(--red);margin:0 6px}
+.road{list-style:none;margin:24px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;counter-reset:rd}
+.road li{position:relative;counter-increment:rd;padding:18px 16px;border-radius:12px;border:1px solid var(--line)}
+.road span{display:block;font:11.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.road span::before{content:counter(rd) " · "}
+.road b{display:block;margin-top:8px;font-size:15.5px;font-weight:600;line-height:1.35}
+@media (max-width:900px){.learn4{grid-template-columns:1fr 1fr;gap:32px 20px}.road{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.learn4,.road,.goals{grid-template-columns:1fr}.bt-r,.bt-ax{grid-template-columns:110px minmax(0,1fr)}}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .learn4 .ln{color:var(--star,#FFC43D)}:root:not([data-theme="light"]) .learn4>div{border-color:var(--star,#FFC43D)}:root:not([data-theme="light"]) .bt-f{background:var(--star,#FFC43D)}}
+:root[data-theme="dark"] .learn4 .ln{color:var(--star,#FFC43D)}:root[data-theme="dark"] .learn4>div{border-color:var(--star,#FFC43D)}:root[data-theme="dark"] .bt-f{background:var(--star,#FFC43D)}
 </style>
 </head>
 <body>
@@ -641,36 +673,45 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
   <div class="col">
     <p class="eb">Next step</p>
     <h2>Testing the redesign</h2>
-    <p class="t">The hi-fi version is next in line for testing. I will run the same two tasks with five U of T students, ideally commuters, and compare against the mid-fi results.</p>
-    <div class="nums">
-      <div><b>12.9s</b><span>mid-fi time to send a Star, the bar to beat</span></div>
-      <div><b>23.4s</b><span>mid-fi time to finish a quest</span></div>
-      <div><b>5</b><span>students planned</span></div>
-      <div><b>0</b><span>“What are Star Points?” questions, the goal</span></div>
-    </div>
+    <p class="t">Next, I will run the same two tasks on the hi-fi version with five U of T students, ideally commuters.</p>
   </div>
+  <div class="wide"><div class="panel rv">
+    <p class="ph">The bars to beat, from mid-fi testing</p>
+    <div class="beat">
+      <div class="bt-r"><b>Send a Star</b><div class="bt-t"><i class="bt-f" style="--w:43%"></i><em style="--x:43%">12.9s</em></div></div>
+      <div class="bt-r"><b>Finish a quest</b><div class="bt-t"><i class="bt-f" style="--w:78%"></i><em style="--x:78%">23.4s</em></div></div>
+      <div class="bt-ax"><span></span><div><span style="--x:0%">0s</span><span style="--x:33.3%">10s</span><span style="--x:66.6%">20s</span><span style="--x:100%">30s</span></div></div>
+    </div>
+    <div class="goals">
+      <div><b>5</b><span>U of T students, ideally commuters</span></div>
+      <div><b>Faster</b><span>than mid-fi on both tasks</span></div>
+      <div><b>0</b><span>“What are Star Points?” questions</span></div>
+    </div>
+  </div></div>
 </section>
+
+<hr class="rule">
 
 <section id="reflection" style="padding-top:clamp(56px,7vw,88px)">
   <div class="col">
     <p class="eb">Reflection</p>
     <h2>What I learned</h2>
-    <p class="t">TStar started as a class project, but it changed how I think about design. The hardest part was never the screens. It was understanding how nervous people feel before they say hi, and designing around that feeling.</p>
-    <div class="reflect two">
-      <div><h4>Calm beats features</h4><p>Our early ideas had matching, games and live alerts. Testing showed that what helped most was taking pressure away. One small, simple action did more than any extra feature.</p></div>
-      <div><h4>Clear beats clever</h4><p>We called the rocket button “Blastoff” because it sounded fun. All three testers asked what it meant. Now I name things for what they do, then add the fun around it.</p></div>
-      <div><h4>Flow is everything</h4><p>Sending people to the inbox after a Star broke the moment. Going straight to the chat fixed it. One extra screen can undo a good idea.</p></div>
-      <div><h4>Shy users need gentle design</h4><p>Not everyone wants points and games. The fun parts had to stay optional, so quieter students never feel pushed.</p></div>
-    </div>
-    <h3 class="sub">What I would do next</h3>
-    <ul class="next-list">
-      <li>Test the hi-fi version with real students.</li>
-      <li>Try optional AI suggestions for the first message, so a blank chat feels less scary.</li>
-      <li>Suggest quests that fit each student’s schedule, so commuters can join too.</li>
-      <li>Test whether limiting Stars per day makes each one feel more meaningful.</li>
-      <li>Check over a full term whether people keep using it, or drop off after week one.</li>
-    </ul>
+    <p class="t">The hardest part was never the screens. It was understanding how nervous people feel before they say hi, and designing around that feeling.</p>
   </div>
+  <div class="wide"><div class="learn4 rv">
+    <div><span class="ln">01</span><h4>Calm beats features</h4><p class="ba2"><s>Matching, games, live alerts</s><i>→</i>One small, simple action</p><p>Taking pressure away helped more than any extra feature.</p></div>
+    <div><span class="ln">02</span><h4>Clear beats clever</h4><p class="ba2"><s>“Blastoff”</s><i>→</i>Names that say what they do</p><p>All three testers asked what “Blastoff” meant.</p></div>
+    <div><span class="ln">03</span><h4>Flow is everything</h4><p class="ba2"><s>Star, then inbox</s><i>→</i>Star, then straight to chat</p><p>One extra screen can undo a good idea.</p></div>
+    <div><span class="ln">04</span><h4>Gentle design for shy users</h4><p class="ba2"><s>Points for everyone</s><i>→</i>Fun parts stay optional</p><p>Quieter students should never feel pushed.</p></div>
+  </div></div>
+  <div class="col"><h3 class="sub">What I would do next</h3></div>
+  <div class="wide"><ol class="road rv">
+    <li><span>Test</span><b>Hi-fi with real students</b></li>
+    <li><span>AI</span><b>Optional first-message suggestions</b></li>
+    <li><span>Quests</span><b>Fit each student’s schedule</b></li>
+    <li><span>Stars</span><b>Try a daily limit</b></li>
+    <li><span>Retention</span><b>Track use over a full term</b></li>
+  </ol></div>
 </section>
 
 <a class="next" href="instacart.html"><span><small>Next project</small><b>Grocery recommendations</b></span><span class="arr">→</span></a>
