@@ -398,6 +398,12 @@ h5{margin-bottom:16px!important}
 .road b{display:block;margin-top:8px;font-size:15.5px;font-weight:600;line-height:1.35}
 @media (max-width:900px){.learn4{grid-template-columns:1fr 1fr;gap:32px 20px}.road{grid-template-columns:1fr 1fr}}
 @media (max-width:520px){.learn4,.road,.goals{grid-template-columns:1fr}.bt-r,.bt-ax{grid-template-columns:110px minmax(0,1fr)}}
+
+/* Oct 24 2026: one equal gap between every section */
+:root{--secgap:clamp(64px,7vw,96px)}
+.main > hr.rule{display:none}
+.main > section{padding-top:0!important;padding-bottom:0!important;margin-top:var(--secgap)!important}
+.main > section > :last-child,.main > section > :last-child > :last-child{margin-bottom:0}
 </style>
 </head>
 <body>

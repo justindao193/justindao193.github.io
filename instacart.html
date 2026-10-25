@@ -810,6 +810,12 @@ details.more .mbody p.t:first-child{margin-top:4px}
 /* Oct 24 2026: lighter panels for readability (light mode only) */
 :root:not([data-theme="dark"]) .panel{background:#FDFAF6;box-shadow:inset 0 0 0 1px var(--line);--card:#F3EDE5}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .panel{background:var(--panel);box-shadow:none;--card:#2F2B29}}
+
+/* Oct 24 2026: one equal gap between every section */
+:root{--secgap:clamp(64px,7vw,96px)}
+.main > hr.rule{display:none}
+.main > section{padding-top:0!important;padding-bottom:0!important;margin-top:var(--secgap)!important}
+.main > section > :last-child,.main > section > :last-child > :last-child{margin-bottom:0}
 </style>
 <script src="instacart/carrot-intro.js"></script>
 </head>
