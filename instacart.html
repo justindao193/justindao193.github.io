@@ -794,6 +794,22 @@ details.more .mbody p.t:first-child{margin-top:4px}
 .states .state-image img{border-radius:0;box-shadow:none}
 .state-short img{margin-bottom:-3%}
 .state-discovery{padding-bottom:16px}
+
+/* Oct 24 2026: recruiter summary, launch plan */
+.tldr{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:36px;padding:24px 0 0;border-top:1px solid var(--line)}
+.tldr span{display:block;font:12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--red-deep)}
+.tldr p{margin:8px 0 0;font-size:16.5px;line-height:1.55;font-weight:500}
+@media (max-width:760px){.tldr{grid-template-columns:1fr;gap:18px}}
+.biz{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.biz>div{background:var(--card);border-radius:12px;padding:20px 18px}
+.biz span{display:block;font:11.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.biz b{display:block;margin-top:10px;font-size:16px;font-weight:600;line-height:1.4}
+.biz p{margin:8px 0 0;font-size:14.5px;line-height:1.5;color:var(--muted)}
+@media (max-width:900px){.biz{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.biz{grid-template-columns:1fr}}
+.limits-list{margin:14px 0 0;padding:0;list-style:none}
+.limits-list li{padding:12px 0;border-top:1px solid var(--line);font-size:16px}
+.limits-list li:last-child{border-bottom:1px solid var(--line)}
 </style>
 <script src="instacart/carrot-intro.js"></script>
 </head>
@@ -805,7 +821,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 
 <nav class="topnav" aria-label="Main"><a href="index.html#work">← Work / <b>Instacart grocery recommendations</b></a><span class="tright" style="padding-right:46px"><a href="index.html#about">About</a></span></nav>
 
-<aside class="side" aria-label="Sections"><a class="back" href="index.html#work" aria-label="Back to work">←</a><ul><li><a href="#overview" data-s="overview problem">overview</a></li><li><a href="#scope" data-s="scope">scope</a></li><li><a href="#fairtest" data-s="fairtest methods results decision">version 1</a></li><li><a href="#v2" data-s="v2">version 2</a></li><li><a href="#v3" data-s="v3">version 3</a></li><li><a href="#prototype" data-s="prototype pilot">prototype</a></li><li><a href="#try" data-s="try">try it</a></li><li><a href="#learned" data-s="learned">learning</a></li></ul></aside>
+<aside class="side" aria-label="Sections"><a class="back" href="index.html#work" aria-label="Back to work">←</a><ul><li><a href="#overview" data-s="overview problem">overview</a></li><li><a href="#scope" data-s="scope">scope</a></li><li><a href="#fairtest" data-s="fairtest methods results decision">version 1</a></li><li><a href="#v2" data-s="v2">version 2</a></li><li><a href="#v3" data-s="v3">version 3</a></li><li><a href="#prototype" data-s="prototype pilot">prototype</a></li><li><a href="#launch" data-s="launch">if launched</a></li><li><a href="#try" data-s="try">try it</a></li><li><a href="#learned" data-s="learned">learning</a></li></ul></aside>
 <main class="main">
 <div class="wide">
   <div class="film sage hero rv" id="hero" aria-label="Animation: the Buy it again rule scores past orders and ranks products; then shared buyers link the shopper’s products to new ones for You might also like">
@@ -849,6 +865,11 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <div class="col hcol">
   <h1>Helping shoppers find familiar groceries and discover new favourites</h1>
   <p class="lead">Could recommendations help shoppers find familiar groceries with less searching? I defined the scope, compared methods using public Instacart orders and built a working shopping prototype. I chose a simple rule that favours recent purchases, then added a separate discovery list.</p>
+  <div class="tldr">
+    <div><span>Problem</span><p>Shoppers rebuy the same groceries every week, but still have to search for them.</p></div>
+    <div><span>What I did</span><p>Compared five ways to rank products on 3.4M public orders, then built a working shopping page with two suggestion lists.</p></div>
+    <div><span>Result</span><p>A simple rule I can explain almost matched machine learning. A list of new products reached about 11 in 100 shoppers, against 9 for popular picks.</p></div>
+  </div>
   <dl class="meta">
     <div><dt>Role</dt><dd>Product manager &amp; data analyst</dd></div>
     <div><dt>Skills</dt><dd>Product scoping, SQL and Python, model evaluation, prototyping, user testing</dd></div>
@@ -861,7 +882,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
   <div class="col">
     <p class="eb">Overview</p>
     <h2>The project at a glance</h2>
-    <p class="t note2">Data: <a href="https://tech.instacart.com/3-million-instacart-orders-open-sourced-d40d29ead6f2" target="_blank" rel="noopener">Instacart’s public 2017 dataset</a> contains anonymous grocery orders, products and purchase sequences. I used an <a href="https://zenodo.org/records/2654444" target="_blank" rel="noopener">archived copy on Zenodo</a>. These records don’t represent all Instacart shoppers.</p>
+    <p class="t note2">Data: <a href="https://tech.instacart.com/3-million-instacart-orders-open-sourced-d40d29ead6f2" target="_blank" rel="noopener">Instacart’s public 2017 dataset</a> contains anonymous grocery orders, products and purchase sequences. I used an <a href="https://zenodo.org/records/2654444" target="_blank" rel="noopener">archived copy on Zenodo</a>. These records do not represent all Instacart shoppers.</p>
   </div>
   <div class="wide"><div class="panel rv">
     <div class="nums">
@@ -949,7 +970,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <hr class="rule">
 
 <section id="results">
-<div class="col"><p class="eb">Results</p><h2>Personal history made the biggest difference</h2><p class="t">Final comparison on the same 131,209 shoppers. These scores measure later-basket matches, not sales or shopping time saved.</p></div><div class="wide"><div class="panel rv"><div aria-label="Final results by method" class="rtab in" role="table">
+<div class="col"><p class="eb">Results</p><h2>Personal history made the biggest difference</h2><p class="t">In plain words: the list I chose found about a quarter of each shopper’s next basket, and about 4 in 5 shoppers bought at least one of its five suggestions. Popular products for everyone found less than 1 in 20.</p></div><div class="wide"><div class="panel rv"><div aria-label="Final results by method" class="rtab in" role="table">
 <div class="rh" role="row"><span role="columnheader">Method</span><span role="columnheader">Recall@5</span><span class="hide-s" role="columnheader"></span><span role="columnheader">Precision@5</span><span role="columnheader">Hit rate@5</span></div>
 <div role="row"><span>General popularity</span><b>4.69%</b><span class="tr hide-s"><i style="--w:19.2%"></i></span><span>9.48%</span><span>36.24%</span></div>
 <div role="row"><span>Personal frequency</span><b>23.12%</b><span class="tr hide-s"><i style="--w:94.5%"></i></span><span>35.41%</span><span>78.23%</span></div>
@@ -992,7 +1013,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <div class="dgrp"><h5>Historical comparison · 15,000 shoppers</h5>
 <div class="drow"><span>Popular products</span><span class="tr"><i style="--w:77.6%"></i></span><b>9.31%</b></div>
 <div class="drow rel"><span>Related products</span><span class="tr"><i style="--w:89.8%"></i></span><b>10.77%</b></div>
-</div></div><p class="axis">Share of shoppers with at least one match among five suggestions. Related products reached a net 219 more shoppers; most still had no match.</p></div></div><div class="col"><p class="t">With five suggestions, related products matched purchases for about 11 in 100 shoppers versus 9 for popularity. These records had already been reviewed; new data and user testing would check whether the results hold up and the feature is useful.</p><p class="t"><b>What is missing:</b> prices, pack sizes, stock and click feedback. Those would need new data. Whether discovery helps people shop still needs user testing.</p><div class="clinks"><a class="clink gh" href="https://github.com/justindao193/instacart-grocery-recommendations/blob/main/src/model_comparison/evaluate_discovery.py" target="_blank" rel="noopener">See discovery code</a><a class="clink gh" href="https://github.com/justindao193/instacart-grocery-recommendations/blob/main/results/discovery_top_five.json" target="_blank" rel="noopener">See the five-item results</a></div></div>
+</div></div><p class="axis">Share of shoppers with at least one match among five suggestions. Related products reached a net 219 more shoppers; most still had no match.</p></div></div><div class="col"><p class="t">With five suggestions, related products matched purchases for about 11 in 100 shoppers versus 9 for popularity. These shoppers’ records had already been reviewed, so new data would be the real check.</p><div class="clinks"><a class="clink gh" href="https://github.com/justindao193/instacart-grocery-recommendations/blob/main/src/model_comparison/evaluate_discovery.py" target="_blank" rel="noopener">See discovery code</a><a class="clink gh" href="https://github.com/justindao193/instacart-grocery-recommendations/blob/main/results/discovery_top_five.json" target="_blank" rel="noopener">See the five-item results</a></div></div>
 </section>
 
 <hr class="rule">
@@ -1005,13 +1026,6 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
   </div>
   <div class="wide">
     <figure class="shot rv"><img src="instacart/screen-discovery.jpg" alt="Prototype for Shopper A with Buy it again and You might also like rows, and Trail Mix and Soda in the basket" loading="lazy" data-zoom="instacart/screen-discovery.jpg"></figure>
-    <p class="t note2">Earlier prototype: these clips show Buy it again before You might also like was added.</p>
-    <div class="feat rv"><h3>01 · Add in one tap</h3>
-      <div class="vid sage"><video src="instacart/ic-add.mp4" poster="instacart/ic-add.jpg" muted loop playsinline preload="none" aria-label="Adding a suggested product"></video></div></div>
-    <div class="feat rv"><h3>02 · Hide what you do not need</h3>
-      <div class="vid sage"><video src="instacart/ic-hide.mp4" poster="instacart/ic-hide.jpg" muted loop playsinline preload="none" aria-label="Hiding a product and showing it again"></video></div></div>
-    <div class="feat rv"><h3>03 · Works for every history</h3><p>A short history shows a short list. A new shopper sees popular products under a different heading.</p>
-      <div class="vid sage"><video src="instacart/ic-history.mp4" poster="instacart/ic-history.jpg" muted loop playsinline preload="none" aria-label="Switching between shoppers with different histories"></video></div></div>
     
   </div>
   <div class="col"><h3 class="sub">Three shoppers, three states</h3></div>
@@ -1034,6 +1048,23 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <div class="db-r"><b>Person 2</b><div class="db-t"><i class="dl" style="--a:20%;--b:80%"></i><i class="d s" style="--x:20%"><em>5s</em></i><i class="d f" style="--x:80%"><em>20s</em></i></div></div>
 <div class="db-k"><span><i class="f"></i>Search first</span><span><i class="s"></i>Suggestions second</span><span>Times are approximate</span></div>
 </div></div></div><div class="col"><p class="t">Person 2 completed both tasks without help. Person 1 needed naming clarification during search and preferred suggestions. Repeated products, fixed task order and assistance mean I cannot claim the feature caused a time saving.</p></div>
+</section>
+
+<hr class="rule">
+
+<section id="launch">
+<div class="col"><p class="eb">If this launched</p><h2>How I would measure it in the real product</h2><p class="t">Offline scores told me which list to build. A live test would tell me whether it helps shoppers and the business.</p></div>
+<div class="wide"><div class="panel rv"><div class="biz">
+<div><span>Main metric</span><b>Share of repeat baskets with an item added from the lists</b><p>Plus time to rebuild a usual basket.</p></div>
+<div><span>Guardrails</span><b>Basket size and checkout rate do not drop</b><p>And shoppers do not hide most suggestions.</p></div>
+<div><span>How I would test it</span><b>A/B test on returning shoppers</b><p>Half see the lists, half do not, for a few weeks. Discovery tested separately.</p></div>
+<div><span>Roll back if</span><b>A guardrail falls, or no lift</b><p>Then try a smaller change, like fewer cards.</p></div>
+</div></div></div>
+<div class="col"><h3 class="sub">Limits of this project</h3><ul class="limits-list">
+<li>All results are matches with past baskets, not proof of time saved or sales.</li>
+<li>The data has no prices, pack sizes, stock or click records.</li>
+<li>Two early user sessions, and none yet for You might also like.</li>
+</ul></div>
 </section>
 
 <hr class="rule">
