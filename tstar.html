@@ -391,10 +391,9 @@ h5{margin-bottom:16px!important}
 .learn4 .ba2{margin:0 0 10px;color:var(--ink);font-weight:500;line-height:1.45}
 .learn4 .ba2 s{color:var(--muted);text-decoration-color:var(--red);font-weight:400}
 .learn4 .ba2 i{font-style:normal;color:var(--red);margin:0 6px}
-.panel:has(> .road){margin-top:24px}
 .road span{white-space:nowrap}
-.road{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;counter-reset:rd}
-.road li{position:relative;counter-increment:rd;padding:14px;border-radius:12px;background:var(--card)}
+.road{list-style:none;margin:24px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;counter-reset:rd}
+.road li{position:relative;counter-increment:rd;padding:14px;border-radius:12px;background:var(--panel)}
 .road span{display:block;font:11.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .road span::before{content:counter(rd) " · "}
 .road b{display:block;margin-top:8px;font-size:15.5px;font-weight:600;line-height:1.35}
@@ -710,13 +709,13 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
     <div><span class="ln">04</span><h4>Gentle design for shy users</h4><p class="ba2"><s>Points for everyone</s><i>→</i>Fun parts stay optional</p><p>Quieter students should never feel pushed.</p></div>
   </div></div>
   <div class="col"><h3 class="sub">What I would do next</h3></div>
-  <div class="wide"><div class="panel rv"><ol class="road">
+  <div class="wide"><ol class="road rv">
     <li><span>Test</span><b>Hi-fi with real students</b></li>
     <li><span>AI</span><b>Optional first-message suggestions</b></li>
     <li><span>Quests</span><b>Fit each student’s schedule</b></li>
     <li><span>Stars</span><b>Try a daily limit</b></li>
     <li><span>Retention</span><b>Track use over a full term</b></li>
-  </ol></div></div>
+  </ol></div>
 </section>
 
 <a class="next" href="instacart.html"><span><small>Next project</small><b>Grocery recommendations</b></span><span class="arr">→</span></a>
