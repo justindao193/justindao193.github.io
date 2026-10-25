@@ -402,12 +402,13 @@ h5{margin-bottom:16px!important}
 
 /* what TStar is */
 .sol{margin-top:40px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-.sol>article{background:var(--panel);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.sol>article{background:var(--card);box-shadow:inset 0 0 0 1px var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
 .sol .sc{height:clamp(220px,24vw,300px);background:var(--sky);padding:28px 14% 0;overflow:hidden}
 .sol .sc img{display:block;width:100%;height:100%;object-fit:cover;object-position:top;border-radius:14px 14px 0 0;box-shadow:0 10px 30px rgba(28,31,94,.18)}
 .sol .sc.bot img{object-position:center 62%}
 .sol .tx{padding:20px 20px 22px}
-.sol .tx span{display:block;font:11.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.sol .tx span{display:flex;align-items:baseline;gap:10px;font:13px var(--mono);color:var(--muted)}
+.sol .tx span em{font-style:normal;color:var(--red-deep);font-weight:500}
 .sol .tx b{display:block;margin-top:8px;font-size:17px;font-weight:600;line-height:1.35}
 .sol .tx p{margin:6px 0 0;font-size:14.5px;line-height:1.5;color:var(--muted)}
 @media (max-width:760px){.sol{grid-template-columns:1fr}.sol .sc{height:260px;padding:24px 22% 0}}
@@ -471,9 +472,9 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
     <p class="t">TStar shows students the classmates in their own program and gives them small, low-pressure ways to connect. Nobody has to send a cold first message.</p>
   </div>
   <div class="wide"><div class="sol rv">
-    <article><div class="sc"><img src="tstar/media/hifi-cohort.jpg" alt="TStar cohort list with classmates and their interests" loading="lazy"></div><div class="tx"><span>1 · Browse</span><b>See your cohort</b><p>Friendly profiles of classmates in your program. Shared interests stand out, so you know what to say.</p></div></article>
-    <article><div class="sc bot"><img src="tstar/media/hifi-star.jpg" alt="Send a Star sheet with an optional note" loading="lazy"></div><div class="tx"><span>2 · Star</span><b>Shoot a Star</b><p>One tap means “happy to chat,” with an optional note. Ignoring a Star sends no notice, so there is no rejection.</p></div></article>
-    <article><div class="sc"><img src="tstar/media/hifi-quest.jpg" alt="Quest Hotdog: grab a hotdog with a cohort buddy" loading="lazy"></div><div class="tx"><span>3 · Quest</span><b>Do a weekly quest</b><p>Small missions like “grab a hotdog with a cohort buddy.” Scan their code, share a photo and earn Star Points for the cohort rocket.</p></div></article>
+    <article><div class="sc"><img src="tstar/media/hifi-cohort.jpg" alt="TStar cohort list with classmates and their interests" loading="lazy"></div><div class="tx"><span><em>01</em>browse</span><b>See your cohort</b><p>Friendly profiles of classmates in your program. Shared interests stand out, so you know what to say.</p></div></article>
+    <article><div class="sc bot"><img src="tstar/media/hifi-star.jpg" alt="Send a Star sheet with an optional note" loading="lazy"></div><div class="tx"><span><em>02</em>star</span><b>Shoot a Star</b><p>One tap means “happy to chat,” with an optional note. Ignoring a Star sends no notice, so there is no rejection.</p></div></article>
+    <article><div class="sc"><img src="tstar/media/hifi-quest.jpg" alt="Quest Hotdog: grab a hotdog with a cohort buddy" loading="lazy"></div><div class="tx"><span><em>03</em>quest</span><b>Do a weekly quest</b><p>Small missions like “grab a hotdog with a cohort buddy.” Scan their code, share a photo and earn Star Points for the cohort rocket.</p></div></article>
   </div></div>
 </section>
 
