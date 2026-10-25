@@ -400,6 +400,8 @@ h5{margin-bottom:16px!important}
 @media (max-width:900px){.learn4{grid-template-columns:1fr 1fr;gap:32px 20px}.road{grid-template-columns:1fr 1fr}}
 @media (max-width:520px){.learn4,.road,.goals{grid-template-columns:1fr}.bt-r,.bt-ax{grid-template-columns:110px minmax(0,1fr)}}
 
+/* text runs to the end of the body */
+.main section .col{max-width:none}
 /* Oct 24 2026: one equal gap between every section */
 :root{--secgap:clamp(64px,7vw,96px)}
 .main > hr.rule{display:none}
@@ -664,7 +666,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
   <div class="col">
     <p class="eb">Live prototype</p>
     <h2>Try it yourself</h2>
-    <p class="t">Tap Cohort, pick AJ and send a Star. Then go Home and do Quest Hotdog. <a href="tstar/app/index.html" target="_blank" rel="noopener">Open full screen ↗</a></p>
+    <p class="t"><a href="tstar/app/index.html" target="_blank" rel="noopener">Open full screen ↗</a></p>
   </div>
   <div class="wide"><div class="stage rv">
     <div class="live"><iframe src="tstar/app/index.html?embed" title="TStar interactive prototype"></iframe></div>
