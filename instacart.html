@@ -797,8 +797,9 @@ details.more .mbody p.t:first-child{margin-top:4px}
 
 /* Oct 24 2026: recruiter summary, launch plan */
 .biz{margin-top:40px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
-.biz>div{background:var(--panel);border-radius:12px;padding:20px 18px}
-.biz span{display:block;font:11.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.biz>div{background:var(--card);box-shadow:inset 0 0 0 1px var(--line);border-radius:12px;padding:20px 18px}
+.biz span{display:flex;align-items:baseline;gap:10px;font:13px var(--mono);color:var(--muted)}
+.biz span em{font-style:normal;color:var(--red-deep);font-weight:500}
 .biz b{display:block;margin-top:10px;font-size:16px;font-weight:600;line-height:1.4}
 .biz p{margin:8px 0 0;font-size:14.5px;line-height:1.5;color:var(--muted)}
 @media (max-width:900px){.biz{grid-template-columns:1fr 1fr}}
@@ -1056,10 +1057,10 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <section id="launch">
 <div class="col"><p class="eb">If this launched</p><h2>How I would measure it in the real product</h2><p class="t">Offline scores told me which list to build. A live test would tell me whether it helps shoppers and the business.</p></div>
 <div class="wide"><div class="biz rv">
-<div><span>Main metric</span><b>Share of repeat baskets with an item added from the lists</b><p>Plus time to rebuild a usual basket.</p></div>
-<div><span>Guardrails</span><b>Basket size and checkout rate do not drop</b><p>And shoppers do not hide most suggestions.</p></div>
-<div><span>How I would test it</span><b>A/B test on returning shoppers</b><p>Half see the lists, half do not, for a few weeks. Discovery tested separately.</p></div>
-<div><span>Roll back if</span><b>A guardrail falls, or no lift</b><p>Then try a smaller change, like fewer cards.</p></div>
+<div><span><em>01</em>main metric</span><b>Share of repeat baskets with an item added from the lists</b><p>Plus time to rebuild a usual basket.</p></div>
+<div><span><em>02</em>guardrails</span><b>Basket size and checkout rate do not drop</b><p>And shoppers do not hide most suggestions.</p></div>
+<div><span><em>03</em>how I would test it</span><b>A/B test on returning shoppers</b><p>Half see the lists, half do not, for a few weeks. Discovery tested separately.</p></div>
+<div><span><em>04</em>roll back if</span><b>A guardrail falls, or no lift</b><p>Then try a smaller change, like fewer cards.</p></div>
 </div></div>
 <div class="col"><h3 class="sub">Limits of this project</h3><ul class="limits-list">
 <li>All results are matches with past baskets, not proof of time saved or sales.</li>
