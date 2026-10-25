@@ -796,8 +796,8 @@ details.more .mbody p.t:first-child{margin-top:4px}
 .state-discovery{padding-bottom:16px}
 
 /* Oct 24 2026: recruiter summary, launch plan */
-.biz{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
-.biz>div{background:var(--card);border-radius:12px;padding:20px 18px}
+.biz{margin-top:40px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.biz>div{background:var(--panel);border-radius:12px;padding:20px 18px}
 .biz span{display:block;font:11.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .biz b{display:block;margin-top:10px;font-size:16px;font-weight:600;line-height:1.4}
 .biz p{margin:8px 0 0;font-size:14.5px;line-height:1.5;color:var(--muted)}
@@ -1055,12 +1055,12 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 
 <section id="launch">
 <div class="col"><p class="eb">If this launched</p><h2>How I would measure it in the real product</h2><p class="t">Offline scores told me which list to build. A live test would tell me whether it helps shoppers and the business.</p></div>
-<div class="wide"><div class="panel rv"><div class="biz">
+<div class="wide"><div class="biz rv">
 <div><span>Main metric</span><b>Share of repeat baskets with an item added from the lists</b><p>Plus time to rebuild a usual basket.</p></div>
 <div><span>Guardrails</span><b>Basket size and checkout rate do not drop</b><p>And shoppers do not hide most suggestions.</p></div>
 <div><span>How I would test it</span><b>A/B test on returning shoppers</b><p>Half see the lists, half do not, for a few weeks. Discovery tested separately.</p></div>
 <div><span>Roll back if</span><b>A guardrail falls, or no lift</b><p>Then try a smaller change, like fewer cards.</p></div>
-</div></div></div>
+</div></div>
 <div class="col"><h3 class="sub">Limits of this project</h3><ul class="limits-list">
 <li>All results are matches with past baskets, not proof of time saved or sales.</li>
 <li>The data has no prices, pack sizes, stock or click records.</li>
