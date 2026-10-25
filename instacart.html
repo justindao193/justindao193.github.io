@@ -796,9 +796,13 @@ details.more .mbody p.t:first-child{margin-top:4px}
 .state-discovery{padding-bottom:16px}
 
 /* Oct 24 2026: recruiter summary, launch plan */
-.tldr{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:36px;padding:24px 0 0;border-top:1px solid var(--line)}
-.tldr span{display:block;font:12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--red-deep)}
-.tldr p{margin:8px 0 0;font-size:16.5px;line-height:1.55;font-weight:500}
+.tldr{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:32px}
+.tldr>div{background:var(--panel);border-radius:14px;padding:22px 22px 20px}
+.tldr span{display:block;font:11.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.tldr b{display:block;margin-top:10px;font-family:var(--serif);font-weight:370;font-size:clamp(30px,3vw,40px);line-height:1;letter-spacing:-.02em}
+.tldr div:last-child b{color:var(--g)}
+.tldr b i{font-style:normal;font-size:.55em;color:var(--muted);margin:0 4px}
+.tldr p{margin:10px 0 0;font-size:15px;line-height:1.45;color:var(--muted)}
 @media (max-width:760px){.tldr{grid-template-columns:1fr;gap:18px}}
 .biz{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
 .biz>div{background:var(--card);border-radius:12px;padding:20px 18px}
@@ -865,16 +869,16 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <div class="col hcol">
   <h1>Helping shoppers find familiar groceries and discover new favourites</h1>
   <p class="lead">Could recommendations help shoppers find familiar groceries with less searching? I defined the scope, compared methods using public Instacart orders and built a working shopping prototype. I chose a simple rule that favours recent purchases, then added a separate discovery list.</p>
-  <div class="tldr">
-    <div><span>Problem</span><p>Shoppers rebuy the same groceries every week, but still have to search for them.</p></div>
-    <div><span>What I did</span><p>Compared five ways to rank products on 3.4M public orders, then built a working shopping page with two suggestion lists.</p></div>
-    <div><span>Result</span><p>A simple rule I can explain almost matched machine learning. A list of new products reached about 11 in 100 shoppers, against 9 for popular picks.</p></div>
-  </div>
   <dl class="meta">
     <div><dt>Role</dt><dd>Product manager &amp; data analyst</dd></div>
     <div><dt>Skills</dt><dd>Product scoping, SQL and Python, model evaluation, prototyping, user testing</dd></div>
     <div><dt>Duration</dt><dd>Oct 2026</dd></div>
   </dl>
+  <div class="tldr">
+    <div><span>Problem</span><b>Every week</b><p>Shoppers search again for the same groceries</p></div>
+    <div><span>What I did</span><b>5 methods</b><p>Tested on 3.4M orders, then built a working prototype</p></div>
+    <div><span>Result</span><b>11 <i>vs</i> 9</b><p>In 100 shoppers bought a new suggestion, vs popular picks</p></div>
+  </div>
   <div class="hbtns"><a class="btn gh" href="https://github.com/justindao193/instacart-grocery-recommendations" target="_blank" rel="noopener">View code on GitHub ↗</a></div>
 </div>
 
