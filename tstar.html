@@ -365,6 +365,10 @@ h5{margin-bottom:16px!important}
 .hcol .meta{grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin-top:48px;padding-top:24px;border-top:1px solid var(--line)}
 .hcol .meta dd{margin-top:10px;line-height:1.55}
 @media (max-width:600px){.hcol .meta{grid-template-columns:1fr 1fr}}
+
+/* Oct 24 2026: lighter panels for readability (light mode only) */
+:root:not([data-theme="dark"]) .panel{background:#FDFAF6;box-shadow:inset 0 0 0 1px var(--line);--card:#F3EDE5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .panel{background:var(--panel);box-shadow:none;--card:#2F2B29}}
 </style>
 </head>
 <body>

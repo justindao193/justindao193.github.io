@@ -806,6 +806,10 @@ details.more .mbody p.t:first-child{margin-top:4px}
 .limits-list{margin:14px 0 0;padding:0;list-style:none}
 .limits-list li{padding:12px 0;border-top:1px solid var(--line);font-size:16px}
 .limits-list li:last-child{border-bottom:1px solid var(--line)}
+
+/* Oct 24 2026: lighter panels for readability (light mode only) */
+:root:not([data-theme="dark"]) .panel{background:#FDFAF6;box-shadow:inset 0 0 0 1px var(--line);--card:#F3EDE5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .panel{background:var(--panel);box-shadow:none;--card:#2F2B29}}
 </style>
 <script src="instacart/carrot-intro.js"></script>
 </head>
