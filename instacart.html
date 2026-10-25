@@ -303,7 +303,9 @@ dialog.lb button{position:fixed;top:16px;right:16px;height:40px;padding:0 16px;b
 .ladder h4{margin:14px 0 8px;font-size:16.5px;font-weight:600;line-height:1.35;letter-spacing:-.005em}
 .ladder p{margin:0;font-size:14.5px;color:var(--muted)}
 .st{display:inline-block;font-size:12.5px;font-weight:600;padding:3px 10px;border-radius:999px}
-.st.ok{background:var(--g-soft);color:var(--g)}.st.mid{background:#FFF0C9;color:#8A6200}.st.no{background:var(--red-soft);color:var(--red-deep)}
+.st.ok{background:#DFEEE1;color:#1F6B43}
+:root[data-theme="dark"] .st.ok{background:#1F3A2B;color:#9BDDB5}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .st.ok{background:#1F3A2B;color:#9BDDB5}}.st.mid{background:#FFF0C9;color:#8A6200}.st.no{background:var(--red-soft);color:var(--red-deep)}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .st.mid{background:#3A321C;color:#F2CC6B}}
 @media (max-width:900px){.ladder{grid-template-columns:1fr 1fr;gap:28px 0}.ladder>div:nth-child(3){border-left:0;padding-left:0}}
 @media (max-width:520px){.ladder{grid-template-columns:1fr}.ladder>div{border-left:0;padding:0 0 0;}.ladder>div+div{border-top:1px solid var(--line);padding-top:20px}}
