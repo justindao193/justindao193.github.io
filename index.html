@@ -812,6 +812,7 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
 
 </style>
 <script src="instacart/carrot-intro.js"></script>
+<link rel="stylesheet" href="housing/story.css">
 </head>
 <body>
 
@@ -912,6 +913,13 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
         <div class="proj-meta"><div><h3>TStar</h3><p>A low-pressure way to make friends in a big cohort</p></div><span class="yr">U of T · 2025 · Case study →</span></div>
         <div class="skills"><span>UX research</span><span>Prototyping</span><span>Usability testing</span><span>Figma</span></div>
       </a>
+
+      <a class="proj" href="housing.html">
+        <div class="thumb housing-thumb housing-media film" aria-hidden="true"><video src="housing/media/housing-film.mp4" poster="housing/media/housing-film.jpg" muted loop playsinline autoplay preload="metadata" aria-hidden="true"></video></div>
+        <div class="proj-meta"><div><h3>Toronto housing</h3><p>A visual data story about what rental prices leave out</p></div><span class="yr">Academic · Case study →</span></div>
+        <div class="skills"><span>Data storytelling</span><span>Data analysis</span><span>Tableau</span><span>Excel</span></div>
+      </a>
+
 
       <button class="proj" type="button" data-case="sharepoint">
         <div class="thumb t-lilac">
@@ -1445,5 +1453,6 @@ redraw();
 </script>
 
 
+<script>(function(){var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;var io=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle('running',e.isIntersecting);var v=e.target.querySelector('video');if(!v)return;if(e.isIntersecting&&!reduce){var q=v.play();if(q&&q.catch)q.catch(function(){})}else v.pause()})});document.querySelectorAll('.housing-thumb').forEach(function(e){var v=e.querySelector('video');if(v&&reduce){v.removeAttribute('autoplay');v.pause()}io.observe(e)})})();</script>
 </body>
 </html>

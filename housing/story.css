@@ -1,0 +1,42 @@
+/* The same data summary appears on the home card and case-study opening. */
+.housing-media{--story-paper:#FFFBF6;--story-ink:#1E1C1B;--story-muted:#6F635A;--story-line:#E2D4C4;--story-red:#B8392A;--story-stage:#EAD5C9;container-type:inline-size;position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;display:grid;place-items:center;background:var(--story-stage);font-family:var(--sans);color:var(--story-ink)}
+[data-theme="dark"] .housing-media{--story-paper:#2F2B29;--story-ink:#F3E6D8;--story-muted:#A39587;--story-line:#49403B;--story-red:#F07A66;--story-stage:#302522}
+.housing-media .story-screen{width:84%;padding:3.4cqw 4cqw 2.8cqw;border-radius:14px;background:var(--story-paper);box-shadow:0 24px 60px -32px #3C2B2250;border:1px solid var(--story-line);text-align:left;transform:translateY(-1cqw)}
+.story-top{display:flex;justify-content:space-between;align-items:center;gap:12px;font:500 clamp(10px,1.2cqw,13px)/1.4 var(--mono);color:var(--story-muted)}
+.story-top>span:first-child{color:var(--story-ink)}
+.story-top i{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--story-red);margin-right:8px;vertical-align:1px}
+.story-head{display:grid;grid-template-columns:1fr;margin:2.6cqw 0 2.8cqw;font:500 clamp(20px,3.1cqw,34px)/1.15 var(--sans);letter-spacing:-.035em}
+.story-head>span{grid-area:1/1}
+.story-grid{display:grid;position:relative;grid-template-columns:1fr 1fr;gap:7.6cqw}.story-grid:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--story-line)}
+.story-column{min-width:0}.story-column+.story-column{border:0;padding:0}
+.story-place{display:flex;align-items:center;gap:10px;font:500 clamp(12px,1.65cqw,18px)/1.45 var(--sans);white-space:nowrap}
+.story-place i{font:500 clamp(10px,1.1cqw,12px) var(--mono);color:var(--story-muted);font-style:normal}
+.story-values{display:grid;margin-top:1.6cqw;font:500 clamp(28px,5.8cqw,64px)/1.08 var(--sans);letter-spacing:-.055em;font-variant-numeric:tabular-nums}
+.story-values strong{grid-area:1/1;font-weight:500;white-space:nowrap}
+.story-values .story-pressure{color:var(--story-red)}
+.story-values strong>span{font-size:.55em;margin-left:3px}
+.story-unit{display:grid;font:clamp(10px,1.25cqw,14px)/1.5 var(--sans);color:var(--story-muted);margin-top:1cqw}
+.story-unit span{grid-area:1/1}
+.story-track{position:relative;height:6px;border-radius:5px;background:var(--story-line);overflow:hidden;margin-top:2.2cqw}
+.story-track>i{position:absolute;left:0;top:0;bottom:0;width:var(--fill);background:var(--story-muted);border-radius:5px}
+.story-track>.story-pressure{background:var(--story-red)}
+.story-bottom{display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid var(--story-line);margin-top:3cqw;padding-top:1.8cqw;color:var(--story-muted);font:clamp(9px,1.1cqw,12px)/1.4 var(--mono)}
+.story-bottom>div{display:flex;gap:14px}.story-scale{display:grid}.story-scale>span{grid-area:1/1}
+.story-bottom>div>span{padding:5px 9px;border-radius:5px}
+.story-bottom .chapter-pressure{background:color-mix(in srgb,var(--story-red) 9%,transparent);color:var(--story-red)}
+.story-cost{opacity:0}.story-pressure{opacity:1}
+.running .story-cost{animation:story-cost 12s ease infinite}.running .story-pressure{animation:story-pressure 12s ease infinite}
+.running .chapter-cost{animation:chapter-cost 12s ease infinite}.running .chapter-pressure{animation:chapter-pressure 12s ease infinite}
+.paused .story-screen *{animation-play-state:paused!important}
+@keyframes story-cost{0%,35%{opacity:1}44%,94%{opacity:0}100%{opacity:1}}
+@keyframes story-pressure{0%,35%{opacity:0}44%,94%{opacity:1}100%{opacity:0}}
+@keyframes chapter-cost{0%,35%,100%{background:var(--story-line);color:var(--story-ink)}44%,94%{background:transparent;color:var(--story-muted)}}
+@keyframes chapter-pressure{0%,35%,100%{background:transparent;color:var(--story-muted)}44%,94%{background:color-mix(in srgb,var(--story-red) 9%,transparent);color:var(--story-red)}}
+@container(max-width:500px){.housing-media .story-screen{width:90%;padding:4cqw 5cqw 3cqw;transform:translateY(-5px)}.story-top{font-size:9px}.story-top>span:last-child{font-size:9px}.story-head{margin:3cqw 0 4cqw;font-size:22px}.story-place{font-size:12px;white-space:normal;align-items:flex-start;gap:6px;min-height:30px}.story-place i{font-size:9px;margin-top:3px}.story-values{font-size:34px;margin-top:1cqw}.story-unit{font-size:10px;margin-top:1cqw;line-height:1.35}.story-track{margin-top:3cqw;height:5px}.story-bottom{margin-top:4cqw;padding-top:2cqw}.story-bottom>span{display:none}.story-bottom>div{width:100%;justify-content:space-between;gap:5px}.story-bottom>div>span{padding:5px 7px;font-size:9px}}
+@media(max-width:640px){.housing-media{aspect-ratio:6/5}}
+@media(prefers-reduced-motion:reduce){.housing-media .story-screen *{animation:none!important;transition:none!important}.story-cost{opacity:0!important}.story-pressure{opacity:1!important}}
+/* campaign film (30 October 2026) */
+.housing-media.film{background:#0D0E11}
+.housing-media.film .motion-control{color:#8B8F98}
+.housing-media.film video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.housing-media.film .motion-control{z-index:2}
