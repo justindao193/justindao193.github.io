@@ -664,6 +664,27 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
 
 
 
+/* Carry-on: locally served brand icons on a continuous luggage belt. */
+.bp-main{min-width:0}
+.bp-f .carry-on{grid-column:1/-1;min-width:0}
+.carry-on dt{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.carry-toggle{border:0;background:none;color:var(--muted);font:10px var(--mono);cursor:pointer;padding:4px 0 4px 10px;letter-spacing:.02em;text-transform:none}
+.carry-toggle:hover{color:var(--red)}
+.carry-toggle:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:3px}
+.carry-belt{position:relative;overflow:hidden;width:100%;min-width:0;padding:8px 0 13px;mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.carry-belt::after{content:"";position:absolute;bottom:0;left:0;width:100%;height:5px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:repeating-linear-gradient(90deg,var(--line) 0 7px,transparent 7px 14px);animation:carry-rollers 1s linear infinite}
+.carry-track{display:flex;width:max-content;animation:carry-travel 48s linear infinite}
+.carry-group{display:flex;flex:none;gap:12px;list-style:none;margin:0;padding:0 12px 0 0}
+.carry-tool{display:flex;flex:none;flex-direction:column;align-items:center;gap:8px;width:80px;padding:10px 4px 9px;border:1px solid var(--line);border-radius:13px;background:var(--card);font:10px/1.3 var(--mono);color:var(--ink);text-align:center;white-space:nowrap}
+.carry-icon{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:10px;background:#fff;box-shadow:0 1px 4px #0000000d}
+.carry-icon img{display:block;width:30px;height:30px;object-fit:contain}
+.carry-icon-pair{gap:1px}
+.carry-icon-pair img{width:18px;height:28px}
+.carry-on:is(:hover,:focus-within) .carry-track,.carry-on:is(:hover,:focus-within) .carry-belt::after,.carry-on.is-paused .carry-track,.carry-on.is-paused .carry-belt::after{animation-play-state:paused}
+@keyframes carry-travel{to{transform:translateX(-50%)}}
+@keyframes carry-rollers{to{background-position:-14px 0}}
+@media(prefers-reduced-motion:reduce){.carry-toggle,.carry-group[aria-hidden="true"]{display:none}.carry-belt{overflow:visible;mask-image:none;-webkit-mask-image:none}.carry-track{width:100%;animation:none}.carry-group{flex-wrap:wrap;justify-content:flex-start;padding:0;gap:8px}.carry-belt::after{animation:none}}
+
 /* boarding pass */
 .bp{position:relative;display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr) 132px;background:var(--white,#FFFBF6);border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:0 30px 60px -44px rgba(30,28,27,.5)}
 :root[data-theme="dark"] .bp{background:#262322}
@@ -992,7 +1013,46 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
         <dl class="bp-f">
           <div><dt>Home base</dt><dd>Toronto</dd></div>
           <div><dt>Next stop</dt><dd>Graduating 2027, open to new opportunities :)</dd></div>
-          <div><dt>Carry-on</dt><dd>Product: Prioritization, user testing<br>Development: Python, SQL, JavaScript<br>Tools: Figma, GitHub, Codex + Claude</dd></div>
+          <div class="carry-on"><dt><span>Carry-on</span><button class="carry-toggle" type="button" aria-label="Pause tool conveyor" aria-pressed="false">Pause <span aria-hidden="true">Ⅱ</span></button></dt><dd>
+            <div class="carry-belt">
+              <div class="carry-track">
+                <ul class="carry-group" aria-label="Tools and languages">
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/python.svg" width="32" height="32" alt="" decoding="async"></span><span>Python</span></li>
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/sql.svg" width="32" height="32" alt="" decoding="async"></span><span>SQL</span></li>
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/javascript.svg" width="32" height="32" alt="" decoding="async"></span><span>JavaScript</span></li>
+                  <li class="carry-tool"><span class="carry-icon carry-icon-pair"><img src="about/tools/html-css.svg" width="32" height="32" alt="" decoding="async"><img src="about/tools/css.svg" width="24" height="32" alt="" decoding="async"></span><span>HTML/CSS</span></li>
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/power-bi.svg" width="32" height="32" alt="" decoding="async"></span><span>Power BI</span></li>
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/excel.svg" width="32" height="32" alt="" decoding="async"></span><span>Excel</span></li>
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/tableau.svg" width="32" height="32" alt="" decoding="async"></span><span>Tableau</span></li>
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/figma.svg" width="32" height="32" alt="" decoding="async"></span><span>Figma</span></li>
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/github.svg" width="32" height="32" alt="" decoding="async"></span><span>GitHub</span></li>
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/sap.svg" width="32" height="32" alt="" decoding="async"></span><span>SAP</span></li>
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/power-automate.svg" width="32" height="32" alt="" decoding="async"></span><span>Power Automate</span></li>
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/sharepoint.svg" width="32" height="32" alt="" decoding="async"></span><span>SharePoint</span></li>
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/dynamics-365.svg" width="32" height="32" alt="" decoding="async"></span><span>Dynamics 365</span></li>
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/claude.svg" width="32" height="32" alt="" decoding="async"></span><span>Claude</span></li>
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/codex.svg" width="32" height="32" alt="" decoding="async"></span><span>Codex</span></li>
+                </ul>
+                <ul class="carry-group" aria-hidden="true">
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/python.svg" width="32" height="32" alt="" decoding="async"></span><span>Python</span></li>
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/sql.svg" width="32" height="32" alt="" decoding="async"></span><span>SQL</span></li>
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/javascript.svg" width="32" height="32" alt="" decoding="async"></span><span>JavaScript</span></li>
+                  <li class="carry-tool"><span class="carry-icon carry-icon-pair"><img src="about/tools/html-css.svg" width="32" height="32" alt="" decoding="async"><img src="about/tools/css.svg" width="24" height="32" alt="" decoding="async"></span><span>HTML/CSS</span></li>
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/power-bi.svg" width="32" height="32" alt="" decoding="async"></span><span>Power BI</span></li>
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/excel.svg" width="32" height="32" alt="" decoding="async"></span><span>Excel</span></li>
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/tableau.svg" width="32" height="32" alt="" decoding="async"></span><span>Tableau</span></li>
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/figma.svg" width="32" height="32" alt="" decoding="async"></span><span>Figma</span></li>
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/github.svg" width="32" height="32" alt="" decoding="async"></span><span>GitHub</span></li>
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/sap.svg" width="32" height="32" alt="" decoding="async"></span><span>SAP</span></li>
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/power-automate.svg" width="32" height="32" alt="" decoding="async"></span><span>Power Automate</span></li>
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/sharepoint.svg" width="32" height="32" alt="" decoding="async"></span><span>SharePoint</span></li>
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/dynamics-365.svg" width="32" height="32" alt="" decoding="async"></span><span>Dynamics 365</span></li>
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/claude.svg" width="32" height="32" alt="" decoding="async"></span><span>Claude</span></li>
+                  <li class="carry-tool"><span class="carry-icon"><img src="about/tools/codex.svg" width="32" height="32" alt="" decoding="async"></span><span>Codex</span></li>
+                </ul>
+              </div>
+            </div>
+          </dd></div>
           <div><dt>Off duty</dt><dd>Travelling, sports, cooking and hanging out with my cat</dd></div>
         </dl>
       </div>
@@ -1454,5 +1514,17 @@ redraw();
 
 
 <script>(function(){var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;var io=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle('running',e.isIntersecting);var v=e.target.querySelector('video');if(!v)return;if(e.isIntersecting&&!reduce){var q=v.play();if(q&&q.catch)q.catch(function(){})}else v.pause()})});document.querySelectorAll('.housing-thumb').forEach(function(e){var v=e.querySelector('video');if(v&&reduce){v.removeAttribute('autoplay');v.pause()}io.observe(e)})})();</script>
+<script>
+(function(){
+  var conveyor=document.querySelector('.carry-on'),toggle=document.querySelector('.carry-toggle');
+  if(!conveyor||!toggle)return;
+  toggle.addEventListener('click',function(){
+    var paused=conveyor.classList.toggle('is-paused');
+    toggle.setAttribute('aria-pressed',String(paused));
+    toggle.setAttribute('aria-label',(paused?'Resume':'Pause')+' tool conveyor');
+    toggle.innerHTML=(paused?'Resume':'Pause')+' <span aria-hidden="true">'+(paused?'▶':'Ⅱ')+'</span>';
+  });
+})();
+</script>
 </body>
 </html>
