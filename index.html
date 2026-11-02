@@ -163,6 +163,7 @@ nav .home{color:var(--ink);font-weight:500}
 .t-sage{background:radial-gradient(120% 140% at 20% 0%,#F1F6EE 0%,#DDE9D9 60%,#CFE0CB 100%)}
 .t-lilac{background:radial-gradient(120% 140% at 85% 0%,#F4EEFB 0%,#E3D9F3 60%,#D5C8EE 100%)}
 .t-sky{background:radial-gradient(120% 140% at 15% 0%,#EEF4FB 0%,#DCE7F5 60%,#CBDCF0 100%)}
+    .t-peach{background:radial-gradient(120% 140% at 85% 0%,#FFF3EC 0%,#FBE4D8 60%,#F4CFBD 100%)}
 .thumb .stage{position:absolute;left:0;top:0;transform-origin:0 0;font-family:var(--sans);color:#1E1C1B;text-align:left;transition:none}
 .win{width:1120px;height:620px;background:#fff;border-radius:14px;box-shadow:0 0 0 1px rgba(30,28,27,.06),0 40px 80px -30px rgba(40,30,60,.35);overflow:hidden;font-size:14px}
 .wbar{height:40px;display:flex;align-items:center;gap:16px;padding:0 16px;background:#F7F5F2;border-bottom:1px solid #ECE7E1}
@@ -847,6 +848,13 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
 .flap .h .c.tilepic{overflow:hidden}
 .flap .c .tx{font:600 clamp(16px,1.7vw,24px)/1 var(--sans);color:#1E1C1B;letter-spacing:-.02em;white-space:nowrap}
 .flap.nohinge:after{display:none}
+
+/* big screens: two projects per row */
+@media (min-width:1024px){
+  #work .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:56px 32px}
+  #work .grid .proj-meta{flex-direction:column;gap:6px}
+  #work .grid .proj .yr{white-space:normal}
+}
 </style>
 <script src="instacart/carrot-intro.js"></script>
 <link rel="stylesheet" href="housing/story.css">
@@ -923,6 +931,12 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
         </div>
         <div class="proj-meta"><div><h3>Instacart grocery recommendations</h3><p>Suggesting what shoppers will buy again, and new products they might like, from 3.4M Instacart orders</p></div><span class="yr">Independent · 2026 · Case study →</span></div>
         <div class="skills"><span>Product management</span><span>Machine learning</span><span>Python + SQL</span><span>Prototyping</span></div>
+      </a>
+
+      <a class="proj" href="skillswap.html">
+        <div class="thumb t-peach"><iframe src="skillswap/card.html" title="" aria-hidden="true" tabindex="-1" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0;pointer-events:none"></iframe></div>
+        <div class="proj-meta"><div><h3>SkillSwap</h3><p>An app for swapping unused hobby supplies with people nearby</p></div><span class="yr">U of T · 2026 · Case study →</span></div>
+        <div class="skills"><span>UX research</span><span>Product design</span><span>Usability testing</span><span>Prototyping</span></div>
       </a>
 
       <a class="proj" href="tstar.html">
