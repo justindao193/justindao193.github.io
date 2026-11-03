@@ -511,12 +511,6 @@ main section>.col>*:last-child{margin-bottom:0}
 .ba{background:#F3EDE5!important}
 .dc-tx{border-top:1px solid var(--line)!important}
 
-.brief{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin-top:44px}
-.brief>div{border-top:2px solid var(--ink);padding-top:18px}
-.brief small{display:block;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
-.brief b{display:block;margin-top:12px;font-family:var(--serif);font-weight:370;font-size:clamp(21px,1.9vw,25px);line-height:1.22;letter-spacing:-.01em}
-.brief p{margin:12px 0 0;font-size:16px;line-height:1.6;color:var(--ink)}
-@media (max-width:760px){.brief{grid-template-columns:1fr;gap:26px}}
 
 .aiw{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:36px}
 .aiw>div{border-top:2px solid var(--red);padding-top:18px}
@@ -525,6 +519,45 @@ main section>.col>*:last-child{margin-bottom:0}
 .aiw li{position:relative;padding-left:16px;margin:0 0 10px;font-size:15px;line-height:1.5;color:var(--muted)}
 .aiw li:before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--red)}
 @media (max-width:820px){.aiw{grid-template-columns:1fr;gap:28px}}
+
+.brief{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:44px;align-items:stretch}
+.brief>div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 22px 24px;display:flex;flex-direction:column}
+.brief small{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.brief .bv{flex:1;display:flex;flex-direction:column;justify-content:center;margin:20px 0 18px;min-height:132px}
+.brief>div>b{display:block;font-size:16.5px;font-weight:600;line-height:1.4}
+.bf{display:flex;flex-direction:column;gap:10px}
+.bf span{display:flex;align-items:center;gap:10px;font-size:15px;line-height:1.35}
+.bf .was{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--red)}
+.bf .now{font-weight:600}
+.bf i{font-style:normal;width:26px;height:26px;flex:none;border-radius:50%;display:grid;place-items:center;font-size:13px;background:var(--panel);color:var(--muted)}
+.bf .now i{background:var(--red);color:#fff}
+.bf .arr{color:var(--red);font-size:18px;line-height:1;padding-left:5px}
+.bn{font-family:var(--serif);font-weight:370;font-size:clamp(46px,4.6vw,60px);line-height:1;letter-spacing:-.02em;color:var(--red)}
+.bn em{font-style:normal;font-size:.42em;color:var(--muted);margin-left:4px;letter-spacing:0}
+.bb{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:6px 10px;align-items:center;margin-top:16px;font-size:13px;color:var(--muted)}
+.bb .tr{height:8px;border-radius:99px;background:var(--panel);overflow:hidden}
+.bb .tr i{display:block;height:100%;width:var(--w);border-radius:99px;background:var(--red)}
+.bb .tr i.g{background:var(--muted);opacity:.5}
+.bb b{color:var(--ink);font-weight:600}
+.bg{position:relative;margin-top:18px}
+.bg .tr{height:8px;border-radius:99px;background:var(--panel);overflow:hidden}
+.bg .tr i{display:block;height:100%;width:var(--w);background:var(--red);border-radius:99px}
+.bg .bax{display:flex;justify-content:space-between;margin-top:6px;font-family:var(--mono);font-size:11px;color:var(--muted)}
+.bg .tag{position:absolute;top:-30px;left:var(--w);transform:translateX(-50%);background:var(--mint);color:var(--mint-ink);font-size:12px;font-weight:600;padding:2px 9px;border-radius:99px;white-space:nowrap}
+.bd{display:flex;gap:6px;margin-top:14px;align-items:center;font-size:13px;color:var(--muted)}
+.bd i{width:12px;height:12px;border-radius:50%;background:var(--red)}
+.bd i.o{background:var(--panel)}
+.bd span{margin-left:6px}
+.bs{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.bs li{display:flex;align-items:center;gap:10px;font-size:15px;line-height:1.35}
+.bs li i{font-style:normal;flex:none;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:11px;background:var(--red-soft);color:var(--red-deep)}
+.bw{display:flex;flex-direction:column;gap:14px}
+.bw div{display:flex;flex-direction:column;gap:7px}
+.bw small{letter-spacing:.08em}
+.bw p{margin:0;display:flex;flex-wrap:wrap;gap:6px}
+.bw p span{font-size:13.5px;padding:4px 11px;border-radius:99px;border:1px solid var(--line);background:var(--bg)}
+.bw .me span{background:var(--red-soft);border-color:transparent;color:var(--red-deep);font-weight:500}
+@media (max-width:1200px){.brief{grid-template-columns:1fr}.brief .bv{min-height:0}}
 </style>
 </head>
 <body>
@@ -547,7 +580,11 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <div class="col hcol">
   <h1>Making new hobbies cheaper by swapping the supplies people never use</h1>
   <p class="lead">In one term, our team of four designers researched, sketched and tested SkillSwap, an app for swapping or buying unused hobby supplies with people nearby. Then I took what our testers struggled with and redesigned the app on my own.</p>
-  <div class="brief"><div><small>Goal</small><b>Make it cheaper to start a hobby</b><p>Help beginners get supplies from people nearby who no longer use them.</p></div><div><small>Result</small><b>Testers rated it 71.7 out of 100</b><p>12 testers gave our Figma version a “Good” usability score. Their main problems shaped my redesign.</p></div><div><small>My part</small><b>Team research, then my own redesign</b><p>I worked with 3 other designers on research and testing. Then I redesigned the app and built it with Claude.</p></div></div>
+  <div class="brief">
+    <div><small>Goal</small><div class="bv"><div class="bf"><span class="was"><i>$</i>Pay full price to start a hobby</span><span class="arr" aria-hidden="true">↓</span><span class="now"><i>⇄</i>Swap with people nearby</span></div></div><b>Make it cheaper to start a hobby.</b></div>
+    <div><small>Result</small><div class="bv"><div class="bn">71.7<em>/ 100</em></div><div class="bg" role="img" aria-label="Average usability score 71.7 out of 100, rated Good" style="--w:71.7%;margin-top:42px"><span class="tag">Good</span><div class="tr"><i></i></div><div class="bax"><span>0</span><span>50</span><span>100</span></div></div></div><b>Usability score from 12 testers on our Figma version.</b></div>
+    <div><small>My part</small><div class="bv"><div class="bw"><div><small>Team of 4</small><p><span>Survey</span><span>Interviews</span><span>Testing</span></p></div><div class="me"><small>On my own</small><p><span>Redesign</span><span>Built with Claude</span></p></div></div></div><b>Team research, then my own redesign.</b></div>
+  </div>
   <dl class="meta">
     <div><dt>Role</dt><dd>4 designers</dd></div>
     <div><dt>Skills</dt><dd>UX research, product design, prototyping, usability testing</dd></div>

@@ -820,12 +820,45 @@ details.more .mbody p.t:first-child{margin-top:4px}
 /* meta columns line up with three-card rows (30 October 2026) */
 .meta{column-gap:16px!important}
 
-.brief{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin-top:44px}
-.brief>div{border-top:2px solid var(--ink);padding-top:18px}
-.brief small{display:block;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
-.brief b{display:block;margin-top:12px;font-family:var(--serif);font-weight:370;font-size:clamp(21px,1.9vw,25px);line-height:1.22;letter-spacing:-.01em}
-.brief p{margin:12px 0 0;font-size:16px;line-height:1.6;color:var(--ink)}
-@media (max-width:760px){.brief{grid-template-columns:1fr;gap:26px}}
+
+.brief{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:44px;align-items:stretch}
+.brief>div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 22px 24px;display:flex;flex-direction:column}
+.brief small{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.brief .bv{flex:1;display:flex;flex-direction:column;justify-content:center;margin:20px 0 18px;min-height:132px}
+.brief>div>b{display:block;font-size:16.5px;font-weight:600;line-height:1.4}
+.bf{display:flex;flex-direction:column;gap:10px}
+.bf span{display:flex;align-items:center;gap:10px;font-size:15px;line-height:1.35}
+.bf .was{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--red)}
+.bf .now{font-weight:600}
+.bf i{font-style:normal;width:26px;height:26px;flex:none;border-radius:50%;display:grid;place-items:center;font-size:13px;background:var(--panel);color:var(--muted)}
+.bf .now i{background:var(--red);color:#fff}
+.bf .arr{color:var(--red);font-size:18px;line-height:1;padding-left:5px}
+.bn{font-family:var(--serif);font-weight:370;font-size:clamp(46px,4.6vw,60px);line-height:1;letter-spacing:-.02em;color:var(--red)}
+.bn em{font-style:normal;font-size:.42em;color:var(--muted);margin-left:4px;letter-spacing:0}
+.bb{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:6px 10px;align-items:center;margin-top:16px;font-size:13px;color:var(--muted)}
+.bb .tr{height:8px;border-radius:99px;background:var(--panel);overflow:hidden}
+.bb .tr i{display:block;height:100%;width:var(--w);border-radius:99px;background:var(--red)}
+.bb .tr i.g{background:var(--muted);opacity:.5}
+.bb b{color:var(--ink);font-weight:600}
+.bg{position:relative;margin-top:18px}
+.bg .tr{height:8px;border-radius:99px;background:var(--panel);overflow:hidden}
+.bg .tr i{display:block;height:100%;width:var(--w);background:var(--red);border-radius:99px}
+.bg .ax{display:flex;justify-content:space-between;margin-top:6px;font-family:var(--mono);font-size:11px;color:var(--muted)}
+.bg .tag{position:absolute;top:-30px;left:var(--w);transform:translateX(-50%);background:var(--mint);color:var(--mint-ink);font-size:12px;font-weight:600;padding:2px 9px;border-radius:99px;white-space:nowrap}
+.bd{display:flex;gap:6px;margin-top:14px;align-items:center;font-size:13px;color:var(--muted)}
+.bd i{width:12px;height:12px;border-radius:50%;background:var(--red)}
+.bd i.o{background:var(--panel)}
+.bd span{margin-left:6px}
+.bs{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.bs li{display:flex;align-items:center;gap:10px;font-size:15px;line-height:1.35}
+.bs li i{font-style:normal;flex:none;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:11px;background:var(--red-soft);color:var(--red-deep)}
+.bw{display:flex;flex-direction:column;gap:14px}
+.bw div{display:flex;flex-direction:column;gap:7px}
+.bw small{letter-spacing:.08em}
+.bw p{margin:0;display:flex;flex-wrap:wrap;gap:6px}
+.bw p span{font-size:13.5px;padding:4px 11px;border-radius:99px;border:1px solid var(--line);background:var(--bg)}
+.bw .me span{background:var(--red-soft);border-color:transparent;color:var(--red-deep);font-weight:500}
+@media (max-width:1200px){.brief{grid-template-columns:1fr}.brief .bv{min-height:0}}
 </style>
 <script src="instacart/carrot-intro.js"></script>
 </head>
@@ -881,7 +914,11 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <div class="col hcol">
   <h1>Helping shoppers find familiar groceries and discover new favourites</h1>
   <p class="lead">Could recommendations help shoppers find familiar groceries with less searching? I defined the scope, compared methods using public Instacart orders and built a working shopping prototype. I chose a simple rule that favours recent purchases, then added a separate discovery list.</p>
-  <div class="brief"><div><small>Goal</small><b>Help shoppers find what they buy again, faster</b><p>Show their usual items first, using a method that is easy to explain.</p></div><div><small>Result</small><b>24% of the next basket, from 5 suggestions</b><p>4 in 5 shoppers bought at least one suggested item. Popular items alone found under 5%.</p></div><div><small>My part</small><b>I led it from idea to prototype</b><p>I picked the problem, tested five methods in SQL and Python, chose the simpler one and built the shopping page.</p></div></div>
+  <div class="brief">
+    <div><small>Goal</small><div class="bv"><div class="bf"><span class="was"><i>?</i>Search for the same items every week</span><span class="arr" aria-hidden="true">↓</span><span class="now"><i>✓</i>Usual items shown first</span></div></div><b>Help shoppers find what they buy again, faster.</b></div>
+    <div><small>Result</small><div class="bv"><div class="bn">24%</div><div class="bb" role="img" aria-label="Personal suggestions found 24 percent of the next basket; popular items found under 5 percent"><span>Personal</span><span class="tr"><i style="--w:24%"></i></span><b>24%</b><span>Popular</span><span class="tr"><i class="g" style="--w:4.5%"></i></span><span>&lt;5%</span></div><div class="bd" aria-label="4 in 5 shoppers bought at least one suggestion"><i></i><i></i><i></i><i></i><i class="o"></i><span>4 in 5 bought one</span></div></div><b>Of the next basket, found by 5 suggestions.</b></div>
+    <div><small>My part</small><div class="bv"><ol class="bs"><li><i>01</i>Picked the problem</li><li><i>02</i>Tested 5 methods in SQL and Python</li><li><i>03</i>Chose the simpler one</li><li><i>04</i>Built the shopping page</li></ol></div><b>I led it from idea to prototype.</b></div>
+  </div>
   <dl class="meta">
     <div><dt>Role</dt><dd>Product manager &amp; data analyst</dd></div>
     <div><dt>Skills</dt><dd>Product scoping, SQL and Python, model evaluation, prototyping, user testing</dd></div>
