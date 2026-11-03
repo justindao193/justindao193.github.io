@@ -828,9 +828,12 @@ details.more .mbody p.t:first-child{margin-top:4px}
 .brief>div>b{display:block;font-size:16.5px;font-weight:600;line-height:1.4}
 .bf{display:flex;flex-direction:column;gap:10px}
 .bf span{display:flex;align-items:center;gap:10px;font-size:15px;line-height:1.35}
-.bf .was{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--red)}
+.bf .was{color:var(--muted)}
+.bf .was s{text-decoration-color:var(--red)}
+.bf .was i{font-family:var(--sans);font-weight:600}
 .bf .now{font-weight:600}
 .bf i{font-style:normal;width:26px;height:26px;flex:none;border-radius:50%;display:grid;place-items:center;font-size:13px;background:var(--panel);color:var(--muted)}
+.bf i svg{width:14px;height:14px;display:block}
 .bf .now i{background:var(--red);color:#fff}
 .bf .arr{color:var(--red);font-size:18px;line-height:1;padding-left:5px}
 .bn{font-family:var(--serif);font-weight:370;font-size:clamp(46px,4.6vw,60px);line-height:1;letter-spacing:-.02em;color:var(--red)}
@@ -916,7 +919,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
   <h1>Helping shoppers find familiar groceries and discover new favourites</h1>
   <p class="lead">A grocery recommendation project built on 3.4 million public Instacart orders, ending in a working shopping page.</p>
   <div class="brief">
-    <div><small>Goal</small><div class="bv"><div class="bf"><span class="was"><i>?</i>Search for the same items every week</span><span class="arr" aria-hidden="true">↓</span><span class="now"><i>✓</i>Usual items shown first</span></div></div><b>Help shoppers find what they buy again, faster.</b></div>
+    <div><small>Goal</small><div class="bv"><div class="bf"><span class="was"><i>?</i><s>Search for the same items every week</s></span><span class="arr" aria-hidden="true">↓</span><span class="now"><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></i>Usual items shown first</span></div></div><b>Help shoppers find what they buy again, faster.</b></div>
     <div><small>Result</small><div class="bv"><div class="bn">24%</div><div class="bb" role="img" aria-label="Personal suggestions found 24 percent of the next basket; popular items found under 5 percent"><span>Personal</span><span class="tr"><i style="--w:24%"></i></span><b>24%</b><span>Popular</span><span class="tr"><i class="g" style="--w:4.5%"></i></span><span>&lt;5%</span></div><div class="bd" aria-label="4 in 5 shoppers bought at least one suggestion"><i></i><i></i><i></i><i></i><i class="o"></i><span>4 in 5 bought one</span></div></div><b>Of the next basket, found by 5 suggestions.</b></div>
     <div><small>My part</small><div class="bv"><ol class="bs"><li><i>01</i>Picked the problem</li><li><i>02</i>Tested 5 methods in SQL and Python</li><li><i>03</i>Chose the simpler one</li><li><i>04</i>Built the shopping page</li></ol></div><b>I led it from idea to prototype.</b></div>
   </div>

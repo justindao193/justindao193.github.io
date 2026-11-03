@@ -527,9 +527,12 @@ main section>.col>*:last-child{margin-bottom:0}
 .brief>div>b{display:block;font-size:16.5px;font-weight:600;line-height:1.4}
 .bf{display:flex;flex-direction:column;gap:10px}
 .bf span{display:flex;align-items:center;gap:10px;font-size:15px;line-height:1.35}
-.bf .was{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--red)}
+.bf .was{color:var(--muted)}
+.bf .was s{text-decoration-color:var(--red)}
+.bf .was i{font-family:var(--sans);font-weight:600}
 .bf .now{font-weight:600}
 .bf i{font-style:normal;width:26px;height:26px;flex:none;border-radius:50%;display:grid;place-items:center;font-size:13px;background:var(--panel);color:var(--muted)}
+.bf i svg{width:14px;height:14px;display:block}
 .bf .now i{background:var(--red);color:#fff}
 .bf .arr{color:var(--red);font-size:18px;line-height:1;padding-left:5px}
 .bn{font-family:var(--serif);font-weight:370;font-size:clamp(46px,4.6vw,60px);line-height:1;letter-spacing:-.02em;color:var(--red)}
@@ -582,7 +585,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
   <h1>Making new hobbies cheaper by swapping the supplies people never use</h1>
   <p class="lead">An app for swapping or buying unused hobby supplies with people nearby, taken from team research to my own working redesign.</p>
   <div class="brief">
-    <div><small>Goal</small><div class="bv"><div class="bf"><span class="was"><i>$</i>Pay full price to start a hobby</span><span class="arr" aria-hidden="true">↓</span><span class="now"><i>⇄</i>Swap with people nearby</span></div></div><b>Make it cheaper to start a hobby.</b></div>
+    <div><small>Goal</small><div class="bv"><div class="bf"><span class="was"><i>$</i><s>Pay full price to start a hobby</s></span><span class="arr" aria-hidden="true">↓</span><span class="now"><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h13m-4-4 4 4-4 4M19 16H6m4-4-4 4 4 4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></i>Swap with people nearby</span></div></div><b>Make it cheaper to start a hobby.</b></div>
     <div><small>Result</small><div class="bv"><div class="bn">71.7<em>/ 100</em></div><div class="bg" role="img" aria-label="Average usability score 71.7 out of 100, rated Good" style="--w:71.7%;margin-top:42px"><span class="tag">Good</span><div class="tr"><i></i></div><div class="bax"><span>0</span><span>50</span><span>100</span></div></div></div><b>Usability score from 12 testers on our Figma version.</b></div>
     <div><small>My part</small><div class="bv"><div class="bw"><div><small>Team of 4</small><p><span>Survey</span><span>Interviews</span><span>Testing</span></p></div><div class="me"><small>On my own</small><p><span>Redesign</span><span>Built with Claude</span></p></div></div></div><b>Team research, then my own redesign.</b></div>
   </div>

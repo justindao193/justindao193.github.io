@@ -429,9 +429,12 @@ h5{margin-bottom:16px!important}
 .brief>div>b{display:block;font-size:16.5px;font-weight:600;line-height:1.4}
 .bf{display:flex;flex-direction:column;gap:10px}
 .bf span{display:flex;align-items:center;gap:10px;font-size:15px;line-height:1.35}
-.bf .was{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--red)}
+.bf .was{color:var(--muted)}
+.bf .was s{text-decoration-color:var(--red)}
+.bf .was i{font-family:var(--sans);font-weight:600}
 .bf .now{font-weight:600}
 .bf i{font-style:normal;width:26px;height:26px;flex:none;border-radius:50%;display:grid;place-items:center;font-size:13px;background:var(--panel);color:var(--muted)}
+.bf i svg{width:14px;height:14px;display:block}
 .bf .now i{background:var(--red);color:#fff}
 .bf .arr{color:var(--red);font-size:18px;line-height:1;padding-left:5px}
 .bn{font-family:var(--serif);font-weight:370;font-size:clamp(46px,4.6vw,60px);line-height:1;letter-spacing:-.02em;color:var(--red)}
@@ -484,7 +487,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
   <h1>Helping shy and commuter students make friends in a big cohort with TStar</h1>
   <p class="lead">A mobile app that helps U of T students make friends in their own cohort, without having to say hi first.</p>
   <div class="brief">
-    <div><small>Goal</small><div class="bv"><div class="bf"><span class="was"><i>?</i>Wait for someone to say hi</span><span class="arr" aria-hidden="true">↓</span><span class="now"><i>★</i>Say hi with one tap</span></div></div><b>Help shy and commuter students start friendships.</b></div>
+    <div><small>Goal</small><div class="bv"><div class="bf"><span class="was"><i>?</i><s>Wait for someone to say hi</s></span><span class="arr" aria-hidden="true">↓</span><span class="now"><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z" fill="currentColor"/></svg></i>Say hi with one tap</span></div></div><b>Help shy and commuter students start friendships.</b></div>
     <div><small>Result</small><div class="bv"><div class="bn">3 / 3</div><div class="bb" role="img" aria-label="Average times: 12.9 seconds to send a Star, 23.4 seconds to finish a quest"><span>Send a Star</span><span class="tr"><i style="--w:43%"></i></span><b>12.9s</b><span>Finish a quest</span><span class="tr"><i style="--w:78%"></i></span><b>23.4s</b></div></div><b>Testers finished both tasks on our mid-fi prototype.</b></div>
     <div><small>My part</small><div class="bv"><div class="bw"><div><small>Team of 5</small><p><span>Ran the survey</span><span>Sketched quest screens</span><span>Ran tests</span></p></div><div class="me"><small>On my own</small><p><span>Redesign</span><span>Launch film</span></p></div></div></div><b>Team project, then my own redesign.</b></div>
   </div>
