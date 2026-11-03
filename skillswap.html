@@ -558,6 +558,7 @@ main section>.col>*:last-child{margin-bottom:0}
 .bw p span{font-size:13.5px;padding:4px 11px;border-radius:99px;border:1px solid var(--line);background:var(--bg)}
 .bw .me span{background:var(--red-soft);border-color:transparent;color:var(--red-deep);font-weight:500}
 @media (max-width:1200px){.brief{grid-template-columns:1fr}.brief .bv{min-height:0}}
+.panel>.goals:first-child{margin-top:0;padding-top:0;border-top:0}
 </style>
 </head>
 <body>
@@ -579,7 +580,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 
 <div class="col hcol">
   <h1>Making new hobbies cheaper by swapping the supplies people never use</h1>
-  <p class="lead">In one term, our team of four designers researched, sketched and tested SkillSwap, an app for swapping or buying unused hobby supplies with people nearby. Then I took what our testers struggled with and redesigned the app on my own.</p>
+  <p class="lead">An app for swapping or buying unused hobby supplies with people nearby, taken from team research to my own working redesign.</p>
   <div class="brief">
     <div><small>Goal</small><div class="bv"><div class="bf"><span class="was"><i>$</i>Pay full price to start a hobby</span><span class="arr" aria-hidden="true">↓</span><span class="now"><i>⇄</i>Swap with people nearby</span></div></div><b>Make it cheaper to start a hobby.</b></div>
     <div><small>Result</small><div class="bv"><div class="bn">71.7<em>/ 100</em></div><div class="bg" role="img" aria-label="Average usability score 71.7 out of 100, rated Good" style="--w:71.7%;margin-top:42px"><span class="tag">Good</span><div class="tr"><i></i></div><div class="bax"><span>0</span><span>50</span><span>100</span></div></div></div><b>Usability score from 12 testers on our Figma version.</b></div>
@@ -627,16 +628,10 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
   <div class="col">
     <p class="eb">Research</p>
     <h2>42 surveys and 7 interviews, grouped by who we heard from</h2>
-    <p class="t">The survey gave us the numbers. The interviews explained them. I grouped what we learned into four themes, then by the three groups of people who would use or shape the app.</p>
+    <p class="t">The survey gave us the numbers and the interviews explained them. Here is who we heard from, and what that meant the app had to do.</p>
   </div>
   <div class="wide"><div class="panel rv">
-    <div class="ins4">
-      <div><b>76%</b><span>of 42 people</span><h4>Cost decides which hobby people try</h4><p>Most would spend under $100 on something new. Students said they pick cheap hobbies so they do not waste money if they quit.</p></div>
-      <div><b>86%</b><span>of people with leftovers</span><h4>Unused supplies just get stored</h4><p>“I would trade them in to Gamestop but [I] never found the time to.”</p></div>
-      <div><b>65%</b><span>of 20 people</span><h4>Condition and trust are the worries</h4><p>65% worried about the condition of used supplies and 60% about the other person.</p></div>
-      <div><b>100%</b><span>of people who answered</span><h4>Local, but not always face to face</h4><p>Everyone wanted local exchanges, yet about as many people would not meet a stranger as would.</p></div>
-    </div>
-    <div class="who3">
+    <div class="who3" style="margin-top:0;padding-top:0;border-top:0">
       <div><b>5</b><h5>Students with hobbies</h5><p>Cost and time decide what they start. A supportive community keeps them going.</p></div>
       <div><b>1</b><h5>Small business owner</h5><p>Sells press-on nails. Showed us how sellers think about stock and materials.</p></div>
       <div><b>1</b><h5>Campus sustainability lead</h5><p>Pointed us to reuse. Across interviews, how much people thought about waste varied a lot.</p></div>
@@ -735,8 +730,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
     </div>
     <div class="susx"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span></div>
     <div class="goals">
-      <div><b>71.7</b><span>average SUS, rated “Good”</span></div>
-      <div><b>4.5 min</b><span>average to finish, from 2 to 8 minutes</span></div>
+            <div><b>4.5 min</b><span>average to finish, from 2 to 8 minutes</span></div>
       <div><b>3 of 12</b><span>had used an exchange app before</span></div>
     </div>
   </div></div>
@@ -762,13 +756,13 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
   <div class="col">
     <p class="eb">Final design</p>
     <h2>I redesigned SkillSwap on my own around what testers struggled with</h2>
-    <p class="t">I borrowed patterns people already know from eBay, Kijiji and Facebook Marketplace, then shaped them around swapping. Each clip below is the live prototype playing itself.</p>
+    <p class="t">Each clip is the live prototype playing itself. The reasons behind each change follow below.</p>
   </div>
   <div class="wide">
-    <div class="dm rv"><div><span class="dn">01<em>browse</em></span><h3>Find supplies by hobby</h3><p>Hobby tags sit at the top, with a full list of 11 groups behind “All categories”. Prices come first on every card, so you can tell at a glance what is a swap and what is for sale.</p></div><div class="dm-ph"><iframe src="skillswap/app/index.html?embed&amp;demo=browse" title="Clip: browsing by hobby" loading="lazy"></iframe></div></div>
-    <div class="dm rv"><div><span class="dn">02<em>offer</em></span><h3>Make an offer in two steps</h3><p>Pick what you will give, then a suggested public spot and a day. A review screen shows the whole trade before anything is sent, and nothing is paid until the other person says yes.</p></div><div class="dm-ph"><iframe src="skillswap/app/index.html?embed&amp;demo=request" title="Clip: making a swap offer" loading="lazy"></iframe></div></div>
-    <div class="dm rv"><div><span class="dn">03<em>confirm</em></span><h3>Accept, renegotiate or decline</h3><p>Requests live on their own screen instead of inside the chat. After the hand-off, both people tap “We swapped!” and rate each other.</p></div><div class="dm-ph"><iframe src="skillswap/app/index.html?embed&amp;demo=accept" title="Clip: accepting and confirming a swap" loading="lazy"></iframe></div></div>
-    <div class="dm rv"><div><span class="dn">04<em>post</em></span><h3>Post with a live photo</h3><p>The camera opens straight away, so every listing shows the real item. A review step catches mistakes before it goes live.</p></div><div class="dm-ph"><iframe src="skillswap/app/index.html?embed&amp;demo=post" title="Clip: posting a listing with a live photo" loading="lazy"></iframe></div></div>
+    <div class="dm rv"><div><span class="dn">01<em>browse</em></span><h3>Find supplies by hobby</h3><p>Tap a hobby tag, or open “All categories”. Every card shows the name, then the price or “swap”.</p></div><div class="dm-ph"><iframe src="skillswap/app/index.html?embed&amp;demo=browse" title="Clip: browsing by hobby" loading="lazy"></iframe></div></div>
+    <div class="dm rv"><div><span class="dn">02<em>offer</em></span><h3>Make an offer in two steps</h3><p>Pick what you give, a public spot and a day, then check the whole trade before sending.</p></div><div class="dm-ph"><iframe src="skillswap/app/index.html?embed&amp;demo=request" title="Clip: making a swap offer" loading="lazy"></iframe></div></div>
+    <div class="dm rv"><div><span class="dn">03<em>confirm</em></span><h3>Accept, renegotiate or decline</h3><p>After the hand-off, both people tap “We swapped!” and rate each other.</p></div><div class="dm-ph"><iframe src="skillswap/app/index.html?embed&amp;demo=accept" title="Clip: accepting and confirming a swap" loading="lazy"></iframe></div></div>
+    <div class="dm rv"><div><span class="dn">04<em>post</em></span><h3>Post with a live photo</h3><p>The camera opens straight away, so every listing shows the real item.</p></div><div class="dm-ph"><iframe src="skillswap/app/index.html?embed&amp;demo=post" title="Clip: posting a listing with a live photo" loading="lazy"></iframe></div></div>
   </div>
   <div class="col" style="margin-top:clamp(48px,6vw,72px)">
     <h3 class="sub">The rest of the app</h3>
@@ -827,11 +821,6 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
     <p class="t">Next, I will give the same loose task to ten hobbyists on the new version and compare it with the Figma round.</p>
   </div>
   <div class="wide"><div class="panel rv">
-    <p class="ph">The bar to beat, from the Figma round</p>
-    <div class="beat">
-      <div class="bt-r"><b>SUS score</b><div class="bt-t"><i class="bt-f" style="--w:71.7%"></i><em style="--x:71.7%">71.7</em></div></div>
-      <div class="bt-ax"><span></span><div><span style="--x:0%">0</span><span style="--x:25%">25</span><span style="--x:50%">50</span><span style="--x:75%">75</span><span style="--x:100%">100</span></div></div>
-    </div>
     <div class="goals">
       <div><b>10</b><span>hobbyists, including some who have never used an exchange app</span></div>
       <div><b>Above 71.7</b><span>average SUS score</span></div>

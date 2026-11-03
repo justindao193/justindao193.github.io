@@ -859,6 +859,7 @@ details.more .mbody p.t:first-child{margin-top:4px}
 .bw p span{font-size:13.5px;padding:4px 11px;border-radius:99px;border:1px solid var(--line);background:var(--bg)}
 .bw .me span{background:var(--red-soft);border-color:transparent;color:var(--red-deep);font-weight:500}
 @media (max-width:1200px){.brief{grid-template-columns:1fr}.brief .bv{min-height:0}}
+.panel>.iter:first-child{margin-top:0}
 </style>
 <script src="instacart/carrot-intro.js"></script>
 </head>
@@ -913,7 +914,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 
 <div class="col hcol">
   <h1>Helping shoppers find familiar groceries and discover new favourites</h1>
-  <p class="lead">Could recommendations help shoppers find familiar groceries with less searching? I defined the scope, compared methods using public Instacart orders and built a working shopping prototype. I chose a simple rule that favours recent purchases, then added a separate discovery list.</p>
+  <p class="lead">A grocery recommendation project built on 3.4 million public Instacart orders, ending in a working shopping page.</p>
   <div class="brief">
     <div><small>Goal</small><div class="bv"><div class="bf"><span class="was"><i>?</i>Search for the same items every week</span><span class="arr" aria-hidden="true">↓</span><span class="now"><i>✓</i>Usual items shown first</span></div></div><b>Help shoppers find what they buy again, faster.</b></div>
     <div><small>Result</small><div class="bv"><div class="bn">24%</div><div class="bb" role="img" aria-label="Personal suggestions found 24 percent of the next basket; popular items found under 5 percent"><span>Personal</span><span class="tr"><i style="--w:24%"></i></span><b>24%</b><span>Popular</span><span class="tr"><i class="g" style="--w:4.5%"></i></span><span>&lt;5%</span></div><div class="bd" aria-label="4 in 5 shoppers bought at least one suggestion"><i></i><i></i><i></i><i></i><i class="o"></i><span>4 in 5 bought one</span></div></div><b>Of the next basket, found by 5 suggestions.</b></div>
@@ -930,16 +931,10 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <section id="overview">
   <div class="col">
     <p class="eb">Overview</p>
-    <h2>The project at a glance</h2>
+    <h2>Three versions, then a prototype</h2>
     <p class="t note2">Data: <a href="https://tech.instacart.com/3-million-instacart-orders-open-sourced-d40d29ead6f2" target="_blank" rel="noopener">Instacart’s public 2017 dataset</a> contains anonymous grocery orders, products and purchase sequences. I used an <a href="https://zenodo.org/records/2654444" target="_blank" rel="noopener">archived copy on Zenodo</a>. These records do not represent all Instacart shoppers.</p>
   </div>
   <div class="wide"><div class="panel rv">
-    <div class="nums">
-      <div><b>3.4M</b><span>historical Instacart orders</span></div>
-      <div><b>131,209</b><span>shoppers in the original method comparison</span></div>
-      <div><b>3</b><span>iterations, from repeat purchases to discovery</span></div>
-      <div><b>2</b><span>exploratory prototype sessions</span></div>
-    </div>
     <div class="iter" aria-label="How the project developed">
       <div><small>Version 1</small><b>Suggest familiar groceries</b><p>Compared five methods. Chose a simple rule that gives recent purchases more weight.</p><span class="st ok">Selected</span></div>
       <div class="stop"><small>Version 2</small><b>Check purchase timing</b><p>Tested whether usual buying gaps improved suggestions. The gain was too small to justify adding it.</p><span class="st no">Not adopted</span></div>
@@ -1019,7 +1014,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <hr class="rule">
 
 <section id="results">
-<div class="col"><p class="eb">Results</p><h2>Personal history made the biggest difference</h2><p class="t">The method I chose found about a quarter of each shopper’s next basket. About 4 in 5 shoppers bought at least one of its five suggestions. Showing everyone the same popular products found less than 1 in 20.</p></div><div class="wide"><div class="panel rv"><div aria-label="Final results by method" class="rtab in" role="table">
+<div class="col"><p class="eb">Results</p><h2>Personal history made the biggest difference</h2><p class="t">Personal history found about five times more of the next basket than one popular list for everyone. The two learned models added almost nothing over the simple rules.</p></div><div class="wide"><div class="panel rv"><div aria-label="Final results by method" class="rtab in" role="table">
 <div class="rh" role="row"><span role="columnheader">Method</span><span role="columnheader">Recall@5</span><span class="hide-s" role="columnheader"></span><span role="columnheader">Precision@5</span><span role="columnheader">Hit rate@5</span></div>
 <div role="row"><span>General popularity</span><b>4.69%</b><span class="tr hide-s"><i style="--w:19.2%"></i></span><span>9.48%</span><span>36.24%</span></div>
 <div role="row"><span>Personal frequency</span><b>23.12%</b><span class="tr hide-s"><i style="--w:94.5%"></i></span><span>35.41%</span><span>78.23%</span></div>
@@ -1032,7 +1027,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <hr class="rule">
 
 <section id="decision">
-<div class="col"><p class="eb">My decision</p><h2>I chose a simpler method, even though another scored slightly better</h2><p class="t">Boosted trees scored 24.45% recall; weighted recency scored 24.28%. I chose the simpler rule after validation, before the final check, accepting about 0.18 percentage points less recall.</p></div><div class="wide"><div class="lessons rv"><div><b>Easy to trace</b><p>Each earlier purchase contributes a visible number of points.</p></div><div><b>Less to maintain</b><p>The default uses a fixed rule rather than a separate trained model.</p></div><div><b>An honest trade-off</b><p>Trees were more accurate. Both were fast locally, so speed did not decide it.</p></div></div></div>
+<div class="col"><p class="eb">My decision</p><h2>I chose a simpler method, even though another scored slightly better</h2><p class="t">Boosted trees scored 0.18 points higher on recall. I picked the simpler rule after validation, before the final check.</p></div><div class="wide"><div class="lessons rv"><div><b>Easy to trace</b><p>Each earlier purchase contributes a visible number of points.</p></div><div><b>Less to maintain</b><p>The default uses a fixed rule rather than a separate trained model.</p></div><div><b>Not about speed</b><p>Both ran fast locally, so the choice came down to clarity.</p></div></div></div>
 </section>
 
 <hr class="rule">
@@ -1062,7 +1057,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <div class="dgrp"><h5>Historical comparison · 15,000 shoppers</h5>
 <div class="drow"><span>Popular products</span><span class="tr"><i style="--w:77.6%"></i></span><b>9.31%</b></div>
 <div class="drow rel"><span>Related products</span><span class="tr"><i style="--w:89.8%"></i></span><b>10.77%</b></div>
-</div></div><p class="axis">Share of shoppers with at least one match among five suggestions. Related products reached a net 219 more shoppers; most still had no match.</p></div></div><div class="col"><p class="t">With five suggestions, related products matched purchases for about 11 in 100 shoppers versus 9 for popularity. These shoppers’ records had already been reviewed, so new data would be the real check.</p><div class="clinks"><a class="clink gh" href="https://github.com/justindao193/instacart-grocery-recommendations/blob/main/src/model_comparison/evaluate_discovery.py" target="_blank" rel="noopener">See discovery code</a><a class="clink gh" href="https://github.com/justindao193/instacart-grocery-recommendations/blob/main/results/discovery_top_five.json" target="_blank" rel="noopener">See the five-item results</a></div></div>
+</div></div><p class="axis">Share of shoppers with at least one match among five suggestions. Related products reached a net 219 more shoppers; most still had no match.</p></div></div><div class="col"><p class="t">These shoppers’ records had already been reviewed, so new data would be the real check.</p><div class="clinks"><a class="clink gh" href="https://github.com/justindao193/instacart-grocery-recommendations/blob/main/src/model_comparison/evaluate_discovery.py" target="_blank" rel="noopener">See discovery code</a><a class="clink gh" href="https://github.com/justindao193/instacart-grocery-recommendations/blob/main/results/discovery_top_five.json" target="_blank" rel="noopener">See the five-item results</a></div></div>
 </section>
 
 <hr class="rule">
@@ -1071,7 +1066,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
   <div class="col">
     <p class="eb">Prototype</p>
     <h2>A shopping page with personal suggestions</h2>
-    <p class="t">I built a shopping page with two lists: Buy it again shows products the shopper has bought before. You might also like suggests products missing from their recorded purchase history. You can switch between three example shoppers: A and B use anonymous purchase records from the dataset, while C shows what a new shopper would see.</p>
+    <p class="t">Two lists: Buy it again for products the shopper has bought before, and You might also like for products new to them. Shoppers A and B use real anonymous records; C is a new shopper.</p>
   </div>
   <div class="wide">
     <figure class="shot rv"><img src="instacart/screen-discovery.jpg" alt="Prototype for Shopper A with Buy it again and You might also like rows, and Trail Mix and Soda in the basket" loading="lazy" data-zoom="instacart/screen-discovery.jpg"></figure>
@@ -1102,18 +1097,13 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <hr class="rule">
 
 <section id="launch">
-<div class="col"><p class="eb">If this launched</p><h2>How I would measure it in the real product</h2><p class="t">Offline scores told me which list to build. A live test would tell me whether it helps shoppers and the business.</p></div>
+<div class="col"><p class="eb">If this launched</p><h2>How I would measure it in the real product</h2><p class="t">Offline scores told me which list to build. The data has no prices, stock or click records, so only a live test can show whether it helps shoppers and the business.</p></div>
 <div class="wide"><div class="biz rv">
 <div><span><em>01</em>main metric</span><b>Share of repeat baskets with an item added from the lists</b><p>Plus time to rebuild a usual basket.</p></div>
 <div><span><em>02</em>guardrails</span><b>Basket size and checkout rate do not drop</b><p>And shoppers do not hide most suggestions.</p></div>
 <div><span><em>03</em>how I would test it</span><b>A/B test on returning shoppers</b><p>Half see the lists, half do not, for a few weeks. Discovery tested separately.</p></div>
 <div><span><em>04</em>roll back if</span><b>A guardrail falls, or no lift</b><p>Then try a smaller change, like fewer cards.</p></div>
 </div></div>
-<div class="col"><h3 class="sub">Limits of this project</h3><ul class="limits-list">
-<li>All results are matches with past baskets, not proof of time saved or sales.</li>
-<li>The data has no prices, pack sizes, stock or click records.</li>
-<li>Two early user sessions, and none yet for You might also like.</li>
-</ul></div>
 </section>
 
 <hr class="rule">
@@ -1135,10 +1125,10 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <hr class="rule">
 
 <section id="learned">
-<div class="col"><p class="eb">What I learned</p><h2>Good scores are only part of a useful product</h2><p class="t">Three decisions shaped the outcome.</p></div><div class="wide"><div class="lessons rv">
-<div><span class="lv">Choose deliberately</span><b>Accept a small accuracy cost</b><p>I chose an inspectable rule while keeping the stronger tree result visible.</p></div>
-<div><span class="lv">Stop with evidence</span><b>Do not move the goalposts</b><p>I stopped timing when it missed the fixed criteria, then explored discovery as a different question.</p></div>
-<div><span class="lv">Keep claims separate</span><b>Prediction is not product value</b><p>Historical matches supported the prototype. Only better user testing can establish shopping benefit.</p></div>
+<div class="col"><p class="eb">What I learned</p><h2>Good scores are only part of a useful product</h2><p class="t">Three lessons I would carry into the next product.</p></div><div class="wide"><div class="lessons rv">
+<div><span class="lv">Choose deliberately</span><b>Accept a small accuracy cost</b><p>A result the team can explain can be worth more than the top score.</p></div>
+<div><span class="lv">Stop with evidence</span><b>Do not move the goalposts</b><p>Set the bar before testing, and stop when an idea misses it.</p></div>
+<div><span class="lv">Keep claims separate</span><b>Prediction is not product value</b><p>Matching past baskets shows a list is accurate, not that it saves shoppers time.</p></div>
 </div></div>
 </section>
 
