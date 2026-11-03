@@ -510,6 +510,21 @@ main section>.col>*:last-child{margin-bottom:0}
 .dc>article{background:#FDFAF6!important;box-shadow:inset 0 0 0 1px var(--line)}
 .ba{background:#F3EDE5!important}
 .dc-tx{border-top:1px solid var(--line)!important}
+
+.brief{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin-top:44px}
+.brief>div{border-top:2px solid var(--ink);padding-top:18px}
+.brief small{display:block;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.brief b{display:block;margin-top:10px;font-family:var(--serif);font-weight:370;font-size:clamp(21px,1.9vw,25px);line-height:1.22;letter-spacing:-.01em}
+.brief p{margin:10px 0 0;font-size:15.5px;line-height:1.55;color:var(--muted)}
+@media (max-width:760px){.brief{grid-template-columns:1fr;gap:26px}}
+
+.aiw{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:36px}
+.aiw>div{border-top:2px solid var(--red);padding-top:18px}
+.aiw h4{margin:0 0 12px;font-size:17px;font-weight:600}
+.aiw ul{margin:0;padding:0;list-style:none}
+.aiw li{position:relative;padding-left:16px;margin:0 0 10px;font-size:15px;line-height:1.5;color:var(--muted)}
+.aiw li:before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--red)}
+@media (max-width:820px){.aiw{grid-template-columns:1fr;gap:28px}}
 </style>
 </head>
 <body>
@@ -520,7 +535,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 
 <nav class="topnav" aria-label="Main"><a href="index.html#work">← Work / <b>SkillSwap</b></a><span class="tright" style="padding-right:46px"></span></nav>
 
-<aside class="side" aria-label="Sections"><a class="back" href="index.html#work" aria-label="Back to work">←</a><ul><li><a href="#problem" data-s="problem solution">overview</a></li><li><a href="#research" data-s="research persona">research</a></li><li><a href="#paper" data-s="paper hifitest">design process</a></li><li><a href="#final" data-s="final decisions">final solution</a></li><li><a href="#prototype" data-s="prototype">try it</a></li><li><a href="#nexttest" data-s="nexttest reflection">learning</a></li></ul></aside>
+<aside class="side" aria-label="Sections"><a class="back" href="index.html#work" aria-label="Back to work">←</a><ul><li><a href="#problem" data-s="problem solution">overview</a></li><li><a href="#research" data-s="research persona">research</a></li><li><a href="#paper" data-s="paper hifitest">design process</a></li><li><a href="#final" data-s="final decisions">final solution</a></li><li><a href="#ai" data-s="ai">built with ai</a></li><li><a href="#prototype" data-s="prototype">try it</a></li><li><a href="#nexttest" data-s="nexttest reflection">learning</a></li></ul></aside>
 <main class="main">
 <div class="wide">
   <div class="film ss rv">
@@ -532,6 +547,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <div class="col hcol">
   <h1>Making new hobbies cheaper by swapping the supplies people never use</h1>
   <p class="lead">In one term, our team of four designers researched, sketched and tested SkillSwap, an app for swapping or buying unused hobby supplies with people nearby. Then I took what our testers struggled with and redesigned the app on my own.</p>
+  <div class="brief"><div><small>Goal</small><b>A cheaper way to start a new hobby</b><p>Connect beginners with people nearby who have supplies they no longer use.</p></div><div><small>Result</small><b>SUS 71.7 with 12 testers</b><p>Testers rated our Figma version “Good”. What they still struggled with drove my redesign.</p></div><div><small>My part</small><b>Team research, then a solo redesign</b><p>One of four designers on research and testing. Then I redesigned the app on my own and built it as working code with Claude.</p></div></div>
   <dl class="meta">
     <div><dt>Role</dt><dd>4 designers</dd></div>
     <div><dt>Skills</dt><dd>UX research, product design, prototyping, usability testing</dd></div>
@@ -739,6 +755,19 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
     <article><div class="ba"><figure><figcaption>Tested in Figma</figcaption><button type="button" data-zoom="skillswap/media/figma-listing.jpg" aria-label="Zoom: Figma listing details"><img src="skillswap/media/figma-listing.jpg" alt="Figma listing details" loading="lazy"></button></figure><i aria-hidden="true">→</i><figure><figcaption>My redesign</figcaption><button type="button" data-zoom="skillswap/media/hifi-listing.jpg" aria-label="Zoom: Redesigned listing with live photo and rating"><img src="skillswap/media/hifi-listing.jpg" alt="Redesigned listing with live photo and rating" loading="lazy" style="object-position:top"></button></figure></div>
       <div class="dc-tx"><span class="dn">04</span><h4>Make strangers easier to trust</h4><dl><div><dt>Saw</dt><dd>In our survey, 60% worried about the other person and 65% about the condition of used supplies.</dd></div><div><dt>Did</dt><dd>A live-photo label, condition up front, a tappable rating with reviews, and a reminder to meet in public.</dd></div></dl></div></article>
       </div></div>
+</section>
+
+<section id="ai">
+  <div class="col">
+    <p class="eb">How I built it</p>
+    <h2>I built the redesign as working code with Claude</h2>
+    <p class="t">Instead of making more Figma screens, I described each screen and flow to Claude, which wrote the code. I reviewed every screen and asked for changes until it fit what testers needed.</p>
+  </div>
+  <div class="wide"><div class="aiw rv">
+    <div><h4>Claude did</h4><ul><li>Wrote the HTML, CSS and JavaScript</li><li>Turned my notes into screens and flows</li><li>Made the self-playing clips above</li></ul></div>
+    <div><h4>I decided</h4><ul><li>Which tester problems to fix first</li><li>Patterns to borrow from eBay, Kijiji and Facebook Marketplace</li><li>Colours, spacing and every label, like “swapped” instead of “traded”</li></ul></div>
+    <div><h4>I pushed back on</h4><ul><li>A blue that did not fit the brand, replaced with dark buttons and pastels</li><li>A sign-up step, since testers wanted to browse before making an account</li><li>Crowded screens, split into fewer choices per step</li></ul></div>
+  </div></div>
 </section>
 
 <section id="prototype">

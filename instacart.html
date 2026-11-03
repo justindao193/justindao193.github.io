@@ -819,6 +819,13 @@ details.more .mbody p.t:first-child{margin-top:4px}
 .main > section > :last-child,.main > section > :last-child > :last-child{margin-bottom:0}
 /* meta columns line up with three-card rows (30 October 2026) */
 .meta{column-gap:16px!important}
+
+.brief{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin-top:44px}
+.brief>div{border-top:2px solid var(--ink);padding-top:18px}
+.brief small{display:block;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.brief b{display:block;margin-top:10px;font-family:var(--serif);font-weight:370;font-size:clamp(21px,1.9vw,25px);line-height:1.22;letter-spacing:-.01em}
+.brief p{margin:10px 0 0;font-size:15.5px;line-height:1.55;color:var(--muted)}
+@media (max-width:760px){.brief{grid-template-columns:1fr;gap:26px}}
 </style>
 <script src="instacart/carrot-intro.js"></script>
 </head>
@@ -874,6 +881,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <div class="col hcol">
   <h1>Helping shoppers find familiar groceries and discover new favourites</h1>
   <p class="lead">Could recommendations help shoppers find familiar groceries with less searching? I defined the scope, compared methods using public Instacart orders and built a working shopping prototype. I chose a simple rule that favours recent purchases, then added a separate discovery list.</p>
+  <div class="brief"><div><small>Goal</small><b>Less searching for the groceries shoppers buy again</b><p>Put the right items up front, using a method a small team can explain and maintain.</p></div><div><small>Result</small><b>Five suggestions found 24% of the next basket</b><p>About 4 in 5 shoppers bought at least one suggestion. Showing everyone popular items found fewer than 1 in 20.</p></div><div><small>My part</small><b>Scope, method, decision and prototype</b><p>I scoped the problem, compared five methods in SQL and Python, chose the simpler rule and built the shopping page.</p></div></div>
   <dl class="meta">
     <div><dt>Role</dt><dd>Product manager &amp; data analyst</dd></div>
     <div><dt>Skills</dt><dd>Product scoping, SQL and Python, model evaluation, prototyping, user testing</dd></div>
