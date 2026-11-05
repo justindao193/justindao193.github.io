@@ -1,1 +1,0 @@
-REFERENCE ONLY: This retrieved portfolio has Wayfinder and Little Things, not TSTAR. Do not assume it is the intended portfolio. It is included to preserve the visual reference available in this session. Its script has been renamed script.js.txt for email compatibility; rename it to script.js locally to run this reference. No live site was changed.
