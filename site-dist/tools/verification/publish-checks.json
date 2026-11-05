@@ -1,0 +1,678 @@
+{
+  "results": [
+    {
+      "page": "index.html",
+      "width": 390,
+      "theme": "light",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/about/friends-night.jpg",
+        "http://127.0.0.1:8000/about/climbing.jpg",
+        "http://127.0.0.1:8000/about/theo.jpg",
+        "http://127.0.0.1:8000/about/vale-team.jpg",
+        "http://127.0.0.1:8000/about/food.jpg",
+        "http://127.0.0.1:8000/about/seoul.jpg",
+        "http://127.0.0.1:8000/about/nyc.jpg",
+        "http://127.0.0.1:8000/about/toronto.jpg"
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "index.html",
+      "width": 800,
+      "theme": "light",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/about/friends-night.jpg",
+        "http://127.0.0.1:8000/about/climbing.jpg",
+        "http://127.0.0.1:8000/about/theo.jpg",
+        "http://127.0.0.1:8000/about/vale-team.jpg",
+        "http://127.0.0.1:8000/about/food.jpg",
+        "http://127.0.0.1:8000/about/seoul.jpg",
+        "http://127.0.0.1:8000/about/nyc.jpg",
+        "http://127.0.0.1:8000/about/toronto.jpg"
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "index.html",
+      "width": 1150,
+      "theme": "light",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/about/friends-night.jpg",
+        "http://127.0.0.1:8000/about/climbing.jpg",
+        "http://127.0.0.1:8000/about/theo.jpg",
+        "http://127.0.0.1:8000/about/vale-team.jpg",
+        "http://127.0.0.1:8000/about/food.jpg",
+        "http://127.0.0.1:8000/about/seoul.jpg",
+        "http://127.0.0.1:8000/about/nyc.jpg",
+        "http://127.0.0.1:8000/about/toronto.jpg"
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "index.html",
+      "width": 1440,
+      "theme": "light",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/about/friends-night.jpg",
+        "http://127.0.0.1:8000/about/climbing.jpg",
+        "http://127.0.0.1:8000/about/theo.jpg",
+        "http://127.0.0.1:8000/about/vale-team.jpg",
+        "http://127.0.0.1:8000/about/food.jpg",
+        "http://127.0.0.1:8000/about/seoul.jpg",
+        "http://127.0.0.1:8000/about/nyc.jpg",
+        "http://127.0.0.1:8000/about/toronto.jpg"
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "index.html",
+      "width": 1920,
+      "theme": "light",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/about/friends-night.jpg",
+        "http://127.0.0.1:8000/about/climbing.jpg",
+        "http://127.0.0.1:8000/about/theo.jpg",
+        "http://127.0.0.1:8000/about/vale-team.jpg",
+        "http://127.0.0.1:8000/about/food.jpg",
+        "http://127.0.0.1:8000/about/seoul.jpg",
+        "http://127.0.0.1:8000/about/nyc.jpg",
+        "http://127.0.0.1:8000/about/toronto.jpg"
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "index.html",
+      "width": 390,
+      "theme": "dark",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/about/friends-night.jpg",
+        "http://127.0.0.1:8000/about/climbing.jpg",
+        "http://127.0.0.1:8000/about/theo.jpg",
+        "http://127.0.0.1:8000/about/vale-team.jpg",
+        "http://127.0.0.1:8000/about/food.jpg",
+        "http://127.0.0.1:8000/about/seoul.jpg",
+        "http://127.0.0.1:8000/about/nyc.jpg",
+        "http://127.0.0.1:8000/about/toronto.jpg"
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "index.html",
+      "width": 800,
+      "theme": "dark",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/about/friends-night.jpg",
+        "http://127.0.0.1:8000/about/climbing.jpg",
+        "http://127.0.0.1:8000/about/theo.jpg",
+        "http://127.0.0.1:8000/about/vale-team.jpg",
+        "http://127.0.0.1:8000/about/food.jpg",
+        "http://127.0.0.1:8000/about/seoul.jpg",
+        "http://127.0.0.1:8000/about/nyc.jpg",
+        "http://127.0.0.1:8000/about/toronto.jpg"
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "index.html",
+      "width": 1150,
+      "theme": "dark",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/about/friends-night.jpg",
+        "http://127.0.0.1:8000/about/climbing.jpg",
+        "http://127.0.0.1:8000/about/theo.jpg",
+        "http://127.0.0.1:8000/about/vale-team.jpg",
+        "http://127.0.0.1:8000/about/food.jpg",
+        "http://127.0.0.1:8000/about/seoul.jpg",
+        "http://127.0.0.1:8000/about/nyc.jpg",
+        "http://127.0.0.1:8000/about/toronto.jpg"
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "index.html",
+      "width": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/about/friends-night.jpg",
+        "http://127.0.0.1:8000/about/climbing.jpg",
+        "http://127.0.0.1:8000/about/theo.jpg",
+        "http://127.0.0.1:8000/about/vale-team.jpg",
+        "http://127.0.0.1:8000/about/food.jpg",
+        "http://127.0.0.1:8000/about/seoul.jpg",
+        "http://127.0.0.1:8000/about/nyc.jpg",
+        "http://127.0.0.1:8000/about/toronto.jpg"
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "index.html",
+      "width": 1920,
+      "theme": "dark",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/about/friends-night.jpg",
+        "http://127.0.0.1:8000/about/climbing.jpg",
+        "http://127.0.0.1:8000/about/theo.jpg",
+        "http://127.0.0.1:8000/about/vale-team.jpg",
+        "http://127.0.0.1:8000/about/food.jpg",
+        "http://127.0.0.1:8000/about/seoul.jpg",
+        "http://127.0.0.1:8000/about/nyc.jpg",
+        "http://127.0.0.1:8000/about/toronto.jpg"
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "housing.html",
+      "width": 390,
+      "theme": "light",
+      "overflow": false,
+      "badImages": [],
+      "textAlignment": []
+    },
+    {
+      "page": "housing.html",
+      "width": 800,
+      "theme": "light",
+      "overflow": false,
+      "badImages": [],
+      "textAlignment": []
+    },
+    {
+      "page": "housing.html",
+      "width": 1150,
+      "theme": "light",
+      "overflow": false,
+      "badImages": [],
+      "textAlignment": []
+    },
+    {
+      "page": "housing.html",
+      "width": 1440,
+      "theme": "light",
+      "overflow": false,
+      "badImages": [],
+      "textAlignment": []
+    },
+    {
+      "page": "housing.html",
+      "width": 1920,
+      "theme": "light",
+      "overflow": false,
+      "badImages": [],
+      "textAlignment": []
+    },
+    {
+      "page": "housing.html",
+      "width": 390,
+      "theme": "dark",
+      "overflow": false,
+      "badImages": [],
+      "textAlignment": []
+    },
+    {
+      "page": "housing.html",
+      "width": 800,
+      "theme": "dark",
+      "overflow": false,
+      "badImages": [],
+      "textAlignment": []
+    },
+    {
+      "page": "housing.html",
+      "width": 1150,
+      "theme": "dark",
+      "overflow": false,
+      "badImages": [],
+      "textAlignment": []
+    },
+    {
+      "page": "housing.html",
+      "width": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "badImages": [],
+      "textAlignment": []
+    },
+    {
+      "page": "housing.html",
+      "width": 1920,
+      "theme": "dark",
+      "overflow": false,
+      "badImages": [],
+      "textAlignment": []
+    },
+    {
+      "page": "tstar.html",
+      "width": 390,
+      "theme": "light",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/tstar/media/hifi-star.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-quest.jpg",
+        "http://127.0.0.1:8000/tstar/media/lofi-quest.jpg",
+        "http://127.0.0.1:8000/tstar/media/lofi-star.jpg",
+        "http://127.0.0.1:8000/tstar/media/lofi-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-cohort.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-profile.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-quests.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-home.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-quest.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-complete.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-star.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-star.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-home.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-explain.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-complete.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-confirm.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-chat.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-chat.jpg",
+        ""
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "tstar.html",
+      "width": 800,
+      "theme": "light",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/tstar/media/lofi-quest.jpg",
+        "http://127.0.0.1:8000/tstar/media/lofi-star.jpg",
+        "http://127.0.0.1:8000/tstar/media/lofi-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-cohort.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-profile.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-quests.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-home.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-quest.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-complete.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-star.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-home.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-explain.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-complete.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-confirm.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-chat.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-chat.jpg",
+        ""
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "tstar.html",
+      "width": 1150,
+      "theme": "light",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/tstar/media/lofi-quest.jpg",
+        "http://127.0.0.1:8000/tstar/media/lofi-star.jpg",
+        "http://127.0.0.1:8000/tstar/media/lofi-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-cohort.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-profile.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-quests.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-home.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-quest.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-complete.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-star.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-home.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-explain.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-complete.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-confirm.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-chat.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-chat.jpg",
+        ""
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "tstar.html",
+      "width": 1440,
+      "theme": "light",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/tstar/media/lofi-quest.jpg",
+        "http://127.0.0.1:8000/tstar/media/lofi-star.jpg",
+        "http://127.0.0.1:8000/tstar/media/lofi-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-cohort.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-profile.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-quests.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-home.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-quest.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-complete.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-star.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-home.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-explain.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-complete.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-confirm.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-chat.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-chat.jpg",
+        ""
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "tstar.html",
+      "width": 1920,
+      "theme": "light",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/tstar/media/lofi-quest.jpg",
+        "http://127.0.0.1:8000/tstar/media/lofi-star.jpg",
+        "http://127.0.0.1:8000/tstar/media/lofi-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-cohort.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-profile.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-quests.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-home.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-quest.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-complete.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-star.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-home.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-explain.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-complete.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-confirm.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-chat.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-chat.jpg",
+        ""
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "tstar.html",
+      "width": 390,
+      "theme": "dark",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/tstar/media/lofi-quest.jpg",
+        "http://127.0.0.1:8000/tstar/media/lofi-star.jpg",
+        "http://127.0.0.1:8000/tstar/media/lofi-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-cohort.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-profile.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-quests.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-home.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-quest.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-complete.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-star.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-home.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-explain.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-complete.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-confirm.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-chat.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-chat.jpg",
+        ""
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "tstar.html",
+      "width": 800,
+      "theme": "dark",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/tstar/media/lofi-quest.jpg",
+        "http://127.0.0.1:8000/tstar/media/lofi-star.jpg",
+        "http://127.0.0.1:8000/tstar/media/lofi-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-cohort.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-profile.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-quests.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-home.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-quest.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-complete.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-star.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-home.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-explain.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-complete.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-confirm.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-chat.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-chat.jpg",
+        ""
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "tstar.html",
+      "width": 1150,
+      "theme": "dark",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/tstar/media/lofi-quest.jpg",
+        "http://127.0.0.1:8000/tstar/media/lofi-star.jpg",
+        "http://127.0.0.1:8000/tstar/media/lofi-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-cohort.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-profile.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-quests.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-home.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-quest.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-complete.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-star.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-home.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-explain.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-complete.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-confirm.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-chat.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-chat.jpg",
+        ""
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "tstar.html",
+      "width": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/tstar/media/lofi-quest.jpg",
+        "http://127.0.0.1:8000/tstar/media/lofi-star.jpg",
+        "http://127.0.0.1:8000/tstar/media/lofi-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-cohort.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-profile.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-quests.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-home.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-quest.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-complete.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-star.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-home.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-explain.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-complete.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-confirm.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-chat.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-chat.jpg",
+        ""
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "tstar.html",
+      "width": 1920,
+      "theme": "dark",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/tstar/media/lofi-quest.jpg",
+        "http://127.0.0.1:8000/tstar/media/lofi-star.jpg",
+        "http://127.0.0.1:8000/tstar/media/lofi-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-cohort.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-profile.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-quests.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-home.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-quest.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-complete.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-star.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-home.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-explain.jpg",
+        "http://127.0.0.1:8000/tstar/media/mf-complete.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-confirm.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-share.jpg",
+        "http://127.0.0.1:8000/tstar/media/lf-chat.jpg",
+        "http://127.0.0.1:8000/tstar/media/hifi-chat.jpg",
+        ""
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "instacart.html",
+      "width": 390,
+      "theme": "light",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/instacart/state-full.jpg",
+        "http://127.0.0.1:8000/instacart/state-short.jpg",
+        "http://127.0.0.1:8000/instacart/state-none.jpg",
+        "http://127.0.0.1:8000/instacart/state-discovery.jpg",
+        ""
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "instacart.html",
+      "width": 800,
+      "theme": "light",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/instacart/state-full.jpg",
+        "http://127.0.0.1:8000/instacart/state-short.jpg",
+        "http://127.0.0.1:8000/instacart/state-none.jpg",
+        "http://127.0.0.1:8000/instacart/state-discovery.jpg",
+        ""
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "instacart.html",
+      "width": 1150,
+      "theme": "light",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/instacart/state-full.jpg",
+        "http://127.0.0.1:8000/instacart/state-short.jpg",
+        "http://127.0.0.1:8000/instacart/state-none.jpg",
+        "http://127.0.0.1:8000/instacart/state-discovery.jpg",
+        ""
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "instacart.html",
+      "width": 1440,
+      "theme": "light",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/instacart/state-full.jpg",
+        "http://127.0.0.1:8000/instacart/state-short.jpg",
+        "http://127.0.0.1:8000/instacart/state-none.jpg",
+        "http://127.0.0.1:8000/instacart/state-discovery.jpg",
+        ""
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "instacart.html",
+      "width": 1920,
+      "theme": "light",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/instacart/state-full.jpg",
+        "http://127.0.0.1:8000/instacart/state-short.jpg",
+        "http://127.0.0.1:8000/instacart/state-none.jpg",
+        "http://127.0.0.1:8000/instacart/state-discovery.jpg",
+        ""
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "instacart.html",
+      "width": 390,
+      "theme": "dark",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/instacart/state-full.jpg",
+        "http://127.0.0.1:8000/instacart/state-short.jpg",
+        "http://127.0.0.1:8000/instacart/state-none.jpg",
+        "http://127.0.0.1:8000/instacart/state-discovery.jpg",
+        ""
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "instacart.html",
+      "width": 800,
+      "theme": "dark",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/instacart/state-full.jpg",
+        "http://127.0.0.1:8000/instacart/state-short.jpg",
+        "http://127.0.0.1:8000/instacart/state-none.jpg",
+        "http://127.0.0.1:8000/instacart/state-discovery.jpg",
+        ""
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "instacart.html",
+      "width": 1150,
+      "theme": "dark",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/instacart/state-full.jpg",
+        "http://127.0.0.1:8000/instacart/state-short.jpg",
+        "http://127.0.0.1:8000/instacart/state-none.jpg",
+        "http://127.0.0.1:8000/instacart/state-discovery.jpg",
+        ""
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "instacart.html",
+      "width": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/instacart/state-full.jpg",
+        "http://127.0.0.1:8000/instacart/state-short.jpg",
+        "http://127.0.0.1:8000/instacart/state-none.jpg",
+        "http://127.0.0.1:8000/instacart/state-discovery.jpg",
+        ""
+      ],
+      "textAlignment": []
+    },
+    {
+      "page": "instacart.html",
+      "width": 1920,
+      "theme": "dark",
+      "overflow": false,
+      "badImages": [
+        "http://127.0.0.1:8000/instacart/state-full.jpg",
+        "http://127.0.0.1:8000/instacart/state-short.jpg",
+        "http://127.0.0.1:8000/instacart/state-none.jpg",
+        "http://127.0.0.1:8000/instacart/state-discovery.jpg",
+        ""
+      ],
+      "textAlignment": []
+    }
+  ],
+  "errors": []
+}
