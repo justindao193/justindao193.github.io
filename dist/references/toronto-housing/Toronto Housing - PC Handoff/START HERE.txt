@@ -1,0 +1,20 @@
+TORONTO HOUSING — COMPLETE PC HANDOFF
+Prepared October 27, 2026
+
+1. Download and extract the entire ZIP on your PC before opening files.
+2. Read CONTINUE IN CHATGPT.txt, then upload that file, the final slides PDF, the Excel workbook and the graph explanation document to a new ChatGPT chat. If ChatGPT accepts ZIP uploads, you can upload this entire package instead.
+3. To view the portfolio draft, open 02 - Portfolio Case Study Draft/index.html in Chrome or Edge. Keep its assets folder and style.css beside it. Internet access helps load the optional DM Sans font; local fallback fonts work offline.
+4. The Tableau .twbx includes its data. Open it in a compatible Tableau Desktop version to edit. The final PDF and chart images can be viewed without Tableau.
+5. Supply the CORRECT existing portfolio URL/source and brand guide to your new chat before asking it to integrate after TSTAR. These were not established in this session.
+
+FOLDERS
+01 - Final Project: final slides, cleaned Excel, graph explanations (Word and PDF), packaged Tableau workbook.
+02 - Portfolio Case Study Draft: editable HTML/CSS, local assets, SVG map and dot chart, original presentation and 2011 CSV.
+03 - Source Data: cleaned 2011 table and map geometry, separate 2016 table and map geometry, illustrative budgets.
+04 - Chart Images: individual chart PNGs plus the final Tableau map and scatterplot exports.
+05 - Sketchbook Reference Only: existing retrieved portfolio snapshot, not confirmed as your intended portfolio. Its JavaScript is saved as .js.txt for email compatibility.
+
+STATUS
+The visual case study is a local draft. No live portfolio was modified or deployed. All draft asset links and 140 neighbourhood records were checked. Browser visual QA remains pending because the in-app browser could not reach the local preview. The draft temporarily uses the retrieved Sketchbook visual style; the intended brand guide is still needed.
+
+The project uses historical 2011 and 2016 data. It is not a current rental-market report. The two years describe different populations and must not be presented as a direct trend.

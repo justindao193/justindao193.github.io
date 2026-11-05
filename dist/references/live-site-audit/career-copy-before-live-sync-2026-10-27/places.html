@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>(function(){var k='jd-theme',s=null;try{s=new URLSearchParams(location.search).get('theme')}catch(e){}if(s!=='light'&&s!=='dark'){s=null;try{s=localStorage.getItem(k)}catch(e){}if(s!=='light'&&s!=='dark'){try{s=sessionStorage.getItem(k)}catch(e){}}}else{try{localStorage.setItem(k,s)}catch(e){}}
+function day(){try{var h=+new Intl.DateTimeFormat('en-CA',{timeZone:'America/Toronto',hour:'numeric',hourCycle:'h23'}).format(new Date());return h>=7&&h<19}catch(e){return true}}
+var m=(s==='light'||s==='dark')?s:(day()?'light':'dark');document.documentElement.setAttribute('data-theme',m);
+window.jdTheme={get:function(){return document.documentElement.getAttribute('data-theme')},set:function(v){document.documentElement.setAttribute('data-theme',v);try{localStorage.setItem(k,v)}catch(e){}try{sessionStorage.setItem(k,v)}catch(e){}document.dispatchEvent(new CustomEvent('jdtheme'))}};})();</script>
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2224%22%20fill%3D%22%23DC4A36%22/%3E%3Cpath%20d%3D%22M33%2035Q33%2019%2050%2019Q67%2019%2067%2035Q67%2045%2057%2050Q51%2053%2051%2060V68Q51%2082%2038%2082Q30%2082%2026%2077%22%20fill%3D%22none%22%20stroke%3D%22%23F8F1E9%22%20stroke-width%3D%2211%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3Ccircle%20cx%3D%2272%22%20cy%3D%2278%22%20r%3D%227%22%20fill%3D%22%23F8F1E9%22/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="icon-180.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Places</title>
+<meta name="description" content="A map of the places Justin Dao has been.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400&display=swap">
+<style>
+:root{
+  --bg:#F8F1E9; --panel:#EFE6DB; --card:#FFFBF6; --ink:#1E1C1B; --muted:#6F635A; --line:#E2D4C4;
+  --red:#DC4A36; --red-deep:#B8392A; --red-soft:#F6DCD3;
+  --night:#1C1F5E; --star:#FFC43D; --sky:#E9ECFF; --mint:#DDF1E4; --mint-ink:#1F6B43;
+  --serif:"Newsreader","Iowan Old Style",Georgia,serif;
+  --sans:"Geist","Segoe UI",system-ui,sans-serif;
+  --mono:"Geist Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1C1A19; --panel:#262322; --card:#2F2B29; --ink:#F3E6D8; --muted:#A39587; --line:#3A3532;
+  --red:#EC5E49; --red-deep:#F07A66; --red-soft:#4A2620; --sky:#23264A; --mint:#1F3A2B; --mint-ink:#9BDDB5; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1C1A19; --panel:#262322; --card:#2F2B29; --ink:#F3E6D8; --muted:#A39587; --line:#3A3532;
+  --red:#EC5E49; --red-deep:#F07A66; --red-soft:#4A2620; --sky:#23264A; --mint:#1F3A2B; --mint-ink:#9BDDB5; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:inherit}
+img,video{display:block;max-width:100%}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:6px}
+.wide{max-width:1120px;margin:0 auto}
+.tbtn.fx{position:fixed;top:24px;right:clamp(20px,2.4vw,40px);z-index:60;background:var(--bg);box-shadow:0 2px 10px -4px rgba(0,0,0,.18)}
+.tbtn{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;padding:0;transition:background .2s,border-color .2s}
+.tbtn:hover{border-color:var(--muted)}
+.tbtn{overflow:hidden}
+.tbtn svg{width:17px;height:17px;grid-area:1/1;transition:opacity .35s ease,transform .55s cubic-bezier(.34,1.56,.64,1)}
+.tbtn .i-moon{opacity:0;transform:translateY(16px) rotate(-60deg)}
+:root[data-theme="dark"] .tbtn .i-sun{opacity:0;transform:translateY(-16px) rotate(90deg)}
+:root[data-theme="dark"] .tbtn .i-moon{opacity:1;transform:none}
+.tbtn:active{transform:scale(.9)}
+@media (prefers-reduced-motion:reduce){.tbtn svg{transition:opacity .2s}}
+</style>
+</head>
+<body>
+<button class="tbtn fx" type="button" aria-label="Switch light or dark mode"><svg viewBox="0 0 24 24" class="i-sun"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><svg viewBox="0 0 24 24" class="i-moon"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+<script>(function(){if(location.hash)return;try{history.scrollRestoration='manual'}catch(e){}
+function top(){document.documentElement.style.scrollBehavior='auto';window.scrollTo(0,0);document.documentElement.style.scrollBehavior=''}
+top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',function(){top();setTimeout(top,60)});addEventListener('pageshow',top)})();</script>
+<style>
+.pg{max-width:1120px;margin:0 auto;padding-bottom:120px}
+.topnav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font-size:14px;max-width:1120px;margin:0 auto}
+.topnav a{text-decoration:none;color:var(--muted)} .topnav a:hover{color:var(--ink)} .topnav b{color:var(--ink);font-weight:500}
+h1{font-family:var(--serif);font-weight:300;font-size:clamp(40px,6vw,72px);line-height:1.04;letter-spacing:-.025em;margin:56px 0 0}
+h1 em{color:var(--red);font-style:italic}
+.lead{margin:20px 0 0;font-size:18px;color:var(--muted);max-width:620px}
+.stats{display:flex;gap:clamp(24px,5vw,56px);margin:36px 0 0;flex-wrap:wrap}
+.stats div{font-family:var(--serif);font-size:clamp(34px,4vw,44px);font-weight:300;line-height:1}
+.stats span{display:block;margin-top:8px;font:12px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:44px 0 14px}
+.chips button{font:500 13.5px var(--sans);padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer;transition:all .2s}
+.chips button:hover{color:var(--ink);border-color:var(--muted)}
+.chips button.on{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.mapbox{position:relative;border-radius:20px;overflow:hidden;background:var(--panel);aspect-ratio:1000/560}
+.mapbox svg{display:block;width:100%;height:100%;cursor:grab}
+.mapbox svg:active{cursor:grabbing}
+.land{fill:var(--card)}
+.bord{fill:none;stroke:var(--line);stroke-width:.6;vector-effect:non-scaling-stroke}
+.pin{cursor:pointer}
+.pin .dot{fill:var(--red);stroke:var(--card);stroke-width:1.6;transition:r .2s}
+.pin .halo{fill:none;stroke:var(--red);stroke-width:1.4;opacity:.45}
+.pin text{font:500 11.5px var(--sans);fill:var(--ink);paint-order:stroke;stroke:var(--card);stroke-width:3.5px;stroke-linejoin:round;opacity:0;transition:opacity .2s;pointer-events:none}
+.pin.lived text,.pin.hover text,.pin.sel text,.pins.close .pin text{opacity:1}
+.pin.sel .dot{fill:var(--ink)}
+.zbtns{position:absolute;right:14px;bottom:14px;display:flex;flex-direction:column;gap:6px}
+.zbtns button{width:34px;height:34px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:500 17px var(--sans);cursor:pointer}
+.legend{position:absolute;left:16px;top:14px;display:flex;gap:14px;font:12px var(--mono);color:var(--muted);background:color-mix(in srgb,var(--panel) 80%,transparent);padding:6px 10px;border-radius:999px}
+.legend i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--red);margin-right:6px;vertical-align:0}
+.legend i.big{width:11px;height:11px;box-shadow:0 0 0 2px var(--panel),0 0 0 3.4px var(--red);vertical-align:-1px}
+.card{position:absolute;left:16px;bottom:16px;width:min(320px,calc(100% - 80px));background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:18px 20px 16px;box-shadow:0 18px 40px -20px rgba(0,0,0,.35);opacity:0;transform:translateY(10px);pointer-events:none;transition:opacity .25s,transform .3s}
+.card.show{opacity:1;transform:none;pointer-events:auto}
+.card .x{position:absolute;right:10px;top:10px;width:28px;height:28px;border:0;border-radius:50%;background:transparent;color:var(--muted);font-size:18px;cursor:pointer}
+.card .x:hover{background:var(--panel);color:var(--ink)}
+.card .tag{font:11.5px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--red)}
+.card h3{font-family:var(--serif);font-weight:400;font-size:30px;line-height:1.1;margin:6px 0 2px;letter-spacing:-.01em}
+.card .ct{color:var(--muted);font-size:14.5px}
+.card dl{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;margin:14px 0 0;font-size:13.5px}
+.card dt{color:var(--muted)} .card dd{margin:0;font-family:var(--mono);font-size:13px}
+.card .ph{display:flex;gap:6px;margin:14px 0 0;overflow-x:auto}
+.card .ph img{height:96px;border-radius:8px}
+.card .note{margin:12px 0 0;font-size:14.5px;line-height:1.55}
+.hint{position:absolute;right:58px;bottom:20px;font:12px var(--mono);color:var(--muted);pointer-events:none}
+@media (max-width:700px){.hint{right:auto;left:10px;bottom:auto;top:44px}}
+.err{position:absolute;inset:0;display:none;place-items:center;color:var(--muted);font-size:14px}
+.list{margin:72px 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:36px 32px}
+.list h2{font-family:var(--serif);font-weight:400;font-size:22px;margin:0;display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:10px}
+.list h2 small{font:12px var(--mono);color:var(--muted)}
+.list ul{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.list button{font:14px var(--sans);padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;transition:all .2s}
+.list button:hover{border-color:var(--red);color:var(--red)}
+.list button.lv{background:var(--red);border-color:var(--red);color:#FFFBF6}
+@media (max-width:700px){
+  .mapbox{aspect-ratio:auto;height:min(64vh,520px)}
+  .card{left:10px;right:10px;width:auto;bottom:10px}
+  .zbtns{top:10px;bottom:auto;right:10px}
+  .legend{top:auto;bottom:auto;left:10px;top:10px}
+}
+</style>
+
+<div class="pg">
+<nav class="topnav" aria-label="Main"><a href="index.html#work">← Justin Dao / <b>Places</b></a><span style="padding-right:46px"></span></nav>
+
+<h1>Places I have <em>been.</em></h1>
+<p class="lead">Every pin is a city I have been to. The bigger pins are the cities I have lived in. Tap a pin or a name to see it up close.</p>
+<div class="stats"><div id="sPlaces">44<span>places</span></div><div id="sCountries">12<span>countries and regions</span></div><div id="sKm">0<span>km from Saigon to Toronto</span></div></div>
+
+<div class="chips" role="group" aria-label="Zoom to a region">
+  <button class="on" data-r="all">Everywhere</button>
+  <button data-r="na">Canada and the US</button>
+  <button data-r="ea">East Asia</button>
+  <button data-r="sea">Southeast Asia</button>
+  <button data-r="vn">Vietnam</button>
+</div>
+
+<div class="mapbox" id="mapbox">
+  <svg id="map" viewBox="0 0 1000 560" role="img" aria-label="World map with a pin for each place Justin has been"><g id="gl"></g><g id="gp" class="pins"></g></svg>
+  <div class="legend"><span><i></i>Visited</span><span><i class="big"></i>Lived</span></div>
+  <div class="hint" id="hint">Use + and −, or pinch, to zoom</div>
+  <div class="zbtns"><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">−</button></div>
+  <div class="card" id="card" aria-live="polite"><button class="x" id="cx" aria-label="Close">×</button><div class="tag" id="cTag"></div><h3 id="cName"></h3><div class="ct" id="cCountry"></div><dl id="cDl"></dl><div id="cExtra"></div></div>
+  <div class="err" id="err">The map could not load. The full list is below.</div>
+</div>
+
+<div class="list" id="list"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+<script>
+/* To add a trip: fill in when, note and photos (file paths) for that place. Empty fields stay hidden. */
+var P=[
+ // Vietnam
+ {n:'Saigon',c:'Vietnam',ll:[10.776,106.700],tz:'Asia/Ho_Chi_Minh',lived:1,r:'vn sea'},
+ {n:'Hanoi',c:'Vietnam',ll:[21.028,105.854],tz:'Asia/Ho_Chi_Minh',r:'vn sea'},
+ {n:'Ha Long Bay',c:'Vietnam',ll:[20.910,107.184],tz:'Asia/Ho_Chi_Minh',r:'vn sea'},
+ {n:'Ninh Binh',c:'Vietnam',ll:[20.251,105.975],tz:'Asia/Ho_Chi_Minh',r:'vn sea'},
+ {n:'Hue',c:'Vietnam',ll:[16.463,107.590],tz:'Asia/Ho_Chi_Minh',r:'vn sea'},
+ {n:'Da Nang',c:'Vietnam',ll:[16.054,108.202],tz:'Asia/Ho_Chi_Minh',r:'vn sea'},
+ {n:'Nha Trang',c:'Vietnam',ll:[12.238,109.197],tz:'Asia/Ho_Chi_Minh',r:'vn sea'},
+ {n:'Phu Quoc',c:'Vietnam',ll:[10.227,103.964],tz:'Asia/Ho_Chi_Minh',r:'vn sea'},
+ // Canada
+ {n:'Toronto',c:'Canada',ll:[43.653,-79.383],tz:'America/Toronto',lived:1,home:1,r:'na'},
+ {n:'Vancouver',c:'Canada',ll:[49.283,-123.121],tz:'America/Vancouver',lived:1,r:'na'},
+ {n:'Banff',c:'Canada',ll:[51.178,-115.571],tz:'America/Edmonton',r:'na'},
+ {n:'Jasper',c:'Canada',ll:[52.873,-118.082],tz:'America/Edmonton',r:'na'},
+ {n:'Calgary',c:'Canada',ll:[51.045,-114.072],tz:'America/Edmonton',r:'na'},
+ {n:'Edmonton',c:'Canada',ll:[53.546,-113.494],tz:'America/Edmonton',r:'na'},
+ {n:'Ottawa',c:'Canada',ll:[45.421,-75.697],tz:'America/Toronto',r:'na'},
+ {n:'Montreal',c:'Canada',ll:[45.502,-73.567],tz:'America/Toronto',r:'na'},
+ {n:'Quebec City',c:'Canada',ll:[46.813,-71.208],tz:'America/Toronto',r:'na'},
+ {n:'Niagara Falls',c:'Canada',ll:[43.090,-79.085],tz:'America/Toronto',r:'na'},
+ // United States
+ {n:'New York',c:'United States',ll:[40.713,-74.006],tz:'America/New_York',r:'na'},
+ {n:'Buffalo',c:'United States',ll:[42.886,-78.878],tz:'America/New_York',r:'na'},
+ {n:'Seattle',c:'United States',ll:[47.606,-122.332],tz:'America/Los_Angeles',r:'na'},
+ {n:'Portland',c:'United States',ll:[45.515,-122.679],tz:'America/Los_Angeles',r:'na'},
+ {n:'San Francisco',c:'United States',ll:[37.775,-122.419],tz:'America/Los_Angeles',r:'na'},
+ {n:'Los Angeles',c:'United States',ll:[34.052,-118.244],tz:'America/Los_Angeles',r:'na'},
+ {n:'Honolulu',c:'United States',ll:[21.307,-157.858],tz:'Pacific/Honolulu',r:''},
+ // South Korea
+ {n:'Seoul',c:'South Korea',ll:[37.567,126.978],tz:'Asia/Seoul',r:'ea'},
+ {n:'Daegu',c:'South Korea',ll:[35.871,128.601],tz:'Asia/Seoul',r:'ea'},
+ {n:'Busan',c:'South Korea',ll:[35.180,129.076],tz:'Asia/Seoul',r:'ea'},
+ {n:'Jeju',c:'South Korea',ll:[33.499,126.531],tz:'Asia/Seoul',r:'ea'},
+ // Japan
+ {n:'Tokyo',c:'Japan',ll:[35.676,139.650],tz:'Asia/Tokyo',r:'ea'},
+ {n:'Kyoto',c:'Japan',ll:[35.011,135.768],tz:'Asia/Tokyo',r:'ea'},
+ {n:'Osaka',c:'Japan',ll:[34.694,135.502],tz:'Asia/Tokyo',r:'ea'},
+ {n:'Nara',c:'Japan',ll:[34.685,135.805],tz:'Asia/Tokyo',r:'ea'},
+ // China
+ {n:'Shanghai',c:'China',ll:[31.230,121.474],tz:'Asia/Shanghai',r:'ea'},
+ {n:'Chengdu',c:'China',ll:[30.573,104.066],tz:'Asia/Shanghai',r:'ea'},
+ {n:'Chongqing',c:'China',ll:[29.563,106.551],tz:'Asia/Shanghai',r:'ea'},
+ {n:'Shenzhen',c:'China',ll:[22.543,114.058],tz:'Asia/Shanghai',r:'ea'},
+ {n:'Hong Kong',c:'Hong Kong',ll:[22.320,114.169],tz:'Asia/Hong_Kong',r:'ea'},
+ // Taiwan
+ {n:'Taipei',c:'Taiwan',ll:[25.033,121.565],tz:'Asia/Taipei',r:'ea'},
+ {n:'Tainan',c:'Taiwan',ll:[22.999,120.227],tz:'Asia/Taipei',r:'ea'},
+ // Southeast Asia
+ {n:'Bangkok',c:'Thailand',ll:[13.756,100.502],tz:'Asia/Bangkok',r:'sea'},
+ {n:'Phuket',c:'Thailand',ll:[7.880,98.392],tz:'Asia/Bangkok',r:'sea'},
+ {n:'Kuala Lumpur',c:'Malaysia',ll:[3.139,101.687],tz:'Asia/Kuala_Lumpur',r:'sea'},
+ {n:'Singapore',c:'Singapore',ll:[1.352,103.820],tz:'Asia/Singapore',r:'sea'},
+ {n:'Cebu',c:'Philippines',ll:[10.316,123.885],tz:'Asia/Manila',r:'sea'}
+];
+(function(){
+var W=1000,H=560,hasD3=window.d3&&window.topojson;
+var home=P.filter(function(p){return p.home})[0];
+function km(a,b){var R=6371,toR=Math.PI/180,dl=(b[0]-a[0])*toR,dn=(b[1]-a[1])*toR,x=Math.sin(dl/2)*Math.sin(dl/2)+Math.cos(a[0]*toR)*Math.cos(b[0]*toR)*Math.sin(dn/2)*Math.sin(dn/2);return Math.round(2*R*Math.asin(Math.sqrt(x)))}
+function fmt(n){return n.toLocaleString('en-CA')}
+var visited=P.filter(function(p){return !p.home});
+document.getElementById('sPlaces').firstChild.nodeValue=visited.length;
+var cs={};visited.forEach(function(p){cs[p.c]=1});document.getElementById('sCountries').firstChild.nodeValue=Object.keys(cs).length;
+var sg=P[0];document.getElementById('sKm').firstChild.nodeValue=fmt(km(sg.ll,home.ll));
+// list
+var order=[],by={};P.forEach(function(p){if(!by[p.c]){by[p.c]=[];order.push(p.c)}by[p.c].push(p)});
+var L=document.getElementById('list');
+order.forEach(function(c){var d=document.createElement('div');d.innerHTML='<h2>'+c+'<small>'+by[c].length+'</small></h2><ul></ul>';
+  by[c].forEach(function(p){var li=document.createElement('li'),b=document.createElement('button');b.textContent=p.n;if(p.lived)b.className='lv';b.onclick=function(){goTo(p,true)};li.appendChild(b);d.querySelector('ul').appendChild(li)});L.appendChild(d)});
+// card
+var card=document.getElementById('card'),sel=null;
+function localTime(tz){try{return new Date().toLocaleTimeString('en-CA',{timeZone:tz,hour:'numeric',minute:'2-digit'})}catch(e){return''}}
+function show(p){sel=p;
+  document.getElementById('cTag').textContent=p.home?'Home now':(p.lived?'Lived here':'Visited');
+  document.getElementById('cName').textContent=p.n;document.getElementById('cCountry').textContent=p.c;
+  var dl='';if(p.when)dl+='<dt>When</dt><dd>'+p.when+'</dd>';dl+='<dt>Local time</dt><dd>'+localTime(p.tz)+'</dd>';
+  if(!p.home)dl+='<dt>From Toronto</dt><dd>'+fmt(km(home.ll,p.ll))+' km</dd>';
+  document.getElementById('cDl').innerHTML=dl;
+  var ex='';if(p.photos&&p.photos.length)ex+='<div class="ph">'+p.photos.map(function(s){return '<img src="'+s+'" alt="'+p.n+'" loading="lazy">'}).join('')+'</div>';
+  if(p.note)ex+='<p class="note">'+p.note+'</p>';document.getElementById('cExtra').innerHTML=ex;
+  card.classList.add('show');if(window.redraw)redraw()}
+document.getElementById('cx').onclick=function(){sel=null;card.classList.remove('show');if(window.redraw)redraw()};
+if(!hasD3){document.getElementById('err').style.display='grid';window.goTo=function(p){show(p)};return}
+// map
+var proj=d3.geoNaturalEarth1().rotate([165,0]);
+proj.fitExtent([[60,70],[W-60,H-40]],{type:'MultiPoint',coordinates:P.map(function(p){return [p.ll[1],p.ll[0]]})});
+var path=d3.geoPath(proj);
+P.forEach(function(p){p.xy=proj([p.ll[1],p.ll[0]])});
+var svg=d3.select('#map'),gl=d3.select('#gl'),gp=d3.select('#gp'),T=d3.zoomIdentity;
+d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-50m.json').then(function(w){
+  var land=topojson.feature(w,w.objects.countries);
+  gl.selectAll('path').data(land.features).join('path').attr('class','land').attr('d',path);
+  gl.append('path').attr('class','bord').attr('d',path(topojson.mesh(w,w.objects.countries,function(a,b){return a!==b})));
+}).catch(function(){document.getElementById('err').style.display='grid'});
+// pins: lived on top
+var pd=P.slice().sort(function(a,b){return (a.lived||0)-(b.lived||0)});
+var pins=gp.selectAll('g').data(pd).join('g').attr('class',function(p){return 'pin'+(p.lived?' lived':'')}).attr('tabindex',0).attr('role','button').attr('aria-label',function(p){return p.n+', '+p.c});
+pins.filter(function(p){return p.lived}).append('circle').attr('class','halo').attr('r',11);
+pins.append('circle').attr('class','dot').attr('r',function(p){return p.lived?6.5:4.6});
+pins.append('text').attr('x',10).attr('y',4).text(function(p){return p.n});
+pins.on('mouseenter',function(){d3.select(this).classed('hover',1).raise()}).on('mouseleave',function(){d3.select(this).classed('hover',0)})
+  .on('click',function(e,p){e.stopPropagation();show(p)}).on('keydown',function(e,p){if(e.key==='Enter'||e.key===' '){e.preventDefault();show(p)}});
+window.redraw=function(){pins.attr('transform',function(p){var s=T.apply(p.xy);return 'translate('+s[0]+','+s[1]+')'}).classed('sel',function(p){return p===sel});
+  gp.classed('close',T.k>=7);if(sel)pins.filter(function(p){return p===sel}).raise()};
+var zoom=d3.zoom().scaleExtent([1,40]).translateExtent([[-200,-150],[W+200,H+150]]).on('zoom',function(e){T=e.transform;gl.attr('transform',T);redraw()});
+zoom.filter(function(e){if(e.type==='wheel')return e.ctrlKey||e.metaKey;if(e.type==='touchstart')return e.touches.length>1;return !e.button});
+svg.call(zoom).on('dblclick.zoom',null).style('touch-action','pan-y');
+function to(pts,maxk){var xs=pts.map(function(p){return p.xy[0]}),ys=pts.map(function(p){return p.xy[1]});
+  var x0=d3.min(xs),x1=d3.max(xs),y0=d3.min(ys),y1=d3.max(ys),k=Math.min(maxk||14,.78*W/Math.max(x1-x0,1),.7*H/Math.max(y1-y0,1));
+  svg.transition().duration(1000).ease(d3.easeCubicInOut).call(zoom.transform,d3.zoomIdentity.translate(W/2,H/2+10).scale(Math.max(1,k)).translate(-(x0+x1)/2,-(y0+y1)/2))}
+var R={all:function(){return P},na:function(){return P.filter(function(p){return /na/.test(p.r)})},ea:function(){return P.filter(function(p){return /ea/.test(p.r)})},sea:function(){return P.filter(function(p){return /sea/.test(p.r)})},vn:function(){return P.filter(function(p){return /vn/.test(p.r)})}};
+var chips=[].slice.call(document.querySelectorAll('.chips button'));
+chips.forEach(function(b){b.onclick=function(){chips.forEach(function(x){x.classList.toggle('on',x===b)});var r=b.dataset.r;if(r==='all')svg.transition().duration(1000).ease(d3.easeCubicInOut).call(zoom.transform,d3.zoomIdentity);else to(R[r](),r==='vn'?9:14)}});
+document.getElementById('zin').onclick=function(){svg.transition().duration(400).call(zoom.scaleBy,1.8)};
+document.getElementById('zout').onclick=function(){svg.transition().duration(400).call(zoom.scaleBy,1/1.8)};
+window.goTo=function(p,scroll){show(p);chips.forEach(function(x){x.classList.remove('on')});
+  if(scroll){var mb=document.getElementById('mapbox').getBoundingClientRect();if(mb.top<0||mb.bottom>innerHeight)document.getElementById('mapbox').scrollIntoView({behavior:'smooth',block:'center'})}
+  svg.transition().duration(1000).ease(d3.easeCubicInOut).call(zoom.transform,d3.zoomIdentity.translate(W/2,H/2).scale(Math.max(T.k,8)).translate(-p.xy[0],-p.xy[1]))};
+redraw();
+})();
+</script>
+
+<script>(function(){document.querySelectorAll('.tbtn').forEach(function(b){b.addEventListener('click',function(){jdTheme.set(jdTheme.get()==='dark'?'light':'dark')})});
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href');if(!/^[\w\/-]+\.html(\?|#|$)/.test(h))return;
+var p=h.split('#'),q=p[0].replace(/([?&])theme=(light|dark)&?/,'$1').replace(/[?&]$/,'');a.setAttribute('href',q+(q.indexOf('?')>-1?'&':'?')+'theme='+jdTheme.get()+(p[1]!=null?'#'+p[1]:''))},true)})();</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+[
+  {
+    "From": "Portfolio-Publish",
+    "To": "Archives\\Portfolio\\Previous-Publish-Folder"
+  },
+  {
+    "From": "Portfolio-Backups",
+    "To": "Archives\\Portfolio\\Backups"
+  },
+  {
+    "From": "Portfolio-Publish.zip",
+    "To": "Archives\\Portfolio\\Exports\\Portfolio-Publish.zip"
+  },
+  {
+    "From": "Portfolio-Website.zip",
+    "To": "Archives\\Portfolio\\Exports\\Portfolio-Website.zip"
+  },
+  {
+    "From": "Resume_Brief_for_ChatGPT.md",
+    "To": "Resumes-and-Transcripts\\Resume_Brief_for_ChatGPT.md"
+  },
+  {
+    "From": "Resumes-and-Transcripts\\Job-Application-Tracker.xlsx",
+    "To": "Tracker\\Job-Application-Tracker.xlsx"
+  },
+  {
+    "From": "portfolio-faster-previews.jpg",
+    "To": "Archives\\Portfolio\\Screenshots\\portfolio-faster-previews.jpg"
+  },
+  {
+    "From": "Portfolio-Live-Checks.json",
+    "To": "Archives\\Portfolio\\Verification\\Portfolio-Live-Checks.json"
+  },
+  {
+    "From": "portfolio-live.jpg",
+    "To": "Archives\\Portfolio\\Screenshots\\portfolio-live.jpg"
+  },
+  {
+    "From": "portfolio-matched-speed.jpg",
+    "To": "Archives\\Portfolio\\Screenshots\\portfolio-matched-speed.jpg"
+  },
+  {
+    "From": "Portfolio-Publish-Status.json",
+    "To": "Archives\\Portfolio\\Verification\\Portfolio-Publish-Status.json"
+  },
+  {
+    "From": "Portfolio-Publish-Verification.json",
+    "To": "Archives\\Portfolio\\Verification\\Portfolio-Publish-Verification.json"
+  },
+  {
+    "From": "portfolio-resume-label.png",
+    "To": "Archives\\Portfolio\\Screenshots\\portfolio-resume-label.png"
+  },
+  {
+    "From": "portfolio-resume-skills-update.png",
+    "To": "Archives\\Portfolio\\Screenshots\\portfolio-resume-skills-update.png"
+  },
+  {
+    "From": "portfolio-skills-short.png",
+    "To": "Archives\\Portfolio\\Screenshots\\portfolio-skills-short.png"
+  },
+  {
+    "From": "portfolio-upload-ready.jpg",
+    "To": "Archives\\Portfolio\\Screenshots\\portfolio-upload-ready.jpg"
+  }
+]

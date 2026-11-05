@@ -1,0 +1,65 @@
+--- live
+
++++ Career copy
+
+@@ -107,3 +107,2 @@
+
+ .proj p{margin:2px 0 0;color:var(--muted);font-size:14.5px}
+-@media(max-width:520px){.proj-meta{flex-direction:column;gap:8px}.proj .proj-meta .yr{white-space:normal}}
+ .proj .yr{font-family:var(--mono);font-size:12px;color:var(--muted);white-space:nowrap}
+@@ -352,3 +351,3 @@
+
+ .proj .sx-mj{margin:0;font-size:18px;color:#6A6D8C;display:flex;gap:12px;align-items:center}
+-.sx-mj span{font-size:15px;font-weight:600;color:#1A5E34;background:#C4E4CB;padding:4px 12px;border-radius:999px}
++.sx-mj span{font-size:15px;font-weight:600;color:#1C7A4C;background:#E3F6EC;padding:4px 12px;border-radius:999px}
+ .proj .sx-lb{margin:26px 0 10px;font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#6A6D8C}
+@@ -812,4 +811,7 @@
+
+ 
++
++@media(max-width:650px){.proj-meta{display:flex;flex-direction:column;align-items:flex-start;gap:8px}.proj-meta>div{min-width:0}.proj-meta .yr{white-space:normal;text-align:left}}
+ </style>
+ <script src="instacart/carrot-intro.js"></script>
++<link rel="stylesheet" href="housing/story.css">
+ </head>
+@@ -844,3 +846,3 @@
+
+     <div class="side">
+-      <p class="bio">An analyst who designs, and a designer who checks <em>the numbers.</em></p>
++      <p class="bio">Part analyst, part designer, always asking <em>why.</em></p>
+       <dl class="status">
+@@ -915,2 +917,18 @@
+
+ 
++      <a class="proj" href="housing.html">
++        <div class="thumb housing-thumb housing-media" aria-hidden="true"><div class="story-screen" aria-hidden="true">
++  <div class="story-top"><span><i></i>Toronto housing</span><span>2011 · renter data</span></div>
++  <div class="story-head"><span class="story-cost">Higher rent.</span><span class="story-pressure">Greater pressure?</span></div>
++  <div class="story-grid">
++    <div class="story-column"><span class="story-place"><i>01</i>Newtonbrook West</span><div class="story-values"><strong class="story-cost">$1,135</strong><strong class="story-pressure">60.3<span>%</span></strong></div><div class="story-unit"><span class="story-cost">monthly rental housing cost</span><span class="story-pressure">spending 30%+ of income on housing</span></div><div class="story-track"><i class="story-cost" style="--fill:56.75%"></i><i class="story-pressure" style="--fill:60.3%"></i></div></div>
++    <div class="story-column"><span class="story-place"><i>02</i>Kingsway South</span><div class="story-values"><strong class="story-cost">$1,640</strong><strong class="story-pressure">36.1<span>%</span></strong></div><div class="story-unit"><span class="story-cost">monthly rental housing cost</span><span class="story-pressure">spending 30%+ of income on housing</span></div><div class="story-track"><i class="story-cost" style="--fill:82%"></i><i class="story-pressure" style="--fill:36.1%"></i></div></div>
++  </div>
++  <div class="story-bottom"><div><span class="chapter-cost">01 rental cost</span><span class="chapter-pressure">02 renter pressure</span></div><span>Same city. A different story.</span></div>
++</div></div>
++        <div class="proj-meta"><div><h3>Toronto housing</h3><p>A visual data story about what rental prices leave out</p></div><span class="yr">Academic · Case study →</span></div>
++        <div class="skills"><span>Data storytelling</span><span>Data analysis</span><span>Tableau</span><span>Excel</span></div>
++      </a>
++
++
++
+       <button class="proj" type="button" data-case="sharepoint">
+@@ -1075,2 +1093,3 @@
+
+   </div></section>
++  <p class="work-note">Visuals are simple illustrations, not internal screens. Some details stay private because this is an internal Vale tool.</p>
+ </template>
+@@ -1090,2 +1109,3 @@
+
+   </ol></section>
++  <p class="work-note">The visuals are a recreated example, not the client’s product. The fixes were a team effort.</p>
+ </template>
+@@ -1447,2 +1467,3 @@
+
+ 
++<script>(function(){var io=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle('running',e.isIntersecting)})});document.querySelectorAll('.housing-thumb').forEach(function(e){io.observe(e)})})();</script>
+ </body>

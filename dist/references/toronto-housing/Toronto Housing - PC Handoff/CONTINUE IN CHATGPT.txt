@@ -1,0 +1,47 @@
+Help me finish adding my Toronto housing project to my existing portfolio, directly after TSTAR. Use my established portfolio brand guide, which I will provide along with the correct portfolio URL or source. Make the project visual, thoughtful and easy to understand: tell the story with maps, charts, comparisons and short takeaways, rather than long blocks of text.
+
+PROJECT
+Working title: Expensive rent. A bigger story.
+Core question: Why is renting harder to afford in some Toronto neighbourhoods?
+Central finding: Higher rental costs do not automatically mean greater housing pressure. Income and housing support provide context.
+Context: academic data storytelling project. Tools: Excel and Tableau; web draft uses HTML/CSS and SVG.
+Do not invent user research, impact metrics, tests, causal findings, roles or project outcomes.
+
+NARRATIVE
+- Start with my original question: where in Toronto is housing most expensive?
+- Explain why I narrowed it: price alone does not explain affordability, and the data does not measure why individuals choose an area or their willingness to pay.
+- An illustrative $1,200 housing bill uses 40% of $3,000 income and 20% of $6,000 income. Label these as examples, not observed households.
+- Map: show the share of renters spending at least 30% of income on housing across the 140 historical neighbourhoods in 2011.
+- Dot chart: higher rental costs do not necessarily correspond to more renters above that threshold.
+- Comparison: Regent Park versus South Parkdale brings rental cost, income and housing support together.
+- Process: narrowing the question, preparing and exploring data, choosing visuals, editing the story. Keep it truthful and grounded in the supplied work.
+- Reflection: clearer questions and population definitions improve data storytelling. A future consistent dataset with renter-specific income would support stronger analysis.
+
+VERIFIED 2011 VALUES
+Newtonbrook West: average monthly rental housing cost $1,135; 60.3% of renters spend 30%+ of income on housing.
+Kingsway South: $1,640; 36.1%.
+Regent Park: median monthly household income $2,681; average rental housing cost $631; subsidized tenant share 64.6%; renter pressure 26.8%.
+South Parkdale: median monthly household income $2,966.75 (rounded $2,967); average rental housing cost $865; subsidized tenant share 17.9%; renter pressure 48.6%.
+The pressure difference between Regent Park and South Parkdale is 21.8 percentage points.
+
+DEFINITIONS AND LIMITS
+2011 income includes ALL households (owners and renters), based on 2010 before-tax income. Rental housing cost includes applicable utilities and covers renters. Do not divide area income into area rent and call it an observed renter budget.
+Subsidized housing and lower costs are associated; these comparisons do not prove causality.
+2016: the supplied overview has a Toronto-wide 36.6% of ASSESSED OWNER AND RENTER households above the threshold. This differs from the 2011 renter-only population. Do not make a direct 2011–2016 trend chart from them. 2016 is the newest year in the supplied project files, not the current year.
+
+CURRENT WORK
+An editable visual case-study draft is in 02 - Portfolio Case Study Draft. It contains a budget illustration, neighbourhood map, native-tooltip scatterplot, paired metric bars, process narrative, caveats, downloads and responsive CSS.
+Its temporary branding comes from a retrieved Sketchbook site: DM Sans body, Vividly handwritten headings, blue #315bc4, yellow #f5df87, warm paper, muted green #718e67. This is only a reference, not confirmation of my intended brand guide.
+The retrieved Sketchbook portfolio has Wayfinder and Little Things rather than TSTAR. Therefore the previous assistant left the live site untouched. Do not insert into the wrong site or rebuild my portfolio from scratch.
+Next steps: inspect my supplied correct portfolio and brand guide; adapt the draft; insert the card directly after TSTAR; check desktop/mobile layouts, chart labels, accessibility and links; then complete the authorized integration.
+
+IMPORTANT LINKS
+Original project chat: https://chatgpt.com/s/cx_6ae0f23344608191822df9227a5f80ec
+Earlier shared project context: https://chatgpt.com/share/6ad1581a-c9dc-83e9-adbe-70bfb4733135
+Reference portfolio retrieved in this session (not confirmed target): https://justin-dao-sketchbook.justindao193.chatgpt.site
+City neighbourhood profiles: https://open.toronto.ca/dataset/neighbourhood-profiles/
+Historical boundaries: https://open.toronto.ca/dataset/neighbourhoods/
+2011 housing definitions: https://www12.statcan.gc.ca/nhs-enm/2011/as-sa/99-014-x/99-014-x2011002-eng.pdf
+
+WRITING AND DESIGN
+Use plain, natural, slightly professional language. Keep the story understandable without technical knowledge. Strong visual hierarchy, generous spacing, finding-led titles, clear units and captions. Build inspiration from the attached reference list without copying anyone's work.

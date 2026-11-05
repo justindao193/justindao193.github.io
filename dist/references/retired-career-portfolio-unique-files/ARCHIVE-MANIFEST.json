@@ -1,0 +1,1427 @@
+[
+  {
+    "file": "Portfolio_Brief_for_ChatGPT.md",
+    "bytes": 3776,
+    "sha256": "717bc6053e0fce3731aeecceee593319c019bfff66d5843c07727fb123d718ab"
+  },
+  {
+    "file": "Portfolio_Requirements.md",
+    "bytes": 20296,
+    "sha256": "1f534f7f8907a9655e9371d538f72817dc2966fb7d6aa9fc955afb3facadfe43"
+  },
+  {
+    "file": "README.txt",
+    "bytes": 439,
+    "sha256": "9ca98891feb55dd2d6d19533613c4c5f575939a0f150a2f64be8b89c93ed8d89"
+  },
+  {
+    "file": "TStar-Figma-Screens.zip",
+    "bytes": 5140969,
+    "sha256": "4874721a06e2806d6dde6419cf6189a055f28e3bacc3d1d1b0f495f0399accd9"
+  },
+  {
+    "file": "TStar-Launch-Film.mp4",
+    "bytes": 3646783,
+    "sha256": "f256ea5b6b07c40932d90d794b1a91ece05157ba87d499970fe118f4b1cbd1aa"
+  },
+  {
+    "file": "TStar_Hi-fi_Test_Script.md",
+    "bytes": 2117,
+    "sha256": "e02fa2e27d89b4a73d465f8dbe49ee2d892a7c063aff0f8f02961f6bc0f7fcd8"
+  },
+  {
+    "file": "GitHub\\instacart-buy-it-again.zip",
+    "bytes": 1971912,
+    "sha256": "b2e909a785ed816b40c592bf82cc1808c7ec5b9fb5c4ed906eb2000ba3b95fed"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready.zip",
+    "bytes": 1045067,
+    "sha256": "75501a990e0fc168c9a119828a124e374ad73b525f08c4b0ffb10b685655857b"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-reviewed.zip",
+    "bytes": 1034610,
+    "sha256": "a06281d87c5bf0f5c438351e08775f328e73803cdce65f28715083196ba76893"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations.zip",
+    "bytes": 1977656,
+    "sha256": "08ff3ff29acc37c7c0193d89851267b60b1220250fcfbd08c64dc00a1ed8c145"
+  },
+  {
+    "file": "GitHub\\PUBLISH_REPOSITORY_UPDATE.md",
+    "bytes": 1739,
+    "sha256": "944affa0bc97de8db4b3b5cbd5126f54452a5e573d84b5a4080573e4f418132d"
+  },
+  {
+    "file": "instacart\\walkthrough.html",
+    "bytes": 1011368,
+    "sha256": "c51c73df09c59b8e57f0ff410aa1552b81514c5b61f31b2b3b31a2741294be17"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\.git",
+    "bytes": 162,
+    "sha256": "fce2170dc9361cdc18f57e0c929103380d6b4035a6a3704444596f1dc8189983"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\.gitignore",
+    "bytes": 467,
+    "sha256": "f3dd95f668d32452796675dc13ee3e6c4d5a89f5554a3ac51a5d29c7537eb89d"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\README.md",
+    "bytes": 7241,
+    "sha256": "a785db0f447fc9b0dccefd0bfe98d356a4962279ab27607fef55cc1b72c19b52"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\requirements.txt",
+    "bytes": 1952,
+    "sha256": "b81f44fcc449554e01b618c54b40d8edd73e1e413fdc4c73d302cc052c37f701"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\run.py",
+    "bytes": 2412,
+    "sha256": "12fe21f5b994c6ca2973fed3e71d6284b7e1b425bee9ce02a40b3b4e789ca5b9"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.gitignore",
+    "bytes": 467,
+    "sha256": "f3dd95f668d32452796675dc13ee3e6c4d5a89f5554a3ac51a5d29c7537eb89d"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\README.md",
+    "bytes": 6475,
+    "sha256": "6f32a1e2df35758629ddb195ea98f74be5af18ddb81fcbbe580d281a94074548"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\requirements.txt",
+    "bytes": 1952,
+    "sha256": "b81f44fcc449554e01b618c54b40d8edd73e1e413fdc4c73d302cc052c37f701"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\config",
+    "bytes": 416,
+    "sha256": "f3669eeaa610e871f85c0ea941325055197fb685ab0494f0d621a4ac10bd356a"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\description",
+    "bytes": 73,
+    "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\FETCH_HEAD",
+    "bytes": 125,
+    "sha256": "bc8619b35702e520fc8d3584cf0f0624fd3af06f8471ddaa7c6b2d6367ae6fb6"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\HEAD",
+    "bytes": 21,
+    "sha256": "28d25bf82af4c0e2b72f50959b2beb859e3e60b9630a5e8c603dad4ddb2b6e80"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\index",
+    "bytes": 5438,
+    "sha256": "75855eb9238d53037ef4c0ca1f9e7076a1e2f28fff047c879e872464d81e1f79"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\packed-refs",
+    "bytes": 112,
+    "sha256": "535432299b60ad6698d6c6a24e948cd6f04e7b6f0e24858bdc6cddaa931c4a05"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\docs\\case_study.md",
+    "bytes": 27397,
+    "sha256": "6b59b42783802a3eda1132a749332a6cc5f0a331a97dc20429dff377340dcbbf"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\docs\\data_and_methods.md",
+    "bytes": 19345,
+    "sha256": "68e821e690ec88321301ee43482e579119a4ac262157715d462279d53a810536"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\docs\\decision_log.md",
+    "bytes": 14462,
+    "sha256": "de9c31a4e370cb8f32689a0436215ae899428dd26dbeb7cf5b9251d2cf371a20"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\docs\\image_sources.json",
+    "bytes": 6886,
+    "sha256": "17d38ff63b7826c3f2ebb29f289dd35acd7d4f7312e4e6790a60b02406e2df58"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\docs\\process_and_learning.md",
+    "bytes": 2731,
+    "sha256": "e1c7702535694273b3f516f79f1fb78fc26190988b42c981b23da571d95ddcfe"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\docs\\project_brief.md",
+    "bytes": 23917,
+    "sha256": "2c929beb84c2098321ee97f6b87ce8da7bff3820c02a934a3d140b56a286755a"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\docs\\repository_review.md",
+    "bytes": 4828,
+    "sha256": "919f4432c85036fed3ad22438b545e89d259ae435e0b79022813ae2f0bbe5145"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\docs\\research_and_testing.md",
+    "bytes": 28676,
+    "sha256": "9863a0ca7c49860401cce67cf78444a2b8bfbfaff98d1d74376584f5b2b1a944"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\notebooks\\01_data_and_sql.ipynb",
+    "bytes": 10534,
+    "sha256": "eb96639888a91c0ad51789436f82718c8396bf47f43e97c5d9e5553c95831c42"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\notebooks\\02_recommendation_methods.ipynb",
+    "bytes": 25216,
+    "sha256": "c92e4d027b1a77780a743dc3b9f39f6c10b6d7c7bbaced2d97a9bfde9d795690"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\notebooks\\03_model_diagnostics.ipynb",
+    "bytes": 19840,
+    "sha256": "eaae79eb5f150a275d5db0a8a2b06335065fb91bdb605ac4586b6c70d5710d8c"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\prototype\\grocery_recommendations_prototype.html",
+    "bytes": 1008658,
+    "sha256": "e9af4418b7e8252e3bbfc20d5105dba5486762d0e6e5f062097ac1731389868c"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\results\\discovery_audit.json",
+    "bytes": 2175,
+    "sha256": "0c44fd3518bbc375ed68d86fc81990a08c503e9fc1605b9d1abde2a2cc347e70"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\results\\discovery_audit_protocol.json",
+    "bytes": 2707,
+    "sha256": "509277c44464b12a0cc4771cd3c5382a22675a3737341ab7dc99745982c15763"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\results\\discovery_development.json",
+    "bytes": 2146,
+    "sha256": "7e894fba8d5b616b4e73dc6eecece79befe10d87953af387957a69862d2d3950"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\results\\discovery_protocol.json",
+    "bytes": 2097,
+    "sha256": "e54fbcc560f5c8659c2a0ca1dec70c5a3d02d34870d0aa71ffc57b6721aa103d"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\results\\discovery_top_five.json",
+    "bytes": 3188,
+    "sha256": "8b700af1e14ce8368c701cd45167e0ee7a0928084464501c6f674d0ee307d684"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\results\\discovery_top_five_plan.json",
+    "bytes": 1814,
+    "sha256": "53f54786666f3b6db591e77c9b394cd5a0130c05e7816d1613ef84359402efc6"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\results\\final_evaluation.json",
+    "bytes": 17356,
+    "sha256": "208ab8149ed07a8d712fbf7f2df91c9465eac989a48f8de43dbe9dc19b3c07ac"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\results\\prediction_runtime.json",
+    "bytes": 4574,
+    "sha256": "130bd7ffe5ce146a51fbde71f8b4e807cf8fec0e0fd104898f284f4a35a53c97"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\results\\source_manifest.json",
+    "bytes": 3100,
+    "sha256": "3c7bd6e2f30e767c882f350058227527dc1310607c1930514339d109519413bc"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\results\\v2_timing_development.json",
+    "bytes": 3161,
+    "sha256": "5257ac6f76c0c18fbf41f9033cb012cc7a4a4e24bed7a9e5bf8c5b4ca8197d3d"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\results\\v2_timing_protocol.json",
+    "bytes": 2393,
+    "sha256": "21eb33b477016fec073d4857d3efcf36ea7ea7c792a4c336a0ed7e6289766896"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\src\\baselines\\personal_frequency.sql",
+    "bytes": 1227,
+    "sha256": "60704da8829a287577c7a16e018e293c912c6b401210ea6fc722d184638c78b0"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\src\\baselines\\popularity_baseline.sql",
+    "bytes": 1612,
+    "sha256": "63176263f6048b3518edec881e2aefa92926b6469602db91c4a2c1b0c631d429"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\src\\baselines\\run_popularity_baseline.py",
+    "bytes": 3077,
+    "sha256": "e7655dd7b557c038f656020e76259e4c617fe9b732610e53628941e961ec576c"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\src\\baselines\\score_personal_frequency.py",
+    "bytes": 8475,
+    "sha256": "3081db518175ce9422a1d40aa853f0d361668c6e97cc6cf6ab4e560bac6dceb0"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\src\\baselines\\score_popularity_validation.py",
+    "bytes": 5427,
+    "sha256": "3a2a8c07a0567b02a678c34e638238004d6708a68d8fe4d3c2386f654a0d0473"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\src\\baselines\\score_popularity_validation.sql",
+    "bytes": 1000,
+    "sha256": "55ebf444906e08f8784aaa3886db104b1389084bcf7f1d62c37082b03901ee4d"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\src\\baselines\\score_weighted_recency.py",
+    "bytes": 6620,
+    "sha256": "ea3c7f7b8ebd54304a64ecba18f5a181fa115abc157a006327a699a809d1ca31"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\src\\baselines\\weighted_recency.sql",
+    "bytes": 1385,
+    "sha256": "f0bf91aa52617755775c8ea5dcdcbddac8ac55bae0656910ab081a374f95a13b"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\src\\data_preparation\\download_data.py",
+    "bytes": 3997,
+    "sha256": "9ea67028a906c6de1b7e87b16f799a2baa2631924f644f22997e86bd41c0328c"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\src\\data_preparation\\prepare_data.py",
+    "bytes": 14500,
+    "sha256": "74d4e3b9615579310bfeedeb447949a7a89c2264d6f51f9a1c7374d1f2fa55aa"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\src\\data_preparation\\verify_preparation.py",
+    "bytes": 4772,
+    "sha256": "5a13cf886f9d8ca303a66dc75f74d975bdbdc4289d253c0c0bb5dedd29f37b6f"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\src\\final_evaluation\\evaluate_discovery_audit.py",
+    "bytes": 11866,
+    "sha256": "f1024bec39df7c46fbc0fee075e73ca50e7db6c32c6c77708fc2e68e07c4059f"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\src\\final_evaluation\\final_features.sql",
+    "bytes": 1292,
+    "sha256": "f501f9056b48ad140e73fa4919513fe0d3c16a7c33b7be30739bc1a5b9282c70"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\src\\final_evaluation\\measure_discovery_top_five.py",
+    "bytes": 8241,
+    "sha256": "5c68b1e1ef865be083083673dce14bfa08cb404430aaecb4c6c7d355815d8b15"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\src\\final_evaluation\\prepare_final_predictions.py",
+    "bytes": 15697,
+    "sha256": "9bdf693efaf2d76b87b24d622f9c6234e0939137c53bcdc52f6a6c07fd3d0b13"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\src\\final_evaluation\\score_final_predictions.py",
+    "bytes": 14241,
+    "sha256": "5909b357cd25eb78745d778f3e7de5691b50d82d20618ec4268b1b652d96c238"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\src\\model_comparison\\build_ml_features.py",
+    "bytes": 12730,
+    "sha256": "f1e28eacaaffce0d66aab3406165a17359824d3a3818780cc34367e0022addee"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\src\\model_comparison\\evaluate_discovery.py",
+    "bytes": 13529,
+    "sha256": "7ba6130d4df867fc207ba6c21a00757673dcac96cac2d7dde3d971de81a74415"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\src\\model_comparison\\evaluate_purchase_timing.py",
+    "bytes": 20970,
+    "sha256": "f6ac1af92e0e2b7f04a46cc6eae64aa63ba1525222a5660544c1847c29e24f06"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\src\\model_comparison\\ml_features.sql",
+    "bytes": 2286,
+    "sha256": "f71484b3bd670722d81c1d82fe0dba996d79a682648c5ec83fdc878c706c5406"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\src\\model_comparison\\prepare_discovery_baseline.py",
+    "bytes": 2689,
+    "sha256": "c404daefabd473c7957ffbcde10ad70d8bc7e3d8498a1ff1c016fee9de4eb6ab"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\src\\model_comparison\\train_boosted_validation.py",
+    "bytes": 277,
+    "sha256": "ba1b632df65b9b58284cc7b9704b36f8cbc4ad11ff6091ec98cbb1b974ce50ae"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\src\\model_comparison\\train_logistic_validation.py",
+    "bytes": 18120,
+    "sha256": "32a409fd620e32294c6c96bacecd2ca13124bd24564ce77262f4bdb9dcd2d9a6"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\src\\prototype_export\\embed_discovery_photos.py",
+    "bytes": 3101,
+    "sha256": "a569a8d880e7ae5374a127f1c8521db50835c22c4873790b4c57ad10769c58b7"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\src\\prototype_export\\export_demo_shoppers.py",
+    "bytes": 7993,
+    "sha256": "e83b8b0db752be1d3680e00eab320d7bd00217b1f0cd4c3e57983a85856660c5"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\src\\prototype_export\\export_discovery_shoppers.py",
+    "bytes": 4511,
+    "sha256": "3b408babd17fcaa25fef2bff24177fbc10523e3a64d4d63fee1aa6b6d1ee8873"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\docs\\images\\prototype.jpg",
+    "bytes": 219849,
+    "sha256": "5cd9fc5dda2175042232affdbb269a6a164cac389cfa89ff5ec233920fb83b10"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\hooks\\applypatch-msg.sample",
+    "bytes": 478,
+    "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\hooks\\commit-msg.sample",
+    "bytes": 896,
+    "sha256": "1f74d5e9292979b573ebd59741d46cb93ff391acdd083d340b94370753d92437"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\hooks\\fsmonitor-watchman.sample",
+    "bytes": 4726,
+    "sha256": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\hooks\\post-update.sample",
+    "bytes": 189,
+    "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\hooks\\pre-applypatch.sample",
+    "bytes": 424,
+    "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\hooks\\pre-commit.sample",
+    "bytes": 1649,
+    "sha256": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\hooks\\pre-merge-commit.sample",
+    "bytes": 416,
+    "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\hooks\\pre-push.sample",
+    "bytes": 1374,
+    "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\hooks\\pre-rebase.sample",
+    "bytes": 4898,
+    "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\hooks\\pre-receive.sample",
+    "bytes": 544,
+    "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\hooks\\prepare-commit-msg.sample",
+    "bytes": 1492,
+    "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\hooks\\push-to-checkout.sample",
+    "bytes": 2783,
+    "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\hooks\\sendemail-validate.sample",
+    "bytes": 2308,
+    "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\hooks\\update.sample",
+    "bytes": 3650,
+    "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\info\\exclude",
+    "bytes": 240,
+    "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\logs\\HEAD",
+    "bytes": 210,
+    "sha256": "99ad48aff6e76b70616e27fb4f262fbf0d4c780921e22187fc095eb0086b9ec6"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\worktrees\\instacart-grocery-recommendations-ready\\COMMIT_EDITMSG",
+    "bytes": 71,
+    "sha256": "b46eedffe96c735201a04ac1d4b14651933eac8755f3b4d5038b4c665c83f544"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\worktrees\\instacart-grocery-recommendations-ready\\commondir",
+    "bytes": 6,
+    "sha256": "340ddcb67a6204f742cd1e28e5b462622dde7daaa8ee36001897196aacdc6d47"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\worktrees\\instacart-grocery-recommendations-ready\\gitdir",
+    "bytes": 103,
+    "sha256": "d7d20f9ef0d6e7bd96d34236c6cc40c0c54e82b5d2d86ef7f5637526e47b4d8f"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\worktrees\\instacart-grocery-recommendations-ready\\HEAD",
+    "bytes": 45,
+    "sha256": "b674aeec7b618401dd13ef930d84d74a5ca2c6c33fad74d74c59c52af979b35c"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\worktrees\\instacart-grocery-recommendations-ready\\index",
+    "bytes": 6543,
+    "sha256": "03e19cb8fe1a6e95d79efec1895cf5d0f3aa1de5de79e2328688a151cbdc75cb"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\worktrees\\instacart-grocery-recommendations-ready\\ORIG_HEAD",
+    "bytes": 41,
+    "sha256": "d0a92b2d77053616d2cffaf9d7e73ce9c7486f1e0f42bece8c732278ac691f83"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\worktrees\\instacart-grocery-recommendations-ready\\logs\\HEAD",
+    "bytes": 507,
+    "sha256": "9d66dbde6512929fa345da5c5fb3f82439fbdf76b295935fa85e70d3d1d04bb3"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\refs\\heads\\improve-project-presentation",
+    "bytes": 41,
+    "sha256": "76ab05c1a5f2d54e1559f2fb450877950f2f20fa1a6aee1e3307950b21443da0"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\refs\\heads\\main",
+    "bytes": 41,
+    "sha256": "f7b0c4ee5234dc22ba71e3e49c057ea047c09b0f87af00fb18b70f9b48251eff"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\refs\\remotes\\origin\\HEAD",
+    "bytes": 30,
+    "sha256": "2bb6a24aa0fc6c484100f5d51a29bbad841cd2c755f5d93faa204e5dbb4eb2b4"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\refs\\remotes\\origin\\main",
+    "bytes": 41,
+    "sha256": "d0a92b2d77053616d2cffaf9d7e73ce9c7486f1e0f42bece8c732278ac691f83"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\09\\a68e4cbdaf28e30f7ac4d22d0a087a62214949",
+    "bytes": 333,
+    "sha256": "8772ecfabe06669d5d15b6839d4fcc485ff2eafe8226752cbcda5aa0da9dfe45"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\0a\\56eece04d55502d580e37acaed4a93bbc586dc",
+    "bytes": 6659,
+    "sha256": "b36786c9e0fd6d80b592f2f5fec0901cc7eb5b6e4deeac38e7701f8014f28e06"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\0d\\9f1d4dfe8b50974f4fd1ae83ae1e361b30ed03",
+    "bytes": 147,
+    "sha256": "5744f8c76f50d51c177fd05e21ddf555857821f346e4b4dbc77f493fec56cfc9"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\12\\89f4ffa8be6af8c307146f24872887e2aeec3e",
+    "bytes": 204,
+    "sha256": "6aa98832bdb3d9792f1b167ea51eb35425747ce26f6ebbb12b9d1117750510be"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\15\\fa2a55bbe4fe2616c1b7f9a4d56489c43b0f2a",
+    "bytes": 503,
+    "sha256": "0d9c2aa2916b8118801feda469aa41ff0cca8c150ab6037c4fceef06537aed40"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\16\\1563497ee14c57fc1cb40c2f5c1e44a7caa63b",
+    "bytes": 5316,
+    "sha256": "853e52b974e82bdaa46c84e2ab514d166b81c534a9718d5bc6bcbf70fd1f2cc2"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\19\\40c478612e9dcdf00282d30d4ae210f5231d52",
+    "bytes": 178,
+    "sha256": "e25e77a3e842d11275ab5ccafb268345804c03d8e25143e2c28d40a3dcaa9b76"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\1a\\1267d6b78148754eaddc2b5b8b4d95877eb79f",
+    "bytes": 6265,
+    "sha256": "ba40e9a0f8d9fbbe1455c5601b27930fcdcf7a0e1e47a24dc42a24fa67d915de"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\1b\\95bfd609a2e71c79418595936f197d5e6b1d29",
+    "bytes": 796,
+    "sha256": "f5939420c228b2f644801c5a3dec0751f21bf0e124277bf4b6ef66930b85f793"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\1c\\0fb015495508bc3bfafce7cc2f40d2d1b75884",
+    "bytes": 363,
+    "sha256": "e9beb6ac1536677d62493d4efe3fc9d189886aa7f63e51fe21425536074474a0"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\1d\\7a119c24618ea78783251fd031c7d1623905c3",
+    "bytes": 3586,
+    "sha256": "2db1c17b4133ccce359b4733aa894908350903576ad68b5e7b98c0aaaa0a0de4"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\1e\\a786576d14edc3a952fb7b091321638c77cc05",
+    "bytes": 1483,
+    "sha256": "6bd97d819651bfe89e8b150dda226eb435665b6f7cd09d449f2ff17bb33afe00"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\1e\\b37eb2cd39463129199f9296d16cf1ac17b205",
+    "bytes": 159,
+    "sha256": "2e2e938f3f77cf639afa1bcf14557de3b5fcab87a9c9a0a9a80ce7cc510bfcb7"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\23\\3ab52bd785bcd10fb465d6b857163ee86f295e",
+    "bytes": 309,
+    "sha256": "97baf4bfd301702de1a71bb86dfeb5797a91b0e5c219b95541728ab86ada0d4b"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\27\\304f3b78f74d9bc1bfac084d9d5823ab13a0c7",
+    "bytes": 54,
+    "sha256": "fddaf92f418d9232cfc6a4bd0820a632bccf7a66e0a9707425dbc67b6b037369"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\27\\f0530087583c810e3bd90812b97849007a9654",
+    "bytes": 905,
+    "sha256": "483376cedeba08266688a44fa78b3d54d577df67cff20ff4708f2f61a955c81e"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\29\\822016e2d2975d2dd4ba9fda0cfb9750a90e5d",
+    "bytes": 1129,
+    "sha256": "a0d326e60f0432907ea42438cb532ba19bfbeb7bb6fbe0a97155d53bdad7b13b"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\32\\f8d88805ed17555fb910061c3c8e50215f0fe5",
+    "bytes": 2543,
+    "sha256": "74f7468f0ebffd1f14688810dd2a1bb2f164ed43e4836c5396e8145172267e9a"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\33\\8700b0b36b5843c066c773f972ee9830b65fac",
+    "bytes": 761,
+    "sha256": "baa5ea7fe8147e2d295ff6e7e1d371b89a2af6673949128311f61e72663254b0"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\34\\5fac97d83a3547e0a2c0d2342161fb7928babb",
+    "bytes": 1157,
+    "sha256": "c9327573a4966a2bc5460b64401af14a647569897079f4b002c8fd6306f7ccb5"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\38\\ced91d7c6af5e555579fe801fb33c1fc7adb2f",
+    "bytes": 5704,
+    "sha256": "5484b5bc7e4b28f961090c93246c6aa7981faab91fcb899d888a99187b8e4953"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\41\\05a5ed32154c7522ea432e5f19758e42a3db36",
+    "bytes": 784,
+    "sha256": "6dc42d9775a6f003ffd474db29fc22ffdf92c7d09157886dc50e18bd1bfe1fe8"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\44\\76d8bc6ea533c25560b9bff1b3f3012ba0ec2a",
+    "bytes": 133,
+    "sha256": "ab2b5207d659c87fa00aa00c36287daa765bd24ef66fdb9568ecfecfb2dd08b8"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\49\\3d57452a901265ba2cd4c45a7ca802b47b7189",
+    "bytes": 308,
+    "sha256": "224ba2e338f2c71c2b10aef511fc4dc8ff8c4e7bc8fd30a1d8d6389425501306"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\4b\\8e96086480a426e19053f1578205901f93302e",
+    "bytes": 17218,
+    "sha256": "ba56d859d411394a23d9de43f7b39f45712705505c471dd20a18e80f21d9cea6"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\4c\\0272ffbf1efb8edd92755193479a177e8df584",
+    "bytes": 30835,
+    "sha256": "9788b6cf9fa1e153921077e6bd1b4d6885665012faf8cf2a5575ec1580cdb6bb"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\4c\\1e1fe1e3861e571d2037f642d3c9069dceab26",
+    "bytes": 31598,
+    "sha256": "535568352a5112a0d12d24f877af0f30bd8dfd528082a4a50fcabc6ea01995ee"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\54\\4af0eefe9e7adaa9378abf61960b418c5b6de0",
+    "bytes": 28594,
+    "sha256": "808d6d9fa7633ac2f3645a64ee74076ebc07b814a63667a88f997ad0288ad70a"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\57\\418894b5f6c2ec933653b7340a8e0c97bb37b8",
+    "bytes": 1124,
+    "sha256": "0bcfc7f408c278123f9b2446e18516d2bdcd45b5fced124334c7f67fac8148c5"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\5a\\e03a06fa4d77cc9ece95b85d4b02008e533de7",
+    "bytes": 514,
+    "sha256": "96c59c99e02941883ad52d86b3e831e4adcb5f7c474ae00ec372314807143b02"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\5d\\0d0c75e525253e02e95c0c3519b38f346d5b2d",
+    "bytes": 459,
+    "sha256": "470f2384860fbae2d5390c8dee5fca52303eba02ccad2ef0934522163497ea70"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\5e\\c453c189104f8ca70bde21206f6067774c0e41",
+    "bytes": 5196,
+    "sha256": "5349fa6ce35d6f415f05c5da151a1f572df5e900cfb50b166ab4861486f568aa"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\5f\\1e37fdd1692e78d96652815a0c76b4e4b8a9e8",
+    "bytes": 282,
+    "sha256": "3eb0341d667b683282a23c06a33e4b0715f7175c4108b361bc0655c8991b7f53"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\62\\17f4816489c8dd75da6b3b749dc378dd65f745",
+    "bytes": 2233,
+    "sha256": "296c0a9732a25efa06ef61b3a3e670b46150256cb9914b63aecfc98adc93455f"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\62\\a86789fdbe1affddc93557981f3b4efcb0aec3",
+    "bytes": 6489,
+    "sha256": "33b59a84670dc2dd9543cda99f3d81b5b1fb635282fa74545371878d7bc012f9"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\64\\05486262eaef1b41e92543a9e10fc2fba25512",
+    "bytes": 444,
+    "sha256": "6bfa5b21f66109c284f5deae4b49ba256f072aa78385f08783f51e0e27c5a61a"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\66\\a0e1f33fadac5af0d0291f552f613d25bf2158",
+    "bytes": 130,
+    "sha256": "8598e57ea252d16d0c5902085960a48d723b75038838ee396727af3d429db5d1"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\68\\f2397c7b7185143496e9c645f612c535e386c8",
+    "bytes": 128,
+    "sha256": "d018fda7197c2fe6ce8d4f8fde4647c3256ddad29b3d157c9b875fcd90bb792a"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\6a\\e719ed32d3cbeefdfea753868dbc405527ae4c",
+    "bytes": 213,
+    "sha256": "43df92844c0f78036d8c2cd49d8e8a0ad5b8fad1b0abaa83fc784f98fe0e962c"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\6b\\c2fe97adec9bf7eec5b17b6c34e1249942ea7d",
+    "bytes": 2205,
+    "sha256": "a595b67b19c8600d6183e13638ecbe939cb7352e5400b7e1b3c6b1d78f71e772"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\6e\\45363cc5bb32c991ac280a9f010854b1faa1b8",
+    "bytes": 1136,
+    "sha256": "26fb514bdf15ca2c61c577b1645760d3f1f0341c58fa2d86130c6f1cd6ac6ba5"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\70\\a60c8dc1cdf8fa6b137bc18697a2c1e7cccff9",
+    "bytes": 2127,
+    "sha256": "8a373242bbf11763dd3c29616acaee4d0e238fa0653a94536f0a47ec3a810b8e"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\73\\b91ccd87dc00dcdf47f75277bd23f6cfa5029e",
+    "bytes": 294,
+    "sha256": "b261aac823b9778e438f7dd142b1784318ae455ff946dfead2947bca07db7467"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\74\\ee5018fe3127a58fcb8e6a2131e097b2a2b8e0",
+    "bytes": 547,
+    "sha256": "dc6b7c8f207c24a60e73ad50ac2d64ddecefd6f64bdc0373ce88e3d8f09aecd8"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\75\\473ef0c9bc9f91614bf49abc5178abc9d6f15d",
+    "bytes": 613,
+    "sha256": "5a12229e6837379f15efea6b474085c5e1f82427435856aaa8ebb1a658cd9156"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\78\\7c6e3c5702ae6e3bd6af8e722427fd16c990bf",
+    "bytes": 459,
+    "sha256": "4080e606a324e8fec8a549c162f9b55380f04b57e2c780d70963fc821bbb56b3"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\79\\3695c8a8ba7e86bbdd67ae3d5a83102d7a3979",
+    "bytes": 2313,
+    "sha256": "75ad77d0d370e319c66b36f4c3dd71ff557b25ce4ca00e82b2c5519c3d903eda"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\7a\\2964fce81c30cbef9c741fcc6678e52d94a855",
+    "bytes": 1953,
+    "sha256": "d578067dde67c4e6e09593643baa561c722c4d4e6e6eaf9381651f977b7049a2"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\7b\\55fc3901efcbcb6dc897b918c97bc17892f089",
+    "bytes": 3077,
+    "sha256": "b90da5688709172e9edfe85d07e9332377313cc83377e93ced3799a01c9775e3"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\7d\\c18424328091aa7983825b51acdc3a78df6dba",
+    "bytes": 493,
+    "sha256": "a9391d938175d2959edd22a2c14455193df7b2401f15dfbc7da179d75ee7c642"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\83\\9db3311826daca3455c204d2879eaaf1992455",
+    "bytes": 215,
+    "sha256": "6187e3ae8986ada10abf392196082738bf511cf9406a98ab2750d9965cefbab4"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\86\\b7c4afadc7def0c1f192ef11f4b44882f14c17",
+    "bytes": 363,
+    "sha256": "32920b3aa6afe3ce19383befb19e8cb7e99bdfa12988099ae1fcaf109fc8eece"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\87\\bc51fcedaab7e36373447c968a4dab93e0da68",
+    "bytes": 625,
+    "sha256": "18bf8f936a104dffd056f0e7690339fed3e1d1c7a0f7f5cf3b14562d743760f4"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\8b\\c7d9eb6469ab5346af6bed6790b5abdd392e7a",
+    "bytes": 244,
+    "sha256": "330c38d4b5d61817225a7d215083b7e3b669fd8acf04163ce9aa1f9a3badc74a"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\8c\\86e60339fc63a0151f9d971d5e3534c312c2fd",
+    "bytes": 600,
+    "sha256": "e0ee133a97b6cd820f4dedfc9f4c2a2c8de708213356387180f8f2384d92bdfb"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\8f\\064af9d53591bffee24cb269ee942b7f5f574d",
+    "bytes": 11898,
+    "sha256": "077f1d3892ec2d56e70d9a93bbbe737f0092f1081527364f08daa03377b6b13f"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\90\\6bb223f4211b4d37e5c09ce628fb74b3ec9edb",
+    "bytes": 693,
+    "sha256": "95ac36e28f93e9f76ffe481c4fd264b96d7b37215aea456fd5e4fe7b64af0228"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\92\\5e7a468eebe37b5651cc867aef32d3a5667232",
+    "bytes": 1673,
+    "sha256": "dcacff5f91b73325fbce0ae9289a0bf2216125e8ba0045a4b4efd6c807a89cfc"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\96\\2d2465c89bf4211048377e17965d7cf1f5ef29",
+    "bytes": 2594,
+    "sha256": "15d87f62b3eac480921390a6d6156cda32d45bc15d2e9174441c11cea9e0ca01"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\96\\d1331d1497b0904e6d0f12526b9ea40746ec12",
+    "bytes": 51,
+    "sha256": "c9cd90bdfdb4c5291d2a217293564e12c84f3638e32f05b9ec067cab7057ccbb"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\98\\4962bc7fb3e6d288611953f24b3c528dcb5539",
+    "bytes": 11202,
+    "sha256": "36b4377c1031d8db5d5c8a6ed9e3ca92905ad1cd43f8ee12154d5ea98709a68b"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\9b\\e090dc7100f7719f87e9620c031919467c0ae2",
+    "bytes": 109438,
+    "sha256": "42847404706395c703d95ac70f127334e59208d151511288aaf7cbc41839b1f4"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\a4\\9c34dbf1ab8a5a50f2cfb202531e4ae5e3993c",
+    "bytes": 12614,
+    "sha256": "e2e69703f1698d772d9ef5b046433c9e041069a17fe2947e76bcdfa415adf22e"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\ad\\ba3f8e885467f54ad92ae1291aaa59b0ec774f",
+    "bytes": 286,
+    "sha256": "9d36a3096a3f89c9c06c9988a4cb9201f186324c201c1e692788238b9d5e1b86"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\ae\\0e9090583ba4d6d29338acc6865cf61520668a",
+    "bytes": 598,
+    "sha256": "90daed9cf077c76873872faad0c902e0b76cb7e897c5da8f2a5d247a7ba378b4"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\b0\\093a1ecb01a238b1e232a5cffb5edc52ec5953",
+    "bytes": 228,
+    "sha256": "e0c0c7e33f5693f10ce280e41db5b5cf8e5fde44ae4de6bfdfdb56b1cf7b5b02"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\b1\\32cf8768db3eca490f2d8c8e899c84810e4ced",
+    "bytes": 88,
+    "sha256": "95a6adec9f46e8de122d76435368d9b51f2b2a48665e6cc7d0420df117f35699"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\b1\\767b9689c105d46b8104722ec180c393fb1ec3",
+    "bytes": 555,
+    "sha256": "025785b28c05bf5915521fe27b60c8468e59e4aa54b89e8d4399fe9eaf000cea"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\b2\\0dc8753317f0ae340841739b573ede6d78fc53",
+    "bytes": 10181,
+    "sha256": "720dde8a7dddc88e16ba6f0759ffeba4b1017ca08ce2060af1f6a7c05946f3b2"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\b6\\392ce26ca665a7ef61ec8ee017f47abe7f04ab",
+    "bytes": 979,
+    "sha256": "27857ad1a24177b797403d4699e154982686c911f2f410e9e860c3b0b7c1f2cf"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\b6\\63ab1ffa4f2f2d16857e1b7b6358bda6966b6f",
+    "bytes": 461,
+    "sha256": "2e4094b8ba1657936a32715f981c6d42d0f99b6c9464b2296bb75b08798e0eb5"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\b7\\6e8d2790f3f58f8be172be151ca4ae3b87ea18",
+    "bytes": 31850,
+    "sha256": "d21976b81666b2f9937cdef13a78d0b2518616d12c3c0ead8b366361a5486a75"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\b8\\c2f97e3e57d59d7a93e81a542c964e071c15b3",
+    "bytes": 1311,
+    "sha256": "df48feae273308efc68bd19d4e2e364ffd1476785a716027161d0138c64ba7da"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\bb\\3c3e279f7f1c377563ebbf0ab4821c838acf93",
+    "bytes": 196,
+    "sha256": "5d4972efe639bc5c5fbb14d3cfff176903c7d2e6df1223100e4f87c546cf9424"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\bd\\38cbe34327f69012037daac5c365a55843d1b8",
+    "bytes": 1806,
+    "sha256": "a5dfd3ed5387f84490f85d9ea55395332c10b9cf7e00a21a0f7c51380a16932b"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\bf\\04abf987bb142a9b2506653c62249ab9952e19",
+    "bytes": 1835,
+    "sha256": "8ef0c354f00e5dd3f075da0d11cbaf043878c3ce7a9ee308ab9ec83ff05a9973"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\c1\\3afe4a8890b6bb877bdb5044d18abd8aac0720",
+    "bytes": 872,
+    "sha256": "84e7f45a0b4b5e11ef0ebfca85436f74680199ca75cce2b3b5a67bfd68fb1e07"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\c1\\af14fee108f32cf185bb82aed38f7c63ef11cc",
+    "bytes": 8474,
+    "sha256": "7854e1983bcd7785934f8e2f0dd93855d48930afc2dd5a9bfbff125d473c6d19"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\c1\\ffd6416e6db4a3e1db3f3f13533c9588d42a50",
+    "bytes": 1475,
+    "sha256": "98cad7eb4f73c071f2552c13e79cdeaa0d0fa2d0dabeb279151cb8edba653f18"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\c2\\08ac95ef16d0c9eaea5005be10f93e6f386793",
+    "bytes": 3414,
+    "sha256": "879e093fd5b261854b687d680d0096594729236a1ba17f9171bba133b650bdf0"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\c3\\2f29f8177aac92c28a59df6e8c6ee8e69a0cf6",
+    "bytes": 1334,
+    "sha256": "21fd8e73d2760e3b2e61462d0b40c36e9b79af26cd7b8db42b9fe07ccb08398d"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\c4\\68d7926417059311acb2847997d8560290de51",
+    "bytes": 262,
+    "sha256": "2eed82888cd43c3a59e160a91ef6bbda5d427a6fd42874d7efe9382606100d8d"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\ca\\04e8edb03bedb96868b26ccfee2a6dad2e8066",
+    "bytes": 385,
+    "sha256": "793e99fa393fb22e9a7e2f98ba2f11880b0fdfc706d36ef8b0cf7c734265d86c"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\ca\\09b60d6a2ec6b4de179cc701c0a375c2bcf4ee",
+    "bytes": 224,
+    "sha256": "0ee9e5a0bc8b272bbfb73b77e928c87ed66269d8738e5d8939dfd959aeb1957a"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\ca\\404abcc29366bdd27426e7ff64f45a188f61a4",
+    "bytes": 53,
+    "sha256": "113b261be396fb15325353827ea3007eb889f0c5d5783bbd7e2a5efa895e6894"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\cb\\12ffc9e13dfeab9a4f0ed72ce83ad54600df65",
+    "bytes": 325,
+    "sha256": "c4544c0286dd043f40a190b151536964b190a0bb43e4a14d2ea01d4f2147d5ce"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\cc\\f0ce84efdf97db8d0d40dcb5356c4c490f1e4b",
+    "bytes": 1428,
+    "sha256": "15f11a2efe00ad8546c7861845790d43565ced71b6806fa85e5b27327b0686d2"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\cd\\a822949f37a1d1e3a180841bde1c2bc5d53eea",
+    "bytes": 35469,
+    "sha256": "7efad66775ac401cf5481846ce679bd2f609fc9e7a478c7432c3e07aaf4e4770"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\ce\\4f8723ae5b537c07e30f669b7ab8b8eb8e80a5",
+    "bytes": 277,
+    "sha256": "3d3d21aaa8bb6e4b12c0108830275645365a7370d8fbfd134fb522969f651979"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\ce\\6f2e2e7815422200a828b370f63a9f0f7e4a7d",
+    "bytes": 54,
+    "sha256": "1b5fdcae83bb722f82d9a44419c7c7486d64f13df437e57945b1900c3af6bf8a"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\d7\\23c3a0d1f3146b94570b299e2972bc2190bd9d",
+    "bytes": 435,
+    "sha256": "59c460d89e0430cbc838fba6777056a4139813369ecff5314be56cefcebac2a9"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\d8\\81f5ea428e46cc79cfc2df4a28f3f90bb051b3",
+    "bytes": 32522,
+    "sha256": "b66c255191af35a4baf6d8d9519d70d3692da82361696330221c4d03b14e41f8"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\de\\69b127bb62193b3cc592127205c6270ae5b376",
+    "bytes": 1441,
+    "sha256": "b00dedba6679d68b6b1dc7731a9a0d4aeb632da3322fbd1f58519632d033f85b"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\e0\\4acb6d761dc888a7a8bc579e562d989f1d782b",
+    "bytes": 389,
+    "sha256": "d055fba8415245685440c33acaaabeac64dd5d25506073bb1528b8fcfbe0c728"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\e5\\b68e471f1d2e341ca6a18d9d8cbce472bf5d4b",
+    "bytes": 61,
+    "sha256": "7efe27f462a0b27c237eb7bb6df5cb2882c054c6cc63b99c384d2751f02d23fa"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\e5\\e2d2b8f18f1d7fbeddc67d3185ccb4eb1875f4",
+    "bytes": 444,
+    "sha256": "5d24ee787400a0177a2b7b14bfaac02e4665d096b9a825aeac5197d64536d30e"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\e6\\f21579e9d92bb719c3e65472e2f0af56888e55",
+    "bytes": 461,
+    "sha256": "8271933c3af425b65e3c284514b1fc351b070948e7ef6dae4a860bff706b11d6"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\ec\\99631ed9eacdde447a27a1f1a08098e02c5e51",
+    "bytes": 69,
+    "sha256": "13635cdd31c58fe8501bf284ff442b8c55e40cdb0cc9a1e92c88af8719a31869"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\ed\\191730a6c5b05ce07f6b1733fc5ef3b4eacfaf",
+    "bytes": 1944,
+    "sha256": "dc45dde7e237520f8c834dd00c5607eef1f35be5eeb3fb5549e7017dc4f06e3e"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\ee\\0c8646beb56da0ba7e593cd442f9ab205cc656",
+    "bytes": 54,
+    "sha256": "7be75beab4dc85e52526c81a4c07b08dc1be025bf0b968ec6f1933ed997018d7"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\ef\\d057b4f883731aa3a447d44b2a5fc54b3eddf2",
+    "bytes": 1860,
+    "sha256": "0c38c436695240b8b6bd5f1a515bbfbeb478fc641dd75b11e15f33b498d692de"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\f3\\20aae259e71d5136b3a7bd993efc15aef1fed7",
+    "bytes": 1289,
+    "sha256": "57bbe4ef7dac0e0dd906288e2e860a65b39998dfcd6f9c0b7316f881ea76fcf3"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\f3\\86f52b481bf3a9701b57b04bf5b3bd7feabbd1",
+    "bytes": 717048,
+    "sha256": "5df4f7baf8db194fabfac82f5c8a24c5623adabf8f69722f30cd730dab36dc26"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\f5\\2f8fb67b6ae770afc3c47d14c530d3f9228eca",
+    "bytes": 370,
+    "sha256": "2b3445839aad14508ffe19f4b8a3ab12d25270a54dd5f28e3069f6597310571a"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\f6\\d99b102eb4bb4f9866c60c4a035963ec499074",
+    "bytes": 68,
+    "sha256": "0226dad524c2a04b4b4bc0c16c66cfbd53ff6e4048079d9157d47aabd0a6adfb"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\f7\\f7871d80f46d663e9097bce4c72d5b8df63c4a",
+    "bytes": 32589,
+    "sha256": "60b15c9fcd7be7c2c89b768c2ef4a42cd3a3cc4030a8df9b8a0bfffde583ceb1"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\f8\\2c49028e873f8b181bd6f5021cdd67937fe00a",
+    "bytes": 2526,
+    "sha256": "0f23c57d1150cb3e6a068579dc4f43cf7798b5b9fa148eee8a7e4624e916202d"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\f8\\ff8750de8cff499732b4608b368b587bf64b02",
+    "bytes": 2196,
+    "sha256": "b56e783630e76c6b266e344966d57fa6588cc5305c2877754b1abb492e0be406"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\f9\\126a4885595f6e421f726fc142dcf172976320",
+    "bytes": 2308,
+    "sha256": "b9c96d26b963a9225a01f5cd167a956a6844f43f49d88fabee0efc59aadcc334"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\f9\\46a78da3ac654d90e7e1a42c13d2bb011b0cc0",
+    "bytes": 3705,
+    "sha256": "e291a57b3153ec84c597baec1a948e668ac4d4ccd6d51e939390c3a739c7e477"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\fd\\f18983b32fa5f7be62d6612d220695578ebc96",
+    "bytes": 1586,
+    "sha256": "81d21aa4310daadf1b4f7e737c66d86f48b0cc58e3327f8c180a458477c7cf49"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\ff\\081071760c032b7804226f1e0949ca6336ad3c",
+    "bytes": 1432,
+    "sha256": "1aa6fccdcffedf1828d0833fa25389585274eea75c1b87865bb821c6454fdd66"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\pack\\pack-98265518468ff6fb8a900b091b184b61f443aa7b.idx",
+    "bytes": 2808,
+    "sha256": "2d1d586d29a68da09269fb19449fd596bc9e585443dfa2fb52d64bfb53dd7271"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\pack\\pack-98265518468ff6fb8a900b091b184b61f443aa7b.pack",
+    "bytes": 1016068,
+    "sha256": "517a38c399fbaa31db24591616e32fb6eb522faeeba1f6dddb9dafcfd1280fe4"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\pack\\pack-98265518468ff6fb8a900b091b184b61f443aa7b.rev",
+    "bytes": 300,
+    "sha256": "7b7caa588ad851b54c005821df7005379d753d2057d33bfbac65458f2d4bf064"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\pack\\pack-bb46a737f77b8660d9187802160f52b243af0c91.idx",
+    "bytes": 6084,
+    "sha256": "8284f0ec3b724b8ce300706bda7f5c400ae03e29416caf831239ddecf836317c"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\pack\\pack-bb46a737f77b8660d9187802160f52b243af0c91.pack",
+    "bytes": 2141885,
+    "sha256": "3ead92fcc5b45bb2d4c0ecc60601566f4c1c88263cdda03d91486cec50716095"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\objects\\pack\\pack-bb46a737f77b8660d9187802160f52b243af0c91.rev",
+    "bytes": 768,
+    "sha256": "8bb789cb6d38109cf7513f36cfb2c16e1620ebe41541ca69ebef27fcf2b3ea37"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\logs\\refs\\heads\\improve-project-presentation",
+    "bytes": 390,
+    "sha256": "a49decb285c694fe78e5770eed17169155510b367361c1a65e3616d3038dd244"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\logs\\refs\\heads\\main",
+    "bytes": 210,
+    "sha256": "99ad48aff6e76b70616e27fb4f262fbf0d4c780921e22187fc095eb0086b9ec6"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\logs\\refs\\remotes\\origin\\HEAD",
+    "bytes": 210,
+    "sha256": "99ad48aff6e76b70616e27fb4f262fbf0d4c780921e22187fc095eb0086b9ec6"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-review\\.git\\logs\\refs\\remotes\\origin\\main",
+    "bytes": 156,
+    "sha256": "c73e4d50de6187b0597adadb5facc1e003296e8f82ca94336aeef214907773e8"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\docs\\case_study.md",
+    "bytes": 27397,
+    "sha256": "6b59b42783802a3eda1132a749332a6cc5f0a331a97dc20429dff377340dcbbf"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\docs\\code_walkthrough.md",
+    "bytes": 3930,
+    "sha256": "a7fa1fed5696a8f0ddf057a9f630861379f4186ed7e02b403c25ca717e27ae78"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\docs\\data_and_methods.md",
+    "bytes": 19345,
+    "sha256": "68e821e690ec88321301ee43482e579119a4ac262157715d462279d53a810536"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\docs\\decision_log.md",
+    "bytes": 14462,
+    "sha256": "de9c31a4e370cb8f32689a0436215ae899428dd26dbeb7cf5b9251d2cf371a20"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\docs\\image_sources.json",
+    "bytes": 6886,
+    "sha256": "17d38ff63b7826c3f2ebb29f289dd35acd7d4f7312e4e6790a60b02406e2df58"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\docs\\process_and_learning.md",
+    "bytes": 3173,
+    "sha256": "3de50ca46d6e667e1abf29dc50f122956805314f15002f011a79fad3a86e5c14"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\docs\\project_brief.md",
+    "bytes": 23917,
+    "sha256": "2c929beb84c2098321ee97f6b87ce8da7bff3820c02a934a3d140b56a286755a"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\docs\\repository_review.md",
+    "bytes": 5083,
+    "sha256": "8ab55e11700105c7a58033d7c411c117b95e45e4b31f0ea37532434e9a020410"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\docs\\reproduction.md",
+    "bytes": 4734,
+    "sha256": "fd5dcc205089db73584e39f872631d8614fc0e3a57200f1cd5ad436437c0a147"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\docs\\research_and_testing.md",
+    "bytes": 28676,
+    "sha256": "9863a0ca7c49860401cce67cf78444a2b8bfbfaff98d1d74376584f5b2b1a944"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\notebooks\\01_data_and_sql.ipynb",
+    "bytes": 10534,
+    "sha256": "eb96639888a91c0ad51789436f82718c8396bf47f43e97c5d9e5553c95831c42"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\notebooks\\02_recommendation_methods.ipynb",
+    "bytes": 25216,
+    "sha256": "c92e4d027b1a77780a743dc3b9f39f6c10b6d7c7bbaced2d97a9bfde9d795690"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\notebooks\\03_model_diagnostics.ipynb",
+    "bytes": 19840,
+    "sha256": "eaae79eb5f150a275d5db0a8a2b06335065fb91bdb605ac4586b6c70d5710d8c"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\prototype\\grocery_recommendations_prototype.html",
+    "bytes": 1008658,
+    "sha256": "e9af4418b7e8252e3bbfc20d5105dba5486762d0e6e5f062097ac1731389868c"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\results\\discovery_audit.json",
+    "bytes": 2175,
+    "sha256": "0c44fd3518bbc375ed68d86fc81990a08c503e9fc1605b9d1abde2a2cc347e70"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\results\\discovery_audit_protocol.json",
+    "bytes": 2707,
+    "sha256": "509277c44464b12a0cc4771cd3c5382a22675a3737341ab7dc99745982c15763"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\results\\discovery_development.json",
+    "bytes": 2146,
+    "sha256": "7e894fba8d5b616b4e73dc6eecece79befe10d87953af387957a69862d2d3950"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\results\\discovery_protocol.json",
+    "bytes": 2097,
+    "sha256": "e54fbcc560f5c8659c2a0ca1dec70c5a3d02d34870d0aa71ffc57b6721aa103d"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\results\\discovery_top_five.json",
+    "bytes": 3188,
+    "sha256": "8b700af1e14ce8368c701cd45167e0ee7a0928084464501c6f674d0ee307d684"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\results\\discovery_top_five_plan.json",
+    "bytes": 1814,
+    "sha256": "53f54786666f3b6db591e77c9b394cd5a0130c05e7816d1613ef84359402efc6"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\results\\final_evaluation.json",
+    "bytes": 17356,
+    "sha256": "208ab8149ed07a8d712fbf7f2df91c9465eac989a48f8de43dbe9dc19b3c07ac"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\results\\prediction_runtime.json",
+    "bytes": 4574,
+    "sha256": "130bd7ffe5ce146a51fbde71f8b4e807cf8fec0e0fd104898f284f4a35a53c97"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\results\\source_manifest.json",
+    "bytes": 3100,
+    "sha256": "3c7bd6e2f30e767c882f350058227527dc1310607c1930514339d109519413bc"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\results\\v2_timing_development.json",
+    "bytes": 3161,
+    "sha256": "5257ac6f76c0c18fbf41f9033cb012cc7a4a4e24bed7a9e5bf8c5b4ca8197d3d"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\results\\v2_timing_protocol.json",
+    "bytes": 2393,
+    "sha256": "21eb33b477016fec073d4857d3efcf36ea7ea7c792a4c336a0ed7e6289766896"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\recommendations.py",
+    "bytes": 6552,
+    "sha256": "d8cc9b5dd276cdd9f3cd1d1125bc42f00021e80ddbd33f5210d23c17aae27411"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\__init__.py",
+    "bytes": 83,
+    "sha256": "fa4ada79b2dd7b11329615228aa59abf53fd989d96fe4301b61fc1051ca4bcb4"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\tests\\test_recommendations.py",
+    "bytes": 6115,
+    "sha256": "c708136d2976a6e7507a8fbae9abffcd987a99993863911201ea2a81b5eaafb7"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\__pycache__\\run.cpython-313.pyc",
+    "bytes": 3549,
+    "sha256": "d8a2b69971afc6db926117affc27295bcfc4d381fc67d5db8b0a1fd522c2b4a7"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\tests\\__pycache__\\test_recommendations.cpython-313.pyc",
+    "bytes": 12037,
+    "sha256": "64289c1ff08a3959c528f5f7f9d9d5bb051063304fd212294f3064dee83ac0f0"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\baselines\\personal_frequency.sql",
+    "bytes": 1227,
+    "sha256": "60704da8829a287577c7a16e018e293c912c6b401210ea6fc722d184638c78b0"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\baselines\\popularity_baseline.sql",
+    "bytes": 1612,
+    "sha256": "63176263f6048b3518edec881e2aefa92926b6469602db91c4a2c1b0c631d429"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\baselines\\run_popularity_baseline.py",
+    "bytes": 3077,
+    "sha256": "e7655dd7b557c038f656020e76259e4c617fe9b732610e53628941e961ec576c"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\baselines\\score_personal_frequency.py",
+    "bytes": 8475,
+    "sha256": "3081db518175ce9422a1d40aa853f0d361668c6e97cc6cf6ab4e560bac6dceb0"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\baselines\\score_popularity_validation.py",
+    "bytes": 5427,
+    "sha256": "3a2a8c07a0567b02a678c34e638238004d6708a68d8fe4d3c2386f654a0d0473"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\baselines\\score_popularity_validation.sql",
+    "bytes": 1000,
+    "sha256": "55ebf444906e08f8784aaa3886db104b1389084bcf7f1d62c37082b03901ee4d"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\baselines\\score_weighted_recency.py",
+    "bytes": 6620,
+    "sha256": "ea3c7f7b8ebd54304a64ecba18f5a181fa115abc157a006327a699a809d1ca31"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\baselines\\weighted_recency.sql",
+    "bytes": 1385,
+    "sha256": "f0bf91aa52617755775c8ea5dcdcbddac8ac55bae0656910ab081a374f95a13b"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\data_preparation\\download_data.py",
+    "bytes": 3997,
+    "sha256": "9ea67028a906c6de1b7e87b16f799a2baa2631924f644f22997e86bd41c0328c"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\data_preparation\\prepare_data.py",
+    "bytes": 14500,
+    "sha256": "74d4e3b9615579310bfeedeb447949a7a89c2264d6f51f9a1c7374d1f2fa55aa"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\data_preparation\\verify_preparation.py",
+    "bytes": 4772,
+    "sha256": "5a13cf886f9d8ca303a66dc75f74d975bdbdc4289d253c0c0bb5dedd29f37b6f"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\final_evaluation\\evaluate_discovery_audit.py",
+    "bytes": 11866,
+    "sha256": "f1024bec39df7c46fbc0fee075e73ca50e7db6c32c6c77708fc2e68e07c4059f"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\final_evaluation\\final_features.sql",
+    "bytes": 1292,
+    "sha256": "f501f9056b48ad140e73fa4919513fe0d3c16a7c33b7be30739bc1a5b9282c70"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\final_evaluation\\measure_discovery_top_five.py",
+    "bytes": 8241,
+    "sha256": "5c68b1e1ef865be083083673dce14bfa08cb404430aaecb4c6c7d355815d8b15"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\final_evaluation\\prepare_final_predictions.py",
+    "bytes": 15697,
+    "sha256": "9bdf693efaf2d76b87b24d622f9c6234e0939137c53bcdc52f6a6c07fd3d0b13"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\final_evaluation\\score_final_predictions.py",
+    "bytes": 14241,
+    "sha256": "5909b357cd25eb78745d778f3e7de5691b50d82d20618ec4268b1b652d96c238"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\model_comparison\\build_ml_features.py",
+    "bytes": 12730,
+    "sha256": "f1e28eacaaffce0d66aab3406165a17359824d3a3818780cc34367e0022addee"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\model_comparison\\evaluate_discovery.py",
+    "bytes": 13529,
+    "sha256": "7ba6130d4df867fc207ba6c21a00757673dcac96cac2d7dde3d971de81a74415"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\model_comparison\\evaluate_purchase_timing.py",
+    "bytes": 20970,
+    "sha256": "f6ac1af92e0e2b7f04a46cc6eae64aa63ba1525222a5660544c1847c29e24f06"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\model_comparison\\ml_features.sql",
+    "bytes": 2286,
+    "sha256": "f71484b3bd670722d81c1d82fe0dba996d79a682648c5ec83fdc878c706c5406"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\model_comparison\\prepare_discovery_baseline.py",
+    "bytes": 2689,
+    "sha256": "c404daefabd473c7957ffbcde10ad70d8bc7e3d8498a1ff1c016fee9de4eb6ab"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\model_comparison\\train_boosted_validation.py",
+    "bytes": 277,
+    "sha256": "ba1b632df65b9b58284cc7b9704b36f8cbc4ad11ff6091ec98cbb1b974ce50ae"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\model_comparison\\train_logistic_validation.py",
+    "bytes": 18120,
+    "sha256": "32a409fd620e32294c6c96bacecd2ca13124bd24564ce77262f4bdb9dcd2d9a6"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\prototype_export\\embed_discovery_photos.py",
+    "bytes": 3101,
+    "sha256": "a569a8d880e7ae5374a127f1c8521db50835c22c4873790b4c57ad10769c58b7"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\prototype_export\\export_demo_shoppers.py",
+    "bytes": 7993,
+    "sha256": "e83b8b0db752be1d3680e00eab320d7bd00217b1f0cd4c3e57983a85856660c5"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\prototype_export\\export_discovery_shoppers.py",
+    "bytes": 4511,
+    "sha256": "3b408babd17fcaa25fef2bff24177fbc10523e3a64d4d63fee1aa6b6d1ee8873"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\__pycache__\\recommendations.cpython-313.pyc",
+    "bytes": 10100,
+    "sha256": "eb29a621dca6001123cdeacbb326ed0ef0072e8575ca1a9c111534a718111703"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\src\\__pycache__\\__init__.cpython-313.pyc",
+    "bytes": 300,
+    "sha256": "2e6a60edde4df6c67d5ba99f8939e3745be016bd10ab3c6d838ec12bcc937d24"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\docs\\images\\prototype.jpg",
+    "bytes": 219849,
+    "sha256": "5cd9fc5dda2175042232affdbb269a6a164cac389cfa89ff5ec233920fb83b10"
+  },
+  {
+    "file": "GitHub\\instacart-grocery-recommendations-ready\\.github\\workflows\\checks.yml",
+    "bytes": 622,
+    "sha256": "6cf5d2c3b4f1fb29aa1867416bbdb08dbdcbf1c9e595369bde0179f423d53545"
+  }
+]

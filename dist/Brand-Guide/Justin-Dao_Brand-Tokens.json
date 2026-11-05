@@ -1,0 +1,42 @@
+{"name":"Justin Dao","version":1,
+"color":{"themes":[{"id":"light","name":"Cream"},{"id":"dark","name":"Charcoal"}],
+"tokens":[
+{"name":"paper","value":{"light":"#F8F1E9","dark":"#1C1A19"},"usage":"Page background everywhere."},
+{"name":"surface","value":{"light":"#EFE3D5","dark":"#262322"},"usage":"Project thumbnails, case-study note boxes, chips. One step up from paper."},
+{"name":"surface-strong","value":{"light":"#E7D6C4","dark":"#2F2B29"},"usage":"Second thumbnail colour so neighbouring cards differ."},
+{"name":"card","value":{"light":"#FFFBF6","dark":"#2B2826"},"usage":"Mock UI windows and anything that floats above a surface."},
+{"name":"ink","value":{"light":"#1E1C1B","dark":"#F3E6D8"},"usage":"Headings and body text on paper, surface and card."},
+{"name":"muted","value":{"light":"#6F635A","dark":"#A39587"},"usage":"Secondary text: subtitles, dates, labels. Passes 4.5:1 on paper and surface in both themes."},
+{"name":"line","value":{"light":"#E4D6C7","dark":"#34302D"},"usage":"Hairline dividers and chip borders. Never for text."},
+{"name":"red","value":{"light":"#DC4A36","dark":"#EC5E49"},"usage":"The signature. Name dot, big italic accents (24px+), thumbnail fills, the clock dot. Not for small text on paper (3.7:1)."},
+{"name":"red-deep","value":{"light":"#B8392A","dark":"#F07A66"},"usage":"Red at small sizes: links, small labels, button fills with white text (5.1:1+)."},
+{"name":"red-soft","value":{"light":"#F4D3C9","dark":"#4A2620"},"usage":"Tint behind the lead skill chip and highlights. Ink text on it."},
+{"name":"charcoal","value":{"light":"#232120","dark":"#121110"},"usage":"Dark thumbnail ground and the dark-mode feel. Card or paper-coloured content on it."},
+{"name":"on-red","value":"#FFFBF6","usage":"Text and icons placed on red-deep fills."}]},
+"type":{"fonts":[],
+"families":{"serif":"\"Newsreader\", \"Iowan Old Style\", Georgia, serif","sans":"\"Geist\", \"Segoe UI\", system-ui, sans-serif","mono":"\"Geist Mono\", ui-monospace, Menlo, monospace"},
+"groups":[
+{"name":"Display","family":"serif","styles":[
+{"name":"name","fontSize":"168px","lineHeight":0.86,"fontWeight":300,"letterSpacing":"-0.045em"},
+{"name":"closer","fontSize":"92px","lineHeight":0.95,"fontWeight":300,"letterSpacing":"-0.04em"},
+{"name":"section","fontSize":"42px","lineHeight":1,"fontWeight":400,"letterSpacing":"-0.02em"},
+{"name":"lead","fontSize":"32px","lineHeight":1.3,"fontWeight":300,"letterSpacing":"-0.01em"}]},
+{"name":"Text","family":"sans","styles":[
+{"name":"intro","fontSize":"17px","lineHeight":1.55,"fontWeight":400},
+{"name":"title","fontSize":"16px","lineHeight":1.4,"fontWeight":500},
+{"name":"body","fontSize":"15.5px","lineHeight":1.6,"fontWeight":400},
+{"name":"small","fontSize":"14px","lineHeight":1.5,"fontWeight":400},
+{"name":"chip","fontSize":"12.5px","lineHeight":1.4,"fontWeight":400}]},
+{"name":"Data","family":"mono","styles":[{"name":"meta","fontSize":"12px","lineHeight":1.4,"fontWeight":400}]}]},
+"spacing":{"tokens":[
+{"name":"space-1","value":"4px","usage":"Gap between chips."},
+{"name":"space-2","value":"8px","usage":"Inside small UI (mock windows, chips)."},
+{"name":"space-4","value":"16px","usage":"Card title to thumbnail; mobile side gutter."},
+{"name":"space-6","value":"28px","usage":"Gap between work cards side by side."},
+{"name":"space-8","value":"56px","usage":"Gap between rows of work; between about columns."},
+{"name":"space-12","value":"96px","usage":"Between major sections."}]},
+"radius":{"tokens":[
+{"name":"radius-sm","value":"6px","usage":"Tags inside mock UIs, small buttons."},
+{"name":"radius-md","value":"12px","usage":"Mock UI windows, note boxes."},
+{"name":"radius-lg","value":"14px","usage":"Project thumbnails."},
+{"name":"radius-pill","value":"999px","usage":"Skill chips, badges, pill buttons."}]}}
