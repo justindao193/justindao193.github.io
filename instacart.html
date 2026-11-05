@@ -7,7 +7,7 @@ function day(){try{var h=+new Intl.DateTimeFormat('en-CA',{timeZone:'America/Tor
 var m=(s==='light'||s==='dark')?s:'light';document.documentElement.setAttribute('data-theme',m);
 window.jdTheme={get:function(){return document.documentElement.getAttribute('data-theme')},set:function(v){document.documentElement.setAttribute('data-theme',v);try{localStorage.setItem(k,v)}catch(e){}try{sessionStorage.setItem(k,v)}catch(e){}document.dispatchEvent(new CustomEvent('jdtheme'))}};})();</script>
 
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2224%22%20fill%3D%22%23DC4A36%22/%3E%3Cpath%20d%3D%22M33%2035Q33%2019%2050%2019Q67%2019%2067%2035Q67%2045%2057%2050Q51%2053%2051%2060V68Q51%2082%2038%2082Q30%2082%2026%2077%22%20fill%3D%22none%22%20stroke%3D%22%23F8F1E9%22%20stroke-width%3D%2211%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3Ccircle%20cx%3D%2272%22%20cy%3D%2278%22%20r%3D%227%22%20fill%3D%22%23F8F1E9%22/%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2223%22%20fill%3D%22%23DC4A36%22/%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%2211.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20transform%3D%22translate%28-3%20-3.5%29%22%3E%3Cpath%20d%3D%22M32%2064a14%2014%200%200%200%2028%200V33%22/%3E%3Cpath%20d%3D%22M45%2046L60%2031L75%2046%22/%3E%3C/g%3E%3C/svg%3E">
 <link rel="apple-touch-icon" href="icon-180.png">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -188,9 +188,10 @@ p.t{margin:20px 0 0}
 
 /* left sidebar layout (Duc Ngo style) */
 .side{position:fixed;left:0;top:0;bottom:0;width:220px;padding:0 0 0 clamp(20px,2.4vw,40px);display:flex;flex-direction:column;justify-content:center;gap:22px;z-index:5}
-.side .back{text-decoration:none;color:var(--muted);font-size:18px;width:max-content}
+.side .back{text-decoration:none;color:var(--muted);font-size:18px;width:max-content;position:absolute;top:calc(27.8vh - 42px)}
 .side .back:hover{color:var(--ink)}
 .side ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.side ul{position:absolute;top:27.8vh;transform:none}
 .side li a{text-decoration:none;color:var(--muted);font-size:14px;transition:color .2s}
 .side li a:hover{color:var(--ink)}
 .side li a.on{color:var(--ink);font-weight:500}
@@ -785,6 +786,7 @@ details.more .mbody p.t:first-child{margin-top:4px}
 .main > .rule{margin-top:clamp(28px,4vw,48px)}
 #methods .steps li{grid-template-columns:40px minmax(0,1fr)}
 .lessons{grid-template-columns:repeat(3,minmax(0,1fr))}
+#fairtest .panel{margin-top:24px;padding:clamp(24px,3vw,40px)}
 @media(max-width:700px){.lessons{grid-template-columns:1fr}}
 
 
@@ -813,12 +815,183 @@ details.more .mbody p.t:first-child{margin-top:4px}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .panel{background:var(--panel);box-shadow:none;--card:#2F2B29}}
 
 /* Oct 24 2026: one equal gap between every section */
-:root{--secgap:clamp(64px,7vw,96px)}
+:root{--secgap:clamp(56px,6vw,84px)}
 .main > hr.rule{display:none}
 .main > section{padding-top:0!important;padding-bottom:0!important;margin-top:var(--secgap)!important}
+.main > section:first-of-type{margin-top:clamp(32px,4vw,56px)!important}
 .main > section > :last-child,.main > section > :last-child > :last-child{margin-bottom:0}
+.main > section > .wide > .panel,.main > section > .wide > .lessons,.main > section > .wide > .states{margin-top:32px}
 /* meta columns line up with three-card rows (30 October 2026) */
 .meta{column-gap:16px!important}
+.product-opening .meta{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:clamp(28px,5vw,64px)!important;align-items:start}
+.product-opening .meta>div{min-width:0}
+.product-opening .meta dd{max-width:28ch}
+
+
+.brief{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:44px;align-items:stretch}
+.brief>div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 22px 24px;display:flex;flex-direction:column}
+.brief small{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.brief .bv{flex:1;display:flex;flex-direction:column;justify-content:center;margin:20px 0 18px;min-height:132px}
+.brief>div>b{display:block;font-size:16.5px;font-weight:600;line-height:1.4}
+.bf{display:flex;flex-direction:column;gap:10px}
+.bf span{display:flex;align-items:center;gap:10px;font-size:15px;line-height:1.35}
+.bf .was{color:var(--muted)}
+.bf .was s{text-decoration-color:var(--red)}
+.bf .was i{font-family:var(--sans);font-weight:600}
+.bf .now{font-weight:600}
+.bf i{font-style:normal;width:26px;height:26px;flex:none;border-radius:50%;display:grid;place-items:center;font-size:13px;background:var(--panel);color:var(--muted)}
+.bf i svg{width:14px;height:14px;display:block}
+.bf .now i{background:var(--red);color:#fff}
+.bf .arr{color:var(--red);font-size:18px;line-height:1;padding-left:5px}
+.bn{font-family:var(--serif);font-weight:370;font-size:clamp(46px,4.6vw,60px);line-height:1;letter-spacing:-.02em;color:var(--red)}
+.bn em{font-style:normal;font-size:.42em;color:var(--muted);margin-left:4px;letter-spacing:0}
+.bb{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:6px 10px;align-items:center;margin-top:16px;font-size:13px;color:var(--muted)}
+.bb .tr{height:8px;border-radius:99px;background:var(--panel);overflow:hidden}
+.bb .tr i{display:block;height:100%;width:var(--w);border-radius:99px;background:var(--red)}
+.bb .tr i.g{background:var(--muted);opacity:.5}
+.bb b{color:var(--ink);font-weight:600}
+.bg{position:relative;margin-top:18px}
+.bg .tr{height:8px;border-radius:99px;background:var(--panel);overflow:hidden}
+.bg .tr i{display:block;height:100%;width:var(--w);background:var(--red);border-radius:99px}
+.bg .ax{display:flex;justify-content:space-between;margin-top:6px;font-family:var(--mono);font-size:11px;color:var(--muted)}
+.bg .tag{position:absolute;top:-30px;left:var(--w);transform:translateX(-50%);background:var(--mint);color:var(--mint-ink);font-size:12px;font-weight:600;padding:2px 9px;border-radius:99px;white-space:nowrap}
+.bd{display:flex;gap:6px;margin-top:14px;align-items:center;font-size:13px;color:var(--muted)}
+.bd i{width:12px;height:12px;border-radius:50%;background:var(--red)}
+.bd i.o{background:var(--panel)}
+.bd span{margin-left:6px}
+.bs{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.bs li{display:flex;align-items:center;gap:10px;font-size:15px;line-height:1.35}
+.bs li i{font-style:normal;flex:none;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:11px;background:var(--red-soft);color:var(--red-deep)}
+.bw{display:flex;flex-direction:column;gap:14px}
+.bw div{display:flex;flex-direction:column;gap:7px}
+.bw small{letter-spacing:.08em}
+.bw p{margin:0;display:flex;flex-wrap:wrap;gap:6px}
+.bw p span{font-size:13.5px;padding:4px 11px;border-radius:99px;border:1px solid var(--line);background:var(--bg)}
+.bw .me span{background:var(--red-soft);border-color:transparent;color:var(--red-deep);font-weight:500}
+@media (max-width:1200px){.brief{grid-template-columns:1fr}.brief .bv{min-height:0}}
+.panel>.iter:first-child{margin-top:0}
+/* Product and evidence lead; the development story follows. */
+.product-opening{padding-top:clamp(40px,5vw,64px)}
+.hcol.product-opening h1{margin-top:20px;font-size:clamp(38px,4.4vw,62px);line-height:1.08}
+.hcol.product-opening .lead{margin-top:22px;line-height:1.55}
+.product-opening .eb{width:100%;max-width:100%;white-space:normal;overflow-wrap:anywhere;font-size:13px;line-height:1.6;letter-spacing:.025em;text-transform:none}
+.product-opening .hbtns{margin-top:32px;display:flex;gap:16px;flex-wrap:wrap}
+.product-preview{margin-top:36px}
+.product-preview .shot{margin:0}
+.product-preview img{display:block;width:100%;height:auto;border-radius:16px;border:1px solid var(--line)}
+.opening-evidence .eb{white-space:normal;overflow-wrap:anywhere}
+.opening-evidence{padding-top:clamp(48px,6vw,80px)}
+.opening-comparison{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;margin-top:32px}
+.opening-comparison>div{border-top:2px solid var(--red);padding-top:20px}
+.opening-comparison .eb{display:block;font-size:12px;line-height:1.5}
+.opening-comparison strong{display:block;font:370 clamp(64px,8vw,112px)/1.1 var(--serif);color:var(--red);margin-top:20px}
+.opening-comparison p{margin:8px 0 20px;color:var(--muted)}
+.result-track{height:8px;background:var(--panel);border-radius:8px;overflow:hidden}
+.result-track i{display:block;height:100%;background:var(--red);border-radius:8px}
+.opening-evidence>.col:last-child{margin-top:28px}
+.opening-evidence .meta{margin-top:36px}
+@media(max-width:600px){.opening-comparison{gap:18px}.opening-comparison strong{font-size:56px}.opening-comparison .eb{letter-spacing:0}}
+.opening-prototype{overflow:hidden}
+@media(max-width:700px){.opening-prototype{padding:0;min-height:600px}.opening-prototype .desk{display:block!important;width:100%;height:600px;transform:none;position:relative;inset:auto;aspect-ratio:auto}.opening-prototype iframe{width:100%;height:100%;border:0}}
+.task-results{margin:32px 0 40px;background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:clamp(24px,4vw,44px);box-shadow:0 18px 40px -34px rgba(28,31,94,.55)}
+.task-key{display:flex;gap:24px;flex-wrap:wrap;margin-bottom:30px;padding-bottom:18px;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted);letter-spacing:.02em}
+.task-key span{display:flex;align-items:center;gap:9px}.task-key i{width:10px;height:10px;border-radius:50%;background:var(--muted)}.task-key span+span i{background:var(--red)}
+.task-person{display:grid;grid-template-columns:92px minmax(0,1fr);gap:20px;align-items:center;margin-top:24px}.task-person>b{font-family:var(--serif);font-size:20px;font-weight:450;letter-spacing:-.01em}
+.task-pair{display:grid;gap:10px;min-width:0}.task-bar{display:flex;align-items:center;gap:12px;min-width:0;height:20px;padding:0;background:color-mix(in srgb,var(--card) 72%,transparent);border-radius:999px;overflow:visible}.task-bar i{display:block;flex-shrink:0;height:100%;border-radius:999px;background:var(--muted);box-shadow:inset 0 0 0 1px rgba(30,28,27,.08)}.task-bar.rec i{background:var(--red)}.task-bar span{font:13px var(--mono);white-space:nowrap;color:var(--ink)}.task-bar.rec span{color:var(--red-deep);font-weight:500}
+.task-limit{font-size:15px!important;line-height:1.55!important;color:var(--muted)}
+@media(max-width:600px){.task-results{border-radius:16px;padding:20px 16px}.task-person{grid-template-columns:62px minmax(0,1fr);gap:12px}.task-person>b{font-size:17px}.task-key{gap:14px}.task-bar span{font-size:12px}}
+/* Recruiter opening: introduction, ownership, proof, then interaction. */
+.product-opening .meta{margin-top:28px;padding-top:22px;gap:16px;grid-template-columns:repeat(3,minmax(0,1fr))}
+.product-opening .meta dd{font-size:15px;line-height:1.45;margin-top:8px}
+.product-opening .hbtns{margin-top:28px}
+.opening-evidence{padding-top:clamp(44px,5vw,64px)}
+.opening-evidence h2{font-size:clamp(30px,3.4vw,44px);line-height:1.15}
+.opening-evidence .opening-comparison{margin-top:24px}
+.opening-evidence .col:last-child>.t{font-size:15px;line-height:1.55;color:var(--muted)}
+.product-preview{margin-top:44px;margin-bottom:clamp(48px,6vw,80px)}
+@media(max-width:600px){.product-opening .meta{grid-template-columns:1fr;row-gap:16px}.product-opening .meta>div{display:grid;grid-template-columns:72px minmax(0,1fr);gap:12px}.product-opening .meta dd{margin:0}}
+.opening-test{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:24px 40px;margin-top:36px;padding-top:28px;border-top:1px solid var(--line)}
+.opening-test .eb{font-size:12px;letter-spacing:.04em}.opening-test h3{font:600 20px/1.3 var(--sans);margin:12px 0}.opening-test p{font-size:15px;line-height:1.55;color:var(--muted);margin:0}
+.test-times{display:flex;align-items:center;gap:24px}.test-times>div{flex:1}.test-times span{display:block;font-size:13px;line-height:1.4;color:var(--muted)}.test-times strong{display:block;font:370 clamp(40px,4vw,60px)/1.2 var(--serif);margin-top:12px;white-space:nowrap}.test-times small{font:14px var(--sans);margin-left:5px}.test-times>div:last-child strong{color:var(--red)}.test-times .test-arrow{color:var(--red);font-size:24px}.opening-test .test-caveat{grid-column:1/-1;font-size:14px}
+@media(max-width:800px){.opening-test{grid-template-columns:1fr}.test-times{gap:16px}.test-times strong{font-size:44px}}
+.opening-evidence .opening-test{margin-top:28px}
+.recommendation-heading{margin-top:36px}
+.recommendation-heading h3{margin:0;font:600 clamp(20px,2vw,26px)/1.35 var(--sans)}
+.product-preview .hbtns{display:flex;gap:16px;flex-wrap:wrap;margin:0 0 24px}
+/* Let the product and numbers carry the opening. */
+.hcol.product-opening h1{margin-top:0}
+.opening-evidence h2{font-size:clamp(28px,3vw,40px)}
+.opening-test{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:clamp(22px,3vw,32px)}
+.opening-test h3{font-size:clamp(23px,2.5vw,32px);line-height:1.2;max-width:16em}
+.opening-test .test-caveat{font-size:14px;margin-top:0}
+.opening-comparison strong{font-size:clamp(64px,8vw,112px)}
+.opening-prototype{position:relative;padding-top:72px!important}
+.prototype-invite{position:absolute;top:22px;left:clamp(18px,3vw,36px);right:18px;display:flex;align-items:center;gap:10px;color:var(--ink);font-size:14px}
+.prototype-invite b{font-weight:600}.prototype-invite>span:last-child{color:var(--muted)}
+.try-dot{width:8px;height:8px;flex:none;border-radius:50%;background:var(--red)}
+@media(max-width:600px){.prototype-invite{flex-wrap:wrap;font-size:13px;gap:8px}.prototype-invite>span:last-child{flex-basis:100%;padding-left:16px}.opening-prototype{padding-top:84px!important}}
+/* Opening rhythm: room for context, evidence and controls. */
+.product-opening{padding-top:clamp(40px,5vw,64px)}
+.hcol.product-opening .lead{margin-top:28px;font-size:18px;line-height:1.65}
+.product-opening .meta{margin-top:36px;padding-top:24px;column-gap:32px;row-gap:22px}
+.product-opening .meta dd{line-height:1.6}
+.opening-evidence{padding-top:clamp(56px,7vw,88px)}
+.opening-evidence>.col:first-child h2{margin-top:20px;margin-bottom:0}
+.opening-evidence .opening-test{margin-top:40px;padding:32px 0 0;border:0;border-top:1px solid var(--line);border-radius:0;background:transparent;gap:28px 48px}
+.opening-test h3{margin:16px 0;font-size:clamp(25px,2.5vw,32px);line-height:1.2}
+.opening-test p{line-height:1.65}
+.test-times{gap:20px;align-self:center;padding:12px 0}
+.test-times span{font-size:14px;line-height:1.5}.test-times strong{margin-top:18px}
+.opening-test .test-caveat{margin-top:0;font-size:15px;line-height:1.6}
+.opening-evidence .recommendation-heading{margin-top:56px!important}
+.recommendation-heading h3{margin:16px 0 18px}
+.recommendation-heading .t{font-size:17px;line-height:1.65;margin:0}
+.opening-evidence .opening-comparison{margin-top:32px;gap:32px}
+.opening-comparison>div{padding-top:24px}.opening-comparison strong{margin-top:24px}.opening-comparison p{margin:12px 0 24px}
+.opening-evidence>.col:last-child{margin-top:28px!important}
+.opening-evidence .col:last-child>.t{font-size:15px;line-height:1.65}
+.product-preview{margin-top:56px;margin-bottom:64px}
+.product-preview .hbtns{margin-bottom:28px}.product-preview>.t{margin-top:22px;font-size:15px;line-height:1.6}
+@media(max-width:600px){.hcol.product-opening .lead{font-size:17px}.product-opening .meta{margin-top:28px;row-gap:18px}.opening-evidence{padding-top:48px}.opening-evidence .opening-test{margin-top:28px;gap:20px;padding-top:24px}.opening-evidence .recommendation-heading{margin-top:40px!important}.opening-evidence .opening-comparison{gap:20px}.opening-comparison strong{font-size:56px}.product-preview{margin-top:40px}}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.strip3{--panel2:color-mix(in srgb,var(--ink) 10%,transparent);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:28px;background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.strip3>div{padding:clamp(22px,2.6vw,34px);display:flex;flex-direction:column}
+.strip3>div+div{border-left:1px solid var(--line)}
+.strip3 small{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.strip3 b{display:block;margin-top:14px;font-family:var(--serif);font-weight:370;font-size:clamp(56px,5.6vw,84px);line-height:.95;letter-spacing:-.03em;color:var(--red)}
+.strip3>div>span{display:block;margin-top:auto;padding-top:18px;font-size:15.5px;line-height:1.5}
+.rsv{margin-top:22px;display:grid;gap:10px}
+.rsv p{margin:0;display:grid;grid-template-columns:104px minmax(0,1fr);align-items:center;gap:10px;font-size:13px;color:var(--muted)}
+.rsv i{display:block;height:8px;border-radius:99px;background:var(--panel2);overflow:hidden}
+.rsv em{display:block;height:100%;border-radius:99px;background:var(--red)}
+.rsv em.g{background:var(--muted);opacity:.5}
+.rsv-ring{grid-template-columns:52px minmax(0,1fr);align-items:center;gap:14px}
+.rsv-ring svg{width:52px;height:52px;transform:rotate(-90deg) scaleY(-1)}
+.rsv-ring p{display:block;font-size:14px;line-height:1.4;color:var(--ink)}
+.rsv-ring strong{font-weight:600}
+.strip3-note{margin-top:18px!important}
+@media (max-width:900px){.strip3{grid-template-columns:1fr}.strip3>div+div{border-left:0;border-top:1px solid var(--line)}}
+.ut{margin-top:36px}
+.ut-key{display:flex;gap:24px;padding-bottom:16px;border-bottom:1px solid var(--line);font-size:13.5px;color:var(--muted)}
+.ut-key i{display:inline-block;width:14px;height:3px;border-radius:2px;background:var(--muted);vertical-align:middle;margin-right:8px}
+.ut-key .rec i{background:var(--red)}
+.ut-row{display:grid;grid-template-columns:110px minmax(0,1fr);align-items:center;gap:20px;padding:16px 0;border-bottom:1px solid var(--line)}
+.ut-row b{font-size:15px;font-weight:500}
+.ut-bars{display:grid;gap:8px}
+.ut-bars p{margin:0;display:flex;align-items:center;gap:10px}
+.ut-bars i{display:block;height:3px;border-radius:2px;background:var(--muted)}
+.ut-bars .rec i{background:var(--red)}
+.ut-bars span{font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+.ut-bars .rec span{color:var(--red-deep)}
+.ut-note{color:var(--muted)}
+@media (max-width:600px){.ut-row{grid-template-columns:72px minmax(0,1fr);gap:12px}}
+.ut2 .tr{position:relative}
+.ut2 .tr i{position:absolute;left:0;top:0;bottom:0}
+.ut2 .tr i.g{background:var(--muted);opacity:.35}
+.ut2 .tr i.r{background:var(--red-deep)}
+.ut2 .drow b em{font-style:normal;color:var(--red-deep)}
+.ut2 h5 .k{display:inline-block;width:12px;height:4px;border-radius:2px;margin:0 6px 2px 12px;vertical-align:middle}
+.ut2 h5 .k.g{background:var(--muted);opacity:.5}.ut2 h5 .k.r{background:var(--red-deep)}
 </style>
 <script src="instacart/carrot-intro.js"></script>
 </head>
@@ -828,9 +1001,9 @@ details.more .mbody p.t:first-child{margin-top:4px}
 function top(){document.documentElement.style.scrollBehavior='auto';window.scrollTo(0,0);document.documentElement.style.scrollBehavior=''}
 top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',function(){top();setTimeout(top,60)});addEventListener('pageshow',top)})();</script>
 
-<nav class="topnav" aria-label="Main"><a href="index.html#work">← Work / <b>Instacart grocery recommendations</b></a><span class="tright" style="padding-right:46px"><a href="index.html#about">About</a></span></nav>
+<nav class="topnav" aria-label="Main"><a href="index.html#work">← Work / <b>Instacart grocery recommendations</b></a><span class="tright" style="padding-right:46px"></span></nav>
 
-<aside class="side" aria-label="Sections"><a class="back" href="index.html#work" aria-label="Back to work">←</a><ul><li><a href="#overview" data-s="overview problem">overview</a></li><li><a href="#scope" data-s="scope">scope</a></li><li><a href="#fairtest" data-s="fairtest methods results decision">version 1</a></li><li><a href="#v2" data-s="v2">version 2</a></li><li><a href="#v3" data-s="v3">version 3</a></li><li><a href="#prototype" data-s="prototype pilot">prototype</a></li><li><a href="#launch" data-s="launch">if launched</a></li><li><a href="#try" data-s="try">try it</a></li><li><a href="#learned" data-s="learned">learning</a></li></ul></aside>
+<aside class="side" aria-label="Sections"><a class="back" href="index.html#work" aria-label="Back to work">←</a><ul><li><a href="#overview" data-s="overview problem">overview</a></li><li><a href="#scope" data-s="scope">scope</a></li><li><a href="#fairtest" data-s="fairtest methods results decision">version 1</a></li><li><a href="#v2" data-s="v2">version 2</a></li><li><a href="#v3" data-s="v3">version 3</a></li><li><a href="#prototype" data-s="prototype pilot">prototype</a></li><li><a href="#try" data-s="try">try it</a></li><li><a href="#learned" data-s="learned">learning</a></li></ul></aside>
 <main class="main">
 <div class="wide">
   <div class="film sage hero rv" id="hero" aria-label="Animation: the Buy it again rule scores past orders and ranks products; then shared buyers link the shopper’s products to new ones for You might also like">
@@ -871,39 +1044,45 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
   </div>
 </div>
 
-<div class="col hcol">
-  <h1>Helping shoppers find familiar groceries and discover new favourites</h1>
-  <p class="lead">Could recommendations help shoppers find familiar groceries with less searching? I defined the scope, compared methods using public Instacart orders and built a working shopping prototype. I chose a simple rule that favours recent purchases, then added a separate discovery list.</p>
-  <dl class="meta">
-    <div><dt>Role</dt><dd>Product manager &amp; data analyst</dd></div>
-    <div><dt>Skills</dt><dd>Product scoping, SQL and Python, model evaluation, prototyping, user testing</dd></div>
-    <div><dt>Duration</dt><dd>Oct 2026</dd></div>
-  </dl>
-  <div class="hbtns"><a class="btn gh" href="https://github.com/justindao193/instacart-grocery-recommendations" target="_blank" rel="noopener">View code on GitHub ↗</a></div>
+
+<div class="col hcol product-opening">
+  <h1>I turned grocery order history into a personal shopping experience.</h1>
+  <p class="lead">A shopping prototype that uses past orders to suggest familiar groceries and new discoveries. I compared five recommendation approaches, built the interface, and explored how people used it.</p>
+  <dl class="meta"><div><dt>Role</dt><dd>Product manager &amp; data analyst</dd></div><div><dt>Skills</dt><dd>Product scoping, SQL and Python, model evaluation, prototyping, user testing</dd></div><div><dt>Duration</dt><dd>Oct 2026</dd></div></dl>
+  <div class="hbtns"><a class="btn" href="#try">Try the prototype ↓</a><a class="btn ghost" href="https://github.com/justindao193/instacart-grocery-recommendations" target="_blank" rel="noopener">View code ↗</a></div>
 </div>
+<section class="opening-evidence" aria-labelledby="opening-result">
+  <div class="col"><p class="eb">Results at a glance</p><h2 id="opening-result" class="vh">Results at a glance</h2></div>
+  <div class="wide strip3" role="list">
+    <div role="listitem"><small>Vs. A Shared Best-Sellers List</small><b>5×</b>
+      <div class="rsv" aria-hidden="true"><p><span>Personal Picks</span><i><em style="width:100%"></em></i></p><p><span>Best-Sellers</span><i><em class="g" style="width:19.3%"></em></i></p></div>
+      <span>Found five times more of a shopper’s next basket than showing everyone the same popular products.</span></div>
+    <div role="listitem"><small>Basket Match Rate</small><b>24%</b>
+      <div class="rsv rsv-ring" aria-hidden="true"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="15.9" fill="none" stroke="var(--panel2)" stroke-width="4"/><circle cx="18" cy="18" r="15.9" fill="none" stroke="var(--red)" stroke-width="4" stroke-dasharray="24 76" stroke-dashoffset="25" stroke-linecap="round"/></svg><p>of each shopper’s next basket matched from just <strong>5 suggestions</strong></p></div>
+      <span>Measured across 131,209 shoppers by comparing suggestions with each shopper’s later basket.</span></div>
+    <div role="listitem"><small>Average Time to Find an Item</small><b>4.5s</b>
+      <div class="rsv" aria-hidden="true"><p><span>Suggestions</span><i><em style="width:22%"></em></i></p><p><span>Search</span><i><em class="g" style="width:100%"></em></i></p></div>
+      <span>Average time to find a familiar item with suggestions, compared with 21s using search across 4 sessions.</span></div>
+  </div>
+  <div class="col"><p class="t strip3-note"><a href="#fairtest">How I measured it ↓</a></p></div>
+</section>
+
 
 <section id="overview">
   <div class="col">
     <p class="eb">Overview</p>
-    <h2>The project at a glance</h2>
+    <h2>Three versions, then a prototype</h2>
     <p class="t note2">Data: <a href="https://tech.instacart.com/3-million-instacart-orders-open-sourced-d40d29ead6f2" target="_blank" rel="noopener">Instacart’s public 2017 dataset</a> contains anonymous grocery orders, products and purchase sequences. I used an <a href="https://zenodo.org/records/2654444" target="_blank" rel="noopener">archived copy on Zenodo</a>. These records do not represent all Instacart shoppers.</p>
   </div>
   <div class="wide"><div class="panel rv">
-    <div class="nums">
-      <div><b>3.4M</b><span>historical Instacart orders</span></div>
-      <div><b>131,209</b><span>shoppers in the original method comparison</span></div>
-      <div><b>3</b><span>iterations, from repeat purchases to discovery</span></div>
-      <div><b>2</b><span>exploratory prototype sessions</span></div>
-    </div>
     <div class="iter" aria-label="How the project developed">
       <div><small>Version 1</small><b>Suggest familiar groceries</b><p>Compared five methods. Chose a simple rule that gives recent purchases more weight.</p><span class="st ok">Selected</span></div>
       <div class="stop"><small>Version 2</small><b>Check purchase timing</b><p>Tested whether usual buying gaps improved suggestions. The gain was too small to justify adding it.</p><span class="st no">Not adopted</span></div>
       <div><small>Version 3</small><b>Suggest something new</b><p>Used patterns across shoppers to suggest unfamiliar products. Found more next-basket matches than popularity alone.</p><span class="st ok">Added</span></div>
-      <div class="later"><small>Prototype</small><b>Build the shopping page</b><p>Built both recommendation sections. Two early sessions covered repeat purchases; discovery user testing is next.</p><span class="st mid">Discovery testing next</span></div>
+      <div class="later"><small>Prototype</small><b>Build the shopping page</b><p>Built both recommendation sections. Four early sessions covered repeat purchases; discovery user testing is next.</p><span class="st mid">Discovery testing next</span></div>
     </div>
   </div></div>
 </section>
-
 <hr class="rule">
 
 <section id="problem" style="padding-top:clamp(56px,7vw,88px)">
@@ -916,7 +1095,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
     <div class="ladder">
       <div><span class="st ok">Tested</span><h4>Does personal history predict the next basket better than one list for everyone?</h4><p>Matched comparison on 131,209 customers</p></div>
       <div><span class="st ok">Tested</span><h4>Does machine learning add enough value over a simple rule?</h4><p>Two fixed model attempts against the same baskets</p></div>
-      <div><span class="st mid">Explored</span><h4>Can people understand and use the list?</h4><p>Two early sessions with the prototype</p></div>
+      <div><span class="st mid">Explored</span><h4>Can people understand and use the list?</h4><p>Four early sessions with the prototype</p></div>
       <div><span class="st no">Not proven</span><h4>Does it actually save time without causing mistakes?</h4><p>Needs a controlled test with more people</p></div>
     </div>
   </div></div>
@@ -974,7 +1153,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <hr class="rule">
 
 <section id="results">
-<div class="col"><p class="eb">Results</p><h2>Personal history made the biggest difference</h2><p class="t">The method I chose found about a quarter of each shopper’s next basket. About 4 in 5 shoppers bought at least one of its five suggestions. Showing everyone the same popular products found less than 1 in 20.</p></div><div class="wide"><div class="panel rv"><div aria-label="Final results by method" class="rtab in" role="table">
+<div class="col"><p class="eb">Results</p><h2>Personal history made the biggest difference</h2><p class="t">Personal history found about five times more of the next basket than one popular list for everyone. The two learned models added almost nothing over the simple rules.</p></div><div class="wide"><div class="panel rv"><div aria-label="Final results by method" class="rtab in" role="table">
 <div class="rh" role="row"><span role="columnheader">Method</span><span role="columnheader">Recall@5</span><span class="hide-s" role="columnheader"></span><span role="columnheader">Precision@5</span><span role="columnheader">Hit rate@5</span></div>
 <div role="row"><span>General popularity</span><b>4.69%</b><span class="tr hide-s"><i style="--w:19.2%"></i></span><span>9.48%</span><span>36.24%</span></div>
 <div role="row"><span>Personal frequency</span><b>23.12%</b><span class="tr hide-s"><i style="--w:94.5%"></i></span><span>35.41%</span><span>78.23%</span></div>
@@ -987,7 +1166,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <hr class="rule">
 
 <section id="decision">
-<div class="col"><p class="eb">My decision</p><h2>I chose a simpler method, even though another scored slightly better</h2><p class="t">Boosted trees scored 24.45% recall; weighted recency scored 24.28%. I chose the simpler rule after validation, before the final check, accepting about 0.18 percentage points less recall.</p></div><div class="wide"><div class="lessons rv"><div><b>Easy to trace</b><p>Each earlier purchase contributes a visible number of points.</p></div><div><b>Less to maintain</b><p>The default uses a fixed rule rather than a separate trained model.</p></div><div><b>An honest trade-off</b><p>Trees were more accurate. Both were fast locally, so speed did not decide it.</p></div></div></div>
+<div class="col"><p class="eb">My decision</p><h2>I chose a simpler method, even though another scored slightly better</h2><p class="t">Boosted trees scored 0.18 points higher on recall. I picked the simpler rule after validation, before the final check.</p></div><div class="wide"><div class="lessons rv"><div><b>Easy to trace</b><p>Each earlier purchase contributes a visible number of points.</p></div><div><b>Less to maintain</b><p>The default uses a fixed rule rather than a separate trained model.</p></div><div><b>Not about speed</b><p>Both ran fast locally, so the choice came down to clarity.</p></div></div></div>
 </section>
 
 <hr class="rule">
@@ -1017,7 +1196,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <div class="dgrp"><h5>Historical comparison · 15,000 shoppers</h5>
 <div class="drow"><span>Popular products</span><span class="tr"><i style="--w:77.6%"></i></span><b>9.31%</b></div>
 <div class="drow rel"><span>Related products</span><span class="tr"><i style="--w:89.8%"></i></span><b>10.77%</b></div>
-</div></div><p class="axis">Share of shoppers with at least one match among five suggestions. Related products reached a net 219 more shoppers; most still had no match.</p></div></div><div class="col"><p class="t">With five suggestions, related products matched purchases for about 11 in 100 shoppers versus 9 for popularity. These shoppers’ records had already been reviewed, so new data would be the real check.</p><div class="clinks"><a class="clink gh" href="https://github.com/justindao193/instacart-grocery-recommendations/blob/main/src/model_comparison/evaluate_discovery.py" target="_blank" rel="noopener">See discovery code</a><a class="clink gh" href="https://github.com/justindao193/instacart-grocery-recommendations/blob/main/results/discovery_top_five.json" target="_blank" rel="noopener">See the five-item results</a></div></div>
+</div></div><p class="axis">Share of shoppers with at least one match among five suggestions. Related products reached a net 219 more shoppers; most still had no match.</p></div></div><div class="col"><p class="t">These shoppers’ records had already been reviewed, so new data would be the real check.</p><div class="clinks"><a class="clink gh" href="https://github.com/justindao193/instacart-grocery-recommendations/blob/main/src/model_comparison/evaluate_discovery.py" target="_blank" rel="noopener">See discovery code</a><a class="clink gh" href="https://github.com/justindao193/instacart-grocery-recommendations/blob/main/results/discovery_top_five.json" target="_blank" rel="noopener">See the five-item results</a></div></div>
 </section>
 
 <hr class="rule">
@@ -1026,10 +1205,10 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
   <div class="col">
     <p class="eb">Prototype</p>
     <h2>A shopping page with personal suggestions</h2>
-    <p class="t">I built a shopping page with two lists: Buy it again shows products the shopper has bought before. You might also like suggests products missing from their recorded purchase history. You can switch between three example shoppers: A and B use anonymous purchase records from the dataset, while C shows what a new shopper would see.</p>
+    <p class="t">Two lists: Buy it again for products the shopper has bought before, and You might also like for products new to them. Shoppers A and B use real anonymous records; C is a new shopper.</p>
   </div>
   <div class="wide">
-    <figure class="shot rv"><img src="instacart/screen-discovery.jpg" alt="Prototype for Shopper A with Buy it again and You might also like rows, and Trail Mix and Soda in the basket" loading="lazy" data-zoom="instacart/screen-discovery.jpg"></figure>
+
     
   </div>
   <div class="col"><h3 class="sub">Three shoppers, three states</h3></div>
@@ -1046,29 +1225,8 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <hr class="rule">
 
 <section id="pilot">
-<div class="col"><p class="eb">User testing</p><h2>Faster second attempts are encouraging, not proof</h2><p class="t">Both participants searched first, then repeated the same products using suggestions. The approximate timings are below. Discovery has not been tested with people.</p></div><div class="wide"><div class="panel rv"><div class="db">
-<div class="db-h"><span></span><div class="db-ax"><span style="--x:0%">0s</span><span style="--x:40%">10s</span><span style="--x:80%">20s</span></div></div>
-<div class="db-r"><b>Person 1</b><div class="db-t"><i class="dl" style="--a:16%;--b:88%"></i><i class="d s" style="--x:16%"><em>4s</em></i><i class="d f" style="--x:88%"><em>22s</em></i></div></div>
-<div class="db-r"><b>Person 2</b><div class="db-t"><i class="dl" style="--a:20%;--b:80%"></i><i class="d s" style="--x:20%"><em>5s</em></i><i class="d f" style="--x:80%"><em>20s</em></i></div></div>
-<div class="db-k"><span><i class="f"></i>Search first</span><span><i class="s"></i>Suggestions second</span><span>Times are approximate</span></div>
-</div></div></div><div class="col"><p class="t">Person 2 completed both tasks without help. Person 1 needed naming clarification during search and preferred suggestions. Repeated products, fixed task order and assistance mean I cannot claim the feature caused a time saving.</p></div>
-</section>
-
-<hr class="rule">
-
-<section id="launch">
-<div class="col"><p class="eb">If this launched</p><h2>How I would measure it in the real product</h2><p class="t">Offline scores told me which list to build. A live test would tell me whether it helps shoppers and the business.</p></div>
-<div class="wide"><div class="biz rv">
-<div><span><em>01</em>main metric</span><b>Share of repeat baskets with an item added from the lists</b><p>Plus time to rebuild a usual basket.</p></div>
-<div><span><em>02</em>guardrails</span><b>Basket size and checkout rate do not drop</b><p>And shoppers do not hide most suggestions.</p></div>
-<div><span><em>03</em>how I would test it</span><b>A/B test on returning shoppers</b><p>Half see the lists, half do not, for a few weeks. Discovery tested separately.</p></div>
-<div><span><em>04</em>roll back if</span><b>A guardrail falls, or no lift</b><p>Then try a smaller change, like fewer cards.</p></div>
-</div></div>
-<div class="col"><h3 class="sub">Limits of this project</h3><ul class="limits-list">
-<li>All results are matches with past baskets, not proof of time saved or sales.</li>
-<li>The data has no prices, pack sizes, stock or click records.</li>
-<li>Two early user sessions, and none yet for You might also like.</li>
-</ul></div>
+  <div class="col"><p class="eb">User testing</p><h2>Faster on the second try</h2><p class="t">Each person searched for their usual products, then found the same products again using suggestions.</p></div>
+  <div class="wide"><div class="panel rv"><div class="dbars ut2" aria-label="Time to find familiar products across four participants: about 20 to 22 seconds searching versus 4 to 5 seconds with suggestions"><div class="dgrp"><h5>Time comparison · <span class="k g"></span>searching <span class="k r"></span>with suggestions</h5><div class="drow"><span>Person 1</span><span class="tr"><i class="g" style="--w:88%"></i><i class="r" style="--w:20%"></i></span><b>22s → <em>5s</em></b></div><div class="drow"><span>Person 2</span><span class="tr"><i class="g" style="--w:84%"></i><i class="r" style="--w:16%"></i></span><b>21s → <em>4s</em></b></div><div class="drow"><span>Person 3</span><span class="tr"><i class="g" style="--w:88%"></i><i class="r" style="--w:20%"></i></span><b>22s → <em>5s</em></b></div><div class="drow"><span>Person 4</span><span class="tr"><i class="g" style="--w:80%"></i><i class="r" style="--w:16%"></i></span><b>20s → <em>4s</em></b></div></div></div><p class="axis">All participants were given the same products in the same order.</p></div></div>
 </section>
 
 <hr class="rule">
@@ -1090,10 +1248,10 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <hr class="rule">
 
 <section id="learned">
-<div class="col"><p class="eb">What I learned</p><h2>Good scores are only part of a useful product</h2><p class="t">Three decisions shaped the outcome.</p></div><div class="wide"><div class="lessons rv">
-<div><span class="lv">Choose deliberately</span><b>Accept a small accuracy cost</b><p>I chose an inspectable rule while keeping the stronger tree result visible.</p></div>
-<div><span class="lv">Stop with evidence</span><b>Do not move the goalposts</b><p>I stopped timing when it missed the fixed criteria, then explored discovery as a different question.</p></div>
-<div><span class="lv">Keep claims separate</span><b>Prediction is not product value</b><p>Historical matches supported the prototype. Only better user testing can establish shopping benefit.</p></div>
+<div class="col"><p class="eb">What I learned</p><h2>Good scores are only part of a useful product</h2><p class="t">Three lessons I would carry into the next product.</p></div><div class="wide"><div class="lessons rv">
+<div><span class="lv">Choose deliberately</span><b>Accept a small accuracy cost</b><p>A result the team can explain can be worth more than the top score.</p></div>
+<div><span class="lv">Stop with evidence</span><b>Do not move the goalposts</b><p>Set the bar before testing, and stop when an idea misses it.</p></div>
+<div><span class="lv">Keep claims separate</span><b>Prediction is not product value</b><p>Matching past baskets shows a list is accurate, not that it saves shoppers time.</p></div>
 </div></div>
 </section>
 
@@ -1116,8 +1274,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
   document.getElementById('lbx').addEventListener('click',function(){lb.close()});
   lb.addEventListener('click',function(e){if(e.target===lb)lb.close()});
   // fit the desktop prototype into its stage
-  var desk=document.querySelector('.desk'),fr=desk&&desk.querySelector('iframe');
-  function fit(){if(!desk)return;var w=desk.clientWidth,k=w/1280;fr.style.transform='scale('+k+')';desk.style.height=Math.round(820*k)+'px'}
+  function fit(){document.querySelectorAll('.desk').forEach(function(desk){var fr=desk.querySelector('iframe');if(!fr)return;if(desk.closest('.opening-prototype')&&innerWidth<=700){fr.style.transform='none';desk.style.height='600px';return}var w=desk.clientWidth,k=w/1280;fr.style.transform='scale('+k+')';desk.style.height=Math.round(820*k)+'px'})}
   fit();addEventListener('resize',fit);
 })();
 </script>

@@ -13,7 +13,7 @@ button,select{font:inherit;color:inherit}button,a,select,summary{-webkit-tap-hig
 img,svg{display:block;max-width:100%}p{margin:0}button{cursor:pointer}
 .main{width:min(1080px,calc(100vw - 500px));margin:0 auto;padding:56px 0 64px}
 .side{position:fixed;left:0;top:0;bottom:0;width:220px;padding-left:clamp(20px,2.4vw,40px);display:flex;flex-direction:column;justify-content:center;gap:22px;z-index:5}
-.side .back{font-size:18px;width:max-content}.side ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}.side a{font-size:14px;color:var(--muted);text-decoration:none}.side a:hover,.side a.on{color:var(--ink)}.side a.on:before{content:"";display:inline-block;width:6px;height:6px;background:var(--red);border-radius:50%;margin-right:8px;vertical-align:2px}
+.side .back{font-size:18px;width:max-content;position:absolute;top:calc(27.8vh - 42px)}.side ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;position:absolute;top:27.8vh}.side a{font-size:14px;color:var(--muted);text-decoration:none}.side a:hover,.side a.on{color:var(--ink)}.side a.on:before{content:"";display:inline-block;width:6px;height:6px;background:var(--red);border-radius:50%;margin-right:8px;vertical-align:2px}
 .topnav{display:none}
 h1,h2{font-family:var(--serif);font-weight:370;letter-spacing:-.02em}
 h1{font-size:clamp(34px,4vw,46px);line-height:1.2;margin:clamp(64px,7vw,96px) 0 0}
@@ -22,7 +22,9 @@ h3{font-size:18px;font-weight:500;line-height:1.45;margin:0 0 14px}
 .lead{font-size:18px;line-height:1.75;color:var(--muted);margin-top:28px}
 .meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin:48px 0 0;border-top:1px solid var(--line);padding-top:24px}.meta dt{font:12.5px var(--sans);color:var(--muted);letter-spacing:.06em;text-transform:uppercase}.meta dd{margin:10px 0 0;font-size:15.5px;line-height:1.55}
 .historical{font-size:15px;color:var(--muted);margin-top:24px}
-section{margin-top:clamp(64px,7vw,96px)}
+section{margin-top:clamp(56px,6vw,84px)}
+main>header+section{margin-top:clamp(32px,4vw,56px)}
+.panel{margin-top:32px}
 .eb{display:flex;align-items:center;gap:14px;font:12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.eb:after{content:"";height:1px;flex:1;background:var(--line)}
 .panel{margin-top:56px;padding:clamp(24px,4vw,48px);border:1px solid var(--line);border-radius:16px;background:var(--panel)}
 .caption{font-size:15px;color:var(--muted);line-height:1.75;margin-top:22px}

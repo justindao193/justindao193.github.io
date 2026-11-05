@@ -7,7 +7,7 @@ function day(){try{var h=+new Intl.DateTimeFormat('en-CA',{timeZone:'America/Tor
 var m=(s==='light'||s==='dark')?s:'light';document.documentElement.setAttribute('data-theme',m);
 window.jdTheme={get:function(){return document.documentElement.getAttribute('data-theme')},set:function(v){document.documentElement.setAttribute('data-theme',v);try{localStorage.setItem(k,v)}catch(e){}try{sessionStorage.setItem(k,v)}catch(e){}document.dispatchEvent(new CustomEvent('jdtheme'))}};})();</script>
 
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2224%22%20fill%3D%22%23DC4A36%22/%3E%3Cpath%20d%3D%22M33%2035Q33%2019%2050%2019Q67%2019%2067%2035Q67%2045%2057%2050Q51%2053%2051%2060V68Q51%2082%2038%2082Q30%2082%2026%2077%22%20fill%3D%22none%22%20stroke%3D%22%23F8F1E9%22%20stroke-width%3D%2211%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3Ccircle%20cx%3D%2272%22%20cy%3D%2278%22%20r%3D%227%22%20fill%3D%22%23F8F1E9%22/%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2223%22%20fill%3D%22%23DC4A36%22/%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%2211.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20transform%3D%22translate%28-3%20-3.5%29%22%3E%3Cpath%20d%3D%22M32%2064a14%2014%200%200%200%2028%200V33%22/%3E%3Cpath%20d%3D%22M45%2046L60%2031L75%2046%22/%3E%3C/g%3E%3C/svg%3E">
 <link rel="apple-touch-icon" href="icon-180.png">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -188,9 +188,9 @@ p.t{margin:20px 0 0}
 
 /* left sidebar layout (Duc Ngo style) */
 .side{position:fixed;left:0;top:0;bottom:0;width:220px;padding:0 0 0 clamp(20px,2.4vw,40px);display:flex;flex-direction:column;justify-content:center;gap:22px;z-index:5}
-.side .back{text-decoration:none;color:var(--muted);font-size:18px;width:max-content}
+.side .back{text-decoration:none;color:var(--muted);font-size:18px;width:max-content;position:absolute;top:calc(27.8vh - 42px)}
 .side .back:hover{color:var(--ink)}
-.side ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.side ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;position:absolute;top:27.8vh}
 .side li a{text-decoration:none;color:var(--muted);font-size:14px;transition:color .2s}
 .side li a:hover{color:var(--ink)}
 .side li a.on{color:var(--ink);font-weight:500}
@@ -415,12 +415,57 @@ h5{margin-bottom:16px!important}
 /* text runs to the end of the body */
 .main section .col{max-width:none}
 /* Oct 24 2026: one equal gap between every section */
-:root{--secgap:clamp(64px,7vw,96px)}
+:root{--secgap:clamp(56px,6vw,84px)}
 .main > hr.rule{display:none}
 .main > section{padding-top:0!important;padding-bottom:0!important;margin-top:var(--secgap)!important}
+.main > section:first-of-type{margin-top:clamp(32px,4vw,56px)!important}
 .main > section > :last-child,.main > section > :last-child > :last-child{margin-bottom:0}
+.main > section > .wide > .panel,.main > section > .wide > .lessons,.main > section > .wide > .states{margin-top:32px}
 /* meta columns line up with three-card rows (30 October 2026) */
 .meta{column-gap:16px!important}
+
+.brief{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:44px;align-items:stretch}
+.brief>div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 22px 24px;display:flex;flex-direction:column}
+.brief small{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.brief .bv{flex:1;display:flex;flex-direction:column;justify-content:center;margin:20px 0 18px;min-height:132px}
+.brief>div>b{display:block;font-size:16.5px;font-weight:600;line-height:1.4}
+.bf{display:flex;flex-direction:column;gap:10px}
+.bf span{display:flex;align-items:center;gap:10px;font-size:15px;line-height:1.35}
+.bf .was{color:var(--muted)}
+.bf .was s{text-decoration-color:var(--red)}
+.bf .was i{font-family:var(--sans);font-weight:600}
+.bf .now{font-weight:600}
+.bf i{font-style:normal;width:26px;height:26px;flex:none;border-radius:50%;display:grid;place-items:center;font-size:13px;background:var(--panel);color:var(--muted)}
+.bf i svg{width:14px;height:14px;display:block}
+.bf .now i{background:var(--red);color:#fff}
+.bf .arr{color:var(--red);font-size:18px;line-height:1;padding-left:5px}
+.bn{font-family:var(--serif);font-weight:370;font-size:clamp(46px,4.6vw,60px);line-height:1;letter-spacing:-.02em;color:var(--red)}
+.bn em{font-style:normal;font-size:.42em;color:var(--muted);margin-left:4px;letter-spacing:0}
+.bb{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:6px 10px;align-items:center;margin-top:16px;font-size:13px;color:var(--muted)}
+.bb .tr{height:8px;border-radius:99px;background:var(--panel);overflow:hidden}
+.bb .tr i{display:block;height:100%;width:var(--w);border-radius:99px;background:var(--red)}
+.bb .tr i.g{background:var(--muted);opacity:.5}
+.bb b{color:var(--ink);font-weight:600}
+.bg{position:relative;margin-top:18px}
+.bg .tr{height:8px;border-radius:99px;background:var(--panel);overflow:hidden}
+.bg .tr i{display:block;height:100%;width:var(--w);background:var(--red);border-radius:99px}
+.bg .bax{display:flex;justify-content:space-between;margin-top:6px;font-family:var(--mono);font-size:11px;color:var(--muted)}
+.bg .tag{position:absolute;top:-30px;left:var(--w);transform:translateX(-50%);background:var(--mint);color:var(--mint-ink);font-size:12px;font-weight:600;padding:2px 9px;border-radius:99px;white-space:nowrap}
+.bd{display:flex;gap:6px;margin-top:14px;align-items:center;font-size:13px;color:var(--muted)}
+.bd i{width:12px;height:12px;border-radius:50%;background:var(--red)}
+.bd i.o{background:var(--panel)}
+.bd span{margin-left:6px}
+.bs{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.bs li{display:flex;align-items:center;gap:10px;font-size:15px;line-height:1.35}
+.bs li i{font-style:normal;flex:none;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:11px;background:var(--red-soft);color:var(--red-deep)}
+.bw{display:flex;flex-direction:column;gap:14px}
+.bw div{display:flex;flex-direction:column;gap:7px}
+.bw small{letter-spacing:.08em}
+.bw p{margin:0;display:flex;flex-wrap:wrap;gap:6px}
+.bw p span{font-size:13.5px;padding:4px 11px;border-radius:99px;border:1px solid var(--line);background:var(--bg)}
+.bw .me span{background:var(--red-soft);border-color:transparent;color:var(--red-deep);font-weight:500}
+@media (max-width:1200px){.brief{grid-template-columns:1fr}.brief .bv{min-height:0}}
+.panel>.goals:first-child{margin-top:0;padding-top:0;border-top:0}
 </style>
 </head>
 <body>
@@ -429,7 +474,7 @@ h5{margin-bottom:16px!important}
 function top(){document.documentElement.style.scrollBehavior='auto';window.scrollTo(0,0);document.documentElement.style.scrollBehavior=''}
 top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',function(){top();setTimeout(top,60)});addEventListener('pageshow',top)})();</script>
 
-<nav class="topnav" aria-label="Main"><a href="index.html#work">← Work / <b>TStar</b></a><span class="tright" style="padding-right:46px"><a href="index.html#about">About</a></span></nav>
+<nav class="topnav" aria-label="Main"><a href="index.html#work">← Work / <b>TStar</b></a><span class="tright" style="padding-right:46px"></span></nav>
 
 <aside class="side" aria-label="Sections"><a class="back" href="index.html#work" aria-label="Back to work">←</a><ul><li><a href="#problem" data-s="problem solution">overview</a></li><li><a href="#research" data-s="research persona journey">research</a></li><li><a href="#ideas" data-s="ideas">ideas</a></li><li><a href="#paper" data-s="paper midfi">design process</a></li><li><a href="#final" data-s="final decisions">final solution</a></li><li><a href="#product" data-s="product">product thinking</a></li><li><a href="#prototype" data-s="prototype">try it</a></li><li><a href="#nexttest" data-s="nexttest reflection">learning</a></li></ul></aside>
 <main class="main">
@@ -442,9 +487,14 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 
 <div class="col hcol">
   <h1>Helping shy and commuter students make friends in a big cohort with TStar</h1>
-  <p class="lead">In one term, our team of five researched, sketched and tested a mobile app for low-pressure friendships at U of T. I ran the survey, sketched the quest screens and ran tests. A year later, I redesigned the app and made this film.</p>
+  <p class="lead">A mobile app that helps U of T students make friends in their own cohort, without having to say hi first.</p>
+  <div class="brief">
+    <div><small>Goal</small><div class="bv"><div class="bf"><span class="was"><i>?</i><s>Wait for someone to say hi</s></span><span class="arr" aria-hidden="true">↓</span><span class="now"><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z" fill="currentColor"/></svg></i>Say hi with one tap</span></div></div><b>Help shy and commuter students start friendships.</b></div>
+    <div><small>Result</small><div class="bv"><div class="bn">3 / 3</div><div class="bb" role="img" aria-label="Average times: 12.9 seconds to send a Star, 23.4 seconds to finish a quest"><span>Send a Star</span><span class="tr"><i style="--w:43%"></i></span><b>12.9s</b><span>Finish a quest</span><span class="tr"><i style="--w:78%"></i></span><b>23.4s</b></div></div><b>Testers finished both tasks on our mid-fi prototype.</b></div>
+    <div><small>My part</small><div class="bv"><div class="bw"><div><small>Team of 5</small><p><span>Ran the survey</span><span>Sketched quest screens</span><span>Ran tests</span></p></div><div class="me"><small>On my own</small><p><span>Redesign</span><span>Launch film</span></p></div></div></div><b>Team project, then my own redesign.</b></div>
+  </div>
   <dl class="meta">
-    <div><dt>Team</dt><dd>Me + 4 designers</dd></div>
+    <div><dt>Role</dt><dd>5 designers</dd></div>
     <div><dt>Skills</dt><dd>UX research, product design, prototyping, usability testing</dd></div>
     <div><dt>Duration</dt><dd>Oct – Dec 2025</dd></div>
   </dl>
@@ -708,18 +758,10 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
     <h2>Testing the redesign</h2>
     <p class="t">Next, I will run the same two tasks on the hi-fi version with five U of T students, ideally commuters.</p>
   </div>
-  <div class="wide"><div class="panel rv">
-    <p class="ph">The bars to beat, from mid-fi testing</p>
-    <div class="beat">
-      <div class="bt-r"><b>Send a Star</b><div class="bt-t"><i class="bt-f" style="--w:43%"></i><em style="--x:43%">12.9s</em></div></div>
-      <div class="bt-r"><b>Finish a quest</b><div class="bt-t"><i class="bt-f" style="--w:78%"></i><em style="--x:78%">23.4s</em></div></div>
-      <div class="bt-ax"><span></span><div><span style="--x:0%">0s</span><span style="--x:33.3%">10s</span><span style="--x:66.6%">20s</span><span style="--x:100%">30s</span></div></div>
-    </div>
-    <div class="goals">
-      <div><b>5</b><span>U of T students, ideally commuters</span></div>
-      <div><b>Faster</b><span>than mid-fi on both tasks</span></div>
-      <div><b>0</b><span>“What are Star Points?” questions</span></div>
-    </div>
+  <div class="wide"><div class="brief rv" style="margin-top:44px">
+    <div><small>Who</small><div class="bv"><div class="bn">5</div><div class="bd" style="margin-top:16px"><i></i><i></i><i></i><i></i><i></i></div></div><b>U of T students, ideally commuters.</b></div>
+    <div><small>Bar to beat</small><div class="bv"><div class="bn">Faster</div><div class="bb" role="img" aria-label="Mid-fi times to beat: 12.9 seconds to send a Star, 23.4 seconds to finish a quest"><span>Send a Star</span><span class="tr"><i style="--w:43%"></i></span><b>12.9s</b><span>Finish a quest</span><span class="tr"><i style="--w:78%"></i></span><b>23.4s</b></div></div><b>Than the mid-fi times on both tasks.</b></div>
+    <div><small>Success means</small><div class="bv"><div class="bn">0</div></div><b>“What are Star Points?” questions.</b></div>
   </div></div>
 </section>
 

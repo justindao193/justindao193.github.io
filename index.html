@@ -7,7 +7,7 @@
 function day(){try{var h=+new Intl.DateTimeFormat('en-CA',{timeZone:'America/Toronto',hour:'numeric',hourCycle:'h23'}).format(new Date());return h>=7&&h<19}catch(e){return true}}
 var m=(s==='light'||s==='dark')?s:'light';document.documentElement.setAttribute('data-theme',m);
 window.jdTheme={get:function(){return document.documentElement.getAttribute('data-theme')},set:function(v){document.documentElement.setAttribute('data-theme',v);try{localStorage.setItem(k,v)}catch(e){}try{sessionStorage.setItem(k,v)}catch(e){}document.dispatchEvent(new CustomEvent('jdtheme'))}};})();</script>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2224%22%20fill%3D%22%23DC4A36%22/%3E%3Cpath%20d%3D%22M33%2035Q33%2019%2050%2019Q67%2019%2067%2035Q67%2045%2057%2050Q51%2053%2051%2060V68Q51%2082%2038%2082Q30%2082%2026%2077%22%20fill%3D%22none%22%20stroke%3D%22%23F8F1E9%22%20stroke-width%3D%2211%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3Ccircle%20cx%3D%2272%22%20cy%3D%2278%22%20r%3D%227%22%20fill%3D%22%23F8F1E9%22/%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2223%22%20fill%3D%22%23DC4A36%22/%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%2211.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20transform%3D%22translate%28-3%20-3.5%29%22%3E%3Cpath%20d%3D%22M32%2064a14%2014%200%200%200%2028%200V33%22/%3E%3Cpath%20d%3D%22M45%2046L60%2031L75%2046%22/%3E%3C/g%3E%3C/svg%3E">
 <link rel="apple-touch-icon" href="icon-180.png">
 <title>Justin Dao Portfolio</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -163,6 +163,7 @@ nav .home{color:var(--ink);font-weight:500}
 .t-sage{background:radial-gradient(120% 140% at 20% 0%,#F1F6EE 0%,#DDE9D9 60%,#CFE0CB 100%)}
 .t-lilac{background:radial-gradient(120% 140% at 85% 0%,#F4EEFB 0%,#E3D9F3 60%,#D5C8EE 100%)}
 .t-sky{background:radial-gradient(120% 140% at 15% 0%,#EEF4FB 0%,#DCE7F5 60%,#CBDCF0 100%)}
+    .t-peach{background:radial-gradient(120% 140% at 85% 0%,#FFF3EC 0%,#FBE4D8 60%,#F4CFBD 100%)}
 .thumb .stage{position:absolute;left:0;top:0;transform-origin:0 0;font-family:var(--sans);color:#1E1C1B;text-align:left;transition:none}
 .win{width:1120px;height:620px;background:#fff;border-radius:14px;box-shadow:0 0 0 1px rgba(30,28,27,.06),0 40px 80px -30px rgba(40,30,60,.35);overflow:hidden;font-size:14px}
 .wbar{height:40px;display:flex;align-items:center;gap:16px;padding:0 16px;background:#F7F5F2;border-bottom:1px solid #ECE7E1}
@@ -677,7 +678,7 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
 .bp-top i{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--red);margin-right:8px;vertical-align:1px}
 .bp-main h2{font-family:var(--serif);font-weight:370;font-size:clamp(44px,5vw,68px);line-height:1;letter-spacing:-.03em;margin:28px 0 18px}
 .bp-main h2 em{color:var(--red);font-style:italic}
-.bp-intro{font-size:clamp(16.5px,1.4vw,18px);line-height:1.65;margin:0;max-width:30em}
+.bp-intro{font-size:clamp(16.5px,1.4vw,18px);line-height:1.65;margin:0;max-width:30em}.bp-intro+.bp-intro{margin-top:12px}
 .bp-f{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 28px;margin:32px 0 0;padding-top:26px;border-top:1.5px dashed var(--line)}
 .bp-f dt{font:11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
 .bp-f dd{margin:0;font-size:15.5px;line-height:1.45}
@@ -810,6 +811,79 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
 
 
 
+/* Carry-on: current brand marks, without visible labels (31 October 2026) */
+.bp>*,.bp-f>div{min-width:0}
+.bp-f .belt{position:relative;max-width:100%;overflow:hidden;margin-top:4px;padding:6px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.bp-f .belt:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:repeating-linear-gradient(90deg,var(--line) 0 10px,transparent 10px 18px);animation:beltrail 1.2s linear infinite}
+.belt-track{list-style:none;margin:0;padding:0 0 10px;display:flex;gap:10px;width:max-content;animation:belt 42s linear infinite}
+.bp-f .belt:hover .belt-track,.bp-f .belt:hover:after{animation-play-state:paused}
+.belt-track li{flex:0 0 56px;display:grid;place-items:center;width:56px;height:56px;border:1px solid var(--line);border-radius:14px;background:#FFFBF6}
+.belt-track img{display:block;width:34px;height:34px;object-fit:contain}
+.belt-track .wide-mark{width:42px}
+@keyframes belt{to{transform:translateX(calc(-50% - 5px))}}
+@keyframes beltrail{to{background-position:18px 0}}
+@media (prefers-reduced-motion:reduce){.belt-track,.bp-f .belt:after{animation:none}.belt-track{flex-wrap:wrap;width:auto}.bp-f .belt{-webkit-mask-image:none;mask-image:none}.belt-track .belt-copy{display:none}}
+/* Carry-on split-flap board (31 October 2026) */
+.flapboard{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:8px;margin-top:6px;perspective:400px}
+.flap{position:relative;aspect-ratio:1;border-radius:10px;background:#FFFBF6;box-shadow:0 0 0 1px var(--line),0 6px 14px -10px rgba(30,28,27,.5)}
+.flap .h{position:absolute;left:0;right:0;height:50%;overflow:hidden;background:#FFFBF6;backface-visibility:hidden}
+.flap .h.top,.flap .h.ftop{top:0;border-radius:10px 10px 0 0}
+.flap .h.bot,.flap .h.fbot{bottom:0;border-radius:0 0 10px 10px}
+.flap .c{position:absolute;left:0;right:0;height:200%;display:grid;place-items:center}
+.flap .h.bot .c,.flap .h.fbot .c{top:-100%}
+.flap .c img{width:56%;height:56%;object-fit:contain}
+.flap .c img.wide-mark{width:70%}
+.flap .ftop{transform-origin:50% 100%;z-index:2}
+.flap .fbot{transform-origin:50% 0;transform:rotateX(90deg);z-index:2}
+.flap.go .ftop{animation:flapTop .18s ease-in forwards;background:linear-gradient(#FFFBF6,#EFE6DB)}
+.flap.go .fbot{animation:flapBot .2s .18s ease-out forwards}
+.flap:after{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:rgba(30,28,27,.16);z-index:3}
+@keyframes flapTop{to{transform:rotateX(-90deg)}}
+@keyframes flapBot{from{transform:rotateX(90deg)}to{transform:rotateX(0)}}
+@media (max-width:520px){.flapboard{grid-template-columns:repeat(4,minmax(0,1fr))}}
+/* Off duty flap tiles: photo and text faces (31 October 2026) */
+.flap .c.tilepic{place-items:stretch}
+.flap .c.tilepic{background-size:cover;background-position:center;background-repeat:no-repeat}
+.flap .c img[src*="hobbies/"]{width:66%;height:66%}
+.flap .h .c.tilepic{overflow:hidden}
+.flap .c .tx{font:600 clamp(16px,1.7vw,24px)/1 var(--sans);color:#1E1C1B;letter-spacing:-.02em;white-space:nowrap}
+.flap.nohinge:after{display:none}
+
+/* big screens: two projects per row */
+@media (min-width:1024px){
+  #work .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:56px 32px}
+  #work .grid .proj-meta{flex-direction:column;gap:6px}
+  #work .grid .proj .yr{white-space:normal}
+}
+/* Homepage intro: headline first, experience below. */
+.hero-intro{padding-block:clamp(48px,8vw,104px) clamp(56px,7vw,96px)}
+.hero-intro .identity{margin:0 0 28px;font-size:15px;color:var(--muted)}
+.hero-intro h1{margin:0;font-family:var(--serif);font-weight:370;font-size:clamp(40px,5.2vw,72px);line-height:1.08;letter-spacing:-.025em;text-wrap:pretty}
+.hero-intro h1 span{color:var(--red)}
+.hero-intro .experience{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:48px;margin:44px 0 0;max-width:860px}
+.hero-intro .experience dt{margin-bottom:8px;font-size:14px;color:var(--muted)}
+.hero-intro .experience dd{margin:0;font-size:15px;line-height:1.5}
+.hero-intro .experience small{display:block;margin-top:12px;font-size:13.5px;line-height:1.5;color:var(--muted)}
+@media(max-width:600px){.hero-intro .experience{grid-template-columns:1fr;gap:24px;margin-top:32px}.hero-intro .identity{margin-bottom:22px}}
+@media(min-width:1001px){.hero-intro{padding-top:calc(28vh - 10px)}.rail .rmid{top:28vh;transform:none}}
+/* Fixed word slot keeps the following comma and phrase stationary. */
+.hero-word{display:inline-block;position:relative;perspective:500px;white-space:nowrap;vertical-align:baseline}
+.hero-word .word-size{display:inline-block;visibility:hidden}
+.hero-word .word-half{position:absolute;left:0;right:0;height:50%;overflow:hidden;background:var(--bg);backface-visibility:hidden;text-align:left}
+.hero-word .word-top,.hero-word .word-out{top:0}
+.hero-word .word-bottom,.hero-word .word-in{bottom:0}
+.hero-word .word-half b{position:absolute;left:0;font:inherit;line-height:1.08;white-space:nowrap}
+.hero-word .word-bottom b,.hero-word .word-in b{transform:translateY(-50%)}
+.hero-word .word-out{transform-origin:50% 100%;z-index:2}
+.hero-word .word-in{transform-origin:50% 0;transform:rotateX(90deg);z-index:2}
+.hero-word .word-half{transform-style:preserve-3d;will-change:transform}
+.hero-word .word-top,.hero-word .word-out{border-radius:7px 7px 0 0}
+.hero-word .word-bottom,.hero-word .word-in{border-radius:0 0 7px 7px}
+.hero-word.flipping .word-out{animation:heroFoldOut .34s cubic-bezier(.55,0,.8,.45) forwards}
+.hero-word.flipping .word-in{animation:heroFoldIn .5s .32s linear forwards}
+@keyframes heroFoldOut{0%{transform:rotateX(0deg);filter:brightness(1)}100%{transform:rotateX(-90deg);filter:brightness(.72)}}
+@keyframes heroFoldIn{0%{transform:rotateX(90deg);filter:brightness(.7);animation-timing-function:cubic-bezier(.3,.6,.45,1)}62%{transform:rotateX(-9deg);filter:brightness(.97);animation-timing-function:ease-in-out}82%{transform:rotateX(3deg)}100%{transform:rotateX(0deg);filter:brightness(1)}}
+@media(prefers-reduced-motion:reduce){.hero-word.flipping .word-out,.hero-word.flipping .word-in{animation:none}}
 </style>
 <script src="instacart/carrot-intro.js"></script>
 <link rel="stylesheet" href="housing/story.css">
@@ -840,16 +914,12 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
     <span class="nright"><span class="clock"><i aria-hidden="true"></i><span id="city">Toronto</span> <span id="time">--:--</span></span></span>
   </nav>
 
-  <header class="hero3" id="top" data-view="work">
-    <h1 class="name">Justin<br>Dao<span>.</span></h1>
-    <div class="side">
-      <p class="bio">An analyst who designs, and a designer who checks <em>the numbers.</em></p>
-      <dl class="status">
-        <div><dt>Currently</dt><dd>BI Analyst Co-op @ Vale in Toronto</dd></div>
-        <div><dt>Previously</dt><dd>Product Specialist @ Apple, UX design intern @ TMA Solutions</dd></div>
-        <div><dt>Next</dt><dd>U of T grad, June 2027. Open to work :)</dd></div>
-      </dl>
-    </div>
+  <header class="hero-intro" id="top" data-view="work">
+    <h1>I design with <span class="hero-word" aria-label="precision"><span class="word-size" aria-hidden="true">precision</span><span class="word-half word-top" aria-hidden="true"><b>precision</b></span><span class="word-half word-bottom" aria-hidden="true"><b>precision</b></span><span class="word-half word-out" aria-hidden="true"><b>precision</b></span><span class="word-half word-in" aria-hidden="true"><b>precision</b></span></span>, build with AI, and use data to guide decisions.</h1>
+    <dl class="experience">
+      <div><dt>Currently</dt><dd>BI Analyst Co-op @ Vale in Toronto</dd></div>
+      <div><dt>Previously</dt><dd>Product Specialist @ Apple, UX design intern @ TMA Solutions</dd></div>
+    </dl>
   </header>
 
   <main id="work" data-view="work">
@@ -886,6 +956,12 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
         </div>
         <div class="proj-meta"><div><h3>Instacart grocery recommendations</h3><p>Suggesting what shoppers will buy again, and new products they might like, from 3.4M Instacart orders</p></div><span class="yr">Independent · 2026 · Case study →</span></div>
         <div class="skills"><span>Product management</span><span>Machine learning</span><span>Python + SQL</span><span>Prototyping</span></div>
+      </a>
+
+      <a class="proj" href="skillswap.html">
+        <div class="thumb t-peach"><iframe src="skillswap/card.html" title="" aria-hidden="true" tabindex="-1" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0;pointer-events:none"></iframe></div>
+        <div class="proj-meta"><div><h3>SkillSwap</h3><p>An app for swapping unused hobby supplies with people nearby</p></div><span class="yr">U of T · 2026 · Case study →</span></div>
+        <div class="skills"><span>UX research</span><span>Product design</span><span>Usability testing</span><span>Prototyping</span></div>
       </a>
 
       <a class="proj" href="tstar.html">
@@ -988,12 +1064,9 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
           <i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg></i>
           <div class="r"><b>NEXT</b><span>Ready for a new challenge</span></div>
         </div>
-        <p class="bp-intro">I like figuring out how things work and how I can make them better. I love learning new skills, so I am always up to something.</p>
+        <p class="bp-intro">I like figuring out how things work and how I can make them better. I love learning new skills, so I am always up to something.</p><p class="bp-intro">Lately, my favourite thing to learn has been AI. I have been building AI agents and bringing my own ideas to life with it, and I am excited to keep learning more.</p>
         <dl class="bp-f">
-          <div><dt>Home base</dt><dd>Toronto</dd></div>
-          <div><dt>Next stop</dt><dd>Graduating 2027, open to new opportunities :)</dd></div>
-          <div><dt>Carry-on</dt><dd>Product: Prioritization, user testing<br>Development: Python, SQL, JavaScript<br>Tools: Figma, GitHub, Codex + Claude</dd></div>
-          <div><dt>Off duty</dt><dd>Travelling, sports, cooking and hanging out with my cat</dd></div>
+          <div class="w"><dt>Carry-on</dt><dd><div class="flapboard" role="img" aria-label="Tools and languages: SQL, Python, Excel, Power BI, Tableau, Figma, GitHub, JavaScript, HTML, CSS, Claude, Codex, Power Automate, SharePoint, Dynamics 365, SAP" data-tools='[{"n":"SQL","s":"about/tools/sql.svg"},{"n":"Python","s":"about/tools/python.svg"},{"n":"Excel","s":"about/tools/excel.svg"},{"n":"Power BI","s":"about/tools/power-bi.svg"},{"n":"Tableau","s":"about/tools/tableau.ico"},{"n":"Figma","s":"about/tools/figma.svg"},{"n":"GitHub","s":"about/tools/github.svg"},{"n":"JavaScript","s":"about/tools/javascript.svg"},{"n":"HTML","s":"about/tools/html.svg"},{"n":"CSS","s":"about/tools/css.svg"},{"n":"Claude","s":"about/tools/claude.svg"},{"n":"Codex","s":"about/tools/codex.svg"},{"n":"Power Automate","s":"about/tools/power-automate.svg"},{"n":"SharePoint","s":"about/tools/sharepoint.svg"},{"n":"Dynamics 365","s":"about/tools/dynamics-365.svg"},{"n":"SAP","s":"about/tools/sap.png","w":1}]'></div></dd></div>
         </dl>
       </div>
       <div class="bp-stub">
@@ -1017,7 +1090,7 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
       <div class="ab-label"><span>Life lately</span></div>
       <div class="gal">
         <div class="jrow"><figure class="gp" style="--ar:750/1000"><img src="about/friends-night.jpg" alt="Justin and four friends posing happily outside at night in Hong Kong" width="750" height="1000" loading="lazy"><figcaption><b>Friends</b> <span>Happy in Hong Kong</span></figcaption></figure><figure class="gp" style="--ar:750/1000"><img src="about/climbing.jpg" alt="Group selfie with friends at a bouldering gym" width="750" height="1000" loading="lazy"><figcaption><b>Sports</b> <span>Bouldering crew</span></figcaption></figure><figure class="gp" style="--ar:750/1000"><img src="about/theo.jpg" alt="Theo, a grey Russian Blue cat, looking up at the camera" width="750" height="1000" loading="lazy"><figcaption><b>Theo</b> <span>The boss</span></figcaption></figure></div>
-        <div class="jrow"><figure class="gp" style="--ar:1000/668"><img src="about/vale-team.jpg" alt="Justin with five colleagues in front of a Vale Base Metals wall" width="1000" height="668" loading="lazy"><figcaption><b>Work</b> <span>The Vale crew</span></figcaption></figure><figure class="gp" style="--ar:750/1000"><img src="about/food.jpg" alt="Justin at a restaurant table about to dig into a meal" width="750" height="1000" loading="lazy"><figcaption><b>Food</b> <span>Taste testing</span></figcaption></figure></div>
+        <div class="jrow"><figure class="gp" style="--ar:1000/668"><img src="about/vale-team.jpg" alt="Justin with five colleagues in front of a Vale Base Metals wall" width="1000" height="668" loading="lazy"><figcaption><b>Work</b> <span>The Vale crew</span></figcaption></figure><figure class="gp" style="--ar:750/1000"><img src="about/food.jpg" alt="Justin at a restaurant table about to dig into a meal" width="750" height="1000" loading="lazy"><figcaption><b>Food</b> <span>Taste testing</span></figcaption></figure><figure class="gp" style="--ar:750/1000"><img src="about/vector.jpg" alt="Justin dressed as Vector for Halloween in an orange tracksuit and black glasses, posing on a balcony at night" width="750" height="1000" loading="lazy"><figcaption><b>Vector</b> <span>Halloween</span></figcaption></figure></div>
         <div class="jrow"><figure class="gp" style="--ar:750/1000"><img src="about/seoul.jpg" alt="Justin in front of a fairytale castle at Lotte World in Seoul" width="750" height="1000" loading="lazy"><figcaption><b>Seoul</b> <span>Lotte World</span></figcaption></figure><figure class="gp" style="--ar:1000/750"><img src="about/nyc.jpg" alt="The Lower Manhattan skyline on a clear day" width="1000" height="750" loading="lazy"><figcaption><b>New York</b> <span>Lower Manhattan</span></figcaption></figure><figure class="gp" style="--ar:750/1000"><img src="about/toronto.jpg" alt="The Toronto skyline and CN Tower at sunset" width="750" height="1000" loading="lazy"><figcaption><b>Toronto</b> <span>Home</span></figcaption></figure></div>
       </div>
     </div>
@@ -1454,5 +1527,16 @@ redraw();
 
 
 <script>(function(){var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;var io=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle('running',e.isIntersecting);var v=e.target.querySelector('video');if(!v)return;if(e.isIntersecting&&!reduce){var q=v.play();if(q&&q.catch)q.catch(function(){})}else v.pause()})});document.querySelectorAll('.housing-thumb').forEach(function(e){var v=e.querySelector('video');if(v&&reduce){v.removeAttribute('autoplay');v.pause()}io.observe(e)})})();</script>
+<script>(function(){var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+function face(t){if(t.p)return '<div class="c tilepic" style="background-image:url('+t.s+')"></div>';var inner=t.t?'<span class="tx">'+t.t+'</span>':'<img src="'+t.s+'" alt=""'+(t.w?' class="wide-mark"':'')+'>';return '<div class="c">'+inner+'</div>'}
+document.querySelectorAll('.flapboard').forEach(function(b,bi){var T=JSON.parse(b.dataset.tools),N=8;
+if(reduce){b.innerHTML=T.map(function(t){return '<div class="flap'+(t.cat?' nohinge':'')+'" title="'+t.n+'"><div class="h top">'+face(t)+'</div><div class="h bot">'+face(t)+'</div></div>'}).join('');return}
+var tiles=[],page=0;for(var i=0;i<N;i++){var t=T[i%T.length],d=document.createElement('div');d.className='flap';d.title=t.n;d.innerHTML='<div class="h top">'+face(t)+'</div><div class="h bot">'+face(t)+'</div><div class="h ftop">'+face(t)+'</div><div class="h fbot">'+face(t)+'</div>';d.classList.toggle('nohinge',!!t.cat);b.appendChild(d);tiles.push({el:d,cur:t})}
+function flip(tile,next){var e=tile.el,q=function(s){return e.querySelector(s)};q('.top').innerHTML=face(next);q('.ftop').innerHTML=face(tile.cur);q('.fbot').innerHTML=face(next);e.classList.remove('go');void e.offsetWidth;e.classList.add('go');e.title=next.n;
+setTimeout(function(){q('.bot').innerHTML=face(next);q('.ftop').innerHTML=face(next);e.classList.remove('go');e.classList.toggle('nohinge',!!next.cat);tile.cur=next},420)}
+var visible=true;if('IntersectionObserver' in window)new IntersectionObserver(function(es){visible=es[0].isIntersecting}).observe(b);
+setTimeout(function(){setInterval(function(){if(!visible||document.hidden)return;page++;tiles.forEach(function(tile,i){setTimeout(function(){flip(tile,T[(i+page*N)%T.length])},i*90)})},2800)},bi*1400)})})();</script>
+
+<script>(function(){var w=document.querySelector('.hero-word');if(!w)return;var words=['precision','care','intent'],i=0,visible=true,reduce=matchMedia('(prefers-reduced-motion: reduce)');function set(p,t){w.querySelector('.word-'+p+' b').textContent=t}function reset(){i=0;w.classList.remove('flipping');['top','bottom','out','in'].forEach(function(p){set(p,words[0])});w.setAttribute('aria-label',words[0])}reduce.addEventListener('change',reset);new IntersectionObserver(function(es){visible=es[0].isIntersecting}).observe(w);setInterval(function(){if(reduce.matches||document.hidden||!visible)return;var old=words[i];i=(i+1)%words.length;var next=words[i];set('top',next);set('out',old);set('in',next);w.classList.add('flipping');w.setAttribute('aria-label',next);setTimeout(function(){if(reduce.matches)return;set('bottom',next);set('out',next);w.classList.remove('flipping')},860)},2500)})();</script>
 </body>
 </html>
