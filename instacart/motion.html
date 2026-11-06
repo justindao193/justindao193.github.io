@@ -1,0 +1,123 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Instacart film</title><style>
+*{box-sizing:border-box;margin:0}
+html,body{width:1280px;height:720px;overflow:hidden;font-family:"Geist","Inter",Arial,sans-serif;color:#1E2A22;-webkit-font-smoothing:antialiased}
+#f{position:relative;width:1280px;height:720px;overflow:hidden}
+.abs{position:absolute}
+#chip{left:50%;top:44px;transform:translateX(-50%);height:34px;padding:0 16px 0 6px;border-radius:99px;background:rgba(255,255,255,.65);display:flex;align-items:center;gap:10px;font-size:14px;font-weight:500;white-space:nowrap}
+#chip i{font-style:normal;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:#1E3B2B;color:#fff;font-size:11px;font-weight:600}
+#card{background:#fff;box-shadow:0 40px 80px -40px rgba(30,59,43,.45),0 2px 6px rgba(30,59,43,.06);overflow:hidden}
+.layer{position:absolute;inset:0}
+/* orders */
+.oh{position:absolute;left:34px;right:34px;top:26px;display:flex;align-items:center;font-size:15px;color:#6B7D72}
+.oh b{font-size:24px;font-weight:600;color:#1E2A22;letter-spacing:-.01em;margin-right:auto}
+.row{position:absolute;left:34px;width:692px;height:52px;display:flex;align-items:center}
+.row img{width:44px;height:44px;border-radius:12px;object-fit:cover;flex:none}
+.row .nm{width:220px;padding-left:14px;font-size:17px;font-weight:500;white-space:nowrap}
+.dots{display:flex;gap:9px}
+.dots i{width:13px;height:13px;border-radius:50%;background:#EEF2EC}
+.sb{margin-left:auto;width:150px;height:8px;border-radius:99px;background:#EEF2EC;overflow:hidden}
+.sb i{display:block;height:100%;border-radius:99px;background:#1E8A4C}
+.sv{width:46px;text-align:right;font-size:15px;font-weight:600;font-variant-numeric:tabular-nums}
+.rk{position:absolute;left:-26px;width:20px;font-size:13px;font-weight:600;color:#1E8A4C;text-align:right}
+/* buy it again */
+.bh{position:absolute;left:34px;right:34px;top:26px;display:flex;align-items:center}
+.bh b{font-size:24px;font-weight:600;letter-spacing:-.01em}
+.bh .bag{margin-left:auto}
+.tagn{font-size:13px;font-weight:600;background:#FFE7D6;color:#B4501C;border-radius:99px;padding:5px 11px;margin-left:14px}
+.bag{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:500;background:#F1F5EF;border-radius:99px;padding:8px 14px}
+.bag u{text-decoration:none;min-width:22px;height:22px;border-radius:99px;background:#1E3B2B;color:#fff;display:grid;place-items:center;font-size:12px;font-weight:600}
+.tl{position:absolute;top:82px;width:152px;height:196px;border:1.5px solid #EAEFE8;border-radius:20px;padding:10px;display:flex;flex-direction:column;align-items:center}
+.tl img{width:110px;height:96px;object-fit:cover;border-radius:12px}
+.tl p{font-size:14.5px;font-weight:500;margin-top:10px;text-align:center;white-space:nowrap}
+.add{margin-top:auto;height:34px;width:100%;border-radius:12px;background:#1E3B2B;color:#fff;font-size:14px;font-weight:500;display:grid;place-items:center;position:relative;overflow:hidden}
+.add span{position:absolute}
+/* end */
+#stat b{display:block;font-size:180px;font-weight:600;letter-spacing:-.05em;line-height:1;color:#1E3B2B}
+#stat p{font-size:28px;color:#1E3B2B;margin-top:16px}#statp{display:inline-block;background:#fff;border-radius:99px;padding:10px 26px;font-weight:500}
+.big{left:0;right:0;text-align:center}
+.mask{display:inline-block;overflow:hidden;vertical-align:bottom;padding:4px 2px 8px}
+.mask>span{display:inline-block}
+#end{top:300px;font-size:58px;font-weight:600;letter-spacing:-.03em}
+#end .mask>span{padding:6px 26px 10px;border-radius:99px}
+#e1{background:#FBE4D8;color:#9A4316}#e2{background:#DEDCF6;color:#3F3A8B}#e3{background:#fff;color:#1E6B3F}
+#tap{width:46px;height:46px;margin:-23px 0 0 -23px;border-radius:50%;background:rgba(20,40,28,.22);box-shadow:0 0 0 3px rgba(255,255,255,.95),0 8px 18px rgba(0,0,0,.22);z-index:20}
+#ring{width:46px;height:46px;margin:-23px 0 0 -23px;border-radius:50%;border:2px solid rgba(255,255,255,.9);z-index:19}
+</style></head><body><div id="f">
+<div id="chip" class="abs" style="display:none"><i>01</i><span>Read past orders</span></div>
+<div id="card" class="abs">
+  <div class="layer" id="L-o"><div class="oh"><b>Past orders</b><span style="width:212px;display:flex;justify-content:space-between;margin-right:28px"><span>older</span><span>recent</span></span><span style="width:196px;text-align:right">Score</span></div><div id="rows"></div></div>
+  <div class="layer" id="L-b"><div class="bh"><b id="bt">Buy it again</b><span class="tagn" id="tagn">New to you</span><span class="bag">Basket <u id="cnt">0</u></span></div><div id="tiles"></div></div>
+</div>
+<div id="stat" class="abs big" style="top:196px"><b><span class="mask"><span id="num">5×</span></span></b><p><span class="mask"><span id="statp">more of the next basket than best-sellers</span></span></p></div>
+<div id="end" class="abs big"><span class="mask"><span id="e1">Scoped.</span></span> <span class="mask"><span id="e2">Tested.</span></span> <span class="mask"><span id="e3">Built.</span></span></div>
+<img id="carrot" class="abs" src="img/carrot.png" style="left:568px;top:288px;width:144px;height:144px;opacity:0"><div id="ring" class="abs"></div><div id="tap" class="abs"></div>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));const lerp=(a,b,p)=>a+(b-a)*p;
+const E={io:p=>p<.5?4*p*p*p:1-Math.pow(-2*p+2,3)/2,o:p=>1-Math.pow(1-p,3),i:p=>p*p*p,back:p=>{const c=1.5;return 1+(c+1)*Math.pow(p-1,3)+c*Math.pow(p-1,2)},expo:p=>p>=1?1:1-Math.pow(2,-10*p)};
+const seg=(t,a,b,e=E.io)=>e(clamp((t-a)/(b-a)));
+const hex=h=>[0,2,4].map(i=>parseInt(h.replace('#','').substr(i,2),16));
+const mix=(c1,c2,p)=>{const a=hex(c1),b=hex(c2);return`rgb(${a.map((v,i)=>Math.round(lerp(v,b[i],p))).join(',')})`};
+/* data: real example from the case study, weight halves every 5 orders */
+const P=[['cereal','Cinnamon Toast Crunch',[1,2,3,4,5]],['cheese','Organic String Cheese',[1,2,3,8,10]],['soda','Soda',[2,4,5,6,7,8,9,10]],['cola','Zero Calorie Cola',[7,9,10]],['jerky','Original Beef Jerky',[3,5,7,8,9,10]],['pistachio','Pistachios',[6,8,9,10]]];
+P.forEach(p=>p.push(p[2].reduce((s,c)=>s+Math.pow(.5,(10-c)/5),0)));
+const order=P.map((p,i)=>i).sort((a,b)=>P[b][3]-P[a][3]);const rank={};order.forEach((i,r)=>rank[i]=r);
+const mx=Math.max(...P.map(p=>p[3]));
+$('rows').innerHTML=P.map((p,i)=>`<div class="row" id="r${i}"><span class="rk" id="rk${i}">${rank[i]+1}</span><img src="img/p-${p[0]}.jpg"><span class="nm">${p[1]}</span><span class="dots">${Array.from({length:10},(_,c)=>`<i id="o${i}_${c+1}"></i>`).join('')}</span><span class="sb"><i id="sb${i}"></i></span><span class="sv" id="sv${i}">0.00</span></div>`).join('');
+const top5=order.slice(0,5).map(i=>[P[i][0],P[i][1].replace('Original ','').replace('Organic ','')]);
+const disc=[['d-trail','Trail Mix'],['d-clem','Clementines'],['d-granola','Granola Bars'],['d-pubmix','Pub Mix'],['d-apples','Apples']];
+const TX=k=>34+k*(152+14);
+$('tiles').innerHTML=[0,1].map(set=>(set?disc:top5).map((d,k)=>`<div class="tl" id="t${set}${k}" style="left:${TX(k)}px"><img src="img/${set?d[0]:'p-'+d[0]}.jpg"><p>${d[1]}</p><div class="add" id="a${set}${k}"><span class="x1">+ Add</span><span class="x2" style="opacity:0">Added</span></div></div>`).join('')).join('');
+const BG=[[0,'#CBEDC6'],[4.3,'#CBEDC6'],[5.0,'#FFD9C6'],[7.6,'#FFD9C6'],[8.3,'#DEDCF6'],[10.8,'#DEDCF6'],[11.5,'#FFF0DC'],[14.4,'#FFF0DC'],[15,'#CBEDC6']];
+const bg=t=>{for(let i=0;i<BG.length-1;i++){const[a,c1]=BG[i],[b,c2]=BG[i+1];if(t<=b)return mix(c1,c2,E.io(clamp((t-a)/(b-a))))}return BG.at(-1)[1]};
+const R=(id,x,y,w,h,r)=>{const e=$(id).style;e.left=x+'px';e.top=y+'px';e.width=w+'px';e.height=h+'px';if(r!=null)e.borderRadius=r+'px'};
+const op=(id,v)=>$(id).style.opacity=v,tr=(id,v)=>$(id).style.transform=v;
+const GO=[260,128,760,438,32],GB=[180,206,920,310,32],GF=[0,0,1280,720,0];
+const geo=(a,b,p)=>a.map((v,i)=>lerp(v,b[i],p));
+function setAdd(id,p){const a=$(id);a.querySelector('.x1').style.opacity=1-p;a.querySelector('.x1').style.transform=`translateY(${-p*14}px)`;a.querySelector('.x2').style.opacity=p;a.querySelector('.x2').style.transform=`translateY(${(1-p)*14}px)`;a.style.background=mix('#1E3B2B','#1E8A4C',p)}
+function render(t){
+  $('f').style.background=bg(t);
+  const chips=[[0.2,4.2,'01','Read past orders'],[4.8,7.5,'02','Suggest what they buy again'],[8.2,10.8,'03','Help them discover something new']];
+  let co=0,ct=chips[0];for(const c of chips)if(t>=c[0]-.01){ct=c;co=Math.min(seg(t,c[0],c[0]+.4,E.o),1-seg(t,c[1]-.35,c[1],E.i))}
+  op('chip',co);tr('chip',`translateX(-50%) translateY(${(1-co)*-8}px)`);$('chip').children[0].textContent=ct[2];$('chip').children[1].textContent=ct[3];
+  /* card */
+  let g=GO,cs=1,cop=1;
+  if(t<4.3){cs=lerp(.92,1,seg(t,0,.7,E.back));cop=seg(t,0,.35,E.o)}
+  else if(t<10.9){g=geo(GO,GB,seg(t,4.3,5.0,E.io))}
+  else{g=geo(GB,[580,300,120,120,60],seg(t,10.9,11.5,E.io));cop=1-seg(t,11.35,11.55)}
+  if(t>=14.4){g=GO;cop=0}
+  R('card',...g);op('card',cop);tr('card',`scale(${cs})`);$('card').style.background='#fff';
+  /* orders layer */
+  const oOut=seg(t,4.3,4.55,E.i);op('L-o',t>=14.4?1:1-oOut);
+  P.forEach((p,i)=>{const ri=seg(t,.25+i*.06,.7+i*.06,E.o);const rr=seg(t,3.0,3.7,E.io);const y=lerp(76+i*58,76+rank[i]*58,rr);
+    const row=$('r'+i).style;row.top=y+'px';row.opacity=t>=14.4?1:ri*(rank[i]===5?lerp(1,.35,seg(t,3.7,3.95)):1);row.transform=`translateY(${(1-ri)*14}px)`;
+    for(let c=1;c<=10;c++){const on=p[2].includes(c)?seg(t,.8+c*.1,.95+c*.1,E.o):0;const d=$(`o${i}_${c}`).style;d.background=mix('#EEF2EC','#1E8A4C',on*Math.pow(.5,(10-c)/5)**.55);d.transform=`scale(${1+.35*Math.sin(clamp((t-.8-c*.1)/.15)*Math.PI)*(p[2].includes(c)?1:0)})`}
+    const sp=seg(t,2.05+i*.05,2.75+i*.05,E.o);$('sb'+i).style.width=(p[3]/mx*100*sp)+'%';$('sv'+i).textContent=(p[3]*sp).toFixed(2);
+    op('rk'+i,seg(t,3.6,3.9))});
+  if(t>=14.4)P.forEach((p,i)=>{$('r'+i).style.top=(76+i*58)+'px';for(let c=1;c<=10;c++){$(`o${i}_${c}`).style.background='#EEF2EC';$(`o${i}_${c}`).style.transform='none'}$('sb'+i).style.width='0%';$('sv'+i).textContent='0.00';op('rk'+i,0)});
+  /* buy-it-again layer */
+  op('L-b',t<14.4?seg(t,4.75,5.0,E.o)*(1-seg(t,10.95,11.2)):0);
+  const disco=t>=8.0;$('bt').textContent=disco?'You might also like':'Buy it again';op('tagn',disco?seg(t,8.3,8.6,E.o):0);$('tagn').style.display=disco?'':'none';
+  const tb=seg(t,7.75,8.0,E.i);op('bt',t<8?1-tb:seg(t,8.0,8.25,E.o));
+  for(let k=0;k<5;k++){const a=seg(t,4.85+k*.07,5.4+k*.07,E.back);const out=seg(t,7.6+k*.04,7.95+k*.04,E.i);const e=$('t0'+k).style;e.opacity=clamp(a*1.5)*(1-out);e.transform=`translateY(${(1-a)*30-out*24}px)`;
+    const b=seg(t,8.1+k*.07,8.65+k*.07,E.back);const e2=$('t1'+k).style;e2.opacity=clamp(b*1.5);e2.transform=`translateY(${(1-b)*30}px)`}
+  setAdd('a00',seg(t,5.95,6.15,E.o));setAdd('a02',seg(t,6.75,6.95,E.o));for(const k of [1,3,4])setAdd('a0'+k,0);
+  setAdd('a11',seg(t,9.45,9.65,E.o));for(const k of [0,2,3,4])setAdd('a1'+k,0);
+  const n=(t>=5.95?1:0)+(t>=6.75?1:0)+(t>=9.45?1:0);$('cnt').textContent=n;
+  const bump=[5.95,6.75,9.45].reduce((m,s)=>Math.max(m,Math.sin(clamp((t-s)/.3)*Math.PI)),0);tr('cnt',`scale(${1+.35*bump})`);
+  /* stat + end */
+  const sIn=seg(t,11.55,12.2,E.expo),sOut=seg(t,12.9,13.25,E.i);
+  $('num').style.transform=`translateY(${(1-sIn)*105+sOut*-105}%)`;$('statp').style.transform=`translateY(${(1-seg(t,11.75,12.35,E.expo))*110+sOut*-110}%)`;
+  op('stat',0);{const ci=seg(t,11.45,11.95,E.back),co=seg(t,14.05,14.35,E.i);op('carrot',clamp(ci*1.4)*(1-co));tr('carrot',`scale(${lerp(.4,1,ci)*(1-.15*co)}) rotate(${(1-ci)*-12}deg)`)}
+  ['e1','e2','e3'].forEach((id,i)=>{const p=seg(t,13.25+i*.18,13.8+i*.18,E.expo);$(id).style.transform=`translateY(${(1-p)*110}%)`});
+  op('end',0);
+  /* tap path */
+  const ty0=206+82+196-27;const pts=[[5.95,180+TX(0)+76,ty0],[6.75,180+TX(2)+76,ty0],[9.45,180+TX(1)+76,ty0]];
+  let tx=0,ty=0,to=0,pr=0;
+  if(t>5.3&&t<7.3){to=Math.min(seg(t,5.3,5.5),1-seg(t,7.1,7.3));const p1=seg(t,5.35,5.85,E.io),p2=seg(t,6.25,6.65,E.io);tx=lerp(lerp(900,pts[0][1],p1),pts[1][1],p2);ty=lerp(lerp(640,ty0,p1),ty0,p2);pr=Math.max(Math.sin(clamp((t-5.9)/.25)*Math.PI),Math.sin(clamp((t-6.7)/.25)*Math.PI))}
+  if(t>8.8&&t<10.0){to=Math.min(seg(t,8.8,9.0),1-seg(t,9.8,10.0));const p=seg(t,8.85,9.35,E.io);tx=lerp(900,pts[2][1],p);ty=lerp(640,ty0,p);pr=Math.sin(clamp((t-9.4)/.25)*Math.PI)}
+  op('tap',to);R('tap',tx,ty,46,46);tr('tap',`scale(${1-.18*pr})`);op('ring',to*pr*.9);R('ring',tx,ty,46,46);tr('ring',`scale(${1+pr*.9})`);
+}
+window.render=render;render(0);
+</script></body></html>

@@ -886,7 +886,9 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
 @media(prefers-reduced-motion:reduce){.hero-word.flipping .word-out,.hero-word.flipping .word-in{animation:none}}
 .hero-word-group{white-space:nowrap;color:inherit!important}
 .vale-thumb{background:url('vale/media/vale-film.jpg') center/cover}
-@media(prefers-reduced-motion:reduce){.vale-thumb video{visibility:hidden}}
+.ic-thumb{background:#CBEDC6 url('instacart/media/instacart-film.jpg?v=2') center/cover}
+.ic-thumb video,.vale-thumb video{display:block;width:100%;height:100%;object-fit:cover}
+@media(prefers-reduced-motion:reduce){.vale-thumb video,.ic-thumb video{visibility:hidden}}
 @media(max-width:640px){
   .hero-intro{padding-top:36px;padding-bottom:48px}
   .hero-intro h1{font-size:clamp(34px,9vw,40px);text-wrap:normal}
@@ -935,33 +937,7 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
     <div class="grid">
 
       <a class="proj" href="instacart.html">
-        <div class="thumb t-sage">
-          <div class="carrot-intro" hidden aria-hidden="true"><img src="instacart/carrot.png" alt="" width="144" height="144"></div>
-          <div class="stage rc-st" data-w="1280" data-h="510" aria-hidden="true">
-            <div class="rc-card">
-              <div class="rc-hd"><span class="rc-t1">Past orders</span><span class="rc-ax"><em>older</em><em>recent</em></span><span class="rc-t2">Score</span><span class="rc-t3">Buy it again</span></div>
-              <div class="rc-body">
-                <div class="rc-rows"><div class="rc-r" data-k="cereal" data-o="1,2,3,4,5"><img src="instacart/p-cereal.jpg" alt=""><span class="rc-nm">Cinnamon Toast Crunch</span><div class="rc-g"><i class="b" data-c="1"></i><i class="b" data-c="2"></i><i class="b" data-c="3"></i><i class="b" data-c="4"></i><i class="b" data-c="5"></i><i class="" data-c="6"></i><i class="" data-c="7"></i><i class="" data-c="8"></i><i class="" data-c="9"></i><i class="" data-c="10"></i></div><div class="rc-s"><i></i></div><b class="rc-v">0.00</b></div><div class="rc-r" data-k="cheese" data-o="1,2,3,8,10"><img src="instacart/p-cheese.jpg" alt=""><span class="rc-nm">Organic String Cheese</span><div class="rc-g"><i class="b" data-c="1"></i><i class="b" data-c="2"></i><i class="b" data-c="3"></i><i class="" data-c="4"></i><i class="" data-c="5"></i><i class="" data-c="6"></i><i class="" data-c="7"></i><i class="b" data-c="8"></i><i class="" data-c="9"></i><i class="b" data-c="10"></i></div><div class="rc-s"><i></i></div><b class="rc-v">0.00</b></div><div class="rc-r" data-k="soda" data-o="2,4,5,6,7,8,9,10"><img src="instacart/p-soda.jpg" alt=""><span class="rc-nm">Soda</span><div class="rc-g"><i class="" data-c="1"></i><i class="b" data-c="2"></i><i class="" data-c="3"></i><i class="b" data-c="4"></i><i class="b" data-c="5"></i><i class="b" data-c="6"></i><i class="b" data-c="7"></i><i class="b" data-c="8"></i><i class="b" data-c="9"></i><i class="b" data-c="10"></i></div><div class="rc-s"><i></i></div><b class="rc-v">0.00</b></div><div class="rc-r" data-k="cola" data-o="7,9,10"><img src="instacart/p-cola.jpg" alt=""><span class="rc-nm">Zero Calorie Cola</span><div class="rc-g"><i class="" data-c="1"></i><i class="" data-c="2"></i><i class="" data-c="3"></i><i class="" data-c="4"></i><i class="" data-c="5"></i><i class="" data-c="6"></i><i class="b" data-c="7"></i><i class="" data-c="8"></i><i class="b" data-c="9"></i><i class="b" data-c="10"></i></div><div class="rc-s"><i></i></div><b class="rc-v">0.00</b></div><div class="rc-r" data-k="jerky" data-o="3,5,7,8,9,10"><img src="instacart/p-jerky.jpg" alt=""><span class="rc-nm">Original Beef Jerky</span><div class="rc-g"><i class="" data-c="1"></i><i class="" data-c="2"></i><i class="b" data-c="3"></i><i class="" data-c="4"></i><i class="b" data-c="5"></i><i class="" data-c="6"></i><i class="b" data-c="7"></i><i class="b" data-c="8"></i><i class="b" data-c="9"></i><i class="b" data-c="10"></i></div><div class="rc-s"><i></i></div><b class="rc-v">0.00</b></div><div class="rc-r" data-k="pistachio" data-o="6,8,9,10"><img src="instacart/p-pistachio.jpg" alt=""><span class="rc-nm">Pistachios</span><div class="rc-g"><i class="" data-c="1"></i><i class="" data-c="2"></i><i class="" data-c="3"></i><i class="" data-c="4"></i><i class="" data-c="5"></i><i class="b" data-c="6"></i><i class="" data-c="7"></i><i class="b" data-c="8"></i><i class="b" data-c="9"></i><i class="b" data-c="10"></i></div><div class="rc-s"><i></i></div><b class="rc-v">0.00</b></div><div class="rc-scan"></div></div>
-                <ol class="rc-list"></ol>
-              </div>
-              <div class="rc-w"><span>Weight</span><div><i style="--h:28.7%"></i><i style="--h:33.0%"></i><i style="--h:37.9%"></i><i style="--h:43.5%"></i><i style="--h:50.0%"></i><i style="--h:57.4%"></i><i style="--h:66.0%"></i><i style="--h:75.8%"></i><i style="--h:87.1%"></i><i style="--h:100.0%"></i></div><small>halves every 5 orders</small></div>
-            </div>
-          </div>
-        <div class="stage dc-st" data-w="1200" data-h="500" aria-hidden="true">
-            <div class="dc-card">
-              <span class="dc-h" style="left:44px">Shopper A buys</span><span class="dc-h" style="left:560px">Never bought · linked by shared buyers</span><span class="dc-h" style="left:1018px">Points</span>
-              <svg class="dc-svg" viewBox="0 0 1168 460"></svg>
-              <div class="dc-seeds"><div class="dc-seed"><img src="instacart/p-soda.jpg" alt=""><span>Soda</span></div><div class="dc-seed"><img src="instacart/p-jerky.jpg" alt=""><span>Beef Jerky</span></div><div class="dc-seed"><img src="instacart/p-pistachio.jpg" alt=""><span>Pistachios</span></div><div class="dc-more">+ 4 more of A’s products</div></div>
-              <div class="dc-cands"><div class="dc-c" data-p="1.51,1.38,1.01" data-t="5.44"><img src="instacart/d-trail.jpg" alt=""><span>Trail Mix</span><div class="dc-bar"><i></i></div><b>0.00</b></div><div class="dc-c" data-p="1.34,0.98,0.8" data-t="4.52"><img src="instacart/d-clem.jpg" alt=""><span>Clementines</span><div class="dc-bar"><i></i></div><b>0.00</b></div><div class="dc-c" data-p="1.32,0.94,0.65" data-t="4.23"><img src="instacart/d-granola.jpg" alt=""><span>Granola Bars</span><div class="dc-bar"><i></i></div><b>0.00</b></div><div class="dc-c" data-p="1.05,1.03,0.8" data-t="4.13"><img src="instacart/d-pubmix.jpg" alt=""><span>Pub Mix</span><div class="dc-bar"><i></i></div><b>0.00</b></div><div class="dc-c" data-p="1.13,0.76,0.63" data-t="3.77"><img src="instacart/d-apples.jpg" alt=""><span>Apples</span><div class="dc-bar"><i></i></div><b>0.00</b></div></div>
-            </div>
-          </div>
-<div class="stage ba-st dl-st" data-w="1200" data-h="500" aria-hidden="true">
-            <div class="ba-card">
-              <div class="ba-top"><h5>You might also like</h5><span class="dl-tag">New to you</span><span class="ba-bag"><svg viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>Basket <b class="ba-n">0</b></span></div>
-              <div class="ba-row"><div class="ba-t" data-k="trail"><div class="ba-in"><div class="ba-img"><img src="instacart/d-trail.jpg" alt=""><span class="ba-add">+ Add</span></div><b>Trail Mix</b><small>Pantry &amp; meat</small></div></div><div class="ba-t" data-k="clem"><div class="ba-in"><div class="ba-img"><img src="instacart/d-clem.jpg" alt=""><span class="ba-add">+ Add</span></div><b>Clementines</b><small>Fruit</small></div></div><div class="ba-t" data-k="granola"><div class="ba-in"><div class="ba-img"><img src="instacart/d-granola.jpg" alt=""><span class="ba-add">+ Add</span></div><b>Granola Bars</b><small>Pantry &amp; meat</small></div></div><div class="ba-t" data-k="pubmix"><div class="ba-in"><div class="ba-img"><img src="instacart/d-pubmix.jpg" alt=""><span class="ba-add">+ Add</span></div><b>Pub Mix</b><small>Pantry &amp; meat</small></div></div><div class="ba-t" data-k="apples"><div class="ba-in"><div class="ba-img"><img src="instacart/d-apples.jpg" alt=""><span class="ba-add">+ Add</span></div><b>Apples</b><small>Fruit</small></div></div></div>
-            </div>
-          </div>
-        </div>
+        <div class="thumb t-sage ic-thumb"><video src="instacart/media/instacart-film.mp4?v=2" poster="instacart/media/instacart-film.jpg?v=2" muted loop playsinline autoplay preload="metadata" aria-label="Animation: past orders are scored and re-ranked into a Buy it again list, shoppers add items, then related products are suggested. Ends on 5x more of the next basket than best-sellers."></video></div>
         <div class="proj-meta"><div><h3>Instacart grocery recommendations</h3><p>Suggesting what shoppers will buy again, and new products they might like, from 3.4M Instacart orders</p></div><span class="yr">Independent · 2026 · Case study →</span></div>
         <div class="skills"><span>Product management</span><span>Machine learning</span><span>Python + SQL</span><span>Prototyping</span></div>
       </a>
@@ -973,8 +949,8 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
       </a>
 
       <button class="proj" type="button" data-case="sharepoint">
-        <div class="thumb t-lilac vale-thumb"><video src="vale/media/vale-film.mp4?v=2" poster="vale/media/vale-film.jpg?v=2" muted loop playsinline autoplay preload="metadata" aria-label="Justin Dao's internal product work at Vale, including a desk-booking app launched to 50+ users" style="width:100%;height:100%;object-fit:cover"></video></div>
-        <div class="proj-meta"><div><h3>Building internal products at Vale</h3><p>Designing tools that help colleagues book desks, navigate processes and find trusted information</p></div><span class="yr">Vale · 2026–27 · Project summary →</span></div>
+        <div class="thumb t-lilac vale-thumb"><video src="vale/media/vale-film.mp4?v=3" poster="vale/media/vale-film.jpg?v=3" muted loop playsinline autoplay preload="metadata" aria-label="Justin Dao's internal product work at Vale, including a desk-booking app launched to 50+ users" style="width:100%;height:100%;object-fit:cover"></video></div>
+        <div class="proj-meta"><div><h3>Building internal products at Vale</h3><p>Designing tools that help colleagues book desks, navigate processes and find trusted information</p></div><span class="yr">Vale · Present · Project summary →</span></div>
         <div class="skills"><span>Product design</span><span>AI prototyping</span><span>Information architecture</span></div>
       </button>
 
@@ -1063,7 +1039,7 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
     <div class="ab-block">
       <div class="ab-label"><span>Experience</span></div>
       <div class="xp" aria-label="Experience">
-      <div class="xp-row"><span><b>Product Design Co-op · Internal Tools</b> <span>· Vale</span></span><span class="when">2026 – 27</span></div>
+      <div class="xp-row"><span><b>Product Design Co-op · Internal Tools</b> <span>· Vale</span></span><span class="when">2026 – Present</span></div>
       <div class="xp-row"><span><b>VP of Events</b> <span>· BI Student Association</span></span><span class="when">2025 – 26</span></div>
       <div class="xp-row"><span><b>Product Specialist</b> <span>· Apple</span></span><span class="when">2024 – 25</span></div>
       <div class="xp-row"><span><b>UX/UI Design Intern</b> <span>· TMA Solutions</span></span><span class="when">2023</span></div>
@@ -1119,7 +1095,7 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
 
 <template id="c-sharepoint">
   <button class="close" type="button" data-close>Close</button>
-  <header><span class="k">Vale · Product Design Co-op · Internal Tools · 2026–27</span><h2 id="case-title">Building tools for Commercial teams</h2><p class="work-lead">I design, test and build internal apps, process guides and knowledge tools.</p>
+  <header><span class="k">Vale · Product Design Co-op · Internal Tools · 2026 – Present</span><h2 id="case-title">Building tools for Commercial teams</h2><p class="work-lead">I design, test and build internal apps, process guides and knowledge tools.</p>
   <div class="chips"><span>Product discovery</span><span>UX design</span><span>AI-assisted prototyping</span><span>User testing</span></div></header>
   <section><p class="ws-eb">Knowledge tools</p><div class="ws-stage"><div class="ws-flow">
     <div><div class="ws-pic mess"><i></i><i></i><i></i><i></i><i></i></div><b>The friction</b><small>Hard-to-find information</small></div>
