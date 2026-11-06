@@ -921,7 +921,7 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
   </nav>
 
   <header class="hero-intro" id="top" data-view="work">
-    <h1>I bring a <span>curious mind</span> and an <span>eye for detail</span> to everything I build.</h1>
+    <h1>I bring a <span class="hero-word" aria-label="curious"><span class="word-size" aria-hidden="true">analytical</span><span class="word-half word-top" aria-hidden="true"><b>curious</b></span><span class="word-half word-bottom" aria-hidden="true"><b>curious</b></span><span class="word-half word-out" aria-hidden="true"><b>curious</b></span><span class="word-half word-in" aria-hidden="true"><b>curious</b></span></span> mind and an <span>eye for detail</span> to everything I build.</h1>
     <dl class="experience">
       <div><dt>Currently</dt><dd>Product Design Co-op · Internal Tools @ Vale in Toronto</dd></div>
       <div><dt>Previously</dt><dd>Product Specialist @ Apple, UX design intern @ TMA Solutions</dd></div>
@@ -1542,6 +1542,6 @@ setTimeout(function(){q('.bot').innerHTML=face(next);q('.ftop').innerHTML=face(n
 var visible=true;if('IntersectionObserver' in window)new IntersectionObserver(function(es){visible=es[0].isIntersecting}).observe(b);
 setTimeout(function(){setInterval(function(){if(!visible||document.hidden)return;page++;tiles.forEach(function(tile,i){setTimeout(function(){flip(tile,T[(i+page*N)%T.length])},i*90)})},2800)},bi*1400)})})();</script>
 
-<script>(function(){var w=document.querySelector('.hero-word');if(!w)return;var words=['precision','care','intent'],i=0,visible=true,reduce=matchMedia('(prefers-reduced-motion: reduce)');function set(p,t){w.querySelector('.word-'+p+' b').textContent=t}function reset(){i=0;w.classList.remove('flipping');['top','bottom','out','in'].forEach(function(p){set(p,words[0])});w.setAttribute('aria-label',words[0])}reduce.addEventListener('change',reset);new IntersectionObserver(function(es){visible=es[0].isIntersecting}).observe(w);setInterval(function(){if(reduce.matches||document.hidden||!visible)return;var old=words[i];i=(i+1)%words.length;var next=words[i];set('top',next);set('out',old);set('in',next);w.classList.add('flipping');w.setAttribute('aria-label',next);setTimeout(function(){if(reduce.matches)return;set('bottom',next);set('out',next);w.classList.remove('flipping')},860)},2500)})();</script>
+<script>(function(){var w=document.querySelector('.hero-word');if(!w)return;var words=['curious','creative','analytical'],i=0,visible=true,reduce=matchMedia('(prefers-reduced-motion: reduce)');function set(p,t){w.querySelector('.word-'+p+' b').textContent=t}function reset(){i=0;w.classList.remove('flipping');['top','bottom','out','in'].forEach(function(p){set(p,words[0])});w.setAttribute('aria-label',words[0])}reduce.addEventListener('change',reset);new IntersectionObserver(function(es){visible=es[0].isIntersecting}).observe(w);setInterval(function(){if(reduce.matches||document.hidden||!visible)return;var old=words[i];i=(i+1)%words.length;var next=words[i];set('top',next);set('out',old);set('in',next);w.classList.add('flipping');w.setAttribute('aria-label',next);setTimeout(function(){if(reduce.matches)return;set('bottom',next);set('out',next);w.classList.remove('flipping')},860)},2500)})();</script>
 </body>
 </html>
