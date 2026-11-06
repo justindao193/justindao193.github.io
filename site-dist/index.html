@@ -884,6 +884,12 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
 @keyframes heroFoldOut{0%{transform:rotateX(0deg);filter:brightness(1)}100%{transform:rotateX(-90deg);filter:brightness(.72)}}
 @keyframes heroFoldIn{0%{transform:rotateX(90deg);filter:brightness(.7);animation-timing-function:cubic-bezier(.3,.6,.45,1)}62%{transform:rotateX(-9deg);filter:brightness(.97);animation-timing-function:ease-in-out}82%{transform:rotateX(3deg)}100%{transform:rotateX(0deg);filter:brightness(1)}}
 @media(prefers-reduced-motion:reduce){.hero-word.flipping .word-out,.hero-word.flipping .word-in{animation:none}}
+.hero-word-group{white-space:nowrap;color:inherit!important}
+@media(max-width:640px){
+  .hero-intro{padding-top:36px;padding-bottom:48px}
+  .hero-intro h1{font-size:clamp(34px,9vw,40px);text-wrap:normal}
+  #work .thumb{aspect-ratio:16/9}
+}
 </style>
 <script src="instacart/carrot-intro.js"></script>
 <link rel="stylesheet" href="housing/story.css">
@@ -915,7 +921,7 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
   </nav>
 
   <header class="hero-intro" id="top" data-view="work">
-    <h1>I design with <span class="hero-word" aria-label="precision"><span class="word-size" aria-hidden="true">precision</span><span class="word-half word-top" aria-hidden="true"><b>precision</b></span><span class="word-half word-bottom" aria-hidden="true"><b>precision</b></span><span class="word-half word-out" aria-hidden="true"><b>precision</b></span><span class="word-half word-in" aria-hidden="true"><b>precision</b></span></span>, build with AI, and use data to guide decisions.</h1>
+    <h1>I design with <span class="hero-word-group"><span class="hero-word" aria-label="precision"><span class="word-size" aria-hidden="true">precision</span><span class="word-half word-top" aria-hidden="true"><b>precision</b></span><span class="word-half word-bottom" aria-hidden="true"><b>precision</b></span><span class="word-half word-out" aria-hidden="true"><b>precision</b></span><span class="word-half word-in" aria-hidden="true"><b>precision</b></span></span>,</span> build with AI, and use data to guide decisions.</h1>
     <dl class="experience">
       <div><dt>Currently</dt><dd>BI Analyst Co-op @ Vale in Toronto</dd></div>
       <div><dt>Previously</dt><dd>Product Specialist @ Apple, UX design intern @ TMA Solutions</dd></div>
