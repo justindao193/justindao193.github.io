@@ -1,15 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-<!-- Microsoft Clarity: portfolio visitor analytics -->
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "z9i9j8i1qw");
-</script>
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script>(function(){var k='jd-theme',s=null;try{s=new URLSearchParams(location.search).get('theme')}catch(e){}if(s!=='light'&&s!=='dark'){s=null;try{s=localStorage.getItem(k)}catch(e){}if(s!=='light'&&s!=='dark'){try{s=sessionStorage.getItem(k)}catch(e){}}}else{try{localStorage.setItem(k,s)}catch(e){}}
@@ -860,7 +851,7 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
 
 /* big screens: two projects per row */
 @media (min-width:1024px){
-  #work .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:56px 32px}
+  #work .grid{grid-template-columns:1fr;gap:88px}
   #work .grid .proj-meta{flex-direction:column;gap:6px}
   #work .grid .proj .yr{white-space:normal}
 }
@@ -996,29 +987,6 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
       </a>
 
 
-
-      <button class="proj" type="button" data-case="tma">
-        <div class="thumb t-sky">
-          <div class="stage win" data-w="1120" aria-hidden="true">
-            <div class="wbar"><span class="wd"><i></i><i></i><i></i></span><span class="url">tripplanner.com/book</span><span></span></div>
-            <div class="wbody t-body">
-              <div class="t-steps"><span><i>1</i>Search</span><span><i>2</i>Compare</span><span><i>3</i>Travellers</span><span><i>4</i>Seats</span><span><i>5</i>Review</span><span><i>6</i>Pay</span></div>
-              <div class="t-cols">
-                <section class="t-opts">
-                  <h4>Toronto → Vancouver</h4><p class="sub">Fri, Nov 14 · 1 traveller</p>
-                  <div class="opt"><div><b>7:05 → 9:20</b><span>Nonstop · 5h 15m</span></div><em>Best</em></div>
-                  <div class="opt"><div><b>10:40 → 13:10</b><span>Nonstop · 5h 30m</span></div><em></em></div>
-                  <div class="opt"><div><b>16:15 → 20:55</b><span>1 stop · 7h 40m</span></div><em></em></div>
-                </section>
-                <aside class="t-sum"><b>Your trip</b><div class="row"><span>Flight</span><span class="v1">Not chosen</span></div><div class="row"><span>Traveller</span><span>Sherry L.</span></div><div class="row"><span>Seat</span><span class="v2">Any</span></div><span class="t-go">Continue</span></aside>
-              </div>
-              <div class="t-done"><span>✓</span><div><b>Booked in 6 steps</b><small>down from 9 steps · recreated example</small></div></div>
-            </div>
-          </div>
-        </div>
-        <div class="proj-meta"><div><h3>TMA travel booking redesign</h3><p>Turning user research into a shorter, clearer booking flow</p></div><span class="yr">TMA · 2023 · Project summary →</span></div>
-        <div class="skills"><span>UX/UI design</span><span>User interviews</span><span>Usability testing</span><span>Wireframing</span></div>
-      </button>
 
     </div>
   </main>
