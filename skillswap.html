@@ -596,6 +596,7 @@ main section>.col>*:last-child{margin-bottom:0}
 .results-top{padding-top:clamp(40px,5vw,64px)}
 .hcol .hbtns{margin-top:32px;display:flex;gap:16px;flex-wrap:wrap}
 </style>
+<style>.db-sum + .wide{padding-top:28px}.db-sum + .wide .hbtns{margin:0!important}.db-sum{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:40px}.db-sum>div{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:clamp(18px,2.2vw,26px);display:flex;flex-direction:column}.db-sum small{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}.db-sum b{display:block;margin-top:12px;font-family:var(--serif);font-weight:400;font-size:clamp(21px,2vw,25px);line-height:1.25;letter-spacing:-.01em}.db-sum b.num{white-space:nowrap;font-size:clamp(34px,3.4vw,46px);font-weight:370;color:var(--red);line-height:1;letter-spacing:-.03em}.db-sum b.num span{color:var(--muted);font-size:.6em}.db-sum p{margin:auto 0 0;padding-top:14px;font-size:14.5px;color:var(--muted);line-height:1.45}.db-sum ul{margin:14px 0 0;padding:0;list-style:none;font-size:15px;display:grid;gap:8px}.db-sum li{padding-left:18px;position:relative}.db-sum li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--red)}@media(max-width:900px){.db-sum{grid-template-columns:1fr}}.next{max-width:1040px;margin-left:0!important;margin-right:auto!important}.main > section#problem{margin-top:clamp(88px,10vw,128px)!important}.aiw{grid-template-columns:1fr 1fr!important}.db-role{margin:40px 0 0}.db-role>div{display:grid;grid-template-columns:minmax(120px,.55fr) 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--line);align-items:center}.db-role>div:last-child{border-bottom:0}.db-role dt{font-size:15px;color:var(--red-deep)}.db-role dd{margin:0;font-size:15.5px;line-height:1.5}.db-role small{display:block;margin-top:4px;font-size:14.5px;color:var(--muted)}.db-tools{display:flex;flex-wrap:wrap;gap:8px}.db-tools span{padding:5px 14px;border:1px solid var(--line);background:var(--card);border-radius:999px;font-size:14px;line-height:1.4}@media(max-width:560px){.db-role>div{grid-template-columns:1fr;gap:4px}}</style>
 </head>
 <body>
 <button class="tbtn fx" type="button" aria-label="Switch light or dark mode"><svg viewBox="0 0 24 24" class="i-sun"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><svg viewBox="0 0 24 24" class="i-moon"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
@@ -615,38 +616,21 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 </div>
 
 <div class="col hcol">
-  <h1>Making new hobbies cheaper by swapping the supplies people never use</h1>
-  <p class="lead">An app for swapping or buying unused hobby supplies with people nearby, taken from team research to my own working redesign.</p>
-  <dl class="meta">
-    <div><dt>Role</dt><dd>4 designers</dd></div>
-    <div><dt>Skills</dt><dd>UX research, product design, prototyping, usability testing</dd></div>
-    <div><dt>Duration</dt><dd>Jan – Apr 2026</dd></div>
-  </dl>
-  <div class="hbtns"><a class="btn" href="#prototype">Try the prototype ↓</a></div>
+  <h1>Old hobby supplies sit in drawers while beginners pay full price.</h1>
+  <p class="lead">So our team designed SkillSwap, a local app for swapping unused supplies. After testing it with 12 people, I redesigned it on my own as working code.</p>
+  
 </div>
 
-<section class="results-top">
-  <div class="col"><p class="eb">Results at a glance</p></div>
-  <div class="wide strip3" role="list">
-    <div role="listitem"><small>Usability score</small><b>71.7</b>
-      <div class="rsv" aria-hidden="true"><p><span>SkillSwap</span><i><em style="width:71.7%"></em></i></p><p><span>Typical app</span><i><em class="g" style="width:68%"></em></i></p></div>
-      <span>Average from 12 people testing our Figma prototype, rated “Good”.</span></div>
-    <div role="listitem"><small>Problem size</small><b>86%</b>
-      <div class="rsv rsv-ring" aria-hidden="true"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="15.9" fill="none" stroke="var(--panel2)" stroke-width="4"/><circle cx="18" cy="18" r="15.9" fill="none" stroke="var(--red)" stroke-width="4" stroke-dasharray="86 14" stroke-dashoffset="25" stroke-linecap="round"/></svg><p>of people with unused supplies <strong>just put them away</strong></p></div>
-      <span>From our survey of 42 people; 74% wanted to try a hobby last year but did not.</span></div>
-    <div role="listitem"><small>Time to finish a swap</small><b>4.5 min</b>
-      <div class="rsv" aria-hidden="true"><p><span>Fastest, 2 min</span><i><em style="width:25%"></em></i></p><p><span>Slowest, 8 min</span><i><em class="g" style="width:100%"></em></i></p></div>
-      <span>Average for 12 testers to list old supplies, find something new and finish one exchange.</span></div>
-  </div>
-  <div class="col"><p class="t strip3-note"><a href="#hifitest">How we tested it ↓</a></p></div>
-</section>
+<div class="wide"><dl class="db-role"><div><dt>Role</dt><dd>Product designer</dd></div><div><dt>Collaborators</dt><dd>Me + 3 designers</dd></div><div><dt>Timeline</dt><dd>Jan – Apr 2026</dd></div><div><dt>Tools</dt><dd class="db-tools"><span>Claude Code</span><span>Codex</span><span>Figma</span></dd></div></dl></div>
+<div class="wide db-sum rv">
+  <div><small>Problem</small><b>86% of people with unused supplies just put them away.</b><p>From our survey of 42 people.</p></div>
+  <div><small>Result</small><b class="num" style="font-size:clamp(52px,5vw,72px)">71.7</b><p>usability score from 12 testers, rated “Good”.</p></div>
+  <div><small>My part</small><ul><li>Research and testing with my team</li><li>Solo redesign from test findings</li><li>Built the prototype with Claude</li></ul></div>
+</div>
+<div class="wide"><div class="hbtns"><a class="btn" href="#prototype">Try the prototype ↓</a></div></div>
 
 <section id="problem">
-  <div class="col">
-    <p class="eb">The problem</p>
-    <h2>Starting a hobby costs money, and old supplies sit in drawers</h2>
-    <p class="t">Crochet needs hooks and yarn. Painting needs paints and brushes. People with leftovers rarely pass them on, and people starting out pay full price. Our survey of 42 people showed both sides.</p>
-  </div>
+  <div class="col"><p class="eb">The problem</p><h2>Cost stops people from starting, and leftovers go unused</h2><p class="t">Our survey of 42 people showed both sides.</p></div>
   <div class="wide"><div class="panel rv" id="bars">
     <div class="bars">
       <div class="bar"><span>Think about the cost of materials before starting a hobby</span><span class="v">76%</span><span class="tr"><i style="--w:76.2%"></i></span></div>
@@ -658,11 +642,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 </section>
 
 <section id="solution">
-  <div class="col">
-    <p class="eb">The solution</p>
-    <h2>SkillSwap, a local app where swapping comes before buying</h2>
-    <p class="t">People list supplies they no longer use and trade them with someone nearby. If nobody has what they want, they can still buy cheaply. Every step is built to feel safe with a stranger.</p>
-  </div>
+  <div class="col"><p class="eb">The solution</p><h2>Swap first, buy second</h2><p class="t">A local app for trading unused hobby supplies, built to feel safe with a stranger.</p></div>
   <div class="wide"><div class="sol rv">
     <article><div class="sc"><img src="skillswap/media/hifi-home.jpg" alt="SkillSwap home with hobby tags and nearby listings" loading="lazy"></div><div class="tx"><span><em>01</em>browse</span><b>Find supplies by hobby</b><p>Pick a hobby, set how far you will travel, and see what people nearby are ready to pass on.</p></div></article>
     <article><div class="sc"><img src="skillswap/media/hifi-review.jpg" alt="Review your offer screen showing yarn swapped for a watercolour set" loading="lazy"></div><div class="tx"><span><em>02</em>offer</span><b>Make an offer in two steps</b><p>Choose what you give, where and when to meet, then check it all before you send.</p></div></article>
@@ -673,11 +653,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <hr class="rule">
 
 <section id="research" style="padding-top:clamp(56px,7vw,88px)">
-  <div class="col">
-    <p class="eb">Research</p>
-    <h2>42 surveys and 7 interviews, grouped by who we heard from</h2>
-    <p class="t">The survey gave us the numbers and the interviews explained them. Here is who we heard from, and what that meant the app had to do.</p>
-  </div>
+  <div class="col"><p class="eb">Research</p><h2>42 surveys and 7 interviews</h2><p class="t">Who we heard from, and what the app had to do.</p></div>
   <div class="wide"><div class="panel rv">
     <div class="who3" style="margin-top:0;padding-top:0;border-top:0">
       <div><b>5</b><h5>Students with hobbies</h5><p>Cost and time decide what they start. A supportive community keeps them going.</p></div>
@@ -685,12 +661,6 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
       <div><b>1</b><h5>Campus sustainability lead</h5><p>Pointed us to reuse. Across interviews, how much people thought about waste varied a lot.</p></div>
     </div>
   </div></div>
-  <div class="col">
-    <div class="qs">
-      <p>“Always scared to give money or send to strangers. You might get scammed and there is no central authority.”<span>A survey respondent, about Reddit</span></p>
-      <p>“Meeting with strangers can be scary, but can be alleviated by meeting in a public place.”<span>A survey respondent, about Kijiji</span></p>
-    </div>
-  </div>
   <div class="col"><h3 class="sub" style="margin-top:clamp(36px,4vw,52px)">What the app had to do</h3></div>
   <div class="wide"><div class="rqs rv">
     <div><b>60%</b><span>worry about the other person</span><h5>Keep exchanges safe</h5></div>
@@ -704,11 +674,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <hr class="rule">
 
 <section id="persona" style="padding-top:clamp(56px,7vw,88px)">
-  <div class="col">
-    <p class="eb">Persona</p>
-    <h2>We designed for Sam, a curious beginner on a budget</h2>
-    <p class="t">He wants to try new hobbies but stops at the price of supplies. His mirror image is Cathy, a crocheter whose leftover yarn takes over her room.</p>
-  </div>
+  <div class="col"><p class="eb">Persona</p><h2>Designing for Sam, a curious beginner on a budget</h2><p class="t">His mirror image is Cathy, whose leftover yarn takes over her room.</p></div>
   <div class="wide"><div class="panel rv">
     <div class="pc">
       <div class="pc-id">
@@ -729,12 +695,6 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
           <div><h5>Pains</h5><ul><li>Budget limits what he tries</li><li>Used supplies arrive worse than shown</li></ul></div>
           <div><h5>Needs</h5><ul><li>A place to discover hobbies</li><li>A way to stick to his budget</li></ul></div>
         </div>
-        <div class="traits">
-          <div class="tr2"><span>Spends freely</span><i style="--p:92%"></i><span>Saves money</span></div>
-          <div class="tr2"><span>Sticks to one</span><i style="--p:80%"></i><span>Tries new skills</span></div>
-          <div class="tr2"><span>Buys new</span><i style="--p:66%"></i><span>Reuses</span></div>
-          <div class="tr2"><span>Practical</span><i style="--p:76%"></i><span>Creative</span></div>
-        </div>
       </div>
     </div>
   </div></div>
@@ -743,32 +703,16 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <hr class="rule">
 
 <section id="paper" style="padding-top:clamp(56px,7vw,88px)">
-  <div class="col">
-    <p class="eb">Ideas to paper</p>
-    <h2>Three concepts, merged into one, then tested on paper</h2>
-    <p class="t">Testers liked the trust score in the social concept but said the trading app felt like Facebook Marketplace. We kept trading at the centre, added community trust, and ran 5 expert reviews and 4 think-alouds on paper.</p>
-  </div>
+  <div class="col"><p class="eb">Ideas to paper</p><h2>Three concepts, merged into one</h2><p class="t">Testers liked the trust score, but trading alone felt like Facebook Marketplace.</p></div>
   <div class="wide"><div class="sol rv">
     <article><div class="sc sk"><img class="z" data-zoom="skillswap/media/lofi-concept-trade.jpg" src="skillswap/media/lofi-concept-trade.jpg" alt="Sketches of the trading-focused app" loading="lazy"></div><div class="tx"><span><em>01</em>trade</span><b>Trading app</b><p>Fast search and trade requests. Felt too much like existing marketplaces.</p></div></article>
     <article><div class="sc sk"><img class="z" data-zoom="skillswap/media/lofi-concept-web.jpg" src="skillswap/media/lofi-concept-web.jpg" alt="Sketches of the trading and forum website" loading="lazy"></div><div class="tx"><span><em>02</em>forum</span><b>Trading plus forums</b><p>Added a forum per hobby. The forums did not help anyone find supplies.</p></div></article>
     <article><div class="sc sk"><img class="z" data-zoom="skillswap/media/lofi-concept-social.jpg" src="skillswap/media/lofi-concept-social.jpg" alt="Sketches of the social community app" loading="lazy"></div><div class="tx"><span><em>03</em>social</span><b>Social community</b><p>Hobby groups and a “SkillSwaps” count for trust. Liked, but unclear how a trade happens.</p></div></article>
   </div></div>
-  <div class="col">
-    <div class="finds" style="margin-top:32px">
-      <div><small>“Accept” and “Decline” in the chat looked like accepting the chat itself</small><p>Moved them onto the request</p></div>
-      <div><small>Nobody knew what the “SkillSwapped” button did</small><p>Explained it and made it the green confirm button</p></div>
-      <div><small>The “+” did not say a camera would open</small><p>Used a camera icon for live photos</p></div>
-      <div><small>Some pages had no menu bar or back button</small><p>Menu bar on every page, back button on the rest</p></div>
-    </div>
-  </div>
 </section>
 
 <section id="hifitest">
-  <div class="col">
-    <p class="eb">Hi-fi prototype</p>
-    <h2>A Figma prototype, tested with 12 people</h2>
-    <p class="t">We built the screens below in Figma. Ten hobbyists, one small business owner and one campus sustainability lead got one loose task: get rid of old supplies, find something new, and finish one exchange.</p>
-  </div>
+  <div class="col"><p class="eb">Testing</p><h2>Tested in Figma with 12 people</h2><p class="t">One task: get rid of old supplies, find something new, finish one swap.</p></div>
   <div class="wide"><div class="fgal rv"><figure><button type="button" data-zoom="skillswap/media/figma-home.jpg" aria-label="Zoom: Figma home screen"><img src="skillswap/media/figma-home.jpg" alt="Our Figma home screen" loading="lazy"></button><figcaption>Home</figcaption></figure><figure><button type="button" data-zoom="skillswap/media/figma-listing.jpg" aria-label="Zoom: Figma listing screen"><img src="skillswap/media/figma-listing.jpg" alt="Our Figma listing screen" loading="lazy"></button><figcaption>Listing</figcaption></figure><figure><button type="button" data-zoom="skillswap/media/figma-buy.jpg" aria-label="Zoom: Figma buying screen"><img src="skillswap/media/figma-buy.jpg" alt="Our Figma buying screen" loading="lazy"></button><figcaption>Buying</figcaption></figure><figure><button type="button" data-zoom="skillswap/media/figma-incoming.jpg" aria-label="Zoom: Figma request screen"><img src="skillswap/media/figma-incoming.jpg" alt="Our Figma request screen" loading="lazy"></button><figcaption>Request</figcaption></figure><figure><button type="button" data-zoom="skillswap/media/figma-profile.jpg" aria-label="Zoom: Figma my listings screen"><img src="skillswap/media/figma-profile.jpg" alt="Our Figma my listings screen" loading="lazy"></button><figcaption>My listings</figcaption></figure><figure><button type="button" data-zoom="skillswap/media/figma-post.jpg" aria-label="Zoom: Figma post screen"><img src="skillswap/media/figma-post.jpg" alt="Our Figma post screen" loading="lazy"></button><figcaption>Post</figcaption></figure></div></div>
   <div class="wide"><div class="panel rv" style="margin-top:24px">
     <div class="ph2"><h4 class="ph">Usability score (SUS) for each tester</h4></div>
@@ -786,14 +730,6 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
     <div class="qs">
       <p>“It was the same layout as pretty much any other app, so it was pretty simple to use.”<span>Familiar, but not memorable</span></p>
       <p>“[I] was confused about the accepting/renegotiate functionality in the chat.”<span>Accepting was still unclear</span></p>
-      <p>“The home page is messy; categories are not clear.”<span>Browsing needed order</span></p>
-      <p>“Couldn’t see the listings you posted. Tried to find it to see/edit.”<span>No place for your own listings</span></p>
-    </div>
-    <div class="finds" style="margin-top:40px">
-      <div><small>Testers also asked to</small><p>Browse before making an account</p></div>
-      <div><small>Testers also asked to</small><p>Pay only after the other person accepts</p></div>
-      <div><small>Testers also asked for</small><p>Instructions for first-time users</p></div>
-      <div><small>Testers also asked for</small><p>Hobbies beyond arts and crafts</p></div>
     </div>
   </div>
 </section>
@@ -801,11 +737,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <hr class="rule">
 
 <section id="final" style="padding-top:clamp(56px,7vw,88px)">
-  <div class="col">
-    <p class="eb">Final design</p>
-    <h2>I redesigned SkillSwap on my own around what testers struggled with</h2>
-    <p class="t">Each clip is the live prototype playing itself. The reasons behind each change follow below.</p>
-  </div>
+  <div class="col"><p class="eb">Final design</p><h2>My solo redesign, built around what testers struggled with</h2><p class="t">Each clip is the live prototype playing itself.</p></div>
   <div class="wide">
     <div class="dm rv"><div><span class="dn">01<em>browse</em></span><h3>Find supplies by hobby</h3><p>Tap a hobby tag, or open “All categories”. Every card shows the name, then the price or “swap”.</p></div><div class="dm-ph"><iframe src="skillswap/app/index.html?embed&amp;demo=browse" title="Clip: browsing by hobby" loading="lazy"></iframe></div></div>
     <div class="dm rv"><div><span class="dn">02<em>offer</em></span><h3>Make an offer in two steps</h3><p>Pick what you give, a public spot and a day, then check the whole trade before sending.</p></div><div class="dm-ph"><iframe src="skillswap/app/index.html?embed&amp;demo=request" title="Clip: making a swap offer" loading="lazy"></iframe></div></div>
@@ -819,11 +751,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 </section>
 
 <section id="decisions">
-  <div class="col">
-    <p class="eb">My decisions</p>
-    <h2>Why I made these calls</h2>
-    <p class="t">Every change started with something a tester did or said. On the left is the Figma prototype we tested, on the right my redesign.</p>
-  </div>
+  <div class="col"><p class="eb">My decisions</p><h2>Every change started with a tester</h2><p class="t">Left: what we tested in Figma. Right: my redesign.</p></div>
   <div class="wide"><div class="dc rv" style="margin-top:40px">
     <article><div class="ba"><figure><figcaption>Tested in Figma</figcaption><button type="button" data-zoom="skillswap/media/figma-incoming.jpg" aria-label="Zoom: Figma request with Accept and Renegotiate"><img src="skillswap/media/figma-incoming.jpg" alt="Figma request with Accept and Renegotiate" loading="lazy"></button></figure><i aria-hidden="true">→</i><figure><figcaption>My redesign</figcaption><button type="button" data-zoom="skillswap/media/hifi-incoming.jpg" aria-label="Zoom: Redesigned swap request screen"><img src="skillswap/media/hifi-incoming.jpg" alt="Redesigned swap request screen" loading="lazy" style="object-position:top"></button></figure></div>
       <div class="dc-tx"><span class="dn">01</span><h4>Give requests their own screen</h4><dl><div><dt>Saw</dt><dd>People were unsure what accepting or renegotiating in the chat would do.</dd></div><div><dt>Did</dt><dd>A request screen that shows what you get, what you give, where and when, then Accept swap, Renegotiate or Decline. The chat stays for talking.</dd></div></dl></div></article>
@@ -837,15 +765,10 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 </section>
 
 <section id="ai">
-  <div class="col">
-    <p class="eb">How I built it</p>
-    <h2>I built the redesign as working code with Claude</h2>
-    <p class="t">Instead of making more Figma screens, I described each screen and flow to Claude, which wrote the code. I reviewed every screen and asked for changes until it fit what testers needed.</p>
-  </div>
+  <div class="col"><p class="eb">How I built it</p><h2>Built as working code with Claude</h2><p class="t">I described each screen, Claude wrote the code, and I made every design call.</p></div>
   <div class="wide"><div class="aiw rv">
-    <div><h4>Claude did</h4><ul><li>Wrote the HTML, CSS and JavaScript</li><li>Turned my notes into screens and flows</li><li>Made the self-playing clips above</li></ul></div>
-    <div><h4>I decided</h4><ul><li>Which tester problems to fix first</li><li>Patterns to borrow from eBay, Kijiji and Facebook Marketplace</li><li>Colours, spacing and every label, like “swapped” instead of “traded”</li></ul></div>
-    <div><h4>I pushed back on</h4><ul><li>A blue that did not fit the brand, replaced with dark buttons and pastels</li><li>A sign-up step, since testers wanted to browse before making an account</li><li>Crowded screens, split into fewer choices per step</li></ul></div>
+    <div><h4>Claude did</h4><ul><li>Wrote the HTML, CSS and JavaScript</li><li>Turned my notes into screens and flows</li></ul></div>
+    <div><h4>I decided</h4><ul><li>Which tester problems to fix first</li><li>Patterns to borrow from eBay, Kijiji and Facebook Marketplace</li></ul></div>
   </div></div>
 </section>
 
@@ -863,23 +786,13 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <hr class="rule">
 
 <section id="reflection" style="padding-top:clamp(56px,7vw,88px)">
-  <div class="col">
-    <p class="eb">Reflection</p>
-    <h2>What I learned</h2>
-    <p class="t">Looking back, the biggest lessons were about scope and clarity, not screens.</p>
-  </div>
+  <div class="col"><p class="eb">Reflection</p><h2>What I learned</h2><p class="t">Scope and clarity mattered more than screens.</p></div>
   <div class="wide"><div class="learn4 rv">
-    <div><span class="ln">01</span><h4>Narrow the scope early</h4><p class="ba2"><s>Trading, forums and tutorials</s><i>→</i>Trading done well</p><p>We were told early that the scope was too big. Cutting sooner would have left more time for the core flow.</p></div>
-    <div><span class="ln">02</span><h4>Push ideas further apart</h4><p class="ba2"><s>Three similar concepts</s><i>→</i>Truly different directions</p><p>Peers said our concepts looked like Facebook Marketplace. Wider brainstorming would have helped.</p></div>
-    <div><span class="ln">03</span><h4>Labels must say what happens</h4><p class="ba2"><s>“Accept” in a chat</s><i>→</i>“Accept swap” on the request</p><p>The same confusion came back in two rounds of testing until the action had its own screen.</p></div>
-    <div><span class="ln">04</span><h4>Pick metrics that fit the task</h4><p class="ba2"><s>Time and error rate</s><i>→</i>SUS plus clear task goals</p><p>Our open task made times vary from 2 to 8 minutes, and we had not defined what counts as an error.</p></div>
+    <div><span class="ln">01</span><h4>Narrow the scope early</h4><p class="ba2"><s>Trading, forums and tutorials</s><i>→</i>Trading done well</p></div>
+    <div><span class="ln">02</span><h4>Push ideas further apart</h4><p class="ba2"><s>Three similar concepts</s><i>→</i>Truly different directions</p></div>
+    <div><span class="ln">03</span><h4>Labels must say what happens</h4><p class="ba2"><s>“Accept” in a chat</s><i>→</i>“Accept swap” on the request</p></div>
+    <div><span class="ln">04</span><h4>Pick metrics that fit the task</h4><p class="ba2"><s>Time and error rate</s><i>→</i>SUS plus clear task goals</p></div>
   </div></div>
-  <div class="col"><h3 class="sub">What I would do next</h3></div>
-  <div class="wide"><ol class="road rv">
-    <li><span>test</span><b>Run the redesign with 10 hobbyists</b></li>
-    <li><span>alerts</span><b>Notify people when a saved search gets a match</b></li>
-    <li><span>community</span><b>Let people talk about the same hobby</b></li>
-  </ol></div>
 </section>
 
 <a class="next" href="tstar.html"><span><small>Next project</small><b>TStar</b></span><span class="arr">→</span></a>
@@ -904,7 +817,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
   lb.addEventListener('click',function(e){if(e.target===lb)lb.close()});
 })();
 </script>
-<script>(function(){document.querySelectorAll('.tbtn').forEach(function(b){b.addEventListener('click',function(){jdTheme.set(jdTheme.get()==='dark'?'light':'dark')})});
+<script>(function(){document.querySelectorAll('.tbtn').forEach(function(b){b.addEventListener('click',function(){(function(){var to=jdTheme.get()==='dark'?'light':'dark',d=document,r=d.documentElement;if(!d.startViewTransition||matchMedia('(prefers-reduced-motion: reduce)').matches){jdTheme.set(to);return}var b=d.querySelector('.tbtn'),x=innerWidth-40,y=40;if(b){var q=b.getBoundingClientRect();x=q.left+q.width/2;y=q.top+q.height/2}var R=Math.hypot(Math.max(x,innerWidth-x),Math.max(y,innerHeight-y));if(!d.getElementById('jdcirc')){var st=d.createElement('style');st.id='jdcirc';st.textContent='html.jdcirc::view-transition-old(root),html.jdcirc::view-transition-new(root){animation:none;mix-blend-mode:normal}html.jdcirc::view-transition-old(root){z-index:1}html.jdcirc::view-transition-new(root){z-index:2}';d.head.appendChild(st)}r.classList.add('jdcirc');var t=d.startViewTransition(function(){jdTheme.set(to)});t.ready.then(function(){r.animate({clipPath:['circle(0px at '+x+'px '+y+'px)','circle('+R+'px at '+x+'px '+y+'px)']},{duration:650,easing:'cubic-bezier(.4,0,.2,1)',pseudoElement:'::view-transition-new(root)'})});t.finished.finally(function(){r.classList.remove('jdcirc')})})()})});
 document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href');if(!/^[\w\/-]+\.html(\?|#|$)/.test(h))return;
 var p=h.split('#'),q=p[0].replace(/([?&])theme=(light|dark)&?/,'$1').replace(/[?&]$/,'');a.setAttribute('href',q+(q.indexOf('?')>-1?'&':'?')+'theme='+jdTheme.get()+(p[1]!=null?'#'+p[1]:''))},true)})();</script>
 <script>(function(){function f(){document.querySelectorAll('.dm-ph').forEach(function(b){var i=b.querySelector('iframe');if(i)i.style.transform='scale('+(b.clientWidth/390)+')'})}f();addEventListener('resize',f);addEventListener('load',f)})();</script>

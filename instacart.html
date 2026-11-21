@@ -1006,6 +1006,7 @@ details.more .mbody p.t:first-child{margin-top:4px}
 @media(prefers-reduced-motion:reduce){.ic-vid video{visibility:hidden}}
 </style>
 <script src="instacart/carrot-intro.js"></script>
+<style>.db-sum + .wide{padding-top:28px}.db-sum + .wide .hbtns{margin:0!important}.db-sum{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:40px}.db-sum>div{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:clamp(18px,2.2vw,26px);display:flex;flex-direction:column}.db-sum small{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}.db-sum b{display:block;margin-top:12px;font-family:var(--serif);font-weight:400;font-size:clamp(21px,2vw,25px);line-height:1.25;letter-spacing:-.01em}.db-sum b.num{white-space:nowrap;font-size:clamp(34px,3.4vw,46px);font-weight:370;color:var(--red);line-height:1;letter-spacing:-.03em}.db-sum b.num span{color:var(--muted);font-size:.6em}.db-sum p{margin:auto 0 0;padding-top:14px;font-size:14.5px;color:var(--muted);line-height:1.45}.db-sum ul{margin:14px 0 0;padding:0;list-style:none;font-size:15px;display:grid;gap:8px}.db-sum li{padding-left:18px;position:relative}.db-sum li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--red)}.main > section#overview{margin-top:clamp(88px,10vw,128px)!important}#results .strip3{margin-bottom:28px}@media(max-width:900px){.db-sum{grid-template-columns:1fr}}.next{max-width:1040px;margin-left:0!important;margin-right:auto!important}.db-role{margin:40px 0 0}.db-role>div{display:grid;grid-template-columns:minmax(120px,.55fr) 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--line);align-items:center}.db-role>div:last-child{border-bottom:0}.db-role dt{font-size:15px;color:var(--red-deep)}.db-role dd{margin:0;font-size:15.5px;line-height:1.5}.db-role small{display:block;margin-top:4px;font-size:14.5px;color:var(--muted)}.db-tools{display:flex;flex-wrap:wrap;gap:8px}.db-tools span{padding:5px 14px;border:1px solid var(--line);background:var(--card);border-radius:999px;font-size:14px;line-height:1.4}@media(max-width:560px){.db-role>div{grid-template-columns:1fr;gap:4px}}</style>
 </head>
 <body>
 <button class="tbtn fx" type="button" aria-label="Switch light or dark mode"><svg viewBox="0 0 24 24" class="i-sun"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><svg viewBox="0 0 24 24" class="i-moon"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
@@ -1015,21 +1016,79 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 
 <nav class="topnav" aria-label="Main"><a href="index.html#work">← Work / <b>Instacart grocery recommendations</b></a><span class="tright" style="padding-right:46px"></span></nav>
 
-<aside class="side" aria-label="Sections"><a class="back" href="index.html#work" aria-label="Back to work">←</a><ul><li><a href="#overview" data-s="overview problem">overview</a></li><li><a href="#scope" data-s="scope">scope</a></li><li><a href="#fairtest" data-s="fairtest methods results decision">version 1</a></li><li><a href="#v2" data-s="v2">version 2</a></li><li><a href="#v3" data-s="v3">version 3</a></li><li><a href="#prototype" data-s="prototype pilot">prototype</a></li><li><a href="#try" data-s="try">try it</a></li><li><a href="#learned" data-s="learned">learning</a></li></ul></aside>
+<aside class="side" aria-label="Sections"><a class="back" href="index.html#work" aria-label="Back to work">←</a><ul><li><a href="#overview" data-s="overview problem">overview</a></li><li><a href="#fairtest" data-s="fairtest methods">method</a></li><li><a href="#results" data-s="results decision">results</a></li><li><a href="#v2" data-s="v2 v3">versions 2–3</a></li><li><a href="#prototype" data-s="prototype pilot">prototype</a></li><li><a href="#try" data-s="try">try it</a></li><li><a href="#learned" data-s="learned">learning</a></li></ul></aside>
 <main class="main">
 <div class="wide">
   <div class="film sage rv ic-vid"><video src="instacart/media/instacart-film.mp4?v=2" poster="instacart/media/instacart-film.jpg?v=2" muted loop playsinline autoplay preload="metadata" aria-label="Animation: past orders are scored and re-ranked into a Buy it again list, shoppers add items, then related products are suggested. Ends on 5x more of the next basket than best-sellers."></video></div>
 </div>
 
-
-<div class="col hcol product-opening">
-  <h1>I turned grocery order history into a personal shopping experience.</h1>
-  <p class="lead">A shopping prototype that uses past orders to suggest familiar groceries and new discoveries. I compared five recommendation approaches, built the interface, and explored how people used it.</p>
-  <dl class="meta"><div><dt>Role</dt><dd>Product manager &amp; data analyst</dd></div><div><dt>Skills</dt><dd>Product scoping, SQL and Python, model evaluation, prototyping, user testing</dd></div><div><dt>Duration</dt><dd>Oct 2026</dd></div></dl>
-  <div class="hbtns"><a class="btn" href="#try">Try the prototype ↓</a><a class="btn ghost" href="https://github.com/justindao193/instacart-grocery-recommendations" target="_blank" rel="noopener">View code ↗</a></div>
+<div class="col hcol product-opening" id="top">
+  <h1>Shoppers buy the same groceries every week, but still have to search for them.</h1>
+  <p class="lead">So I used 3.4M real Instacart orders to suggest what each shopper will buy again, built the shopping page, and tested it with people.</p>
 </div>
-<section class="opening-evidence" aria-labelledby="opening-result">
-  <div class="col"><p class="eb">Results at a glance</p><h2 id="opening-result" class="vh">Results at a glance</h2></div>
+<div class="wide"><dl class="db-role"><div><dt>Role</dt><dd>Product manager &amp; data analyst</dd></div><div><dt>Timeline</dt><dd>Oct 2026</dd></div><div><dt>Tools</dt><dd class="db-tools"><span>Claude Code</span><span>Codex</span><span>SQL</span><span>Python</span></dd></div></dl></div>
+<div class="wide db-sum rv">
+  <div><small>Problem</small><b>Shoppers search for the same items every week.</b><p>One best-sellers list treats every shopper the same.</p></div>
+  <div><small>Result</small><b class="num" style="font-size:clamp(52px,5vw,72px)">5×</b><p>more of the next basket found than a shared best-sellers list.</p></div>
+  <div><small>My part</small><ul><li>Data analysis in SQL and Python</li><li>Compared five ranking methods</li><li>Built and tested the prototype</li></ul></div>
+</div>
+<div class="wide"><div class="hbtns"><a class="btn" href="#try">Try the prototype ↓</a><a class="btn ghost" href="https://github.com/justindao193/instacart-grocery-recommendations" target="_blank" rel="noopener">View code ↗</a></div></div>
+
+<section id="overview" class="db-first">
+  <div class="col"><p class="eb">The approach</p><h2>Three versions, then a prototype</h2><p class="t">Each version answered one question. I kept what worked and stopped what did not.</p></div>
+  <div class="wide"><div class="panel rv">
+    <div class="iter" aria-label="How the project developed">
+      <div><small>Version 1</small><b>Suggest familiar groceries</b><p>Compared five methods. Chose a simple rule that gives recent purchases more weight.</p><span class="st ok">Selected</span></div>
+      <div class="stop"><small>Version 2</small><b>Check purchase timing</b><p>Tested whether usual buying gaps improved suggestions. The gain was too small to justify adding it.</p><span class="st no">Not adopted</span></div>
+      <div><small>Version 3</small><b>Suggest something new</b><p>Used patterns across shoppers to suggest unfamiliar products. Found more next-basket matches than popularity alone.</p><span class="st ok">Added</span></div>
+      <div class="later"><small>Prototype</small><b>Build the shopping page</b><p>Built both recommendation sections. Four early sessions covered repeat purchases; discovery user testing is next.</p><span class="st mid">Discovery testing next</span></div>
+    </div>
+  </div></div>
+
+</section>
+
+<section id="problem">
+  <div class="col"><p class="eb">The problem</p><h2>Four questions to answer</h2><p class="t">Order history can show what is accurate. Only people can show what is easier.</p></div>
+  <div class="wide"><div class="panel rv">
+    <div class="ladder">
+      <div><span class="st ok">Tested</span><h4>Does personal history predict the next basket better than one list for everyone?</h4><p>Matched comparison on 131,209 customers</p></div>
+      <div><span class="st ok">Tested</span><h4>Does machine learning add enough value over a simple rule?</h4><p>Two fixed model attempts against the same baskets</p></div>
+      <div><span class="st mid">Explored</span><h4>Can people understand and use the list?</h4><p>Four early sessions with the prototype</p></div>
+      <div><span class="st no">Not proven</span><h4>Does it actually save time without causing mistakes?</h4><p>Needs a controlled test with more people</p></div>
+    </div>
+  </div></div>
+
+</section>
+
+<hr class="rule">
+
+<section id="fairtest">
+  <div class="col"><p class="eb">How I tested</p><h2>Predict a basket the model never saw</h2><p class="t">Every method used earlier orders only, then I checked the answer once.</p></div>
+  <div class="wide"><div class="panel rv"><div aria-label="Order timeline for one customer" class="tl">
+<div class="tl-h"><span></span><span>Earlier orders</span><span>Second-last</span><span>Last order</span><span>Held-back basket</span></div>
+<div class="tl-r"><b>Train the models</b><i class="in" style="grid-column:2/3"></i><i class="ans" style="grid-column:3/4">answer</i></div>
+<div class="tl-r"><b>Try and compare ideas</b><i class="in" style="grid-column:2/4"></i><i class="ans" style="grid-column:4/5">answer</i></div>
+<div class="tl-r"><b>Final check, once</b><i class="in" style="grid-column:2/5"></i><i class="ans fin" style="grid-column:5/6">answer</i></div>
+</div></div></div><div class="col"><p class="t"><b>Recall</b> measures how much of the next basket the list found. <b>Precision</b> measures how many suggestions matched. <b>Hit rate</b> asks whether at least one matched.</p></div>
+
+</section>
+
+<section id="methods">
+  <div class="col"><p class="eb">Methods</p><h2>Five ways to rank a shopper’s groceries</h2><p class="t">Three simple rules and two learned models, all tested on the same 131,209 shoppers.</p></div>
+  <div class="wide"><div class="panel rv"><ol class="steps">
+<li><span class="n">1</span><div><h4>General popularity</h4><p>The same popular products for everyone.</p></div></li>
+<li><span class="n">2</span><div><h4>Personal frequency</h4><p>The products each shopper bought most often.</p></div></li>
+<li class="pick"><span class="n">3</span><div><h4>Weighted recency</h4><p>Add purchase points, giving recent orders more weight.</p></div></li>
+<li><span class="n">4</span><div><h4>Logistic regression</h4><p>Learn how to combine five purchase-history clues.</p></div></li>
+<li><span class="n">5</span><div><h4>Boosted trees</h4><p>Use small decision trees to combine those clues more flexibly.</p></div></li>
+</ol></div></div><div class="col"><div class="clinks"><a class="clink gh" href="https://github.com/justindao193/instacart-grocery-recommendations/blob/main/src/baselines/score_weighted_recency.py" target="_blank" rel="noopener">See the ranking code</a><a class="clink gh" href="https://github.com/justindao193/instacart-grocery-recommendations/blob/main/src/baselines/weighted_recency.sql" target="_blank" rel="noopener">See the SQL</a></div></div>
+
+</section>
+
+<hr class="rule">
+
+<section id="results">
+  <div class="col"><p class="eb">Results</p><h2>Personal history beat a shared list by 5×</h2><p class="t">Tested on 131,209 shoppers, using earlier orders to predict their next basket.</p></div>
   <div class="wide strip3" role="list">
     <div role="listitem"><small>Vs. A Shared Best-Sellers List</small><b>5×</b>
       <div class="rsv" aria-hidden="true"><p><span>Personal Picks</span><i><em style="width:100%"></em></i></p><p><span>Best-Sellers</span><i><em class="g" style="width:19.3%"></em></i></p></div>
@@ -1041,96 +1100,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
       <div class="rsv" aria-hidden="true"><p><span>Suggestions</span><i><em style="width:22%"></em></i></p><p><span>Search</span><i><em class="g" style="width:100%"></em></i></p></div>
       <span>Average time to find a familiar item with suggestions, compared with 21s using search across 4 sessions.</span></div>
   </div>
-  <div class="col"><p class="t strip3-note"><a href="#fairtest">How I measured it ↓</a></p></div>
-</section>
-
-
-<section id="overview">
-  <div class="col">
-    <p class="eb">Overview</p>
-    <h2>Three versions, then a prototype</h2>
-    <p class="t note2">Data: <a href="https://tech.instacart.com/3-million-instacart-orders-open-sourced-d40d29ead6f2" target="_blank" rel="noopener">Instacart’s public 2017 dataset</a> contains anonymous grocery orders, products and purchase sequences. I used an <a href="https://zenodo.org/records/2654444" target="_blank" rel="noopener">archived copy on Zenodo</a>. These records do not represent all Instacart shoppers.</p>
-  </div>
-  <div class="wide"><div class="panel rv">
-    <div class="iter" aria-label="How the project developed">
-      <div><small>Version 1</small><b>Suggest familiar groceries</b><p>Compared five methods. Chose a simple rule that gives recent purchases more weight.</p><span class="st ok">Selected</span></div>
-      <div class="stop"><small>Version 2</small><b>Check purchase timing</b><p>Tested whether usual buying gaps improved suggestions. The gain was too small to justify adding it.</p><span class="st no">Not adopted</span></div>
-      <div><small>Version 3</small><b>Suggest something new</b><p>Used patterns across shoppers to suggest unfamiliar products. Found more next-basket matches than popularity alone.</p><span class="st ok">Added</span></div>
-      <div class="later"><small>Prototype</small><b>Build the shopping page</b><p>Built both recommendation sections. Four early sessions covered repeat purchases; discovery user testing is next.</p><span class="st mid">Discovery testing next</span></div>
-    </div>
-  </div></div>
-</section>
-<hr class="rule">
-
-<section id="problem" style="padding-top:clamp(56px,7vw,88px)">
-  <div class="col">
-    <p class="eb">The problem</p>
-    <h2>Shoppers rebuy the same groceries, but still have to find them</h2>
-    <p class="t">A visible list could help returning shoppers reach familiar groceries with less searching. Historical orders let me test prediction accuracy; testing with people is needed to assess shopping effort.</p>
-  </div>
-  <div class="wide"><div class="panel rv">
-    <div class="ladder">
-      <div><span class="st ok">Tested</span><h4>Does personal history predict the next basket better than one list for everyone?</h4><p>Matched comparison on 131,209 customers</p></div>
-      <div><span class="st ok">Tested</span><h4>Does machine learning add enough value over a simple rule?</h4><p>Two fixed model attempts against the same baskets</p></div>
-      <div><span class="st mid">Explored</span><h4>Can people understand and use the list?</h4><p>Four early sessions with the prototype</p></div>
-      <div><span class="st no">Not proven</span><h4>Does it actually save time without causing mistakes?</h4><p>Needs a controlled test with more people</p></div>
-    </div>
-  </div></div>
-</section>
-
-<hr class="rule">
-
-<section id="scope" style="padding-top:clamp(56px,7vw,88px)">
-  <div class="col">
-    <p class="eb">Scope</p>
-    <h2>What I chose to build, and what I left out</h2>
-    <p class="t">I started with five familiar products and reversible controls. Discovery came later as a separate feature; prices, stock and checkout stayed outside scope.</p>
-  </div>
-  <div class="wide"><div class="panel rv">
-    <div class="split">
-      <div><h5>In Version 1</h5><ul class="plain">
-        <li>Up to five familiar products</li>
-        <li>Add with one tap, never automatically</li>
-        <li>Hide one exact product, then Show it again later</li>
-        <li>Fewer than five when history is short, never random filler</li>
-        <li>Popular products as a clear fallback for a new shopper</li>
-      </ul></div>
-      <div><h5>Left out</h5><ul class="plain out">
-        <li>New-product discovery (tested later in Version 3)</li>
-        <li>Prices, stock and checkout</li>
-        <li>Real accounts or an Instacart connection</li>
-        <li>Learning from clicks in real time</li>
-        <li>A separate dashboard</li>
-      </ul></div>
-    </div>
-  </div></div>
-</section>
-
-<hr class="rule">
-
-<section id="fairtest">
-<div class="col"><p class="eb">How I tested</p><h2>Use earlier orders to predict a later basket</h2><p class="t">Every method faced the same 131,209 shoppers. Lists used earlier purchases only and were saved before checking final baskets.</p></div><div class="wide"><div class="panel rv"><div aria-label="Order timeline for one customer" class="tl">
-<div class="tl-h"><span></span><span>Earlier orders</span><span>Second-last</span><span>Last order</span><span>Held-back basket</span></div>
-<div class="tl-r"><b>Train the models</b><i class="in" style="grid-column:2/3"></i><i class="ans" style="grid-column:3/4">answer</i></div>
-<div class="tl-r"><b>Try and compare ideas</b><i class="in" style="grid-column:2/4"></i><i class="ans" style="grid-column:4/5">answer</i></div>
-<div class="tl-r"><b>Final check, once</b><i class="in" style="grid-column:2/5"></i><i class="ans fin" style="grid-column:5/6">answer</i></div>
-</div></div></div><div class="col"><p class="t"><b>Recall</b> measures how much of the next basket the list found. <b>Precision</b> measures how many suggestions matched. <b>Hit rate</b> asks whether at least one matched.</p></div>
-</section>
-
-<section id="methods">
-<div class="col"><p class="eb">Methods</p><h2>Start simple, then test the extra complexity</h2><p class="t">I compared three simple rules and two learned models. Recent purchases earned more weight in the rule I selected.</p></div><div class="wide"><div class="panel rv"><ol class="steps">
-<li><span class="n">1</span><div><h4>General popularity</h4><p>The same popular products for everyone.</p></div></li>
-<li><span class="n">2</span><div><h4>Personal frequency</h4><p>The products each shopper bought most often.</p></div></li>
-<li class="pick"><span class="n">3</span><div><h4>Weighted recency</h4><p>Add purchase points, giving recent orders more weight.</p></div></li>
-<li><span class="n">4</span><div><h4>Logistic regression</h4><p>Learn how to combine five purchase-history clues.</p></div></li>
-<li><span class="n">5</span><div><h4>Boosted trees</h4><p>Use small decision trees to combine those clues more flexibly.</p></div></li>
-</ol></div></div><div class="col"><div class="clinks"><a class="clink gh" href="https://github.com/justindao193/instacart-grocery-recommendations/blob/main/src/baselines/score_weighted_recency.py" target="_blank" rel="noopener">See the ranking code</a><a class="clink gh" href="https://github.com/justindao193/instacart-grocery-recommendations/blob/main/src/baselines/weighted_recency.sql" target="_blank" rel="noopener">See the SQL</a></div></div>
-</section>
-
-<hr class="rule">
-
-<section id="results">
-<div class="col"><p class="eb">Results</p><h2>Personal history made the biggest difference</h2><p class="t">Personal history found about five times more of the next basket than one popular list for everyone. The two learned models added almost nothing over the simple rules.</p></div><div class="wide"><div class="panel rv"><div aria-label="Final results by method" class="rtab in" role="table">
+  <div class="wide"><div class="panel rv"><div aria-label="Final results by method" class="rtab in" role="table">
 <div class="rh" role="row"><span role="columnheader">Method</span><span role="columnheader">Recall@5</span><span class="hide-s" role="columnheader"></span><span role="columnheader">Precision@5</span><span role="columnheader">Hit rate@5</span></div>
 <div role="row"><span>General popularity</span><b>4.69%</b><span class="tr hide-s"><i style="--w:19.2%"></i></span><span>9.48%</span><span>36.24%</span></div>
 <div role="row"><span>Personal frequency</span><b>23.12%</b><span class="tr hide-s"><i style="--w:94.5%"></i></span><span>35.41%</span><span>78.23%</span></div>
@@ -1138,18 +1108,20 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <div role="row"><span>Logistic regression</span><b>24.28%</b><span class="tr hide-s"><i style="--w:99.3%"></i></span><span>37.30%</span><span>79.38%</span></div>
 <div role="row"><span>Boosted trees</span><b>24.45%</b><span class="tr hide-s"><i style="--w:100%"></i></span><span>37.58%</span><span>79.45%</span></div>
 </div></div></div>
+
 </section>
 
-<hr class="rule">
-
 <section id="decision">
-<div class="col"><p class="eb">My decision</p><h2>I chose a simpler method, even though another scored slightly better</h2><p class="t">Boosted trees scored 0.18 points higher on recall. I picked the simpler rule after validation, before the final check.</p></div><div class="wide"><div class="lessons rv"><div><b>Easy to trace</b><p>Each earlier purchase contributes a visible number of points.</p></div><div><b>Less to maintain</b><p>The default uses a fixed rule rather than a separate trained model.</p></div><div><b>Not about speed</b><p>Both ran fast locally, so the choice came down to clarity.</p></div></div></div>
+  <div class="col"><p class="eb">My decision</p><h2>I chose the simpler method</h2><p class="t">Boosted trees scored 0.18 points higher on recall. I still picked weighted recency, for three reasons.</p></div>
+  <div class="wide"><div class="lessons rv"><div><b>Easy to trace</b><p>Each earlier purchase contributes a visible number of points.</p></div><div><b>Less to maintain</b><p>The default uses a fixed rule rather than a separate trained model.</p></div><div><b>Not about speed</b><p>Both ran fast locally, so the choice came down to clarity.</p></div></div></div>
+
 </section>
 
 <hr class="rule">
 
 <section id="v2">
-<div class="col"><p class="eb">Version 2 · An idea I stopped</p><h2>Purchase timing added too little</h2><p class="t">I gave extra points when a product looked due, based on its usual purchase gaps. The recall gain was 0.025 percentage points against a 0.25-point criterion fixed beforehand. I stopped this attempt instead of moving the goalposts.</p></div><div class="wide"><div class="panel rv"><div aria-label="Version 2 recall gain against the target" class="gauge">
+  <div class="col"><p class="eb">Version 2 · Stopped</p><h2>Purchase timing added too little</h2><p class="t">The gain had to clear a bar I set before testing. It did not, so I stopped.</p></div>
+  <div class="wide"><div class="panel rv"><div aria-label="Version 2 recall gain against the target" class="gauge">
 <div class="g-scale"><span style="--x:0%">−0.05</span><span style="--x:16.7%">0</span><span class="g-goal" style="--x:100%">Bar to clear: +0.25</span></div>
 <div class="g-track">
 <i class="g-zero" style="--x:16.7%"></i>
@@ -1159,12 +1131,12 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 </div>
 <p class="g-lab"><b>+0.025 points</b>. Its 95% range (−0.003 to +0.052) even includes zero.</p>
 </div></div></div>
+
 </section>
 
-<hr class="rule">
-
 <section id="v3">
-<div class="col"><p class="eb">Version 3 · Discovery</p><h2>A separate list for something unfamiliar</h2><p class="t">I used shared-buyer patterns to rank products absent from each shopper’s recorded history. This keeps discovery separate from buying familiar products again.</p></div><div class="wide"><div class="panel rv"><ol aria-label="How a discovery list is built" class="flow">
+  <div class="col"><p class="eb">Version 3 · Discovery</p><h2>A second list for something new</h2><p class="t">Products bought by similar shoppers, kept separate from Buy it again.</p></div>
+  <div class="wide"><div class="panel rv"><ol aria-label="How a discovery list is built" class="flow">
 <li><span class="fn">1</span><h4>Start with familiar products</h4><p>Take up to ten products, weighted by recent purchases.</p></li>
 <li><span class="fn">2</span><h4>Find product connections</h4><p>Look for shared buyers, adjusted for each product’s popularity.</p></li>
 <li><span class="fn">3</span><h4>Add personal contributions</h4><p>Multiply each familiar product’s weight by its connection strength.</p></li>
@@ -1174,16 +1146,13 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <div class="drow"><span>Popular products</span><span class="tr"><i style="--w:77.6%"></i></span><b>9.31%</b></div>
 <div class="drow rel"><span>Related products</span><span class="tr"><i style="--w:89.8%"></i></span><b>10.77%</b></div>
 </div></div><p class="axis">Share of shoppers with at least one match among five suggestions. Related products reached a net 219 more shoppers; most still had no match.</p></div></div><div class="col"><p class="t">These shoppers’ records had already been reviewed, so new data would be the real check.</p><div class="clinks"><a class="clink gh" href="https://github.com/justindao193/instacart-grocery-recommendations/blob/main/src/model_comparison/evaluate_discovery.py" target="_blank" rel="noopener">See discovery code</a><a class="clink gh" href="https://github.com/justindao193/instacart-grocery-recommendations/blob/main/results/discovery_top_five.json" target="_blank" rel="noopener">See the five-item results</a></div></div>
+
 </section>
 
 <hr class="rule">
 
-<section id="prototype" style="padding-top:clamp(56px,7vw,88px)">
-  <div class="col">
-    <p class="eb">Prototype</p>
-    <h2>A shopping page with personal suggestions</h2>
-    <p class="t">Two lists: Buy it again for products the shopper has bought before, and You might also like for products new to them. Shoppers A and B use real anonymous records; C is a new shopper.</p>
-  </div>
+<section id="prototype">
+  <div class="col"><p class="eb">The prototype</p><h2>Buy it again, and something new</h2><p class="t">One list for familiar groceries, one for products a shopper has not tried.</p></div>
   <div class="wide">
 
     
@@ -1197,13 +1166,13 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
       <figure><figcaption><span>Shoppers A and B</span><b>You might also like</b>Five products missing from the shopper's recorded purchase history. Add works the same way. There is no Hide here yet.</figcaption><div class="state-image state-discovery"><img src="instacart/state-discovery.jpg" alt="You might also like row with five unfamiliar products for Shopper A" loading="lazy" data-zoom="instacart/state-discovery.jpg"></div></figure>
     </div>
   </div>
+
 </section>
 
-<hr class="rule">
-
 <section id="pilot">
-  <div class="col"><p class="eb">User testing</p><h2>Faster on the second try</h2><p class="t">Each person searched for their usual products, then found the same products again using suggestions.</p></div>
+  <div class="col"><p class="eb">User testing</p><h2>From about 21 seconds to under 5</h2><p class="t">Four people found their usual products by search, then again with suggestions.</p></div>
   <div class="wide"><div class="panel rv"><div class="dbars ut2" aria-label="Time to find familiar products across four participants: about 20 to 22 seconds searching versus 4 to 5 seconds with suggestions"><div class="dgrp"><h5>Time comparison · <span class="k g"></span>searching <span class="k r"></span>with suggestions</h5><div class="drow"><span>Person 1</span><span class="tr"><i class="g" style="--w:88%"></i><i class="r" style="--w:20%"></i></span><b>22s → <em>5s</em></b></div><div class="drow"><span>Person 2</span><span class="tr"><i class="g" style="--w:84%"></i><i class="r" style="--w:16%"></i></span><b>21s → <em>4s</em></b></div><div class="drow"><span>Person 3</span><span class="tr"><i class="g" style="--w:88%"></i><i class="r" style="--w:20%"></i></span><b>22s → <em>5s</em></b></div><div class="drow"><span>Person 4</span><span class="tr"><i class="g" style="--w:80%"></i><i class="r" style="--w:16%"></i></span><b>20s → <em>4s</em></b></div></div></div><p class="axis">All participants were given the same products in the same order.</p></div></div>
+
 </section>
 
 <hr class="rule">
@@ -1225,11 +1194,12 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <hr class="rule">
 
 <section id="learned">
-<div class="col"><p class="eb">What I learned</p><h2>Good scores are only part of a useful product</h2><p class="t">Three lessons I would carry into the next product.</p></div><div class="wide"><div class="lessons rv">
+<div class="col"><p class="eb">What I learned</p><h2>Good scores are only part of a useful product</h2></div><div class="wide"><div class="lessons rv">
 <div><span class="lv">Choose deliberately</span><b>Accept a small accuracy cost</b><p>A result the team can explain can be worth more than the top score.</p></div>
 <div><span class="lv">Stop with evidence</span><b>Do not move the goalposts</b><p>Set the bar before testing, and stop when an idea misses it.</p></div>
 <div><span class="lv">Keep claims separate</span><b>Prediction is not product value</b><p>Matching past baskets shows a list is accurate, not that it saves shoppers time.</p></div>
 </div></div>
+
 </section>
 
 <a class="next" href="tstar.html"><span><small>Next project</small><b>TStar</b></span><span class="arr">→</span></a>
@@ -1384,7 +1354,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
   }})()}}})},{threshold:.3}).observe(hero);
 })();
 </script>
-<script>(function(){document.querySelectorAll('.tbtn').forEach(function(b){b.addEventListener('click',function(){jdTheme.set(jdTheme.get()==='dark'?'light':'dark')})});
+<script>(function(){document.querySelectorAll('.tbtn').forEach(function(b){b.addEventListener('click',function(){(function(){var to=jdTheme.get()==='dark'?'light':'dark',d=document,r=d.documentElement;if(!d.startViewTransition||matchMedia('(prefers-reduced-motion: reduce)').matches){jdTheme.set(to);return}var b=d.querySelector('.tbtn'),x=innerWidth-40,y=40;if(b){var q=b.getBoundingClientRect();x=q.left+q.width/2;y=q.top+q.height/2}var R=Math.hypot(Math.max(x,innerWidth-x),Math.max(y,innerHeight-y));if(!d.getElementById('jdcirc')){var st=d.createElement('style');st.id='jdcirc';st.textContent='html.jdcirc::view-transition-old(root),html.jdcirc::view-transition-new(root){animation:none;mix-blend-mode:normal}html.jdcirc::view-transition-old(root){z-index:1}html.jdcirc::view-transition-new(root){z-index:2}';d.head.appendChild(st)}r.classList.add('jdcirc');var t=d.startViewTransition(function(){jdTheme.set(to)});t.ready.then(function(){r.animate({clipPath:['circle(0px at '+x+'px '+y+'px)','circle('+R+'px at '+x+'px '+y+'px)']},{duration:650,easing:'cubic-bezier(.4,0,.2,1)',pseudoElement:'::view-transition-new(root)'})});t.finished.finally(function(){r.classList.remove('jdcirc')})})()})});
 document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href');if(!/^[\w\/-]+\.html(\?|#|$)/.test(h))return;
 var p=h.split('#'),q=p[0].replace(/([?&])theme=(light|dark)&?/,'$1').replace(/[?&]$/,'');a.setAttribute('href',q+(q.indexOf('?')>-1?'&':'?')+'theme='+jdTheme.get()+(p[1]!=null?'#'+p[1]:''))},true)})();</script>
 </body>

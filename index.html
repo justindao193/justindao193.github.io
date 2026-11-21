@@ -737,7 +737,7 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
 @media (max-width:600px){.bp-photo{aspect-ratio:1/1}}
 /* gallery */
 .gal{display:grid;gap:clamp(10px,1.2vw,16px)}
-.jrow{display:flex;gap:clamp(10px,1.2vw,16px);align-items:flex-start}
+.gp .bw{white-space:nowrap;position:absolute;top:10px;left:10px;z-index:2;padding:4px 10px;border-radius:999px;background:#DC4A36;color:#fff;font:500 11px var(--mono);letter-spacing:.04em}.gp.built img{object-position:50% 50%}.gp.built figcaption{white-space:normal;border-radius:12px;line-height:1.35}@media(max-width:700px){.gp .bw{top:6px;left:6px;font-size:8px;padding:2px 6px;letter-spacing:0}}.jrow{display:flex;gap:clamp(10px,1.2vw,16px);align-items:flex-start}
 .gp{position:relative;margin:0;flex:calc(var(--ar)) 1 0;min-width:0;aspect-ratio:var(--ar);overflow:hidden;border-radius:12px}
 .gp img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s cubic-bezier(.2,.7,.3,1)}
 .gp figcaption{position:absolute;left:12px;bottom:12px;padding:5px 10px;border-radius:999px;background:rgba(255,251,246,.92);color:#1E1C1B;font:11.5px var(--mono);white-space:nowrap;max-width:calc(100% - 24px);overflow:hidden;text-overflow:ellipsis;box-shadow:0 4px 12px -6px rgba(0,0,0,.35)}
@@ -937,6 +937,12 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
     <h2 class="ab-label" style="margin:0 0 22px;font-weight:400"><span>Selected work</span></h2>
     <div class="grid">
 
+      <a class="proj" href="deskbooking.html">
+        <div class="thumb vale-thumb" style="background:#fff"><video src="deskbooking/media/hero.mp4?v=2" poster="deskbooking/media/hero.jpg?v=2" muted loop playsinline autoplay preload="metadata" aria-label="Product video of the desk-booking app: see who is in, pick a day and book a desk" style="width:100%;height:100%;object-fit:cover"></video></div>
+        <div class="proj-meta"><div><h3>Designed and launched a desk-booking app with AI, raising check-ins from <span class="num-r">57%</span> to <span class="num-r">82%</span> in 20 days</h3><p>Built for a team of 40 sharing 9 desks, from a team-chat complaint to live in two weeks</p></div><span class="yr">Vale · Present · Case study →</span></div>
+        <div class="skills"><span>Product design</span><span>AI prototyping</span><span>Data analysis</span></div>
+      </a>
+
       <a class="proj" href="instacart.html">
         <div class="thumb t-sage ic-thumb"><video src="instacart/media/instacart-film.mp4?v=2" poster="instacart/media/instacart-film.jpg?v=2" muted loop playsinline autoplay preload="metadata" aria-label="Animation: past orders are scored and re-ranked into a Buy it again list, shoppers add items, then related products are suggested. Ends on 5x more of the next basket than best-sellers."></video></div>
         <div class="proj-meta"><div><h3>Made grocery reordering <span class="num-r">4x</span> faster for shoppers</h3><p>Suggesting what shoppers will buy again, and new products they might like, from 3.4M Instacart orders</p></div><span class="yr">Instacart · Independent · 2026 · Case study →</span></div>
@@ -949,11 +955,7 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
         <div class="skills"><span>UX research</span><span>Product design</span><span>Usability testing</span><span>Prototyping</span></div>
       </a>
 
-      <button class="proj" type="button" data-case="sharepoint">
-        <div class="thumb t-lilac vale-thumb"><video src="vale/media/vale-film.mp4?v=3" poster="vale/media/vale-film.jpg?v=3" muted loop playsinline autoplay preload="metadata" aria-label="Justin Dao's internal product work at Vale, including a desk-booking app launched to 50+ users" style="width:100%;height:100%;object-fit:cover"></video></div>
-        <div class="proj-meta"><div><h3>Designed and launched a desk-booking app used by <span class="num-r">50+</span> people</h3><p>Now designing tools that help colleagues navigate processes and find trusted information</p></div><span class="yr">Vale · Present · Project summary →</span></div>
-        <div class="skills"><span>Product design</span><span>AI prototyping</span><span>Information architecture</span></div>
-      </button>
+
 
       <a class="proj" href="tstar.html">
         <div class="thumb t-night">
@@ -1028,6 +1030,7 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
     <div class="ab-block">
       <div class="ab-label"><span>Life lately</span></div>
       <div class="gal">
+        <div class="jrow brow"><figure class="gp built" style="--ar:1200/900"><span class="bw">Built with Claude</span><img src="about/kindle.jpg" alt="An old Kindle on a desk turned into an e-ink dashboard showing the time, calendar, weather and a pixel cat" width="1200" height="900" loading="lazy"><figcaption><b>Kindle</b> <span>An old Kindle turned into a desk screen</span></figcaption></figure><figure class="gp built" style="--ar:850/1900"><span class="bw">Built with Claude</span><img src="about/widgets.jpg" alt="Custom Windows desktop widgets: flip clock, Toronto weather, calendar, Claude and Codex usage meters and a photo frame" width="850" height="1900" loading="lazy"><figcaption><b>Widgets</b> <span>Custom widgets for my computer</span></figcaption></figure><figure class="gp" style="--ar:537/1280"><img src="about/scuba.jpg" alt="Justin snorkelling next to a sea turtle in the Philippines" width="537" height="1280" loading="lazy"><figcaption><b>Scuba</b> <span>Sea turtle</span></figcaption></figure></div>
         <div class="jrow"><figure class="gp" style="--ar:750/1000"><img src="about/friends-night.jpg" alt="Justin and four friends posing happily outside at night in Hong Kong" width="750" height="1000" loading="lazy"><figcaption><b>Friends</b> <span>Happy in Hong Kong</span></figcaption></figure><figure class="gp" style="--ar:750/1000"><img src="about/climbing.jpg" alt="Group selfie with friends at a bouldering gym" width="750" height="1000" loading="lazy"><figcaption><b>Sports</b> <span>Bouldering crew</span></figcaption></figure><figure class="gp" style="--ar:750/1000"><img src="about/theo.jpg" alt="Theo, a grey Russian Blue cat, looking up at the camera" width="750" height="1000" loading="lazy"><figcaption><b>Theo</b> <span>The boss</span></figcaption></figure></div>
         <div class="jrow"><figure class="gp" style="--ar:1000/668"><img src="about/vale-team.jpg" alt="Justin with five colleagues in front of a Vale Base Metals wall" width="1000" height="668" loading="lazy"><figcaption><b>Work</b> <span>The Vale crew</span></figcaption></figure><figure class="gp" style="--ar:750/1000"><img src="about/food.jpg" alt="Justin at a restaurant table about to dig into a meal" width="750" height="1000" loading="lazy"><figcaption><b>Food</b> <span>Taste testing</span></figcaption></figure><figure class="gp" style="--ar:750/1000"><img src="about/vector.jpg" alt="Justin dressed as Vector for Halloween in an orange tracksuit and black glasses, posing on a balcony at night" width="750" height="1000" loading="lazy"><figcaption><b>Vector</b> <span>Halloween</span></figcaption></figure></div>
         <div class="jrow"><figure class="gp" style="--ar:750/1000"><img src="about/seoul.jpg" alt="Justin in front of a fairytale castle at Lotte World in Seoul" width="750" height="1000" loading="lazy"><figcaption><b>Seoul</b> <span>Lotte World</span></figcaption></figure><figure class="gp" style="--ar:1000/750"><img src="about/nyc.jpg" alt="The Lower Manhattan skyline on a clear day" width="1000" height="750" loading="lazy"><figcaption><b>New York</b> <span>Lower Manhattan</span></figcaption></figure><figure class="gp" style="--ar:750/1000"><img src="about/toronto.jpg" alt="The Toronto skyline and CN Tower at sunset" width="750" height="1000" loading="lazy"><figcaption><b>Toronto</b> <span>Home</span></figcaption></figure></div>
@@ -1325,7 +1328,7 @@ nav[aria-label="Main"] a.on{color:var(--ink)}
   });
 })();
 </script>
-<script>(function(){document.querySelectorAll('.tbtn').forEach(function(b){b.addEventListener('click',function(){jdTheme.set(jdTheme.get()==='dark'?'light':'dark')})});
+<script>(function(){document.querySelectorAll('.tbtn').forEach(function(b){b.addEventListener('click',function(){(function(){var to=jdTheme.get()==='dark'?'light':'dark',d=document,r=d.documentElement;if(!d.startViewTransition||matchMedia('(prefers-reduced-motion: reduce)').matches){jdTheme.set(to);return}var b=d.querySelector('.tbtn'),x=innerWidth-40,y=40;if(b){var q=b.getBoundingClientRect();x=q.left+q.width/2;y=q.top+q.height/2}var R=Math.hypot(Math.max(x,innerWidth-x),Math.max(y,innerHeight-y));if(!d.getElementById('jdcirc')){var st=d.createElement('style');st.id='jdcirc';st.textContent='html.jdcirc::view-transition-old(root),html.jdcirc::view-transition-new(root){animation:none;mix-blend-mode:normal}html.jdcirc::view-transition-old(root){z-index:1}html.jdcirc::view-transition-new(root){z-index:2}';d.head.appendChild(st)}r.classList.add('jdcirc');var t=d.startViewTransition(function(){jdTheme.set(to)});t.ready.then(function(){r.animate({clipPath:['circle(0px at '+x+'px '+y+'px)','circle('+R+'px at '+x+'px '+y+'px)']},{duration:650,easing:'cubic-bezier(.4,0,.2,1)',pseudoElement:'::view-transition-new(root)'})});t.finished.finally(function(){r.classList.remove('jdcirc')})})()})});
 document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href');if(!/^[\w\/-]+\.html(\?|#|$)/.test(h))return;
 var p=h.split('#'),q=p[0].replace(/([?&])theme=(light|dark)&?/,'$1').replace(/[?&]$/,'');a.setAttribute('href',q+(q.indexOf('?')>-1?'&':'?')+'theme='+jdTheme.get()+(p[1]!=null?'#'+p[1]:''))},true)})();</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
