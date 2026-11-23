@@ -1109,11 +1109,11 @@ details.more .mbody p.t:first-child{margin-top:4px}
 .db-it .im{position:relative;flex:1;min-height:0;aspect-ratio:1220/819;border-radius:10px;overflow:hidden;background:#fff;box-shadow:0 0 0 1px var(--line);cursor:zoom-in}
 .db-it .sk .im{aspect-ratio:auto;background:#fff}.db-it .sk img{object-fit:contain;object-position:50% 50%}
 .db-it img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 0}
-.db-it figcaption{margin:14px 4px 0;display:flex;align-items:baseline;gap:10px;font-size:14.5px;color:var(--muted)}
+@media(max-width:560px){.db-it{grid-template-columns:minmax(0,1fr)!important}}.db-it figcaption{margin:14px 4px 0;display:flex;align-items:baseline;gap:10px;font-size:14.5px;color:var(--muted)}
 .db-it figcaption b{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);font-weight:400}
 .db-it .fin{border-color:var(--red);box-shadow:0 0 0 1px var(--red)}
 .db-it .fin figcaption b{color:var(--red)}
-@media(max-width:700px){.db-it{grid-template-columns:1fr 1fr}.db-it .sk{grid-row:auto;grid-column:1/-1}.db-it .sk .im{aspect-ratio:4/3}.db-it .fin{grid-column:1/-1}}
+.db-it>figure{min-width:0}@media(max-width:700px){.db-it{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.db-it .sk{grid-row:auto;grid-column:1/-1}.db-it .sk .im{aspect-ratio:4/3}.db-it .fin{grid-column:1/-1}}
 
 .db-jy{list-style:none;margin:32px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;position:relative}
 .db-jy::before{content:"";position:absolute;left:24px;right:24px;top:31px;height:2px;background:var(--line)}
