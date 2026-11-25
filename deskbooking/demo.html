@@ -61,8 +61,7 @@ h2{font-size:30px;line-height:1.2}
 .bar .tab:hover{background:rgba(255,255,255,.22);color:#fff;border-color:transparent}
 .bar .tab[aria-selected=true]{background:#fff;color:var(--green);box-shadow:0 2px 8px rgba(3,73,68,.18)}
 .today{display:none}
-.demo{display:inline-flex;align-items:center;background:#fff;color:var(--green);border-radius:999px;padding:3px 12px;font-size:13px;font-style:normal}
-.demobar{max-width:1280px;margin:0 auto;padding:10px 40px 0;font-size:13px;color:var(--mid);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.demobar{display:flex;align-items:center;gap:8px 16px;flex-wrap:wrap}
 .demobar button{border:0;background:none;color:var(--green);text-decoration:underline;cursor:pointer;font-size:13px;padding:0}
 .calkey{display:flex;gap:14px;flex-wrap:wrap;margin-top:12px;font-size:12.5px;color:var(--mid)}
 .calkey span{display:inline-flex;align-items:center;gap:6px}.calkey i{width:12px;height:12px;border-radius:0 0 4px 0;display:inline-block;border:1px solid var(--line)}
@@ -125,9 +124,8 @@ table.mbt td{height:56px;padding-top:8px;padding-bottom:8px}
 .dayhead h2{font-size:30px}
 .legend{display:flex;gap:18px;flex-wrap:wrap;margin:16px 2px 12px;font-size:12.5px;font-weight:600;color:var(--ink)}
 .legend span{display:inline-flex;align-items:center;gap:8px}
-.legend i{width:12px;height:12px;border-radius:50%;display:inline-block}
-.legend i{border-radius:0 0 4px 0!important}
-.legend i.st{background:repeating-linear-gradient(135deg,#8C9598 0 3px,#D5D9DB 3px 6px)}
+.legend i{flex:0 0 12px;width:12px;height:12px;border-radius:0 0 3px 0;display:inline-block}
+.legend i.st{background:repeating-linear-gradient(135deg,#697477 0 2px,#D5D9DB 2px 4px)}
 .legend i.ci{background:var(--gray)}
 .legend i.rs{background:#8C9598}
 .steplab{display:flex;align-items:center;gap:12px;font-style:italic;font-weight:600;color:var(--green);font-size:17px;margin:4px 0 14px}
@@ -143,7 +141,7 @@ table.mbt td{height:56px;padding-top:8px;padding-bottom:8px}
 .btn.r{background:#fff;color:var(--gray);box-shadow:inset 0 0 0 1.5px #C4C8CB}.btn.r:hover{background:var(--bg)}
 .btn:disabled{background:var(--line);color:#8B9093;cursor:not-allowed;box-shadow:none}
 .btn.big{padding:12px 24px;font-size:14.5px}
-.btn.sm{}
+.btn.sm{font-size:12.5px;padding:7px 14px}
 
 /* chips */
 .chip{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:1px 10px;font-size:12px;font-weight:600;color:var(--ink);background:var(--bg);white-space:nowrap}
@@ -271,6 +269,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 2
 .av{position:relative;overflow:hidden;flex:0 0 auto;width:34px;height:34px;border-radius:50%;display:inline-grid;place-items:center;background:var(--blue);color:#fff;font-weight:700;font-style:italic;font-size:12.5px;line-height:1}
 .av img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%;background:#fff;opacity:0}
 .av img.ok{opacity:1}
+.desk .av.m{box-shadow:none}
 .av.m{background:var(--blue);box-shadow:0 0 0 2px #fff,0 0 0 4.5px var(--blue)}
 .plist.cp li.me{background:var(--sky);border-radius:0 0 14px 0;margin:2px -10px;padding:8px 10px;border-bottom-color:transparent}
 .plist.cp li.me .nm{color:var(--blue-d,#1F8FBF)}
@@ -321,11 +320,13 @@ button.pp small{margin-left:auto;flex:0 0 auto}
 
 @media(max-width:1100px){.desks{grid-template-columns:repeat(2,minmax(0,1fr))}.rulesw .rules{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:1000px){.cols2{grid-template-columns:1fr;grid-template-areas:"cal" "extra" "main" "rules"}.side{display:contents}.cal{grid-area:cal}.extra{grid-area:extra}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.hero h1{font-size:44px}}
-@media(max-width:640px){.daybar .dact{justify-content:flex-start}.daybar .dact .btn{width:100%}.bar-in{padding:10px 18px 12px;min-height:0}.ttl{padding:4px 0 0}.ttl h1{font-size:21px}.ttl p{display:none}.bar .tabs{width:100%;overflow-x:auto}.bar .tab{padding:8px 14px}.rulesw .rules{grid-template-columns:1fr}.wrap{padding:0 18px}main{padding-top:24px}.hero{padding:40px 24px;border-radius:0 0 70px 0}.hero h1{font-size:36px}.hero p{font-size:17px}.desks{grid-template-columns:1fr;gap:8px}.db{min-height:0;flex-direction:row;flex-wrap:wrap;align-items:center;gap:4px 10px}.desk .acts{margin:0 0 0 auto;padding:0}.desk .why{margin:0;padding:0;flex-basis:100%}.tabs{overflow-x:auto;flex-wrap:nowrap}.tab{white-space:nowrap}.cc{height:48px}.wb{grid-template-columns:56px 1fr}.wb span:last-child{grid-column:1/-1}.panel,.zone,.selhead,.tw{border-radius:0 0 24px 0}.selhead h2{font-size:26px}.wk thead{display:none}.wk,.wk tbody{display:block}.wk tr{display:grid;grid-template-columns:1fr auto;gap:6px 12px;padding:12px 16px;border-bottom:1px solid var(--line)}.wk td{display:block;padding:0;border:0;background:transparent!important;box-shadow:none!important}.wk td:last-child{grid-column:1/-1}.wk tr.td{background:var(--sky)}.chips{grid-template-columns:1fr}}
+@media(max-width:640px){.daybar .dact{justify-content:flex-start}.daybar .dact .btn{width:100%}.bar-in{padding:10px 18px 12px;min-height:0}.ttl{padding:4px 0 0}.ttl h1{font-size:21px}.ttl p{display:none}.bar .tabs{width:100%;overflow-x:auto}.bar .tab{padding:8px 14px}.rulesw .rules{grid-template-columns:1fr}.wrap{padding:0 18px}main{padding-top:24px}.hero{padding:40px 24px;border-radius:0 0 70px 0}.hero h1{font-size:36px}.hero p{font-size:17px}.desks{grid-template-columns:1fr;gap:8px}.db{min-height:0;flex-direction:row;flex-wrap:wrap;align-items:center;gap:4px 10px}.desk .acts{margin:0 0 0 auto;padding:0}.desk.res .db{flex-direction:column;align-items:flex-start}.desk .why{margin:0;padding:0;flex-basis:100%}.tabs{overflow-x:auto;flex-wrap:nowrap}.tab{white-space:nowrap}.cc{height:48px}.wb{grid-template-columns:56px 1fr}.wb span:last-child{grid-column:1/-1}.panel,.zone,.selhead,.tw{border-radius:0 0 24px 0}.selhead h2{font-size:26px}.wk thead{display:none}.wk,.wk tbody{display:block}.wk tr{display:grid;grid-template-columns:1fr auto;gap:6px 12px;padding:12px 16px;border-bottom:1px solid var(--line)}.wk td{display:block;padding:0;border:0;background:transparent!important;box-shadow:none!important}.wk td:last-child{grid-column:1/-1}.wk tr.td{background:var(--sky)}.chips{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.desk,.desk.free:hover{transform:none;transition:none}}
+:where(button,a):focus-visible{outline:3px solid #26302F;outline-offset:3px}
 </style></head>
 <body>
 <header class="bar"><div class="bar-in">
-  <div class="ttl"><span class="demo">Demo</span><span id="logo"></span><div><h1>CCO Toronto desk booking</h1></div></div>
+  <div class="ttl"><span id="logo"></span><div><h1>CCO Toronto desk booking</h1></div></div>
   <div class="tabs" role="tablist" id="tabs">
     <button class="tab" role="tab" data-v="book" aria-selected="true">Book a desk</button>
     <button class="tab" role="tab" data-v="week" aria-selected="false">Who's in</button>
@@ -333,12 +334,11 @@ button.pp small{margin-left:auto;flex:0 0 auto}
     <button class="tab" role="tab" data-v="ins" aria-selected="false">Insights</button>
   </div>
 </div></header>
-<div class="demobar"><span>Demo with sample data and made-up colleagues. Nothing here is saved to SharePoint.</span><button type="button" id="dreset">Reset demo</button></div>
 <main><div class="wrap">
   <div id="banner"></div>
   <section class="pane" id="pane"></section>
 </div></main>
-<footer><div class="wrap"><span>Vale Base Metals · CCO Toronto desk booking · Internal use</span><span class="tag">#EnergyTransitionMetals</span></div></footer>
+<footer><div class="wrap"><div class="demobar"><span>Demo with sample data</span><button type="button" id="dreset">Reset demo</button></div></div></footer>
 <div id="toast" role="status" aria-live="polite"></div>
 <script>
 (function(){
@@ -362,7 +362,7 @@ const DESKS=[
   {id:"07",z:"B"},{id:"08",z:"B"},{id:"09",z:"B",res:"Tom Nguyen"},{id:"10",z:"B"},{id:"11",z:"B"},{id:"12",z:"B",res:"Kenji Sato"}
 ];
 /* CCO roster from the CCO distribution list (name, email, title, manager) */
-const ROSTER=[{"n": "Justin Dao", "e": "justin.dao@vale.com", "t": "Co-op Student", "m": ""}, {"n": "Maya Chen", "e": "maya.chen@example.com", "t": "Director, Commercial Solutions", "m": ""}, {"n": "Daniel Okafor", "e": "daniel.okafor@example.com", "t": "Sr Manager, Sales", "m": ""}, {"n": "Priya Raman", "e": "priya.raman@example.com", "t": "Manager, Sales Operations", "m": ""}, {"n": "Lucas Ferreira", "e": "lucas.ferreira@example.com", "t": "Sr Commercial Analyst", "m": ""}, {"n": "Hannah Brooks", "e": "hannah.brooks@example.com", "t": "Commercial Analyst", "m": ""}, {"n": "Omar Haddad", "e": "omar.haddad@example.com", "t": "Specialist, Logistics", "m": ""}, {"n": "Sofia Rossi", "e": "sofia.rossi@example.com", "t": "Sr Specialist, Commercial", "m": ""}, {"n": "Ethan Walsh", "e": "ethan.walsh@example.com", "t": "Analyst II, Commercial", "m": ""}, {"n": "Aiko Tanaka", "e": "aiko.tanaka@example.com", "t": "Sr Analyst, Sales Reporting", "m": ""}, {"n": "Marcus Bell", "e": "marcus.bell@example.com", "t": "Manager, Supply Chain", "m": ""}, {"n": "Chloe Martin", "e": "chloe.martin@example.com", "t": "Specialist, Commercial", "m": ""}, {"n": "Ravi Patel", "e": "ravi.patel@example.com", "t": "ETL / Data Analyst", "m": ""}, {"n": "Grace Kim", "e": "grace.kim@example.com", "t": "Sr Specialist, Commercial", "m": ""}, {"n": "Noah Fischer", "e": "noah.fischer@example.com", "t": "Commercial Analyst", "m": ""}, {"n": "Isabel Moreno", "e": "isabel.moreno@example.com", "t": "Manager, Market Development", "m": ""}, {"n": "Liam O'Connor", "e": "liam.oconnor@example.com", "t": "Logistics Administrator", "m": ""}, {"n": "Fatima Zahra", "e": "fatima.zahra@example.com", "t": "Sr Analyst, Commercial", "m": ""}, {"n": "Ben Carter", "e": "ben.carter@example.com", "t": "Intern", "m": ""}, {"n": "Elena Petrova", "e": "elena.petrova@example.com", "t": "Specialist, Traffic", "m": ""}, {"n": "Tom Nguyen", "e": "tom.nguyen@example.com", "t": "Sr Manager, Product", "m": ""}, {"n": "Ava Thompson", "e": "ava.thompson@example.com", "t": "Analyst I, Commercial", "m": ""}, {"n": "Kenji Sato", "e": "kenji.sato@example.com", "t": "Sr Manager, Market", "m": ""}, {"n": "Zoe Laurent", "e": "zoe.laurent@example.com", "t": "Co-op Student", "m": ""}, {"n": "Samuel Adeyemi", "e": "samuel.adeyemi@example.com", "t": "Sr Specialist, Logistics", "m": ""}];
+const ROSTER=[{"n": "Justin Dao", "e": "justin.dao@example.com", "t": "Co-op Student", "m": ""}, {"n": "Maya Chen", "e": "maya.chen@example.com", "t": "Director, Commercial Solutions", "m": ""}, {"n": "Daniel Okafor", "e": "daniel.okafor@example.com", "t": "Sr Manager, Sales", "m": ""}, {"n": "Priya Raman", "e": "priya.raman@example.com", "t": "Manager, Sales Operations", "m": ""}, {"n": "Lucas Ferreira", "e": "lucas.ferreira@example.com", "t": "Sr Commercial Analyst", "m": ""}, {"n": "Hannah Brooks", "e": "hannah.brooks@example.com", "t": "Commercial Analyst", "m": ""}, {"n": "Omar Haddad", "e": "omar.haddad@example.com", "t": "Specialist, Logistics", "m": ""}, {"n": "Sofia Rossi", "e": "sofia.rossi@example.com", "t": "Sr Specialist, Commercial", "m": ""}, {"n": "Ethan Walsh", "e": "ethan.walsh@example.com", "t": "Analyst II, Commercial", "m": ""}, {"n": "Aiko Tanaka", "e": "aiko.tanaka@example.com", "t": "Sr Analyst, Sales Reporting", "m": ""}, {"n": "Marcus Bell", "e": "marcus.bell@example.com", "t": "Manager, Supply Chain", "m": ""}, {"n": "Chloe Martin", "e": "chloe.martin@example.com", "t": "Specialist, Commercial", "m": ""}, {"n": "Ravi Patel", "e": "ravi.patel@example.com", "t": "ETL / Data Analyst", "m": ""}, {"n": "Grace Kim", "e": "grace.kim@example.com", "t": "Sr Specialist, Commercial", "m": ""}, {"n": "Noah Fischer", "e": "noah.fischer@example.com", "t": "Commercial Analyst", "m": ""}, {"n": "Isabel Moreno", "e": "isabel.moreno@example.com", "t": "Manager, Market Development", "m": ""}, {"n": "Liam O'Connor", "e": "liam.oconnor@example.com", "t": "Logistics Administrator", "m": ""}, {"n": "Fatima Zahra", "e": "fatima.zahra@example.com", "t": "Sr Analyst, Commercial", "m": ""}, {"n": "Ben Carter", "e": "ben.carter@example.com", "t": "Intern", "m": ""}, {"n": "Elena Petrova", "e": "elena.petrova@example.com", "t": "Specialist, Traffic", "m": ""}, {"n": "Tom Nguyen", "e": "tom.nguyen@example.com", "t": "Sr Manager, Product", "m": ""}, {"n": "Ava Thompson", "e": "ava.thompson@example.com", "t": "Analyst I, Commercial", "m": ""}, {"n": "Kenji Sato", "e": "kenji.sato@example.com", "t": "Sr Manager, Market", "m": ""}, {"n": "Zoe Laurent", "e": "zoe.laurent@example.com", "t": "Co-op Student", "m": ""}, {"n": "Samuel Adeyemi", "e": "samuel.adeyemi@example.com", "t": "Sr Specialist, Logistics", "m": ""}];
 /* ============================================== */
 
 const $=s=>document.querySelector(s);
@@ -421,7 +421,7 @@ const AVP=(()=>{
     return draw({skin:pk(skins,1),hair:pk(hairs,5),shirt:pk(shirts,9),bg:pk(bgs,13),style:(r>>>17)%6,glasses:((r>>>21)%5)===0,beard:((r>>>24)%6)===0&&((r>>>17)%6)<2});
   }
   const me=draw({skin:"#EBC3A2",hair:"#1F1F1F",shirt:"#007E7A",bg:"#EAF6FC",style:0,glasses:false,beard:false});
-  return e=>norm(e)==="justin.dao@vale.com"?me:person(norm(e)||"x");
+  return e=>norm(e)==="justin.dao@example.com"?me:person(norm(e)||"x");
 })();
 const photoUrl=(e,sz)=>AVP(e);
 function avatar(name,email,cls,sz){
@@ -504,9 +504,17 @@ function demoSeed(){
   const others=ROSTER.filter(p=>p.n!=="Justin Dao");
   const guests=[{n:"Alex Rivera",e:"alex.rivera@example.com"},{n:"Jordan Lee",e:"jordan.lee@example.com"},{n:"Morgan Price",e:"morgan.price@example.com"}];
   const out=[];let id=1;const t=today(),tp=parse(t);
+  const dates=windowDates();
   const at=(d,h,m)=>{const x=parse(d);x.setHours(h,m,0,0);return x.toISOString()};
+  const openingDay=dates[0];
+  const openingDesks=[["01","Ben Carter"],["03","Noah Fischer"],["04","Fatima Zahra"],["07","Elena Petrova"]];
+  openingDesks.forEach(([desk,name])=>{
+    const created=openingDay===t?new Date().toISOString():at(t,9,0);
+    const checkIn=desk==="07"&&openingDay===t?created:null;
+    out.push({id:id++,desk,date:openingDay,name,email:byName[norm(name)].e,status:"Booked",checkIn,cco:true,created});
+  });
   for(let k=-42;k<=CONFIG.windowDays;k++){
-    const d=addDays(tp,k),ds=ymd(d);if(isWeekend(d))continue;
+    const d=addDays(tp,k),ds=ymd(d);if(isWeekend(d)||ds===openingDay)continue;
     const wd=d.getDay();const base={1:4,2:7,3:8,4:7,5:3}[wd];
     const fade=k>0?Math.max(0.15,1-k/22):1;
     let n=Math.round(base*fade+(rnd()*2-1));n=Math.max(0,Math.min(n,bookable.length));
@@ -514,23 +522,21 @@ function demoSeed(){
     const used=new Set();
     desks.forEach((desk,ix)=>{
       let p;
-      if(k<=0&&ix===0&&rnd()<.55&&!used.has("Justin Dao"))p={n:"Justin Dao",e:"justin.dao@vale.com",c:true};
+      if(k<0&&ix===0&&rnd()<.55&&!used.has("Justin Dao"))p={n:"Justin Dao",e:"justin.dao@example.com",c:true};
       else if(rnd()<.07){const g=pick(guests);p={n:g.n,e:g.e,c:false}}
       else{let q;do{q=pick(others)}while(used.has(q.n));p={n:q.n,e:q.e,c:true}}
       if(used.has(p.n))return;used.add(p.n);
       const b={id:id++,desk,date:ds,name:p.n,email:p.e,status:"Booked",checkIn:null,cco:p.c,created:at(ymd(addDays(d,-1-Math.floor(rnd()*6))),9+Math.floor(rnd()*8),Math.floor(rnd()*60))};
       if(k<0){const x=rnd();if(x<.08)b.status="Cancelled";else if(x<.80)b.checkIn=at(ds,8,Math.floor(rnd()*95));}
-      if(k===0&&p.n!=="Justin Dao"&&rnd()<.6)b.checkIn=at(ds,8,Math.floor(rnd()*50));
       out.push(b);
     });
   }
-  /* you: today booked (not yet checked in) + a few upcoming days */
-  const mine=[0,1,6,8].map(k=>windowDates()[k]).filter(Boolean);
+  /* Leave the opening day bookable and prefill a few later visits. */
+  const mine=[1,6,8].map(k=>dates[k]).filter(Boolean);
   mine.forEach(ds=>{if(out.some(b=>b.date===ds&&b.name==="Justin Dao"&&b.status!=="Cancelled"))return;
     const taken=new Set(out.filter(b=>b.date===ds&&b.status!=="Cancelled").map(b=>b.desk));
     const desk=["03","05","02","10"].find(x=>!taken.has(x))||bookable.map(x=>x.id).find(x=>!taken.has(x));if(!desk)return;
-    out.push({id:id++,desk,date:ds,name:"Justin Dao",email:"justin.dao@vale.com",status:"Booked",checkIn:(ds===t&&nowMin()>=relMin)?at(ds,9,12):null,cco:true,created:at(ymd(addDays(tp,-2)),14,5)})});
-  if(nowMin()>=relMin)out.forEach(b=>{if(b.name==="Justin Dao"&&b.date===t&&b.status!=="Cancelled"&&!b.checkIn)b.checkIn=at(t,9,12)});
+    out.push({id:id++,desk,date:ds,name:"Justin Dao",email:"justin.dao@example.com",status:"Booked",checkIn:null,cco:true,created:at(ymd(addDays(tp,-2)),14,5)})});
   return out;
 }
 function demoReset(){try{localStorage.removeItem(Local.key)}catch(e){}mem[Local.key]=null;Local.save(demoSeed());}
@@ -620,22 +626,25 @@ function nextWorkday(){const w=windowDates();return w.find(x=>x>today())||today(
 
 function deskTile(d,date){
   const num="Desk "+d.id;
-  const LOCK='<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
   const TICK='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
-  if(d.res)return `<div class="desk res"><div class="dh"><span>${num}</span><small>Reserved</small></div><div class="db"><div class="who">${esc(d.res)}</div><div class="sub">Permanently assigned</div></div></div>`;
+  if(d.res){
+    const portrait=avatar(d.res,byName[norm(d.res)]?.e,"sm");
+    return `<div class="desk res"><div class="dh"><span>${num}</span><small>Reserved</small></div><div class="db"><div class="who">${portrait}<span>${esc(d.res)}</span></div><div class="sub">Permanently assigned</div></div></div>`;
+  }
   const h=holder(d.id,date);
   if(h){
     const s=state(h),mine=isMine(h),isIn=s==="In";
     const cls=mine?"mine":(isIn?"in":"pend");
     const chip=h.cco?"":`<span class="chip guest">Guest</span>`;
-    const sub=(!isIn&&date===today())?`<div class="sub">Check in by ${hhmm(cutoffMin(h))}</div>`:"";
+    const sub=(mine&&!isIn&&date===today())?`<div class="sub">Check in by ${hhmm(cutoffMin(h))}</div>`:"";
     let acts="";
     if(mine){
       if(s==="Booked"&&date===today())acts+=`<button class="btn sm" type="button" data-a="in" data-id="${h.id}">Check in</button>`;
+      acts+=`<button class="btn r sm" type="button" data-a="cancel" data-id="${h.id}">Cancel</button>`;
     }
     const lab=isIn?`${TICK}Checked in`:(mine?"Your desk":"Booked");
-    const tick=isIn?avatar(h.name,h.email,"sm"+(mine?" m":"")):"";
-    return `<div class="desk ${cls}"><div class="dh"><span>${num}</span><small>${lab}</small></div><div class="db"><div class="who">${tick}${pn0(h)}${chip}</div>${sub}<div class="acts">${acts}</div></div></div>`;
+    const portrait=avatar(h.name,h.email,"sm"+(mine?" m":""));
+    return `<div class="desk ${cls}"><div class="dh"><span>${num}</span><small>${lab}</small></div><div class="db"><div class="who">${portrait}${pn0(h)}${chip}</div>${sub}<div class="acts">${acts}</div></div></div>`;
   }
   const rel=data.find(b=>b.desk===d.id&&b.date===date&&state(b)==="Released");
   const w=whyNot(d.id,date);
@@ -790,10 +799,10 @@ function render(){
 /* ---------- profile card ---------- */
 const PI={chat:'<path d="M4 5h16v11H9l-5 4z"/>',mail:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>',call:'<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/>',copy:'<rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/>',check:'<path d="M5 12.5l4.5 4.5L19 7.5"/>'};
 const pi=k=>`<svg viewBox="0 0 24 24" aria-hidden="true">${PI[k]}</svg>`;
-let popEl=null;
-function closePop(){if(popEl){popEl.remove();popEl=null}}
+let popEl=null,popTrigger=null;
+function closePop(){if(popEl){popEl.remove();popEl=null;const target=popTrigger;popTrigger=null;if(target&&target.isConnected)target.focus()}}
 function openPop(btn){
-  closePop();
+  closePop();popTrigger=btn;
   const email=btn.dataset.pop||"",name=btn.dataset.name||"",date=btn.dataset.pdate||sel||today();
   const r=byEmail[norm(email)]||byName[norm(name)]||null;
   const nm=r?r.n:name,em=r?r.e:email,title=r&&r.t?r.t:"";
@@ -830,7 +839,16 @@ document.addEventListener("click",e=>{
   if(popEl&&e.target.closest(".pop .x")){closePop();return}
   if(popEl&&!e.target.closest(".pop"))closePop();
 });
-document.addEventListener("keydown",e=>{if(e.key==="Escape")closePop()});
+document.addEventListener("keydown",e=>{
+ if(!popEl)return;
+ if(e.key==="Escape"){e.preventDefault();closePop();return}
+ if(e.key==="Tab"){
+  const focusable=Array.from(popEl.querySelectorAll('button,a[href],[tabindex="0"]')).filter(x=>!x.disabled);
+  const first=focusable[0],last=focusable[focusable.length-1];
+  if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}
+  else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}
+ }
+});
 document.addEventListener("click",e=>{
   const t=e.target.closest("[data-a],[data-date],.tab");if(!t)return;
   if(t.classList.contains("tab")){view=t.dataset.v;render();return}
@@ -847,7 +865,7 @@ document.addEventListener("click",e=>{
 });
 document.addEventListener("click",e=>{if(e.target.id==="dreset"){demoReset();reload().then(render);toast("Demo data reset")}});
 (async function start(){
-  store=Local;Local.key="cco_desk_demo_"+today();me={name:"Justin Dao",email:"justin.dao@vale.com"};
+  store=Local;Local.key="cco_desk_demo_"+today();me={name:"Justin Dao",email:"justin.dao@example.com"};
   if(!Local.all().length)Local.save(demoSeed());
   await reload();if(CONFIG.logoUrl)$("#logo").innerHTML=`<img src="${esc(CONFIG.logoUrl)}" alt="Vale">`;render();
   setInterval(()=>{if(!document.hidden&&!popEl)refresh()},60000);

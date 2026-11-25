@@ -456,14 +456,17 @@ i.more{background:var(--g)} i.same{background:var(--line)} i.less{background:var
 .tree span{font-size:15px;color:var(--muted)}
 @media (max-width:560px){.tree>div{grid-template-columns:1fr;gap:2px}}
 /* try it */
-.sagestage{background:radial-gradient(70% 90% at 30% 20%,#F8F1E9 0%,#EFE3D5 55%,#E7D6C4 100%);padding:clamp(20px,4vw,48px)}
+.db-try{display:inline-block;margin-top:16px;color:var(--red-deep);font-size:15px;font-weight:500;text-underline-offset:3px;text-decoration-skip-ink:none;white-space:nowrap}
+.db-try-mobile{display:none}
+#try{scroll-margin-top:24px}
+#trystage{margin-top:24px;padding:0;background:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .desk{width:100%;position:relative;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 40px 80px -36px rgba(30,28,27,.5)}
 .desk iframe{position:absolute;left:0;top:0;width:1280px;height:820px;border:0;transform-origin:0 0}
 .note2{font-size:15px;color:var(--muted)}
 .mob-open{display:none;text-decoration:none;text-align:center}
-.mob-open img{width:100%;border-radius:12px;box-shadow:0 30px 60px -36px rgba(30,28,27,.5)}
-.mob-open .btn{margin-top:20px;background:#B8392A;color:#fff}
-@media (max-width:700px){.desk{display:none}.mob-open{display:block}}
+.mob-open img{display:block;width:100%;height:auto;border-radius:12px;box-shadow:0 30px 60px -36px rgba(30,28,27,.5)}
+@media (max-width:700px){.desk,.db-try-desktop{display:none}.mob-open{display:block}.db-try-mobile{display:inline-block}}
 #methods .panel,#results .panel{padding-bottom:clamp(20px,3.4vw,44px)}
 
 /* hero animation (same motion as the home card) */
@@ -1092,6 +1095,58 @@ details.more .mbody p.t:first-child{margin-top:4px}
   .db-map>div{padding-bottom:20px}
 }
 /* v2 */
+.db-sum{grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.35fr)!important}.db-sum .res{background:var(--red);border-color:var(--red);color:#fff}.db-sum .res small,.db-sum .res p{color:rgba(255,255,255,.88)!important}.db-sum .res b.num{color:#fff!important;font-size:clamp(44px,4.6vw,64px)!important}.db-sum .res b.num span{color:rgba(255,255,255,.7)!important}@media(max-width:900px){.db-sum{grid-template-columns:1fr!important}}
+.db-up{display:flex!important;align-items:center;gap:10px;font-size:15px}.db-up em{font-style:normal;font-weight:600;font-size:14px;color:#2E8B57;background:rgba(46,139,87,.14);padding:5px 12px;border-radius:999px}
+.db-snag{margin-top:24px!important}
+.db-ps2{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:14px;align-items:stretch;margin-top:28px}.db-ps2>div{border-radius:16px;padding:20px 22px}.db-ps2 .p{background:color-mix(in srgb,var(--red) 10%,transparent)}.db-ps2 .s{background:var(--card);border:1px solid var(--line)}.db-ps2 .ar{align-self:center;color:var(--red);font-size:20px}.db-ps2 small{font:12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--red)}.db-ps2 .s small{color:var(--muted)}.db-ps2 p{margin:8px 0 0;font-size:15.5px;line-height:1.5}@media(max-width:700px){.db-ps2{grid-template-columns:1fr}.db-ps2 .ar{justify-self:center;transform:rotate(90deg)}}
+.db-steps{grid-template-columns:repeat(5,minmax(0,1fr))!important}.db-steps p{margin:8px 0 0;font-size:13.5px;line-height:1.45;color:var(--muted)}.db-steps .ok p{color:rgba(255,255,255,.88)}.db-steps .fix{border-color:var(--ink)}.db-steps .ok{grid-column:auto!important}@media(max-width:900px){.db-steps{grid-template-columns:repeat(3,minmax(0,1fr))!important}}@media(max-width:560px){.db-steps{grid-template-columns:minmax(0,1fr)!important}}
+.db-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.db-tabs span{padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:var(--card);font-size:14px}.db-tabs span.on{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.db-it{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:20px!important}.db-it .sk{grid-row:auto!important}.db-it .im,.db-it .sk .im{aspect-ratio:1220/819!important;flex:none}.db-it .fin{grid-column:1/-1}.db-it .fin .im{aspect-ratio:16/8.6!important}@media(max-width:700px){.db-it{grid-template-columns:minmax(0,1fr)!important}}
+.db-st{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;position:relative}
+.db-st::before{content:"";position:absolute;left:10px;right:10px;top:7px;height:2px;background:var(--line)}
+.db-st li{position:relative;padding-top:34px}
+.db-st .dot{position:absolute;top:0;left:0;width:16px;height:16px;border-radius:50%;background:var(--red);box-shadow:0 0 0 5px var(--bg)}
+.db-st small{display:block;min-height:2.8em;font:12px var(--mono);line-height:1.4;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.db-st b{display:block;margin-top:10px;font-family:var(--serif);font-weight:400;font-size:clamp(22px,2.2vw,28px);line-height:1.15;letter-spacing:-.01em;color:var(--ink)}
+.db-st .need{display:inline-block;margin-top:14px;padding:4px 10px;border-radius:999px;background:var(--panel);font-size:13px;color:var(--muted)}
+@media(max-width:800px){.db-st{grid-template-columns:1fr;gap:0}.db-st::before{left:7px;right:auto;top:8px;bottom:8px;width:2px;height:auto}.db-st li{padding:0 0 26px 36px}.db-st .dot{top:2px}.db-st b{margin-top:6px}.db-st small{min-height:0}}
+
+.db-jt{margin-top:32px;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--card)}
+.db-jt .r{display:grid;grid-template-columns:minmax(90px,.75fr) repeat(5,minmax(0,1fr))}
+.db-jt .r+.r{border-top:1px solid var(--line)}
+.db-jt .l{padding:18px 20px;font:12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center}
+.db-jt .c{position:relative;padding:18px 16px;font-size:15.5px;display:flex;align-items:center}
+.db-jt .j .c{font-family:var(--serif);font-size:clamp(17px,1.6vw,20px);line-height:1.2;flex-direction:column;align-items:flex-start;gap:10px;padding-top:20px;padding-bottom:20px}
+.db-jt .j .c i{font:500 11px var(--mono);font-style:normal;color:#fff;background:var(--red);width:24px;height:24px;border-radius:50%;display:grid;place-items:center}
+.db-jt .j .c+.c::before{content:"→";position:absolute;left:-7px;top:22px;color:var(--red);font:14px var(--sans)}
+.db-jt .n .c{color:var(--ink)}
+.db-jt .f{background:color-mix(in srgb,var(--red) 9%,transparent)}
+.db-jt .f .l{color:var(--red)}
+.db-jt .f .c{color:var(--red);font-weight:600;font-size:16px}
+@media(max-width:800px){.db-jt{display:grid;grid-auto-flow:column;grid-template-rows:repeat(6,auto);grid-template-columns:minmax(0,1.25fr) minmax(0,1fr) minmax(0,1fr)}.db-jt .r{display:contents}.db-jt .c,.db-jt .l{border-top:1px solid var(--line);padding:14px 12px}.db-jt .l{border-top:0;font-size:10.5px}.db-jt .j .c{flex-direction:row;align-items:center;gap:8px;font-size:16px}.db-jt .j .c+.c::before{display:none}.db-jt .f{background:none}.db-jt .f .c,.db-jt .f .l{background:color-mix(in srgb,var(--red) 9%,transparent)}.db-jt .c,.db-jt .f .c{font-size:14.5px}.db-jt .j .c i{flex-shrink:0}}
+
+.db-vs{position:relative}.db-vs>div{grid-template-columns:minmax(0,.7fr) minmax(0,1fr) minmax(0,1fr)!important}.db-vs>div>span:last-child{background:color-mix(in srgb,var(--red) 8%,transparent);margin:-16px calc(-1*clamp(18px,2.4vw,28px)) -16px 0;padding:16px clamp(18px,2.4vw,28px)}.db-vs>div{align-items:center}.db-vs .win{font-weight:500}.db-vs>div:not(.h)>span:nth-child(2){color:var(--muted)}
+.db-find3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:16px}
+.db-find3>div{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:clamp(18px,2.2vw,28px)}
+.db-find3 b{display:block;font-family:var(--serif);font-weight:370;font-size:clamp(44px,4.4vw,64px);line-height:1;letter-spacing:-.03em}
+.db-find3 p{margin:12px 0 0;font-size:15px;line-height:1.45;color:var(--muted)}
+.db-ins{margin-top:36px;background:var(--red);color:#fff;border-radius:18px;padding:clamp(28px,3.6vw,44px) clamp(28px,4vw,52px)}
+.db-ins small{font:12px var(--mono);letter-spacing:.12em;text-transform:uppercase;opacity:.85}
+.db-ins .row{display:grid;grid-template-columns:auto 1fr;gap:clamp(20px,3vw,40px);align-items:center;margin-top:clamp(18px,2.4vw,28px)}
+.db-ins b{display:block;font-family:var(--serif);font-weight:370;font-size:clamp(72px,8vw,112px);line-height:.8;letter-spacing:-.04em}
+.db-ins p{margin:0;font-size:clamp(20px,2.2vw,26px);line-height:1.3;font-family:var(--serif)}
+.db-ins p.s{margin-top:10px;font-family:var(--sans);font-size:15px;opacity:.85}
+.db-ins .db-bar{max-width:420px}
+.db-res{margin:20px 0 0;font-size:16px;display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+.db-res span{font:12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
+.db-hmw2{margin-top:clamp(48px,6vw,72px)}
+.db-hmw2 small{font:12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.db-hmw2 p{font-size:clamp(22px,2.4vw,28px)!important;line-height:1.3;margin-top:8px}
+@media(max-width:700px){.db-find3{grid-template-columns:1fr}}
+
+#problem .db-ps{margin-top:14px;border-left:3px solid var(--red);padding-left:22px}#problem .db-ps p{margin-top:0;font-size:clamp(24px,2.6vw,32px);line-height:1.25}.db-full{margin:18px 0 0;font-size:16px;color:var(--muted)}.db-full b{color:var(--ink);font-weight:500}
+.db-cards p{margin:6px 6px 0;font-size:14.5px;line-height:1.45;color:var(--muted)}.db-cx{font-size:16px!important;color:var(--muted)!important;margin-top:10px!important}
+.db-under{margin-top:20px!important;color:var(--muted)}
 .main > section#problem{margin-top:clamp(88px,10vw,128px)!important}
 .db-tools{display:flex;flex-wrap:wrap;gap:8px}.db-tools span{padding:5px 14px;border:1px solid var(--line);background:var(--card);border-radius:999px;font-size:14px;line-height:1.4}
 .db-role>div{align-items:center}.db-role>div:last-child{border-bottom:0}
@@ -1118,7 +1173,7 @@ details.more .mbody p.t:first-child{margin-top:4px}
 .db-jy{list-style:none;margin:32px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;position:relative}
 .db-jy::before{content:"";position:absolute;left:24px;right:24px;top:31px;height:2px;background:var(--line)}
 .db-jy li{position:relative;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 18px 18px;display:flex;flex-direction:column}
-.db-jy small{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--red);color:#fff;font-family:var(--mono);font-size:11px}
+.db-jy small{display:block;font:12px var(--mono);letter-spacing:.06em;color:var(--muted)}
 .db-jy b{margin-top:14px;font-family:var(--serif);font-weight:400;font-size:clamp(19px,1.7vw,22px);line-height:1.2;letter-spacing:-.01em;min-height:2.4em}
 .db-jy span{display:block;margin-top:14px;font-size:15px;line-height:1.3}
 .db-jy em{display:block;font-style:normal;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
@@ -1183,7 +1238,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 
 <nav class="topnav" aria-label="Main"><a href="index.html#work">← Work / <b>Vale desk booking</b></a><span class="tright" style="padding-right:46px"></span></nav>
 
-<aside class="side" aria-label="Sections"><a class="back" href="index.html#work" aria-label="Back to work">←</a><ul><li><a href="#overview" data-s="overview">overview</a></li><li><a href="#problem" data-s="problem audit">problem</a></li><li><a href="#research" data-s="research">research</a></li><li><a href="#design" data-s="direction design">design</a></li><li><a href="#solution" data-s="solution">solution</a></li><li><a href="#try" data-s="try">try it</a></li><li><a href="#launch" data-s="launch results">results</a></li><li><a href="#learned" data-s="ai learned">learning</a></li></ul></aside>
+<aside class="side" aria-label="Sections"><a class="back" href="index.html#work" aria-label="Back to work">←</a><ul><li><a href="#overview" data-s="overview">overview</a></li><li><a href="#problem" data-s="problem audit">problem</a></li><li><a href="#research" data-s="research">research</a></li><li><a href="#design" data-s="direction design">design</a></li><li><a href="#solution" data-s="solution">solution</a></li><li><a href="#launch" data-s="launch results">results</a></li><li><a href="#learned" data-s="ai learned">learning</a></li></ul></aside>
 <main class="main">
 <div class="wide">
   <div class="film rv db-film"><video src="deskbooking/media/hero.mp4?v=12" poster="deskbooking/media/hero.jpg?v=12" muted loop playsinline autoplay preload="metadata" aria-label="Product video of the desk-booking app: see who is in, pick a day and book a desk."></video></div>
@@ -1201,8 +1256,8 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 </dl></div>
 <div class="wide db-sum rv">
   <div><small>Problem</small><b>Desks showed as full while seats sat empty.</b><p>About 40 people shared 9 bookable desks.</p></div>
-  <div><small>Result · 20 days</small><b class="num">57% <span>→</span> 82%</b><p>Check-in rate, with 18% of desks freed up for others.</p></div>
   <div><small>My part</small><ul><li>Booking data analysis</li><li>Design and AI-built prototype</li><li>Launch with IT on SharePoint</li></ul></div>
+  <div class="res"><small>Result · 20 days</small><b class="num">57% <span>→</span> 82%</b><p>Check-in rate, with 18% of desks freed up for others.</p></div>
 </div>
 
 <div class="wide"><div class="hbtns"><a class="btn" href="#try">Try the demo ↓</a></div></div>
@@ -1210,20 +1265,19 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <hr class="rule">
 
 <section id="problem">
-  <div class="col"><p class="eb">The problem</p><h2>“It says full, but the seats are empty.”</h2><p class="t">It started in our team chat. People could not find a desk, even on days the office looked half empty.</p></div>
+  <div class="col"><p class="eb">The problem</p></div>
+  <div class="col"><div class="db-ps rv"><p>Team members struggled to plan office visits because desk availability and reservation ownership were unclear, especially when people’s plans changed.</p></div></div>
   <div class="wide"><div class="panel rv db-ctx" aria-label="About 40 people share 9 bookable desks">
-    <p class="db-big">40 people.<br><span>9 desks.</span></p>
+    <div><p class="db-big">40 people.<br><span>9 desks.</span></p></div>
     <div class="db-grid" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i></div>
   </div></div>
-  <div class="col"><div class="db-ps rv"><small>Problem statement</small><p>Team members struggled to plan office visits because desk availability and who owned each booking were unclear, especially when plans changed.</p></div></div>
 </section>
 
 <section id="audit" style="padding-top:clamp(56px,7vw,88px)">
-  <div class="col"><p class="eb">The existing tool</p><h2>Four friction points in Smart Office</h2></div>
+  <div class="col"><p class="eb">The existing tool</p><h2>Four friction points in the existing solution</h2></div>
   <div class="wide">
-    <figure class="shot rv"><img src="deskbooking/media/old-annotated.jpg" data-zoom="deskbooking/media/old-annotated.jpg" alt="Smart Office booking screen with six location fields marked" loading="lazy"></figure>
     <div class="db-cards rv">
-      <div><div class="im"><img src="deskbooking/media/c-setup.jpg" data-zoom="deskbooking/media/c-setup.jpg" alt="Six location fields in Smart Office" loading="lazy"></div><small>01 · Setup</small><b>Six fields before a single desk</b></div>
+      <div><div class="im"><img src="deskbooking/media/c-setup.jpg?v=2" data-zoom="deskbooking/media/c-setup.jpg?v=2" alt="Six location fields in Smart Office" loading="lazy"></div><small>01 · Setup</small><b>Six fields before a single desk</b></div>
       <div><div class="im"><img src="deskbooking/media/c-slots.jpg" data-zoom="deskbooking/media/c-slots.jpg" alt="A desk shown as partially available from 16:00 to 17:00" loading="lazy"></div><small>02 · Time slots</small><b>Partial hours invite double booking</b></div>
       <div><div class="im"><img src="deskbooking/media/c-visibility.jpg" data-zoom="deskbooking/media/c-visibility.jpg" alt="Booked desks marked Unavailable with no name" loading="lazy"></div><small>03 · Visibility</small><b>Booked desks show no name</b></div>
       <div><div class="im"><img src="deskbooking/media/old-cancel.jpg" data-zoom="deskbooking/media/old-cancel.jpg" alt="Cancel dialog asking for a reason" loading="lazy"></div><small>04 · Cancelling</small><b>Two steps and a reason no one reads</b></div>
@@ -1234,33 +1288,31 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <hr class="rule">
 
 <section id="research">
-  <div class="col"><p class="eb">Research</p><h2>A small group, not the whole team</h2><p class="t">I pulled the booking data from IT and analyzed it with Copilot.</p></div>
-  <div class="wide"><div class="db-find rv">
-    <div class="big"><b>10</b><p>people made <strong>72%</strong> of all no-shows</p><div class="db-bar" aria-hidden="true"><i style="width:72%"></i></div></div>
+  <div class="col"><p class="eb">Research</p><h2>Over half of all bookings were no-shows</h2></div>
+  <div class="wide"><div class="db-ins rv"><small>Key insight</small><div class="row"><b>10</b><div><p>people made <strong>72%</strong> of all no-shows.</p><p class="s">A small group, not the whole team.</p></div></div></div>
+  <div class="db-find3 rv">
     <div><b>57%</b><p>of bookings were no-shows</p></div>
-    <div><b>21%</b><p>came from outside the team</p></div>
-    <div><b>4</b><p>pairs of double bookings</p></div>
-  </div></div>
-  <div class="col"><p class="t db-out">Leadership saw the report and agreed: <strong>we needed an alternative.</strong></p>
-  <p class="db-hmw">How might we help the team plan office days with confidence, and make sure booked desks get used?</p></div>
+    <div><b>21%</b><p>of bookings came from outside the team</p></div>
+    <div><b>4</b><p>pairs of bookings overlapped on the same desk</p></div>
+  </div>
+  <p class="db-res rv"><span>Outcome</span>Leadership saw the report and agreed we needed an alternative.</p></div>
+  <div class="col"><div class="db-ps db-hmw2 rv"><small>How might we</small><p>Help the team plan office days with confidence, and make sure booked desks get used?</p></div></div>
 </section>
 
 <hr class="rule">
 
 <section id="direction">
-  <div class="col"><p class="eb">Direction</p><h2>A shared sheet, or a purpose-built app</h2><p class="t">My manager proposed a shared Excel sheet. I kept its openness, and proposed an app that enforces the rules on its own.</p></div>
+  <div class="col"><p class="eb">Direction</p><h2>My manager suggested a shared sheet. I proposed an app.</h2></div>
   <div class="wide"><div class="db-vs rv" role="table" aria-label="Excel sheet compared with the app">
     <div class="h" role="row"><span role="columnheader"></span><span role="columnheader">Excel sheet</span><span role="columnheader" class="win">App</span></div>
-    <div role="row"><span role="rowheader">Names</span><span role="cell">Typed in by hand</span><span role="cell" class="win">Pulled from the booking</span></div>
-    <div role="row"><span role="rowheader">Rules</span><span role="cell">Anyone can edit or delete</span><span role="cell" class="win">Enforced automatically</span></div>
-    <div role="row"><span role="rowheader">Upkeep</span><span role="cell">Needs an owner</span><span role="cell" class="win">Maintains itself</span></div>
+    <div role="row"><span role="rowheader">Names</span><span role="cell">Added by hand</span><span role="cell" class="win">Taken from the booking</span></div><div role="row"><span role="rowheader">Entries</span><span role="cell">Can be deleted</span><span role="cell" class="win">Kept by the rules</span></div><div role="row"><span role="rowheader">Rules</span><span role="cell">Not enforced</span><span role="cell" class="win">Enforced automatically</span></div>
   </div></div>
 </section>
 
 <hr class="rule">
 
 <section id="design">
-  <div class="col"><p class="eb">Design</p><h2>Each need became one feature</h2><p class="t">I walked the journey step by step and asked what the team needed at each point.</p></div>
+  <div class="col"><p class="eb">Design</p><h2>Each need became one feature</h2></div>
   <div class="wide"><ol class="db-jy rv" aria-label="Journey step, user need and feature">
   <li><small>01</small><b>Plan a visit</b><span class="nd"><em>Need</em>Availability</span><span class="ft"><em>Feature</em>Week view</span></li>
   <li><small>02</small><b>See who booked</b><span class="nd"><em>Need</em>Visibility</span><span class="ft"><em>Feature</em>Names shown</span></li>
@@ -1269,11 +1321,11 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
   <li><small>05</small><b>Arrive and sit down</b><span class="nd"><em>Need</em>Reliability</span><span class="ft"><em>Feature</em>Auto-release</span></li>
 </ol></div>
 
-  <div class="col" style="margin-top:clamp(64px,8vw,104px)"><p class="eb">Iteration</p><h2>From sketch to final in four rounds</h2><p class="t">Copilot built each version from my sketch and rules. My job was editing: removing noise until it was clear where to look.</p></div>
+  <div class="col" style="margin-top:clamp(64px,8vw,104px)"><p class="eb">Iteration</p><h2>Iterating on an AI-built prototype</h2></div>
   <div class="wide"><div class="db-it rv">
-  <figure class="sk"><div class="im"><img src="deskbooking/media/it-sketch.jpg" data-zoom="deskbooking/media/it-sketch.jpg" alt="Paper sketch of the layout" loading="lazy"></div><figcaption><b>Sketch</b>Layout and booking rules</figcaption></figure>
+  <figure class="sk"><div class="im"><img src="deskbooking/media/it-sketch.jpg?v=2" data-zoom="deskbooking/media/it-sketch.jpg?v=2" alt="Paper sketch of the layout" loading="lazy"></div><figcaption><b>Sketch</b>Layout and booking rules</figcaption></figure>
   <figure class=""><div class="im"><img src="deskbooking/media/it-v1.jpg" data-zoom="deskbooking/media/it-v1.jpg" alt="Version 1 prototype" loading="lazy"></div><figcaption><b>V1</b>Too dense</figcaption></figure>
-  <figure class=""><div class="im"><img src="deskbooking/media/it-v2.jpg" data-zoom="deskbooking/media/it-v2.jpg" alt="Version 2 prototype" loading="lazy"></div><figcaption><b>V2</b>Vale brand colours</figcaption></figure>
+  <figure class=""><div class="im"><img src="deskbooking/media/it-v2.jpg" data-zoom="deskbooking/media/it-v2.jpg" alt="Version 2 prototype" loading="lazy"></div><figcaption><b>V2</b>Company brand colours</figcaption></figure>
   <figure class=""><div class="im"><img src="deskbooking/media/it-v3.jpg" data-zoom="deskbooking/media/it-v3.jpg" alt="Version 3 prototype" loading="lazy"></div><figcaption><b>V3</b>Clear focus</figcaption></figure>
   <figure class="fin"><div class="im"><img src="deskbooking/media/pg-book.jpg" data-zoom="deskbooking/media/pg-book.jpg" alt="Final design" loading="lazy"></div><figcaption><b>Final</b>After a heuristic review</figcaption></figure>
 </div></div>
@@ -1282,33 +1334,31 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <hr class="rule">
 
 <section id="solution">
-  <div class="col"><p class="eb">The solution</p><h2>Book, check in or cancel from one page</h2><p class="t">Four pages in the Vale brand: Book a desk, Who’s in, My bookings and Insights.</p></div>
-  <div class="wide"><div class="film rv db-tour"><video src="deskbooking/media/tour.mp4" poster="deskbooking/media/tour.jpg" muted loop playsinline autoplay preload="none" aria-label="Screen recording of booking a desk"></video></div></div>
+  <div class="col">
+    <p class="eb">The solution</p>
+    <h2>Book, check in or cancel from one page</h2>
+    <a class="db-try db-try-desktop" href="#try">Try the demo <span aria-hidden="true">&#8595;</span></a>
+    <a class="db-try db-try-mobile" href="deskbooking/demo.html" target="_blank" rel="noopener">Try the demo <span aria-hidden="true">&#8599;</span></a>
+  </div>
+  <div class="wide" id="try" tabindex="-1"><div class="stage" id="trystage">
+    <div class="desk"><iframe src="deskbooking/demo.html" title="Desk booking demo" loading="lazy"></iframe></div>
+    <a class="mob-open" href="deskbooking/demo.html" target="_blank" rel="noopener" aria-label="Try the desk booking demo"><img src="deskbooking/media/demo-preview.jpg" alt="Desk booking calendar and desk cards" width="1280" height="820" loading="lazy"></a>
+  </div></div>
 
-  <div class="col db-fh"><small>01 · Plan an office day</small><h3>See free desks at a glance</h3><p>Full-day bookings match how people work and remove double booking.</p></div>
+  <div class="col db-fh"><small>01 · Plan an office day</small><h3>Pick a day by how many desks are free</h3><p>Full-day bookings only, so no more double booking.</p></div>
   <div class="wide"><div class="db-vid rv"><video src="deskbooking/media/plan.mp4" poster="deskbooking/media/plan.jpg" muted loop playsinline autoplay preload="none" aria-label="Choosing a day and booking a desk"></video></div></div>
 
-  <div class="col db-fh"><small>02 · Manage a booking</small><h3>All your bookings in one place</h3><p>See upcoming days and past visits, and manage each one from the same list.</p></div>
+  <div class="col db-fh"><small>02 · Manage a booking</small><h3>Every booking, past and upcoming, in one list</h3><p>See where you are sitting next, and where you sat before.</p></div>
   <div class="wide"><div class="db-vid rv"><video src="deskbooking/media/manage.mp4" poster="deskbooking/media/manage.jpg" muted loop playsinline autoplay preload="none" aria-label="Checking in from My bookings"></video></div></div>
 
-  <div class="col db-fh"><small>03 · Identify the holder</small><h3>A name on every desk</h3><p>No more guessing who has a desk, or who to ask.</p></div>
+  <div class="col db-fh"><small>03 · Identify the holder</small><h3>Every booked desk shows who has it</h3><p>So you know who to ask if plans change.</p></div>
   <div class="wide"><div class="db-vid rv"><video src="deskbooking/media/holder.mp4" poster="deskbooking/media/holder.jpg" muted loop playsinline autoplay preload="none" aria-label="Desk cards showing who booked each desk"></video></div></div>
 </section>
 
 <hr class="rule">
 
-<section id="try" style="padding-top:clamp(56px,7vw,88px)">
-  <div class="col"><p class="eb">Try it</p><h2>Use the demo</h2><p class="t">Pick a day, book a desk, then check in or cancel. Sample data only. <a href="deskbooking/demo.html" target="_blank" rel="noopener">Open full screen ↗</a></p></div>
-  <div class="wide"><div class="stage sagestage" id="trystage">
-    <div class="desk"><iframe src="deskbooking/demo.html" title="Desk booking demo" loading="lazy"></iframe></div>
-    <a class="mob-open" href="deskbooking/demo.html" target="_blank" rel="noopener"><img src="deskbooking/media/pg-book.jpg" alt="Desk booking demo"><span class="btn">Open the demo ↗</span></a>
-  </div></div>
-</section>
-
-<hr class="rule">
-
 <section id="launch">
-  <div class="col"><p class="eb">Launch</p><h2>Live in two weeks</h2><p class="t">One snag nearly stopped it: SharePoint would not save bookings. An IT partner helped me find an alternative approach to host it inside SharePoint.</p></div>
+  <div class="col"><p class="eb">Launch</p><h2>Live in two weeks, after one snag</h2></div>
   <div class="wide"><ol class="db-steps rv">
     <li><small>Spark</small><b>Team chat</b></li>
     <li><small>Research</small><b>Data report</b></li>
@@ -1316,22 +1366,19 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
     <li class="bad"><small>Snag</small><b>Bookings lost on refresh</b></li>
     <li class="ok"><small>Launch</small><b>Live for the team</b></li>
   </ol></div>
+  <div class="col"><p class="t db-snag">When I uploaded the first version to SharePoint, bookings disappeared after a refresh. I partnered with IT to resolve the issue, and we found another way to host it inside SharePoint.</p></div>
 </section>
 
 <section id="results" style="padding-top:clamp(56px,7vw,88px)">
   <div class="col"><p class="eb">Results · first 20 days</p><h2>Booked desks now get used</h2></div>
   <div class="wide strip3" role="list">
     <div role="listitem"><small>Check-in rate</small><b>82%</b>
-      <div class="rsv" aria-hidden="true"><p><span>New app</span><i><em style="width:82%"></em></i></p><p><span>Before</span><i><em class="g" style="width:57%"></em></i></p></div>
-      <span>Up 25 points from 57%.</span></div>
+      <span class="db-up"><em>▲ +25 pts</em> from 57%</span></div>
     <div role="listitem"><small>Desks freed up</small><b>18%</b>
-      <div class="rsv rsv-ring" aria-hidden="true"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="15.9" fill="none" stroke="var(--panel2)" stroke-width="4"/><circle cx="18" cy="18" r="15.9" fill="none" stroke="var(--red)" stroke-width="4" stroke-dasharray="18 82" stroke-dashoffset="25" stroke-linecap="round"/></svg><p>released <strong>back to the pool</strong></p></div>
       <span>Unconfirmed bookings release on their own.</span></div>
-    <div role="listitem"><small>Adoption</small><b>28</b>
-      <div class="db-dots" aria-hidden="true"></div>
-      <span>people made 94 full-day desk bookings.</span></div>
+    <div role="listitem"><small>People using it</small><b>28</b>
+      <span>people booked a desk, 94 bookings in total.</span></div>
   </div>
-  <div class="col"><p class="t strip3-note">An early signal. I am tracking more data and feedback before calling it solved.</p></div>
 </section>
 
 <hr class="rule">
