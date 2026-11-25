@@ -18,7 +18,7 @@
 *{box-sizing:border-box}
 html,body{margin:0}
 body{font-family:var(--font);color:var(--ink);background:#fff;font-size:15px;line-height:1.4;-webkit-font-smoothing:antialiased}
-button{font:inherit;color:inherit;cursor:pointer;background:none;border:0;padding:0}
+button{font:inherit;color:inherit;cursor:var(--interactive-cursor,pointer);background:none;border:0;padding:0}
 img{display:block}
 :focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:8px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
@@ -183,6 +183,8 @@ footer.foot{border-top:1px solid var(--line);padding-block:20px 28px;font-size:1
 .profile-options button[aria-selected="true"]{background:var(--cta-soft);color:var(--kale);font-weight:600}
 .profile-options button[aria-selected="true"]::after{content:"✓";margin-left:16px}
 </style>
+<link rel="stylesheet" href="../portfolio-cursor.css">
+<script src="../portfolio-cursor.js" defer></script>
 </head>
 <body>
 

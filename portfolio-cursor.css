@@ -1,0 +1,6 @@
+/* Desktop cursor */
+@media (hover:hover) and (pointer:fine) and (forced-colors:none){
+  :root{--interactive-cursor:var(--cursor-ring,pointer);cursor:var(--cursor-dot,auto)}
+  :is(a[href],button:enabled,summary,select:enabled,input:is([type=button],[type=submit],[type=reset],[type=checkbox],[type=radio]):enabled){cursor:var(--interactive-cursor,pointer)}
+  :is(input:not([type]),input:is([type=text],[type=email],[type=number],[type=password],[type=search],[type=tel],[type=url]),textarea,[contenteditable=true]){cursor:text}
+}

@@ -49,7 +49,7 @@ img,video{display:block;max-width:100%}
 :focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:6px}
 .wide{max-width:1120px;margin:0 auto}
 .tbtn.fx{position:fixed;top:24px;right:clamp(20px,2.4vw,40px);z-index:60;background:var(--bg);box-shadow:0 2px 10px -4px rgba(0,0,0,.18)}
-.tbtn{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;padding:0;transition:background .2s,border-color .2s}
+.tbtn{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:var(--interactive-cursor,pointer);padding:0;transition:background .2s,border-color .2s}
 .tbtn:hover{border-color:var(--muted)}
 .tbtn{overflow:hidden}
 .tbtn svg{width:17px;height:17px;grid-area:1/1;transition:opacity .35s ease,transform .55s cubic-bezier(.34,1.56,.64,1)}
@@ -59,6 +59,8 @@ img,video{display:block;max-width:100%}
 .tbtn:active{transform:scale(.9)}
 @media (prefers-reduced-motion:reduce){.tbtn svg{transition:opacity .2s}}
 </style>
+<link rel="stylesheet" href="portfolio-cursor.css">
+<script src="portfolio-cursor.js" defer></script>
 </head>
 <body>
 <button class="tbtn fx" type="button" aria-label="Switch light or dark mode"><svg viewBox="0 0 24 24" class="i-sun"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><svg viewBox="0 0 24 24" class="i-moon"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
@@ -76,7 +78,7 @@ h1 em{color:var(--red);font-style:italic}
 .stats div{font-family:var(--serif);font-size:clamp(34px,4vw,44px);font-weight:300;line-height:1}
 .stats span{display:block;margin-top:8px;font:12px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 .chips{display:flex;gap:8px;flex-wrap:wrap;margin:44px 0 14px}
-.chips button{font:500 13.5px var(--sans);padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer;transition:all .2s}
+.chips button{font:500 13.5px var(--sans);padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:var(--interactive-cursor,pointer);transition:all .2s}
 .chips button:hover{color:var(--ink);border-color:var(--muted)}
 .chips button.on{background:var(--ink);border-color:var(--ink);color:var(--bg)}
 .mapbox{position:relative;border-radius:20px;overflow:hidden;background:var(--panel);aspect-ratio:1000/560}
@@ -84,20 +86,20 @@ h1 em{color:var(--red);font-style:italic}
 .mapbox svg:active{cursor:grabbing}
 .land{fill:var(--card)}
 .bord{fill:none;stroke:var(--line);stroke-width:.6;vector-effect:non-scaling-stroke}
-.pin{cursor:pointer}
+.pin{cursor:var(--interactive-cursor,pointer)}
 .pin .dot{fill:var(--red);stroke:var(--card);stroke-width:1.6;transition:r .2s}
 .pin .halo{fill:none;stroke:var(--red);stroke-width:1.4;opacity:.45}
 .pin text{font:500 11.5px var(--sans);fill:var(--ink);paint-order:stroke;stroke:var(--card);stroke-width:3.5px;stroke-linejoin:round;opacity:0;transition:opacity .2s;pointer-events:none}
 .pin.lived text,.pin.hover text,.pin.sel text,.pins.close .pin text{opacity:1}
 .pin.sel .dot{fill:var(--ink)}
 .zbtns{position:absolute;right:14px;bottom:14px;display:flex;flex-direction:column;gap:6px}
-.zbtns button{width:34px;height:34px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:500 17px var(--sans);cursor:pointer}
+.zbtns button{width:34px;height:34px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:500 17px var(--sans);cursor:var(--interactive-cursor,pointer)}
 .legend{position:absolute;left:16px;top:14px;display:flex;gap:14px;font:12px var(--mono);color:var(--muted);background:color-mix(in srgb,var(--panel) 80%,transparent);padding:6px 10px;border-radius:999px}
 .legend i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--red);margin-right:6px;vertical-align:0}
 .legend i.big{width:11px;height:11px;box-shadow:0 0 0 2px var(--panel),0 0 0 3.4px var(--red);vertical-align:-1px}
 .card{position:absolute;left:16px;bottom:16px;width:min(320px,calc(100% - 80px));background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:18px 20px 16px;box-shadow:0 18px 40px -20px rgba(0,0,0,.35);opacity:0;transform:translateY(10px);pointer-events:none;transition:opacity .25s,transform .3s}
 .card.show{opacity:1;transform:none;pointer-events:auto}
-.card .x{position:absolute;right:10px;top:10px;width:28px;height:28px;border:0;border-radius:50%;background:transparent;color:var(--muted);font-size:18px;cursor:pointer}
+.card .x{position:absolute;right:10px;top:10px;width:28px;height:28px;border:0;border-radius:50%;background:transparent;color:var(--muted);font-size:18px;cursor:var(--interactive-cursor,pointer)}
 .card .x:hover{background:var(--panel);color:var(--ink)}
 .card .tag{font:11.5px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--red)}
 .card h3{font-family:var(--serif);font-weight:400;font-size:30px;line-height:1.1;margin:6px 0 2px;letter-spacing:-.01em}
@@ -114,7 +116,7 @@ h1 em{color:var(--red);font-style:italic}
 .list h2{font-family:var(--serif);font-weight:400;font-size:22px;margin:0;display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:10px}
 .list h2 small{font:12px var(--mono);color:var(--muted)}
 .list ul{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
-.list button{font:14px var(--sans);padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;transition:all .2s}
+.list button{font:14px var(--sans);padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:var(--interactive-cursor,pointer);transition:all .2s}
 .list button:hover{border-color:var(--red);color:var(--red)}
 .list button.lv{background:var(--red);border-color:var(--red);color:#FFFBF6}
 @media (max-width:700px){

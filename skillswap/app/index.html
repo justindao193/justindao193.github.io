@@ -20,7 +20,7 @@
 html,body{margin:0;height:100%}
 body{font-family:var(--font);color:var(--ink);background:#E9EBE8;letter-spacing:-.006em;-webkit-font-smoothing:antialiased}
 button,input,textarea,select{font:inherit;color:inherit}
-button{cursor:pointer;border:0;background:none;padding:0}
+button{cursor:var(--interactive-cursor,pointer);border:0;background:none;padding:0}
 .device{position:relative;width:100%;height:100dvh;overflow:hidden;overflow:clip;background:var(--bg)}
 @media (min-width:520px) and (min-height:640px){
   body{display:grid;place-items:center;min-height:100dvh;padding:24px}
@@ -274,7 +274,7 @@ svg.i{width:20px;height:20px;flex:none}
 .sys{justify-self:center;font-size:12.5px;color:var(--muted);font-weight:600;padding:4px 10px}
 .help details{border-top:1px solid var(--line);padding:14px 16px}
 .help details:first-child{border-top:0}
-.help summary{font-weight:700;font-size:15px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:10px}
+.help summary{font-weight:700;font-size:15px;cursor:var(--interactive-cursor,pointer);list-style:none;display:flex;justify-content:space-between;gap:10px}
 .help summary::-webkit-details-marker{display:none}
 .help details p{margin:8px 0 0;font-size:14px;line-height:1.5;color:var(--muted)}
 
@@ -652,7 +652,7 @@ body{color:#1B211E}
 .acg{padding:14px 0;border-bottom:1px solid var(--hair)}.acg b{display:block;margin-bottom:10px;font-size:14px}
 .acg .chip{height:34px;font-size:13.5px}
 .fcat{display:flex;align-items:center;justify-content:space-between;width:100%;height:48px;margin-top:6px;padding:0 14px;border-radius:14px;background:var(--soft);box-shadow:inset 0 0 0 1px var(--hair);font-size:15px;font-weight:600}.fcat svg{width:16px;height:16px;color:var(--muted)}
-.tgl{display:flex;align-items:center;gap:12px;margin:16px 20px 0;padding:14px 16px;border-radius:16px;background:var(--peach);cursor:pointer}
+.tgl{display:flex;align-items:center;gap:12px;margin:16px 20px 0;padding:14px 16px;border-radius:16px;background:var(--peach);cursor:var(--interactive-cursor,pointer)}
 .tgl span{flex:1}.tgl b{display:block;font-size:15px}.tgl small{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
 .tgl input{position:absolute;opacity:0;pointer-events:none}
 .tgl i{position:relative;width:46px;height:28px;border-radius:999px;background:#D9D2C6;flex:none;transition:background .2s}
@@ -723,6 +723,8 @@ body{color:#1B211E}
 .btn.ok,.btn.cta{background:var(--deep)!important;color:#fff!important;box-shadow:none!important}.btn.ok:active,.btn.cta:active{background:#0E201B!important}
 .av.ai{background:#fff!important;overflow:hidden;padding:0}.av.ai img{width:100%;height:100%;object-fit:cover;display:block}
 </style>
+<link rel="stylesheet" href="../../portfolio-cursor.css">
+<script src="../../portfolio-cursor.js" defer></script>
 </head>
 <body>
 <div class="device" id="dev">

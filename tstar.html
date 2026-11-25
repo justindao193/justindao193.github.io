@@ -56,7 +56,7 @@ nav b{color:var(--ink);font-weight:500}
 
 .film{position:relative;border-radius:16px;overflow:hidden;background:#0E1036;aspect-ratio:16/9;margin-top:24px}
 .film video{width:100%;height:100%;object-fit:cover}
-.ctl{position:absolute;right:14px;bottom:14px;height:36px;padding:0 14px;border-radius:999px;border:0;background:rgba(14,16,54,.7);color:#fff;font:500 13px var(--sans);cursor:pointer}
+.ctl{position:absolute;right:14px;bottom:14px;height:36px;padding:0 14px;border-radius:999px;border:0;background:rgba(14,16,54,.7);color:#fff;font:500 13px var(--sans);cursor:var(--interactive-cursor,pointer)}
 
 h1{font-family:var(--serif);font-weight:370;font-size:clamp(34px,4vw,46px);line-height:1.12;letter-spacing:-.02em;margin:64px 0 0}
 .lead{margin:24px 0 0;font-size:18px}
@@ -78,7 +78,7 @@ p.t{margin:20px 0 0}
 .panel.sky{background:var(--sky)}
 .panel.night{background:#14164A}
 .cap{font-size:14px;color:var(--muted);margin:12px 0 0}
-.z{cursor:zoom-in}
+.z{cursor:var(--interactive-cursor,zoom-in)}
 
 /* bars */
 .bars{display:grid;gap:22px;max-width:760px;margin:0 auto}
@@ -297,7 +297,7 @@ h3.sub{font-size:16px;font-weight:600;margin:48px 0 0}
 .ba figure{margin:0;text-align:center}
 .ba figcaption{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:10px}
 .ba figure:last-child figcaption{color:var(--red-deep)}
-.ba button{display:block;width:100%;max-width:170px;margin:0 auto;padding:0;border:0;background:#fff;aspect-ratio:291/634;border-radius:clamp(12px,1.6vw,20px) clamp(12px,1.6vw,20px) 0 0;overflow:hidden;box-shadow:0 0 0 1px rgba(30,28,27,.06),0 20px 40px -26px rgba(28,31,94,.55);height:auto;max-height:300px;cursor:zoom-in}
+.ba button{display:block;width:100%;max-width:170px;margin:0 auto;padding:0;border:0;background:#fff;aspect-ratio:291/634;border-radius:clamp(12px,1.6vw,20px) clamp(12px,1.6vw,20px) 0 0;overflow:hidden;box-shadow:0 0 0 1px rgba(30,28,27,.06),0 20px 40px -26px rgba(28,31,94,.55);height:auto;max-height:300px;cursor:var(--interactive-cursor,zoom-in)}
 .ba figure:first-child button{filter:saturate(.55);opacity:.85}
 .ba img{width:100%;height:100%;object-fit:cover;object-position:top}
 .ba>i{font-style:normal;text-align:center;color:var(--red);font-size:20px;padding-top:22px}
@@ -334,12 +334,12 @@ h3.sub{font-size:16px;font-weight:600;margin:48px 0 0}
 dialog.lb{border:0;padding:0;background:transparent;max-width:min(1500px,96vw);max-height:94vh}
 dialog.lb::backdrop{background:rgba(15,13,12,.86)}
 dialog.lb img{max-width:100%;max-height:90vh;border-radius:12px;margin:auto}
-dialog.lb button{position:fixed;top:16px;right:16px;height:40px;padding:0 16px;border-radius:999px;border:0;background:#FFFBF6;color:#1E1C1B;font:inherit;cursor:pointer}
+dialog.lb button{position:fixed;top:16px;right:16px;height:40px;padding:0 16px;border-radius:999px;border:0;background:#FFFBF6;color:#1E1C1B;font:inherit;cursor:var(--interactive-cursor,pointer)}
 .rv{opacity:0;transform:translateY(16px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1)}
 .rv.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.bar .tr i{transition:none}}
 .tbtn.fx{position:fixed;top:24px;right:clamp(20px,2.4vw,40px);z-index:60;background:var(--bg);box-shadow:0 2px 10px -4px rgba(0,0,0,.18)}
-.tbtn{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;padding:0;transition:background .2s,border-color .2s}
+.tbtn{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:var(--interactive-cursor,pointer);padding:0;transition:background .2s,border-color .2s}
 .tbtn:hover{border-color:var(--muted)}
 .tbtn{overflow:hidden}
 .tbtn svg{width:17px;height:17px;grid-area:1/1;transition:opacity .35s ease,transform .55s cubic-bezier(.34,1.56,.64,1)}
@@ -477,6 +477,8 @@ h5{margin-bottom:16px!important}
 .panel>.goals:first-child{margin-top:0;padding-top:0;border-top:0}
 </style>
 <style>.db-try{margin-top:28px!important}.next{max-width:1040px;margin-left:0!important;margin-right:auto!important}.db-role{margin:40px 0 0}.db-role>div{display:grid;grid-template-columns:minmax(120px,.55fr) 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--line);align-items:center}.db-role>div:last-child{border-bottom:0}.db-role dt{font-size:15px;color:var(--red-deep)}.db-role dd{margin:0;font-size:15.5px;line-height:1.5}.db-role small{display:block;margin-top:4px;font-size:14.5px;color:var(--muted)}.db-tools{display:flex;flex-wrap:wrap;gap:8px}.db-tools span{padding:5px 14px;border:1px solid var(--line);background:var(--card);border-radius:999px;font-size:14px;line-height:1.4}@media(max-width:560px){.db-role>div{grid-template-columns:1fr;gap:4px}}</style>
+<link rel="stylesheet" href="portfolio-cursor.css">
+<script src="portfolio-cursor.js" defer></script>
 </head>
 <body>
 <button class="tbtn fx" type="button" aria-label="Switch light or dark mode"><svg viewBox="0 0 24 24" class="i-sun"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><svg viewBox="0 0 24 24" class="i-moon"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
