@@ -7,7 +7,7 @@
   if(!context)return;
 
   function cursorImage(color,ring){
-    var dot='<circle cx="12" cy="12" r="5.5" fill="'+color+'"/>';
+    var dot='<circle cx="12" cy="12" r="6" fill="'+color+'"/>';
     var outline=ring?'<circle cx="12" cy="12" r="8.5" fill="none" stroke="'+color+'" stroke-width="1.5"/>':'';
     var svg='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">'+dot+outline+'</svg>';
     return 'url("data:image/svg+xml,'+encodeURIComponent(svg)+'") 12 12,'+(ring?'pointer':'auto');
