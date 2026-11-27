@@ -1133,11 +1133,11 @@ details.more .mbody p.t:first-child{margin-top:4px}
 .ic-ideas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:28px}.ic-ideas>div{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:clamp(24px,3vw,36px)}.ic-ideas .hd{display:flex;align-items:center;justify-content:space-between;gap:12px}.ic-ideas small{font:11.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}.ic-ideas b{display:block;margin-top:18px;font-family:var(--serif);font-weight:400;font-size:clamp(20px,1.8vw,23px);line-height:1.3;text-wrap:balance}.ic-ideas p{margin:auto 0 0;padding-top:20px;border-top:1px solid var(--line);margin-top:22px;font-size:15px;line-height:1.55;color:var(--muted)}.ic-ideas .tag{font-size:12.5px;font-weight:600;padding:4px 11px;border-radius:999px;white-space:nowrap}.ic-ideas .no .tag{background:color-mix(in srgb,var(--muted) 16%,transparent);color:var(--muted)}.ic-ideas .ok{border:2px solid #2E8B57;box-shadow:0 24px 48px -32px rgba(46,139,87,.45)}.ic-ideas .ok .tag{background:#2E8B57;color:#fff}.ic-ideas .no{opacity:.72}.ic-ideas .no b{color:var(--muted)}@media(max-width:700px){.ic-ideas{grid-template-columns:1fr}}
 
 /* cohesive spacing */#results .strip3{margin-bottom:0!important}
-main section > .col + .wide > :first-child{margin-top:32px!important}
+main section > .col + .wide:not(.strip3) > :first-child{margin-top:32px!important}
 main section > .col + .wide.strip3,main section > .col + .wide.stage,main section > .col + .wide#try{margin-top:32px!important}
 main section > .col + .wide#try > .stage{margin-top:0!important}
 main section .db-fh + .wide > :first-child{margin-top:28px!important}
-main section .wide + .wide > :first-child,main section .strip3 + .wide > :first-child{margin-top:16px!important}
+main section .wide + .wide:not(.strip3) > :first-child,main section .strip3 + .wide > :first-child{margin-top:16px!important}
 #approach .ic-goal{margin-top:24px!important}#approach .ic-goal + .wide > :first-child{margin-top:32px!important}
 #solution .col:has(> .sub){margin-top:clamp(64px,8vw,104px)}#solution .col:has(> .sub) + .wide > :first-child{margin-top:28px!important}
 .ic-ideas + *, .wide + .col > .clinks{margin-top:24px}

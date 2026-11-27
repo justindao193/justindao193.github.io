@@ -1230,7 +1230,7 @@ details.more .mbody p.t:first-child{margin-top:4px}
 @media(max-width:560px){.db-cards{grid-template-columns:1fr}.db-grid{gap:6px}}
 
 /* cohesive spacing */
-main section > .col + .wide > :first-child{margin-top:32px!important}
+main section > .col + .wide:not(.strip3) > :first-child{margin-top:32px!important}
 main section > .col + .wide.strip3{margin-top:32px!important}
 main section .db-fh + .wide > :first-child{margin-top:28px!important}
 .db-quotes figure{display:flex;flex-direction:column}.db-quotes figcaption{margin-top:auto!important;padding-top:18px}
