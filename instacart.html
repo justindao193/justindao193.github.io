@@ -1165,9 +1165,9 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 </div>
 <div class="wide"><dl class="db-role"><div><dt>Role</dt><dd>Product manager &amp; data analyst</dd></div><div><dt>Timeline</dt><dd>Oct 2026</dd></div><div><dt>Tools</dt><dd class="db-tools"><span>Claude Code</span><span>Codex</span><span>SQL</span><span>Python</span></dd></div></dl></div>
 <div class="wide db-sum rv">
-  <div><small>Problem</small><b>People buy the same groceries again and again.</b><p>But they still have to find each one every time.</p></div>
-  <div><small>My part</small><ul><li>Data analysis in SQL and Python</li><li>Compared five ranking methods</li><li>Built and tested the prototype</li></ul></div>
-  <div class="res"><small>Result</small><b class="num">5×</b><p>better at predicting a shopper’s next basket than suggesting popular products.</p></div>
+  <div><small>Problem</small><b>People buy the same groceries again and again</b><p>But they still have to find each one every time</p></div>
+  <div><small>My part</small><ul><li>Data analysis in SQL and Python</li><li>Compared 5 ranking methods</li><li>Built and tested the prototype</li></ul></div>
+  <div class="res"><small>Result</small><b class="num">5×</b><p>better at predicting a shopper’s next basket than suggesting popular products</p></div>
 </div>
 <div class="wide"><div class="hbtns"><a class="btn" href="#try">Try the prototype ↓</a><a class="btn ghost" href="https://github.com/justindao193/instacart-grocery-recommendations" target="_blank" rel="noopener">View code ↗</a></div></div>
 
@@ -1175,8 +1175,8 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
   <div class="col"><p class="eb">The problem</p></div>
   <div class="col"><div class="db-ps rv"><p>People buy many of the same groceries every order, but have to find them again each time.</p></div></div>
   <div class="wide"><div class="ic-ev rv">
-    <div><b>59%</b><p>of products in an Instacart order had been bought before by the same shopper.</p></div>
-    <div><b>2×</b><p>more repeat items between back-to-back online grocery orders than between store trips.</p></div>
+    <div><b>59%</b><p>of products in an Instacart order had been bought before by the same shopper</p></div>
+    <div><b>2×</b><p>more repeat items between back-to-back online grocery orders than between store trips</p></div>
   </div></div>
 </section>
 
@@ -1192,7 +1192,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
     <li><span>04</span><small>Improve</small><b>Two more ideas, one kept</b></li>
   </ol></div>
 
-  <div class="col db-fh"><small>Step 1 · Ask</small><h3>If people rebuy the same items, can their past orders guess the next order?</h3><p>To check, I hid each shopper’s latest order and tried to guess 5 items in it, using only older orders.</p></div>
+  <div class="col db-fh"><small>Step 1 · Ask</small><h3>If people rebuy the same items, can their past orders guess the next order?</h3><p>To check, I hid each shopper’s latest order and tried to guess 5 items in it, using only older orders</p></div>
   <div class="wide"><div class="panel rv"><div aria-label="Order timeline for one customer" class="tl">
 <div class="tl-h"><span></span><span>Earlier orders</span><span>Second-last</span><span>Last order</span><span>Hidden order</span></div>
 <div class="tl-r"><b>Train the models</b><i class="in" style="grid-column:2/3"></i><i class="ans" style="grid-column:3/4">answer</i></div>
@@ -1200,15 +1200,15 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <div class="tl-r"><b>Final check, once</b><i class="in" style="grid-column:2/5"></i><i class="ans fin" style="grid-column:5/6">answer</i></div>
 </div></div></div>
 
-  <div class="col db-fh"><small>Step 2 · Test</small><h3>Their own past orders guessed best</h3><p>I compared 5 ways of guessing, from showing everyone the most popular products to machine learning.</p></div>
-  <div class="wide"><div class="db-ins rv"><small>Key insight</small><div class="row"><b>5×</b><div><p>Guessing from <strong>their own past orders</strong> found 5× more of the next order than guessing the most popular products.</p><p class="s">Tested on real Instacart shoppers, using 3.4M past orders.</p></div></div></div>
+  <div class="col db-fh"><small>Step 2 · Test</small><h3>Their own past orders guessed best</h3><p>I compared 5 ways of guessing, from showing everyone the most popular products to machine learning</p></div>
+  <div class="wide"><div class="db-ins rv"><small>Key insight</small><div class="row"><b>5×</b><div><p>Guessing from <strong>their own past orders</strong> found 5× more of the next order than guessing the most popular products</p><p class="s">Tested on real Instacart shoppers, using 3.4M past orders</p></div></div></div>
   <div class="db-find3 rv">
     <div><b>131K</b><p>real shoppers tested</p></div>
     <div><b>79%</b><p>of shoppers had at least one right guess in their 5</p></div>
     <div><b>1 in 4</b><p>items in a next order, on average, were among the 5 guesses</p></div>
   </div></div>
 
-  <div class="col db-fh"><small>Step 3 · Choose</small><h3>I picked the simple rule over machine learning</h3><p>Almost the same score, and much easier to explain.</p></div>
+  <div class="col db-fh"><small>Step 3 · Choose</small><h3>I picked the simple rule over machine learning</h3><p>Almost the same score, and much easier to explain</p></div>
   <div class="wide"><div class="db-vs rv" role="table" aria-label="Boosted trees compared with weighted recency">
     <div class="h" role="row"><span role="columnheader"></span><span role="columnheader">Machine learning</span><span role="columnheader" class="win">Simple rule</span></div>
     <div role="row"><span role="rowheader">Next order found</span><span role="cell">24.45%</span><span role="cell" class="win">24.28%</span></div><div role="row"><span role="rowheader">How it works</span><span role="cell">A trained model (boosted trees)</span><span role="cell" class="win">Recent buys count more (weighted recency)</span></div><div role="row"><span role="rowheader">Explaining a pick</span><span role="cell">Hard to trace</span><span role="cell" class="win">Each purchase adds visible points</span></div><div role="row"><span role="rowheader">Upkeep</span><span role="cell">A separate model to maintain</span><span role="cell" class="win">Nothing extra to maintain</span></div>
@@ -1222,7 +1222,7 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 <div role="row"><span>Boosted trees</span><b>24.45%</b><span class="tr hide-s"><i style="--w:100%"></i></span><span>37.58%</span><span>79.45%</span></div>
 </div><p class="axis ic-leg"><b>Recall</b>: how much of the next order the 5 guesses found. <b>Precision</b>: how many of the 5 guesses were right. <b>Hit rate</b>: shoppers with at least one right guess.</p></div></div><div class="col"><div class="clinks"><a class="clink gh" href="https://github.com/justindao193/instacart-grocery-recommendations/blob/main/src/baselines/score_weighted_recency.py" target="_blank" rel="noopener">See the ranking code</a><a class="clink gh" href="https://github.com/justindao193/instacart-grocery-recommendations/blob/main/src/baselines/weighted_recency.sql" target="_blank" rel="noopener">See the SQL</a></div></div>
 
-  <div class="col db-fh"><small>Step 4 · Improve</small><h3>I tried two more ideas and kept one</h3><p>Each idea had to clear a bar I set before testing.</p></div>
+  <div class="col db-fh"><small>Step 4 · Improve</small><h3>I tried two more ideas and kept one</h3><p>Each idea had to clear a bar I set before testing</p></div>
   <div class="wide"><div class="ic-ideas rv">
     <div class="no"><div class="hd"><small>Idea 1</small><span class="tag">Stopped</span></div><b>Suggest items when people usually rebuy them</b><p>Almost no gain. It improved results by 0.025 points, far below my bar of 0.25.</p></div>
     <div class="ok"><div class="hd"><small>Idea 2</small><span class="tag">✓ Kept and built</span></div><b>Suggest new products that similar shoppers buy</b><p>More shoppers got a right guess: 10.8%, compared with 9.3% for popular products. This became “You might also like”.</p></div>
@@ -1239,10 +1239,10 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
     <a class="mob-open" href="instacart/grocery_recommendations_prototype.html" target="_blank" rel="noopener"><img src="instacart/screen-discovery.jpg" alt="Grocery recommendations prototype with Buy it again and You might also like"><span class="btn">Open the prototype ↗</span></a>
   </div></div>
 
-  <div class="col db-fh"><small>01 · Add in one tap</small><h3>Usual groceries, one tap away</h3><p>The five products each shopper is most likely to buy again.</p></div>
+  <div class="col db-fh"><small>01 · Add in one tap</small><h3>Usual groceries, one tap away</h3><p>The 5 products each shopper is most likely to buy again</p></div>
   <div class="wide"><div class="db-vid rv"><video src="instacart/ic-add.mp4" poster="instacart/ic-add.jpg" muted loop playsinline autoplay preload="none" aria-label="Adding a product from Buy it again"></video></div></div>
 
-  <div class="col db-fh"><small>02 · Hide what you do not need</small><h3>Remove a suggestion that does not fit</h3><p>Hidden items stay one click away.</p></div>
+  <div class="col db-fh"><small>02 · Hide what you do not need</small><h3>Remove a suggestion that does not fit</h3><p>Hidden items stay one click away</p></div>
   <div class="wide"><div class="db-vid rv"><video src="instacart/ic-hide.mp4" poster="instacart/ic-hide.jpg" muted loop playsinline autoplay preload="none" aria-label="Hiding a product from Buy it again"></video></div></div>
 
   <div class="col db-fh"><small>03 · Works for every history</small><h3>A short history gets a short list</h3><p>No random filler. Shoppers with no history see popular products instead.</p></div>
@@ -1251,10 +1251,10 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
   <div class="col"><h3 class="sub">Three shoppers, three states</h3></div>
   <div class="wide">
     <div class="states rv">
-      <figure><figcaption><span>Shopper A</span><b>Full list</b>A regular shopper sees five familiar products.</figcaption><img src="instacart/state-full.jpg" alt="Buy it again row with five familiar products" loading="lazy" data-zoom="instacart/state-full.jpg"></figure>
+      <figure><figcaption><span>Shopper A</span><b>Full list</b>A regular shopper sees 5 familiar products</figcaption><img src="instacart/state-full.jpg" alt="Buy it again row with five familiar products" loading="lazy" data-zoom="instacart/state-full.jpg"></figure>
       <figure><figcaption><span>Shopper B</span><b>Short list</b>Only one familiar product, so only one is shown. No random filler.</figcaption><div class="state-image state-short"><img src="instacart/state-short.jpg" alt="Buy it again row with only one product" loading="lazy" data-zoom="instacart/state-short.jpg"></div></figure>
-      <figure><figcaption><span>Shopper C</span><b>No history</b>Popular products instead, under their own heading.</figcaption><img src="instacart/state-none.jpg" alt="Popular products row for a shopper with no history" loading="lazy" data-zoom="instacart/state-none.jpg"></figure>
-      <figure><figcaption><span>Shoppers A and B</span><b>You might also like</b>Five products missing from the shopper's recorded purchase history. Add works the same way. There is no Hide here yet.</figcaption><div class="state-image state-discovery"><img src="instacart/state-discovery.jpg" alt="You might also like row with five unfamiliar products for Shopper A" loading="lazy" data-zoom="instacart/state-discovery.jpg"></div></figure>
+      <figure><figcaption><span>Shopper C</span><b>No history</b>Popular products instead, under their own heading</figcaption><img src="instacart/state-none.jpg" alt="Popular products row for a shopper with no history" loading="lazy" data-zoom="instacart/state-none.jpg"></figure>
+      <figure><figcaption><span>Shoppers A and B</span><b>You might also like</b>5 products missing from the shopper’s recorded purchase history. Add works the same way. There is no Hide here yet.</figcaption><div class="state-image state-discovery"><img src="instacart/state-discovery.jpg" alt="You might also like row with five unfamiliar products for Shopper A" loading="lazy" data-zoom="instacart/state-discovery.jpg"></div></figure>
     </div>
   </div>
 </section>
@@ -1267,11 +1267,11 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
     <div role="listitem"><small>Time to find an item</small><b>4.5s</b>
       <span class="db-up"><em>▼ 16.5s</em> from 21s with search</span></div>
     <div role="listitem"><small>Faster with suggestions</small><b>4 of 4</b>
-      <span>people found their items faster than by search.</span></div>
+      <span>people found their items faster than by search</span></div>
     <div role="listitem"><small>Next basket predicted</small><b>5×</b>
-      <span>better prediction than popular products.</span></div>
+      <span>better prediction than popular products</span></div>
   </div>
-  <div class="wide"><div class="panel rv"><div class="dbars ut2" aria-label="Time to find familiar products across four participants: about 20 to 22 seconds searching versus 4 to 5 seconds with suggestions"><div class="dgrp"><h5>Time comparison · <span class="k g"></span>searching <span class="k r"></span>with suggestions</h5><div class="drow"><span>Person 1</span><span class="tr"><i class="g" style="--w:88%"></i><i class="r" style="--w:20%"></i></span><b>22s → <em>5s</em></b></div><div class="drow"><span>Person 2</span><span class="tr"><i class="g" style="--w:84%"></i><i class="r" style="--w:16%"></i></span><b>21s → <em>4s</em></b></div><div class="drow"><span>Person 3</span><span class="tr"><i class="g" style="--w:88%"></i><i class="r" style="--w:20%"></i></span><b>22s → <em>5s</em></b></div><div class="drow"><span>Person 4</span><span class="tr"><i class="g" style="--w:80%"></i><i class="r" style="--w:16%"></i></span><b>20s → <em>4s</em></b></div></div></div><p class="axis">All participants were given the same products in the same order.</p></div></div>
+  <div class="wide"><div class="panel rv"><div class="dbars ut2" aria-label="Time to find familiar products across four participants: about 20 to 22 seconds searching versus 4 to 5 seconds with suggestions"><div class="dgrp"><h5>Time comparison · <span class="k g"></span>searching <span class="k r"></span>with suggestions</h5><div class="drow"><span>Person 1</span><span class="tr"><i class="g" style="--w:88%"></i><i class="r" style="--w:20%"></i></span><b>22s → <em>5s</em></b></div><div class="drow"><span>Person 2</span><span class="tr"><i class="g" style="--w:84%"></i><i class="r" style="--w:16%"></i></span><b>21s → <em>4s</em></b></div><div class="drow"><span>Person 3</span><span class="tr"><i class="g" style="--w:88%"></i><i class="r" style="--w:20%"></i></span><b>22s → <em>5s</em></b></div><div class="drow"><span>Person 4</span><span class="tr"><i class="g" style="--w:80%"></i><i class="r" style="--w:16%"></i></span><b>20s → <em>4s</em></b></div></div></div><p class="axis">All participants were given the same products in the same order</p></div></div>
   <div class="col"><p class="t">These were four early sessions. A larger, controlled test, and testing You might also like with people, come next.</p></div>
 </section>
 
@@ -1279,9 +1279,9 @@ top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',
 
 <section id="learned">
 <div class="col"><p class="eb">What I learned</p><h2>Good scores are only part of a useful product</h2></div><div class="wide"><div class="lessons rv">
-<div><span class="lv">Choose deliberately</span><b>Accept a small accuracy cost</b><p>A result the team can explain can be worth more than the top score.</p></div>
-<div><span class="lv">Stop with evidence</span><b>Do not move the goalposts</b><p>Set the bar before testing, and stop when an idea misses it.</p></div>
-<div><span class="lv">Keep claims separate</span><b>Prediction is not product value</b><p>Matching past baskets shows a list is accurate, not that it saves shoppers time.</p></div>
+<div><span class="lv">Choose deliberately</span><b>Accept a small accuracy cost</b><p>A result the team can explain can be worth more than the top score</p></div>
+<div><span class="lv">Stop with evidence</span><b>Do not move the goalposts</b><p>Set the bar before testing, and stop when an idea misses it</p></div>
+<div><span class="lv">Keep claims separate</span><b>Prediction is not product value</b><p>Matching past baskets shows a list is accurate, not that it saves shoppers time</p></div>
 </div></div>
 
 </section>
